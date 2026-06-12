@@ -42,19 +42,38 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 100%;
   }
 
   .logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
-    height: 100%;
+    z-index: 2;
   }
   .logo img {
     height: 40px;
     display: block;
+  }
+  
+  .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    z-index: 2;
   }
   
   nav {
@@ -202,23 +221,6 @@
   .highlight-link {
     color: var(--pcb-glow) !important;
     font-weight: bold;
-  }
-
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 6px;
-    background: transparent;
-    border: none;
-    padding: 8px;
-  }
-  .menu-toggle span {
-    width: 30px;
-    height: 3px;
-    background-color: #00ff41;
-    transition: 0.3s;
-    border-radius: 2px;
   }
 
   .beam {

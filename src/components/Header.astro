@@ -4,15 +4,17 @@
 ---
 
 <style>
-  app-header {
+  /* 外层包裹：深色背景、粘性定位、全宽 */
+  .site-header {
     display: block;
     position: sticky;
     top: 0;
-    z-index: 10000;
+    z-index: 11000;
     background-color: #05140a;
     border-bottom: 2px solid #1a4225;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     overflow: visible;
+    width: 100%;
   }
   .header-container {
     position: relative;
@@ -35,23 +37,32 @@
     z-index: 0;
   }
 
-  .content {
+  .header-content {
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
   }
+
   .logo {
     display: flex;
     align-items: center;
+    height: 100%;
   }
   .logo img {
     height: 40px;
     display: block;
   }
   
+  nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
   nav ul.nav-links {
     display: flex;
     gap: 24px;
@@ -59,8 +70,15 @@
     margin: 0;
     padding: 0;
     align-items: center;
+    height: 100%;
   }
-  
+
+  nav ul.nav-links > li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
   nav ul.nav-links > li > a {
     color: var(--text-main);
     text-decoration: none;
@@ -70,6 +88,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    white-space: nowrap;
   }
   
   nav ul.nav-links > li > a:hover {
@@ -114,9 +133,10 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    z-index: 10001;
+    z-index: 12000;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     pointer-events: none;
+    /* 确保下拉菜单在hero区域之上 */
   }
 
   .has-dropdown::after {
@@ -189,6 +209,9 @@
     flex-direction: column;
     cursor: pointer;
     gap: 6px;
+    background: transparent;
+    border: none;
+    padding: 8px;
   }
   .menu-toggle span {
     width: 30px;
@@ -252,6 +275,7 @@
     nav ul.nav-links > li {
       width: 100%;
       margin-bottom: 20px;
+      height: auto;
     }
     
     .mega-menu {
@@ -283,224 +307,226 @@
   }
 </style>
 
-<div class="header-container">
-  <svg class="pcb-bg" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 80">
-    <defs>
-      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
-    </defs>
-    <g stroke="#1a4225" stroke-width="2" fill="none">
-      <path d="M-10,20 H300 L320,40 H800 L820,20 H1500 L1520,40 H1950" />
-      <path d="M-10,60 H400 L420,30 H900 L920,60 H1400 L1420,30 H1950" />
-      <path d="M600,80 L620,50 H1100 L1120,80" />
-    </g>
-    <g fill="#1a4225">
-      <circle cx="300" cy="20" r="3"/>
-      <circle cx="320" cy="40" r="3"/>
-      <circle cx="400" cy="60" r="3"/>
-      <circle cx="420" cy="30" r="3"/>
-      <circle cx="800" cy="40" r="3"/>
-      <circle cx="820" cy="20" r="3"/>
-    </g>
-    <g stroke="#ffcc00" stroke-width="2" fill="none" filter="url(#glow)">
-      <path class="beam beam-1" d="M-10,20 H300 L320,40 H800 L820,20 H1500 L1520,40 H1950" />
-      <path class="beam beam-2" d="M-10,60 H400 L420,30 H900 L920,60 H1400 L1420,30 H1950" />
-      <path class="beam beam-3" d="M600,80 L620,50 H1100 L1120,80" />
-    </g>
-  </svg>
+<div class="site-header">
+  <div class="header-container">
+    <svg class="pcb-bg" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 80">
+      <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="3" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+      <g stroke="#1a4225" stroke-width="2" fill="none">
+        <path d="M-10,20 H300 L320,40 H800 L820,20 H1500 L1520,40 H1950" />
+        <path d="M-10,60 H400 L420,30 H900 L920,60 H1400 L1420,30 H1950" />
+        <path d="M600,80 L620,50 H1100 L1120,80" />
+      </g>
+      <g fill="#1a4225">
+        <circle cx="300" cy="20" r="3"/>
+        <circle cx="320" cy="40" r="3"/>
+        <circle cx="400" cy="60" r="3"/>
+        <circle cx="420" cy="30" r="3"/>
+        <circle cx="800" cy="40" r="3"/>
+        <circle cx="820" cy="20" r="3"/>
+      </g>
+      <g stroke="#ffcc00" stroke-width="2" fill="none" filter="url(#glow)">
+        <path class="beam beam-1" d="M-10,20 H300 L320,40 H800 L820,20 H1500 L1520,40 H1950" />
+        <path class="beam beam-2" d="M-10,60 H400 L420,30 H900 L920,60 H1400 L1420,30 H1950" />
+        <path class="beam beam-3" d="M600,80 L620,50 H1100 L1120,80" />
+      </g>
+    </svg>
 
-  <div class="content">
-    <a href="/" class="logo">
-      <img src="/images/xf-logo.png" alt="XingFeng PCB Logo">
-    </a>
-    
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="header-content">
+      <a href="/" class="logo">
+        <img src="/images/xf-logo.png" alt="XingFeng PCB Logo">
+      </a>
+      
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="/products/" class="dropdown-trigger">Products <span class="arrow">▼</span></a>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <h4>Layer Count</h4>
+                <ul>
+                  <li><a href="/products/1-layer-pcb/">1-Layer PCB</a></li>
+                  <li><a href="/products/2-layer-pcb/">2-Layer PCB</a></li>
+                  <li><a href="/products/4-layer-pcb/">4-Layer PCB</a></li>
+                  <li><a href="/products/6-layer-pcb/">6-Layer PCB</a></li>
+                  <li><a href="/products/8-layer-pcb/">8-Layer PCB</a></li>
+                  <li><a href="/products/10-layer-pcb/">10-Layer PCB</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Advanced Layers</h4>
+                <ul>
+                  <li><a href="/products/12-layer-pcb/">12-Layer PCB</a></li>
+                  <li><a href="/products/14-layer-pcb/">14-Layer PCB</a></li>
+                  <li><a href="/products/16-layer-pcb/">16-Layer PCB</a></li>
+                  <li><a href="/products/20-layer-pcb/">20-Layer PCB</a></li>
+                  <li><a href="/products/24-layer-pcb/">24-Layer PCB</a></li>
+                  <li><a href="/products/32-layer-pcb/">32-Layer PCB</a></li>
+                  <li><a href="/products/40-layer-pcb/">40-Layer PCB</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Specialty PCB</h4>
+                <ul>
+                  <li><a href="/pcb-manufacturing/hdi-pcb/">HDI PCB</a></li>
+                  <li><a href="/pcb-manufacturing/bga-pcb/">BGA PCB</a></li>
+                  <li><a href="/pcb-manufacturing/high-frequency-pcb/">High Frequency PCB</a></li>
+                  <li><a href="/pcb-manufacturing/impedance-control-pcb/">Impedance Control PCB</a></li>
+                  <li><a href="/pcb-manufacturing/heavy-copper-pcb/">Heavy Copper PCB</a></li>
+                  <li><a href="/pcb-manufacturing/high-tg-pcb/">High Tg PCB</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Flex & Metal Core</h4>
+                <ul>
+                  <li><a href="/pcb-manufacturing/flexible-pcb/">Flexible PCB</a></li>
+                  <li><a href="/pcb-manufacturing/rigid-flex-pcb/">Rigid-Flex PCB</a></li>
+                  <li><a href="/pcb-manufacturing/aluminum-pcbs/">Aluminum PCB</a></li>
+                  <li><a href="/pcb-manufacturing/metal-core-pcb/">Metal Core PCB</a></li>
+                  <li><a href="/pcb-manufacturing/led-pcb-board/">LED PCB Board</a></li>
+                  <li><a href="/products/multilayer-pcb/">Multilayer PCB Guide</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="/pcb-manufacturing/" class="dropdown-trigger">Services <span class="arrow">▼</span></a>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <h4>PCB Fabrication</h4>
+                <ul>
+                  <li><a href="/prototype-pcb/">PCB Prototype</a></li>
+                  <li><a href="/pcb-manufacturing/">PCB Manufacturing</a></li>
+                  <li><a href="/pcb-manufacturing/custom-circuit-board-printing/">Custom PCB</a></li>
+                  <li><a href="/pcb-manufacturing/quick-turn-pcb/">Quick Turn PCB</a></li>
+                  <li><a href="/pcb-manufacturing/low-cost-pcbs-fabrication/">Low Cost PCB</a></li>
+                  <li><a href="/pcb-manufacturing/pcb-mass-production/">PCB Mass Production</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>PCB Assembly</h4>
+                <ul>
+                  <li><a href="/pcba-manufacturing/">PCBA Manufacturing</a></li>
+                  <li><a href="/pcb-assembly/">PCB Assembly</a></li>
+                  <li><a href="/pcb-assembly/smt-pcb-assembly/">SMT PCB Assembly</a></li>
+                  <li><a href="/pcb-assembly/through-hole-pcb-assembly/">Through-Hole Assembly</a></li>
+                  <li><a href="/pcb-assembly/full-turnkey-pcb-assembly-service/">Turnkey PCB Assembly</a></li>
+                  <li><a href="/pcb-assembly/components-purchasing-services/">Component Sourcing</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Assembly Types</h4>
+                <ul>
+                  <li><a href="/pcb-assembly/fast-prototype-pcb-assembly-service/">Prototype PCB Assembly</a></li>
+                  <li><a href="/pcb-assembly/quick-turn-pcb-assembly/">Quick Turn PCB Assembly</a></li>
+                  <li><a href="/pcb-assembly/low-volume-assembly-service/">Low Volume Assembly</a></li>
+                  <li><a href="/pcb-assembly/high-volume-pcb-assembly-services/">High Volume Assembly</a></li>
+                  <li><a href="/pcb-assembly/lead-free-pcb-assembly-service/">Lead-Free Assembly</a></li>
+                  <li><a href="/pcb-assembly/led-pcb-assembly/">LED PCB Assembly</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Stencil Services</h4>
+                <ul>
+                  <li><a href="/pcb-assembly/pcb-smt-stencil/">PCB SMT Stencil</a></li>
+                  <li><a href="/laser-cut-smt-stencil/">Laser Cut SMT Stencil</a></li>
+                  <li><a href="/step-stencil/">Step Stencil</a></li>
+                  <li><a href="/nano-coating-pcb-stencil-manufacturing/">Nano-Coating Stencil</a></li>
+                  <li><a href="/custom-electroform-stencils/">Electroform Stencils</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="/technical-capabilities/" class="dropdown-trigger">Capabilities <span class="arrow">▼</span></a>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <h4>Factory Capability</h4>
+                <ul>
+                  <li><a href="/technical-capabilities/">PCB Capabilities</a></li>
+                  <li><a href="/pcb-fabrication-process/">PCB Fabrication Process</a></li>
+                  <li><a href="/technical-capabilities/rigid-pcb-fabrication-capability/">Rigid PCB Capability</a></li>
+                  <li><a href="/technical-capabilities/flexible-pcb-fabrication-capability/">Flexible PCB Capability</a></li>
+                  <li><a href="/technical-capabilities/rigid-flex-pcb-fabrication-capability/">Rigid-Flex Capability</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Advanced Process</h4>
+                <ul>
+                  <li><a href="/technical-capabilities/hdi-pcb-board-fabrication-capabilities/">HDI PCB Capability</a></li>
+                  <li><a href="/technical-capabilities/pcb-copper-thickness-capabilities/">Copper Thickness Capability</a></li>
+                  <li><a href="/pcb-assembly/pcb-assembly-capability/">PCB Assembly Capability</a></li>
+                  <li><a href="/pcb-assembly/pcb-stencil-capability/">SMT Stencil Capability</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Testing & Resources</h4>
+                <ul>
+                  <li><a href="/pcb-board-testing-and-inspection/">Testing & Inspection</a></li>
+                  <li><a href="/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb/">Flying Probe Testing</a></li>
+                  <li><a href="/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly/">X-Ray Inspection</a></li>
+                  <li><a href="/pcb-materials/">PCB Materials</a></li>
+                  <li><a href="/support/pcb-pcba-manufacturing-file/">Manufacturing Files</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="/applications-and-industries-served/" class="dropdown-trigger">Industries <span class="arrow">▼</span></a>
+            <div class="mega-menu">
+              <div class="mega-column">
+                <h4>Applications</h4>
+                <ul>
+                  <li><a href="/applications-and-industries-served/">Industries Served</a></li>
+                  <li><a href="/applications-and-industries-served/pcbs-for-consumer-electronics/">Consumer Electronics</a></li>
+                  <li><a href="/applications-and-industries-served/pcbs-for-communication-equipment/">Communication Equipment</a></li>
+                  <li><a href="/applications-and-industries-served/pcbs-for-automobile-electronics/">Automobile Electronics</a></li>
+                  <li><a href="/applications-and-industries-served/pcbs-for-medical-devices/">Medical Devices</a></li>
+                  <li><a href="/applications-and-industries-served/pcbs-for-industrial-control-applications/">Industrial Control</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Markets</h4>
+                <ul>
+                  <li><a href="/applications-and-industries-served/pcbs-for-led-lighting/">LED Lighting</a></li>
+                  <li><a href="/applications-and-industries-served/new-energy-pcbs/">New Energy</a></li>
+                  <li><a href="/applications-and-industries-served/new-energy-vehicle-pcb/">New Energy Vehicle</a></li>
+                  <li><a href="/applications-and-industries-served/pcbs-for-aerospace-and-defence/">Aerospace & Defence</a></li>
+                  <li><a href="/applications-and-industries-served/security-and-access-control-systems-pcbs/">Security & Access Control</a></li>
+                  <li><a href="/applications-and-industries-served/server-and-data-storage-pcbs/">Server & Data Storage</a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="/pcb-manufacturer/">China PCB Manufacturer Guide</a></li>
+                  <li><a href="/pcb-manufacturer-usa-vs-china/">USA vs China PCB</a></li>
+                  <li><a href="/pcb-manufacturer-in-vietnam-vs-china/">Vietnam vs China PCB</a></li>
+                  <li><a href="/products/multilayer-pcb/">Multilayer PCB Guide</a></li>
+                  <li><a href="/products/high-layer-count-pcb/">High Layer Count PCB</a></li>
+                  <li><a href="/support/">Technical Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
-    
-    <nav>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-
-        <li class="has-dropdown">
-          <a href="/products/" class="dropdown-trigger">Products <span class="arrow">▼</span></a>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h4>Layer Count</h4>
-              <ul>
-                <li><a href="/products/1-layer-pcb/">1-Layer PCB</a></li>
-                <li><a href="/products/2-layer-pcb/">2-Layer PCB</a></li>
-                <li><a href="/products/4-layer-pcb/">4-Layer PCB</a></li>
-                <li><a href="/products/6-layer-pcb/">6-Layer PCB</a></li>
-                <li><a href="/products/8-layer-pcb/">8-Layer PCB</a></li>
-                <li><a href="/products/10-layer-pcb/">10-Layer PCB</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Advanced Layers</h4>
-              <ul>
-                <li><a href="/products/12-layer-pcb/">12-Layer PCB</a></li>
-                <li><a href="/products/14-layer-pcb/">14-Layer PCB</a></li>
-                <li><a href="/products/16-layer-pcb/">16-Layer PCB</a></li>
-                <li><a href="/products/20-layer-pcb/">20-Layer PCB</a></li>
-                <li><a href="/products/24-layer-pcb/">24-Layer PCB</a></li>
-                <li><a href="/products/32-layer-pcb/">32-Layer PCB</a></li>
-                <li><a href="/products/40-layer-pcb/">40-Layer PCB</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Specialty PCB</h4>
-              <ul>
-                <li><a href="/pcb-manufacturing/hdi-pcb/">HDI PCB</a></li>
-                <li><a href="/pcb-manufacturing/bga-pcb/">BGA PCB</a></li>
-                <li><a href="/pcb-manufacturing/high-frequency-pcb/">High Frequency PCB</a></li>
-                <li><a href="/pcb-manufacturing/impedance-control-pcb/">Impedance Control PCB</a></li>
-                <li><a href="/pcb-manufacturing/heavy-copper-pcb/">Heavy Copper PCB</a></li>
-                <li><a href="/pcb-manufacturing/high-tg-pcb/">High Tg PCB</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Flex & Metal Core</h4>
-              <ul>
-                <li><a href="/pcb-manufacturing/flexible-pcb/">Flexible PCB</a></li>
-                <li><a href="/pcb-manufacturing/rigid-flex-pcb/">Rigid-Flex PCB</a></li>
-                <li><a href="/pcb-manufacturing/aluminum-pcbs/">Aluminum PCB</a></li>
-                <li><a href="/pcb-manufacturing/metal-core-pcb/">Metal Core PCB</a></li>
-                <li><a href="/pcb-manufacturing/led-pcb-board/">LED PCB Board</a></li>
-                <li><a href="/products/multilayer-pcb/">Multilayer PCB Guide</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="has-dropdown">
-          <a href="/pcb-manufacturing/" class="dropdown-trigger">Services <span class="arrow">▼</span></a>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h4>PCB Fabrication</h4>
-              <ul>
-                <li><a href="/prototype-pcb/">PCB Prototype</a></li>
-                <li><a href="/pcb-manufacturing/">PCB Manufacturing</a></li>
-                <li><a href="/pcb-manufacturing/custom-circuit-board-printing/">Custom PCB</a></li>
-                <li><a href="/pcb-manufacturing/quick-turn-pcb/">Quick Turn PCB</a></li>
-                <li><a href="/pcb-manufacturing/low-cost-pcbs-fabrication/">Low Cost PCB</a></li>
-                <li><a href="/pcb-manufacturing/pcb-mass-production/">PCB Mass Production</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>PCB Assembly</h4>
-              <ul>
-                <li><a href="/pcba-manufacturing/">PCBA Manufacturing</a></li>
-                <li><a href="/pcb-assembly/">PCB Assembly</a></li>
-                <li><a href="/pcb-assembly/smt-pcb-assembly/">SMT PCB Assembly</a></li>
-                <li><a href="/pcb-assembly/through-hole-pcb-assembly/">Through-Hole Assembly</a></li>
-                <li><a href="/pcb-assembly/full-turnkey-pcb-assembly-service/">Turnkey PCB Assembly</a></li>
-                <li><a href="/pcb-assembly/components-purchasing-services/">Component Sourcing</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Assembly Types</h4>
-              <ul>
-                <li><a href="/pcb-assembly/fast-prototype-pcb-assembly-service/">Prototype PCB Assembly</a></li>
-                <li><a href="/pcb-assembly/quick-turn-pcb-assembly/">Quick Turn PCB Assembly</a></li>
-                <li><a href="/pcb-assembly/low-volume-assembly-service/">Low Volume Assembly</a></li>
-                <li><a href="/pcb-assembly/high-volume-pcb-assembly-services/">High Volume Assembly</a></li>
-                <li><a href="/pcb-assembly/lead-free-pcb-assembly-service/">Lead-Free Assembly</a></li>
-                <li><a href="/pcb-assembly/led-pcb-assembly/">LED PCB Assembly</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Stencil Services</h4>
-              <ul>
-                <li><a href="/pcb-assembly/pcb-smt-stencil/">PCB SMT Stencil</a></li>
-                <li><a href="/laser-cut-smt-stencil/">Laser Cut SMT Stencil</a></li>
-                <li><a href="/step-stencil/">Step Stencil</a></li>
-                <li><a href="/nano-coating-pcb-stencil-manufacturing/">Nano-Coating Stencil</a></li>
-                <li><a href="/custom-electroform-stencils/">Electroform Stencils</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="has-dropdown">
-          <a href="/technical-capabilities/" class="dropdown-trigger">Capabilities <span class="arrow">▼</span></a>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h4>Factory Capability</h4>
-              <ul>
-                <li><a href="/technical-capabilities/">PCB Capabilities</a></li>
-                <li><a href="/pcb-fabrication-process/">PCB Fabrication Process</a></li>
-                <li><a href="/technical-capabilities/rigid-pcb-fabrication-capability/">Rigid PCB Capability</a></li>
-                <li><a href="/technical-capabilities/flexible-pcb-fabrication-capability/">Flexible PCB Capability</a></li>
-                <li><a href="/technical-capabilities/rigid-flex-pcb-fabrication-capability/">Rigid-Flex Capability</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Advanced Process</h4>
-              <ul>
-                <li><a href="/technical-capabilities/hdi-pcb-board-fabrication-capabilities/">HDI PCB Capability</a></li>
-                <li><a href="/technical-capabilities/pcb-copper-thickness-capabilities/">Copper Thickness Capability</a></li>
-                <li><a href="/pcb-assembly/pcb-assembly-capability/">PCB Assembly Capability</a></li>
-                <li><a href="/pcb-assembly/pcb-stencil-capability/">SMT Stencil Capability</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Testing & Resources</h4>
-              <ul>
-                <li><a href="/pcb-board-testing-and-inspection/">Testing & Inspection</a></li>
-                <li><a href="/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb/">Flying Probe Testing</a></li>
-                <li><a href="/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly/">X-Ray Inspection</a></li>
-                <li><a href="/pcb-materials/">PCB Materials</a></li>
-                <li><a href="/support/pcb-pcba-manufacturing-file/">Manufacturing Files</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="has-dropdown">
-          <a href="/applications-and-industries-served/" class="dropdown-trigger">Industries <span class="arrow">▼</span></a>
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h4>Applications</h4>
-              <ul>
-                <li><a href="/applications-and-industries-served/">Industries Served</a></li>
-                <li><a href="/applications-and-industries-served/pcbs-for-consumer-electronics/">Consumer Electronics</a></li>
-                <li><a href="/applications-and-industries-served/pcbs-for-communication-equipment/">Communication Equipment</a></li>
-                <li><a href="/applications-and-industries-served/pcbs-for-automobile-electronics/">Automobile Electronics</a></li>
-                <li><a href="/applications-and-industries-served/pcbs-for-medical-devices/">Medical Devices</a></li>
-                <li><a href="/applications-and-industries-served/pcbs-for-industrial-control-applications/">Industrial Control</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Markets</h4>
-              <ul>
-                <li><a href="/applications-and-industries-served/pcbs-for-led-lighting/">LED Lighting</a></li>
-                <li><a href="/applications-and-industries-served/new-energy-pcbs/">New Energy</a></li>
-                <li><a href="/applications-and-industries-served/new-energy-vehicle-pcb/">New Energy Vehicle</a></li>
-                <li><a href="/applications-and-industries-served/pcbs-for-aerospace-and-defence/">Aerospace & Defence</a></li>
-                <li><a href="/applications-and-industries-served/security-and-access-control-systems-pcbs/">Security & Access Control</a></li>
-                <li><a href="/applications-and-industries-served/server-and-data-storage-pcbs/">Server & Data Storage</a></li>
-              </ul>
-            </div>
-            <div class="mega-column">
-              <h4>Resources</h4>
-              <ul>
-                <li><a href="/pcb-manufacturer/">China PCB Manufacturer Guide</a></li>
-                <li><a href="/pcb-manufacturer-usa-vs-china/">USA vs China PCB</a></li>
-                <li><a href="/pcb-manufacturer-in-vietnam-vs-china/">Vietnam vs China PCB</a></li>
-                <li><a href="/products/multilayer-pcb/">Multilayer PCB Guide</a></li>
-                <li><a href="/products/high-layer-count-pcb/">High Layer Count PCB</a></li>
-                <li><a href="/support/">Technical Support</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
   </div>
 </div>
 

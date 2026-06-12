@@ -4,3 +4,10 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
+.codex-preview/
+.codex-preview*/
+fast-flare/
+.codex-preview/
+.codex-preview*/
+fast-flare/
+false/

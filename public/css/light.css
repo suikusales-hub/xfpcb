@@ -1,0 +1,549 @@
+/* ========================================
+   CSS Light Theme Override
+   覆盖深色背景为白色背景，白字改为蓝字
+   导航栏和页脚保持深色（组件内 Scoped CSS 不受影响）
+   ======================================== */
+
+/* --- 全局 --- */
+body {
+  background: #ffffff !important;
+  color: #1a365d !important;  /* 深蓝主色 */
+}
+
+main {
+  background: #ffffff;
+}
+
+/* --- 所有 section 默认白底 --- */
+main section,
+main .container,
+main .info-section,
+main .service-section,
+main .pcba-section,
+main .comparison-section,
+main .layer-content-section,
+main .home-products {
+  background: #ffffff;
+}
+
+/* 保留深色区段为浅灰背景 */
+main .bg-darker,
+main .layer-intent-section,
+main .layer-rfq-section,
+main .pcba-quote-band,
+main .quote-band,
+main .service-section.dark {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* --- 标题颜色 --- */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  color: #1a365d !important;  /* 深蓝 */
+}
+
+main .section-title,
+main .layer-section-heading h2,
+main .info-section h2,
+main .service-section h2,
+main .pcba-section h2,
+main .comparison-section h2 {
+  color: #1e40af !important;  /* 更亮的蓝 */
+}
+
+main .section-title::after {
+  background: #2563eb !important;  /* 蓝色下划线 */
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* --- Hero 区域（首页） --- */
+main .home-hero {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+main .hero-text h1 {
+  color: #1a365d !important;
+  text-shadow: none !important;
+}
+
+main .hero-text h1 span {
+  color: #2563eb !important;
+}
+
+main .hero-text h2 {
+  color: #4a5568 !important;
+}
+
+main .hero-benefits li {
+  color: #2d3748 !important;
+}
+
+/* Hero 表单保持轻微背景便于区分 */
+main .hero-form-wrapper {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+main .quick-quote-form h3 {
+  color: #1a365d !important;
+}
+
+main .quick-quote-form input,
+main .quick-quote-form textarea,
+main .quick-quote-form select {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #1a365d !important;
+}
+
+main .quick-quote-form input:focus,
+main .quick-quote-form textarea:focus {
+  border-color: #2563eb !important;
+}
+
+main .form-note {
+  color: #718096 !important;
+}
+
+/* --- 普通文字 --- */
+main p,
+main .text-content,
+main .desc,
+main li,
+main .info-section p,
+main .service-section p,
+main .pcba-section p,
+main .comparison-section p,
+main .layer-section-heading p {
+  color: #2d3748 !important;
+}
+
+main .eyebrow,
+main .info-kicker,
+main .service-kicker,
+main .pcba-eyebrow {
+  color: #2563eb !important;
+}
+
+/* --- 卡片 / 面板 --- */
+main .service-card,
+main .home-product-card,
+main .value-card,
+main .stat-box,
+main .layer-card,
+main .layer-process-step,
+main .layer-application-item,
+main .service-card-2,
+main .service-panel,
+main .service-step,
+main .info-card,
+main .info-panel,
+main .pcba-card,
+main .pcba-panel,
+main .pcba-step,
+main .signal-panel,
+main .decision-panel,
+main .xfpcb-card,
+main .check-item,
+main .faq-item,
+main .pcba-faq details,
+main .faq-block details,
+main .service-faq,
+main .qc-card,
+main .limit-card,
+main .via-type,
+main .hf-card,
+main .badge,
+main .contact-item {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #2d3748 !important;
+}
+
+main .service-card:hover,
+main .home-product-card:hover,
+main .value-card:hover,
+main .service-card:hover,
+main .layer-card:hover {
+  border-color: #93c5fd !important;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* 卡片内标题 */
+main .service-card h3,
+main .home-product-card h3,
+main .value-card h3,
+main .layer-card h3,
+main .qc-card h4,
+main .via-type h4,
+main .hf-card h4,
+main .faq-item h4,
+main .pcba-faq summary,
+main .faq-block summary,
+main .service-faq summary,
+main .contact-details h4 {
+  color: #1e40af !important;
+}
+
+main .service-card p,
+main .home-product-card p,
+main .value-card p,
+main .layer-card p,
+main .qc-card p,
+main .via-type p,
+main .hf-card p,
+main .limit-desc,
+main .layer-desc {
+  color: #4a5568 !important;
+}
+
+/* --- 产品页面特有 --- */
+main .product-hero.layer-hero,
+main .info-hero,
+main .service-hero {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+main .product-hero h1,
+main .info-hero h1,
+main .service-hero h1 {
+  color: #1a365d !important;
+  text-shadow: none !important;
+}
+
+main .layer-visual-note {
+  color: #4a5568 !important;
+}
+
+main .layer-hero-pills span {
+  border-color: #bfdbfe !important;
+  color: #1e40af !important;
+  background: #eff6ff !important;
+}
+
+/* --- 表格 --- */
+main .tech-table,
+main .layer-spec-table,
+main .info-table,
+main .pcba-table,
+main .service-table,
+main .comparison-table {
+  background: #ffffff !important;
+}
+
+main .tech-table th,
+main .layer-spec-table th,
+main .info-table th,
+main .pcba-table th,
+main .service-table th,
+main .comparison-table th {
+  background: #eff6ff !important;
+  color: #1e40af !important;
+}
+
+main .tech-table td,
+main .layer-spec-table td,
+main .info-table td,
+main .pcba-table td,
+main .service-table td,
+main .comparison-table td {
+  color: #2d3748 !important;
+  border-color: #e2e8f0 !important;
+}
+
+main .tech-table tr:hover td {
+  color: #1e40af !important;
+  background: #f8fafc !important;
+}
+
+/* --- 统计圆圈 --- */
+main .stat-circle {
+  background: #ffffff !important;
+  border-color: #bfdbfe !important;
+}
+
+main .stat-circle .pct {
+  color: #2563eb !important;
+}
+
+main .stat-circle .lbl {
+  color: #4a5568 !important;
+}
+
+main .stat-circle:hover {
+  border-color: #2563eb !important;
+}
+
+/* --- 按钮 --- */
+main .cta-btn {
+  color: #2563eb !important;
+  border-color: #2563eb !important;
+}
+
+main .cta-btn:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+main .layer-secondary-btn,
+main .service-secondary,
+main .pcba-secondary,
+main .secondary-action {
+  border-color: #bfdbfe !important;
+  color: #1e40af !important;
+}
+
+main .layer-secondary-btn:hover,
+main .service-secondary:hover {
+  background: #eff6ff !important;
+}
+
+/* --- 相关链接 --- */
+main .related-layer-link {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #2d3748 !important;
+}
+
+main .related-layer-link.active {
+  border-color: #2563eb !important;
+  color: #2563eb !important;
+  background: #eff6ff !important;
+}
+
+main .related-layer-link:hover {
+  border-color: #93c5fd !important;
+  color: #1e40af !important;
+}
+
+/* --- 徽章 / 标签 --- */
+main .quick-turn-badge {
+  background: #eff6ff !important;
+  border-color: #2563eb !important;
+  color: #2563eb !important;
+}
+
+main .intent-tags span,
+main .pcba-tags span,
+main .service-tags span {
+  background: #eff6ff !important;
+  border-color: #bfdbfe !important;
+  color: #1e40af !important;
+}
+
+/* --- SVG 图标 --- */
+main .service-icon {
+  stroke: #2563eb !important;
+}
+
+main .value-icon {
+  fill: #2563eb !important;
+}
+
+main .contact-item svg {
+  fill: #2563eb !important;
+}
+
+/* --- 表单 --- */
+main .layer-rfq-form,
+main .support-form,
+main .pcba-form,
+main .quote-form,
+main .service-form {
+  background: #f8fafc !important;
+  border-color: #bfdbfe !important;
+}
+
+main .layer-rfq-form label,
+main .support-form label,
+main .pcba-form label,
+main .quote-form label,
+main .service-form label {
+  color: #1a365d !important;
+}
+
+main .layer-rfq-form input,
+main .layer-rfq-form textarea,
+main .support-form input,
+main .support-form textarea,
+main .support-form select,
+main .pcba-form input,
+main .pcba-form textarea,
+main .pcba-form select,
+main .quote-form input,
+main .quote-form textarea,
+main .quote-form select,
+main .service-form input,
+main .service-form textarea,
+main .service-form select {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #1a365d !important;
+}
+
+main .layer-rfq-form button,
+main .support-form button,
+main .pcba-form button,
+main .quote-form button,
+main .service-form button {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+main .layer-rfq-form button:hover,
+main .support-form button:hover {
+  background: #1d4ed8 !important;
+}
+
+/* --- 服务页面流程步 --- */
+main .service-step::before,
+main .pcba-step::before {
+  border-color: #93c5fd !important;
+  color: #2563eb !important;
+  background: #eff6ff !important;
+}
+
+/* --- 软件图标 --- */
+main .logo-box {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #4a5568 !important;
+}
+
+main .logo-box:hover {
+  color: #2563eb !important;
+  border-color: #2563eb !important;
+}
+
+/* --- 列表项 --- */
+main .benefit-list li {
+  color: #2d3748 !important;
+}
+
+main .benefit-list li::before {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+main .capabilities-list li {
+  color: #2d3748 !important;
+}
+
+main .capabilities-list li::before {
+  color: #2563eb !important;
+}
+
+main .capabilities-list strong {
+  color: #1a365d !important;
+}
+
+/* --- INFO 页面列表 --- */
+main .info-list li,
+main .sitemap-list li {
+  color: #2d3748 !important;
+}
+
+main .info-list li::before,
+main .sitemap-list li::before {
+  background: #2563eb !important;
+}
+
+main .sitemap-list a {
+  color: #1e40af !important;
+}
+
+main .sitemap-list a:hover {
+  color: #2563eb !important;
+}
+
+/* --- CALL OUT --- */
+main .info-note,
+main .service-callout,
+main .research-note,
+main .layer-rfq-note {
+  background: #eff6ff !important;
+  border-color: #2563eb !important;
+  color: #1e40af !important;
+}
+
+/* --- 栈图 --- */
+main .stackup-container {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+main .layer-cu {
+  background: linear-gradient(90deg, #b87333, #d49559, #b87333) !important;
+  color: #ffffff !important;
+}
+
+main .layer-prepreg {
+  background: repeating-linear-gradient(45deg, #e2e8f0, #e2e8f0 10px, #f1f5f9 10px, #f1f5f9 20px) !important;
+  color: #475569 !important;
+}
+
+main .layer-core {
+  background: #bfdbfe !important;
+  color: #1e40af !important;
+  border-color: #2563eb !important;
+}
+
+/* --- 服务页右栏图 --- */
+main .service-visual {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+main .service-visual figcaption {
+  color: #4a5568 !important;
+}
+
+/* --- 首页 Hero benefits list 中之前用了内联 style --- */
+main .hero-benefits {
+  color: #2d3748 !important;
+}
+
+/* PCBA hero overlay */
+main .pcba-hero {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+main .pcba-hero h1 span {
+  color: #2563eb !important;
+}
+
+main .pcba-lead {
+  color: #4a5568 !important;
+}
+
+/* 对比页 hero */
+main .comparison-hero {
+  background: #ffffff !important;
+}
+
+main .comparison-hero h1 .highlight {
+  color: #2563eb !important;
+}
+
+/* --- 内联样式覆盖 --- */
+/* 首页 hero form select 的背景色 */
+main .hero-form-wrapper select {
+  background: #ffffff !important;
+  color: #1a365d !important;
+}
+
+/* Stackup 图例 */
+main .stackup-layer span {
+  color: inherit;
+}
+main .layer-cu span {
+  color: #ffffff !important;
+}

@@ -1,0 +1,220 @@
+# PCBELEC Navigation and Footer Crawl Summary
+
+Crawled source: https://www.pcbelec.com/ on 2026-05-28
+
+## Extracted Relevant Navigation/Footer Links
+- JHYPCB -> /
+- PCB Prototype -> /prototype-pcb
+- Low Cost PCB Prototype -> /pcb-manufacturing/low-cost-pcbs-fabrication
+- Quick Turn PCB Prototype -> /prototype-pcb/fast-turn-prototype-pcb-service
+- Flexible PCB Prototype -> /pcb-manufacturing/flexible-pcb/flexible-pcb-prototyping
+- Multilayer PCB Prototype -> /prototype-pcb/multilayer-pcb-prototype
+- PCB Manufacturing -> /pcb-manufacturing
+- Custom PCB -> /pcb-manufacturing/custom-circuit-board-printing
+- Quick Turn PCB -> /pcb-manufacturing/quick-turn-pcb
+- Single Layer PCB -> /pcb-manufacturing/single-layer-pcb
+- Double-Sided PCB -> /pcb-manufacturing/double-sided-pcb
+- Multilayer PCB -> /pcb-manufacturing/multilayer-pcb
+- 4 Layer PCB -> /pcb-manufacturing/multilayer-pcb/4-layer-pcb
+- 6 Layer PCB -> /pcb-manufacturing/multilayer-pcb/6-layer-pcb
+- BGA PCB -> /pcb-manufacturing/bga-pcb
+- HDI PCB -> /pcb-manufacturing/hdi-pcb
+- Gold Finger PCB -> /pcb-manufacturing/gold-fingers-pcb
+- High-frequency PCB -> /pcb-manufacturing/high-frequency-pcb
+- Impedance Control PCB -> /pcb-manufacturing/impedance-control-pcb
+- Rigid PCB -> /pcb-manufacturing/rigid-pcb
+- Flexible PCB -> /pcb-manufacturing/flexible-pcb
+- Single Layer Flexible PCB -> /pcb-manufacturing/flexible-pcb/single-layer-flexible-pcb
+- Double-sided Flex PCB -> /pcb-manufacturing/flexible-pcb/double-sided-flex-pcb
+- Multilayer Flexible PCB -> /pcb-manufacturing/flexible-pcb/multilayer-flex-pcb
+- Rigid-Flex PCB -> /pcb-manufacturing/rigid-flex-pcb
+- Metal Core PCB -> /pcb-manufacturing/metal-core-pcb
+- Aluminum PCB -> /pcb-manufacturing/aluminum-pcbs
+- LED PCB Board -> /pcb-manufacturing/led-pcb-board
+- Copper Core PCB -> /pcb-manufacturing/copper-based-pcb
+- Heavy Copper PCB -> /pcb-manufacturing/heavy-copper-pcb
+- High TG PCB -> /pcb-manufacturing/high-tg-pcb
+- PCB Assembly -> /pcb-assembly
+- SMT PCB Assembly -> /pcb-assembly/smt-pcb-assembly
+- Through-hole PCB Assembly -> /pcb-assembly/through-hole-pcb-assembly-2
+- Mixed Technology PCB Assembly Services -> /mixed-technology-pcb-assembly-services
+- Lead-free PCB Assembly Service -> /pcb-assembly/lead-free-pcb-assembly-service
+- Fast Prototype PCB Assembly -> /pcb-assembly/fast-prototype-pcb-assembly-service
+- Low-Cost PCB Assembly Service -> /pcb-assembly/low-cost-pcb-assembly-2
+- Quick Turn PCB Assembly Service -> /pcb-assembly/quick-turn-pcb-assembly-2
+- Full & Partial Turnkey PCB Assembly -> /pcb-assembly/full-turnkey-pcb-assembly-service
+- Low Volume PCB Assembly -> /pcb-assembly/low-volume-assembly-service
+- High Volume PCB Assembly Services -> /pcb-assembly/high-volume-pcb-assembly-services
+- LED PCB Assembly -> /pcb-assembly/led-pcb-assembly
+- Components Purchasing Services -> /pcb-assembly/components-purchasing-services
+- PCB SMT Stencil -> /pcb-assembly/pcb-smt-stencil
+- Laser Cut SMT Stencil -> /laser-cut-smt-stencil
+- Step Stencil -> /step-stencil
+- Nano-Coating PCB Stencil -> /nano-coating-pcb-stencil-manufacturing
+- Electroform Stencils -> /custom-electroform-stencils
+- About us -> /pcb-manufacturer
+- PCB Manufacturer in China -> /pcb-manufacturer/pcb-manufacturer-in-china
+- PCB China Factory -> /pcb-manufacturer/pcb-factory
+- Quality Management -> /pcb-manufacturer/quality-management
+- Contact -> /contact
+- Why choose us -> /pcb-manufacturer/why-us
+- PCB Manufacturing Capabilities -> /technical-capabilities
+- PCB Fabrication Process -> /pcb-fabrication-process
+- Rigid PCB Fabrication Capability -> /technical-capabilities/rigid-pcb-fabrication-capability
+- Flexible PCB Fabrication Capability -> /technical-capabilities/flexible-pcb-fabrication-capability
+- Rigid-Flex PCB Fabrication Capability -> /technical-capabilities/rigid-flex-pcb-fabrication-capability
+- HDI PCB Board Fabrication Capability -> /technical-capabilities/hdi-pcb-board-fabrication-capabilities
+- PCB Assembly Capability -> /pcb-assembly/pcb-assembly-capability
+- PCB SMT Stencil Capability -> /pcb-assembly/pcb-stencil-capability
+- PCB Copper Thickness Capabilities -> /technical-capabilities/pcb-copper-thickness-capabilities
+- PCB Mass Production -> /pcb-manufacturing/pcb-mass-production
+- Industries Served -> /applications-and-industries-served
+- PCBs For Consumer electronics -> /applications-and-industries-served/pcbs-for-consumer-electronics
+- PCBs For New Energy Applications -> /applications-and-industries-served/new-energy-pcbs
+- New Energy Vehicle PCB -> /applications-and-industries-served/new-energy-vehicle-pcb
+- PCBs for Automobile Electronics -> /applications-and-industries-served/pcbs-for-automobile-electronics
+- PCBs for Medical Devices -> /applications-and-industries-served/pcbs-for-medical-devices
+- PCBs for Industrial Control Applications -> /applications-and-industries-served/pcbs-for-industrial-control-applications
+- PCBs for Communication Equipment -> /applications-and-industries-served/pcbs-for-communication-equipment
+- Server and data storage PCBs -> /applications-and-industries-served/server-and-data-storage-pcbs
+- Security and Access Control Systems PCBs -> /applications-and-industries-served/security-and-access-control-systems-pcbs
+- PCBs for Aerospace and Defense -> /applications-and-industries-served/pcbs-for-aerospace-and-defence
+- PCBs for LED Lighting -> /applications-and-industries-served/pcbs-for-led-lighting
+- Resources -> /support
+- Order Guide -> /how-to-place-an-order
+- PCB & PCBA Manufacturing File -> /support/pcb-pcba-manufacturing-file
+- What is the BOM? -> /blog/pcba-insights/what-is-the-bill-of-materials.html
+- Glossary of Terms -> /support/pcb-terminology-glossary
+- Free PCB Design Software -> /support/pcb-design-software-free-download
+- PCB Materials -> /pcb-materials
+- Testing & Inspection Methods for PCB and PCBA -> /pcb-board-testing-and-inspection
+- Flying Probe Testing for PCB -> /pcb-board-testing-and-inspection/flying-probe-testing-for-pcb
+- X-ray Inspection in PCB Assembly -> /pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly
+- Get a Quote -> /how-to-place-an-order
+- Get a Free Quote -> /how-to-place-an-order
+- Learn more about our journey -> /pcb-manufacturer
+- support your next PCB project -> /how-to-place-an-order
+- Learn More -> /prototype-pcb
+- Learn More -> /pcb-manufacturing
+- Learn More -> /pcb-assembly
+- Learn More -> /pcb-assembly/components-purchasing-services
+- rapid PCB prototype service -> /prototype-pcb/fast-turn-prototype-pcb-service
+- Get a Free Quote for Your Prototype -> /how-to-place-an-order
+- Learn More Our PCB Capability -> /technical-capabilities
+- Gold Fingers PCB -> /pcb-manufacturing/gold-fingers-pcb
+- High Frequency PCB -> /pcb-manufacturing/high-frequency-pcb
+- High Tg PCB -> /pcb-manufacturing/high-tg-pcb
+- SMT Assembly -> /pcb-assembly/smt-pcb-assembly
+- THT Assembly -> /pcb-assembly/through-hole-pcb-assembly-2
+- Turnkey PCBA -> /pcb-assembly/full-turnkey-pcb-assembly-service
+- Additional Services -> /pcb-assembly/pcb-smt-stencil
+- Prototype PCB Assembly -> /pcb-assembly/fast-prototype-pcb-assembly-service
+- Quick Turn PCB Assembly -> /pcb-assembly/quick-turn-pcb-assembly-2
+- Lead Free PCB Assembly -> /pcb-assembly/lead-free-pcb-assembly-service
+- Low-volume PCB Assembly -> /pcb-assembly/low-volume-assembly-service
+- Flex PCB Adhesives and Bonding Materials Explained -> /blog/pcb-manufacturing-insights/flex-pcb-adhesives-and-bonding-materials-explained.html
+- Flexible PCB Coverlay vs. Solder Mask: Which Protection Should You Choose? -> /blog/pcb-manufacturing-insights/flexible-pcb-coverlay-vs-solder-mask-which-protection-should-you-choose.html
+- Explore Ceramic PCB Material Options: How to Choose the Right Substrate -> /blog/pcb-manufacturing-insights/explore-ceramic-pcb-material-options-how-to-choose-the-right-substrate.html
+- From Prototype to Production: Essential PCB Assembly Tips for Engineers -> /blog/pcba-insights/from-prototype-to-production-essential-pcb-assembly-tips-for-engineers.html
+- How to Evaluate SMT PCB Assembly Quality: A Buyer’s Checklist -> /blog/pcba-insights/how-to-evaluate-smt-pcb-assembly-quality-a-buyers-checklist.html
+- IPC Standards in SMT PCB Assembly: What You Need to Know -> /blog/pcba-insights/ipc-standards-in-smt-pcb-assembly-what-you-need-to-know.html
+- PCB Prototype Services -> /prototype-pcb
+- Quick Turn PCB Manufacturing -> /pcb-manufacturing/quick-turn-pcb
+- Low-cost PCBs Fabrication -> /pcb-manufacturing/low-cost-pcbs-fabrication
+- Flexible PCB Fabrication -> /pcb-manufacturing/flexible-pcb
+- Multilayer PCB Fabrication -> /pcb-manufacturing/multilayer-pcb
+- Rigid-Flex PCB Fabrication -> /pcb-manufacturing/rigid-flex-pcb
+- LED PCB Fabrication -> /pcb-manufacturing/led-pcb-board
+- Aluminum PCB Fabrication -> /pcb-manufacturing/aluminum-pcbs
+- PCB Assembly -> /technical-capabilities
+- Prototype PCB Assembly Service -> /pcb-assembly/fast-prototype-pcb-assembly-service
+- Low-volume PCB Assembly Service -> /pcb-assembly/low-volume-assembly-service
+- SMT PCB Assembly Service -> /pcb-assembly/smt-pcb-assembly
+- LED PCB Assembly Service -> /pcb-assembly/led-pcb-assembly
+- Through Hole PCB Assembly Service -> /pcb-assembly/through-hole-pcb-assembly-2
+- SMT Stencil -> /pcb-assembly/pcb-smt-stencil
+- Component Sourcing Service -> /pcb-assembly/components-purchasing-services
+- About Us -> /pcb-manufacturer
+- Why Buy PCB From Us -> /pcb-manufacturer/why-us
+- PCB Factory -> /pcb-manufacturer/pcb-factory
+- Contact Us -> /contact
+- Capabilities -> /technical-capabilities
+
+## XFPCB Implementation Note
+Competitor images were not copied. New pages use original XFPCB-themed image assets generated for this project and saved under site/images/.
+
+## New XFPCB Pages Created
+- /prototype-pcb/
+- /pcb-manufacturing/
+- /pcb-assembly/
+- /pcb-manufacturer/
+- /pcb-manufacturer/pcb-manufacturer-in-china/
+- /pcb-manufacturer/why-us/
+- /pcb-manufacturer/pcb-factory/
+- /pcb-manufacturer/quality-management/
+- /pcb-manufacturing/custom-circuit-board-printing/
+- /pcb-manufacturing/quick-turn-pcb/
+- /pcb-manufacturing/low-cost-pcbs-fabrication/
+- /pcb-manufacturing/bga-pcb/
+- /pcb-manufacturing/hdi-pcb/
+- /pcb-manufacturing/gold-fingers-pcb/
+- /pcb-manufacturing/high-frequency-pcb/
+- /pcb-manufacturing/impedance-control-pcb/
+- /pcb-manufacturing/rigid-pcb/
+- /pcb-manufacturing/flexible-pcb/
+- /pcb-manufacturing/flexible-pcb/single-layer-flexible-pcb/
+- /pcb-manufacturing/flexible-pcb/double-sided-flex-pcb/
+- /pcb-manufacturing/flexible-pcb/multilayer-flex-pcb/
+- /pcb-manufacturing/rigid-flex-pcb/
+- /pcb-manufacturing/metal-core-pcb/
+- /pcb-manufacturing/aluminum-pcbs/
+- /pcb-manufacturing/led-pcb-board/
+- /pcb-manufacturing/copper-based-pcb/
+- /pcb-manufacturing/heavy-copper-pcb/
+- /pcb-manufacturing/high-tg-pcb/
+- /pcb-manufacturing/pcb-mass-production/
+- /pcb-assembly/smt-pcb-assembly/
+- /pcb-assembly/through-hole-pcb-assembly/
+- /pcb-assembly/mixed-technology-pcb-assembly-services/
+- /pcb-assembly/lead-free-pcb-assembly-service/
+- /pcb-assembly/fast-prototype-pcb-assembly-service/
+- /pcb-assembly/quick-turn-pcb-assembly/
+- /pcb-assembly/low-cost-pcb-assembly/
+- /pcb-assembly/full-turnkey-pcb-assembly-service/
+- /pcb-assembly/low-volume-assembly-service/
+- /pcb-assembly/high-volume-pcb-assembly-services/
+- /pcb-assembly/led-pcb-assembly/
+- /pcb-assembly/components-purchasing-services/
+- /pcb-assembly/pcb-smt-stencil/
+- /laser-cut-smt-stencil/
+- /step-stencil/
+- /nano-coating-pcb-stencil-manufacturing/
+- /custom-electroform-stencils/
+- /technical-capabilities/
+- /pcb-fabrication-process/
+- /technical-capabilities/rigid-pcb-fabrication-capability/
+- /technical-capabilities/flexible-pcb-fabrication-capability/
+- /technical-capabilities/rigid-flex-pcb-fabrication-capability/
+- /technical-capabilities/hdi-pcb-board-fabrication-capabilities/
+- /pcb-assembly/pcb-assembly-capability/
+- /pcb-assembly/pcb-stencil-capability/
+- /technical-capabilities/pcb-copper-thickness-capabilities/
+- /how-to-place-an-order/
+- /support/pcb-pcba-manufacturing-file/
+- /support/pcb-terminology-glossary/
+- /pcb-materials/
+- /pcb-board-testing-and-inspection/
+- /pcb-board-testing-and-inspection/flying-probe-testing-for-pcb/
+- /pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly/
+- /applications-and-industries-served/
+- /applications-and-industries-served/pcbs-for-consumer-electronics/
+- /applications-and-industries-served/new-energy-pcbs/
+- /applications-and-industries-served/new-energy-vehicle-pcb/
+- /applications-and-industries-served/pcbs-for-automobile-electronics/
+- /applications-and-industries-served/pcbs-for-medical-devices/
+- /applications-and-industries-served/pcbs-for-industrial-control-applications/
+- /applications-and-industries-served/pcbs-for-communication-equipment/
+- /applications-and-industries-served/server-and-data-storage-pcbs/
+- /applications-and-industries-served/security-and-access-control-systems-pcbs/
+- /applications-and-industries-served/pcbs-for-aerospace-and-defence/
+- /applications-and-industries-served/pcbs-for-led-lighting/

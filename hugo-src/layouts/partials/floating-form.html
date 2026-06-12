@@ -1,0 +1,168 @@
+<style>
+    .floating-form-wrapper {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translate(100%, -50%);
+        width: 360px;
+        background: rgba(5, 20, 10, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--pcb-trace);
+        border-left: 3px solid var(--pcb-glow);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 9999;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .floating-toggle-btn {
+        position: absolute;
+        left: -45px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--pcb-glow);
+        color: var(--pcb-dark);
+        border: none;
+        padding: 15px 10px;
+        cursor: pointer;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        border-radius: 8px 0 0 8px;
+        box-shadow: -2px 0 10px rgba(0, 255, 65, 0.3);
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .floating-toggle-btn:hover {
+        background: #fff;
+        transform: translateY(-50%) scale(1.05);
+    }
+
+    .floating-form-wrapper.is-open {
+        transform: translate(0, -50%);
+    }
+
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--pcb-trace);
+    }
+
+    .form-header h3 {
+        color: var(--pcb-glow);
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .close-form-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        line-height: 1;
+        padding: 0 5px;
+        transition: color 0.3s;
+    }
+
+    .close-form-btn:hover {
+        color: #ff4444;
+    }
+
+    .web3-form {
+        margin: 0 !important;
+        padding: 20px !important;
+        border: none !important;
+    }
+
+    .web3-form label {
+        color: var(--text-main) !important;
+        font-size: 0.95rem;
+    }
+
+    .web3-form input[type="text"],
+    .web3-form input[type="email"],
+    .web3-form textarea {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid var(--pcb-trace) !important;
+        color: #fff !important;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .web3-form input[type="text"]:focus,
+    .web3-form input[type="email"]:focus,
+    .web3-form textarea:focus {
+        outline: none;
+        border-color: var(--pcb-glow) !important;
+        box-shadow: 0 0 8px rgba(0, 255, 65, 0.2);
+    }
+
+    .web3-form button[type="submit"] {
+        background: var(--pcb-glow) !important;
+        color: var(--pcb-dark) !important;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .web3-form button[type="submit"]:hover {
+        background: #fff !important;
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+        .floating-form-wrapper {
+            width: 300px;
+        }
+    }
+</style>
+
+<aside class="floating-form-wrapper" id="floatingDrawer" aria-label="Quick inquiry form">
+    <button class="floating-toggle-btn" id="toggleFormBtn" type="button" aria-controls="floatingDrawer" aria-expanded="false">Contact Us</button>
+
+    <div class="form-header">
+        <h3>Quick Inquiry</h3>
+        <button class="close-form-btn" id="closeFormBtn" type="button" aria-label="Close inquiry form">&times;</button>
+    </div>
+
+    <form class="web3-form" action="https://api.web3forms.com/submit" method="POST" style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px;">
+        <input type="hidden" name="access_key" value="{{ site.Params.web3formsAccessKey }}">
+        <input type="hidden" name="honeypot" style="display:none;">
+        <input type="hidden" name="page_url" value="{{ .Permalink }}" data-current-url="true">
+        <input type="hidden" name="page_path" value="{{ .RelPermalink }}">
+        <input type="hidden" name="page_title" value="{{ .Title }}">
+        <input type="hidden" name="page_host" value="xfpcb.com">
+        <input type="hidden" name="referrer_url" value="" data-referrer-url="true">
+        <input type="hidden" name="utm_source" value="" data-utm="utm_source">
+        <input type="hidden" name="utm_medium" value="" data-utm="utm_medium">
+        <input type="hidden" name="utm_campaign" value="" data-utm="utm_campaign">
+        <input type="hidden" name="utm_term" value="" data-utm="utm_term">
+        <input type="hidden" name="utm_content" value="" data-utm="utm_content">
+        <input type="hidden" name="subject" value="Product Inquiry from {{ .Title }}">
+        <input type="hidden" name="redirect" value="{{ "/" | absURL }}">
+
+        <div style="margin-bottom: 1rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name *</label>
+            <input type="text" name="name" placeholder="John Doe" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Email *</label>
+            <input type="email" name="email" placeholder="john@example.com" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Message / Requirements *</label>
+            <textarea name="message" placeholder="Please describe your requirements..." required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; min-height: 120px;"></textarea>
+        </div>
+
+        <button type="submit" style="background: #2563eb; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 4px; cursor: pointer; font-weight: 600;">
+            Send Inquiry
+        </button>
+    </form>
+</aside>

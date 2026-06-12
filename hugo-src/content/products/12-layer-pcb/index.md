@@ -1,0 +1,142 @@
+﻿---
+title: '12 Layer PCB Manufacturer | High-Frequency & HDI | XingFeng PCB'
+seoTitle: '12 Layer PCB Manufacturer | High-Frequency & HDI | XingFeng PCB'
+description: 'Cutting-edge 12 layer PCB manufacturer for 5G and Data Centers. We excel in hybrid stackups (Rogers/FR4), advanced microvias, and extreme routing density.'
+keywords: '12 layer PCB manufacturer, high frequency PCB, 5G base station PCB, hybrid stackup PCB, Rogers PCB manufacturer, advanced microvias, edge computing PCB'
+styles:
+  - '/css/style.css'
+  - '/css/about.css'
+  - '/css/products.css'
+---
+
+<!-- Hero Section -->
+        <section class="product-hero">
+            <div class="container product-hero-grid">
+                <div class="product-text">
+                    <h1>Cutting-Edge <span>12 Layer PCB</span> Manufacturer</h1>
+                    <h2>Engineered for 5G, Data Centers & Edge Computing</h2>
+                    <p class="desc">
+                        Push the boundaries of data transmission. As a specialized 12-layer PCB manufacturer, XingFeng PCB empowers telecommunications architects and high-frequency designers. We master hybrid stackups (combining Rogers with FR-4), ultra-fine pitch BGA fan-outs, and advanced microvia technologies to handle extreme routing densities and gigahertz-level signal integrity.
+                    </p>
+                    <a href="#quote" class="cta-btn">Discuss Hybrid Stackups</a>
+                </div>
+                <div class="product-visual">
+                    <div class="product-image-wrapper">
+                        <!-- 复用要求�?675x542 比例图片 -->
+                        <img src="/images/675x542pcb.jpg" alt="12 Layer High Frequency PCB for 5G Base Stations">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Long-form Technical Content -->
+        <section class="container long-article">
+            <h2 class="section-title center">Mastering High-Frequency & Extreme Density</h2>
+            <p class="text-content center" style="text-align: center; max-width: 900px; margin: 0 auto 40px;">
+                A 12-layer PCB is not a standard board; it is a highly tuned electromagnetic environment. We provide the manufacturing precision required for 100G/400G optical transceivers, massive MIMO antennas, and AI-driven edge servers.
+            </p>
+
+            <h3>The Power of Hybrid Stackups (Mixed-Dielectric)</h3>
+            <p>
+                In high-frequency RF and microwave applications (like 5G mmWave), signal loss must be minimized. While materials like Rogers RO4350B or Panasonic Megtron 6 offer incredibly low Dissipation Factors (Df), building an entire 12-layer board out of them is prohibitively expensive.
+            </p>
+            <p>
+                <strong>Our Solution:</strong> We specialize in mixed-dielectric lamination. We can press ultra-low loss high-frequency laminates on the outer layers (L1-L2, L11-L12) where the critical RF signals reside, while using cost-effective High-Tg FR-4 (like Shengyi S1000-2) for the inner digital, power, and ground planes. This delivers peak RF performance at a fraction of the cost.
+            </p>
+
+            <h3>Advanced Microvia Technology (HDI)</h3>
+            <p>
+                Modern network processors and FPGAs are packaged in massive BGAs with pin pitches of 0.5mm, 0.4mm, or even tighter. Routing thousands of signals out of these chips on a 12-layer board is impossible with standard through-holes.
+            </p>
+            <p>
+                We utilize state-of-the-art Mitsubishi CO2 laser drills to create highly accurate microvias. Our capabilities include:
+            </p>
+            <ul>
+                <li><strong>Any-Layer HDI:</strong> Complex sequential lamination (3+N+3 or Any-Layer) allowing vias to connect any two adjacent layers.</li>
+                <li><strong>Stacked & Staggered Microvias:</strong> Copper-filled stacked vias for straight vertical routing, or staggered vias for improved mechanical reliability.</li>
+                <li><strong>Via-in-Pad (VIPPO):</strong> Essential for fine-pitch BGA fan-outs, filled with conductive or non-conductive epoxy and plated flat.</li>
+            </ul>
+
+            <h3>Extreme Routing Density & Backdrilling</h3>
+            <p>
+                When dealing with 12.5 Gbps or 28 Gbps SerDes channels, the unused portion of a plated through-hole (the "via stub") acts as an antenna, causing severe signal reflections and resonance. We employ precise <strong>Controlled Depth Backdrilling</strong> to remove these stubs from the 12-layer stackup, significantly clearing the eye diagram and improving overall Signal Integrity (SI).
+            </p>
+        </section>
+
+        <!-- Advanced Material Capability Table -->
+        <section class="bg-darker">
+            <div class="container">
+                <h2 class="section-title center">Supported High-Frequency Materials</h2>
+                <p class="text-content center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    We stock and process a wide range of specialized laminates designed for low dielectric constant (Dk) and low insertion loss (Df).
+                </p>
+                
+                <div class="hf-materials">
+                    <div class="hf-card">
+                        <h4>Rogers Corp</h4>
+                        <p>RO4000 & RO3000 Series</p>
+                        <ul>
+                            <li>RO4350B (Dk 3.48, Df 0.0037)</li>
+                            <li>RO4003C (Dk 3.38, Df 0.0027)</li>
+                            <li>Thermoset hydrocarbon laminates</li>
+                            <li>Excellent for Hybrid FR4 pressing</li>
+                        </ul>
+                    </div>
+                    <div class="hf-card">
+                        <h4>Panasonic</h4>
+                        <p>Megtron Series</p>
+                        <ul>
+                            <li>Megtron 4 / 6 / 7</li>
+                            <li>Ultra-low transmission loss</li>
+                            <li>Highly reliable for High-layer counts</li>
+                            <li>Ideal for 100G/400G networking</li>
+                        </ul>
+                    </div>
+                    <div class="hf-card">
+                        <h4>Isola / Shengyi</h4>
+                        <p>High-Speed Digital</p>
+                        <ul>
+                            <li>Isola 370HR (High Tg 180°C)</li>
+                            <li>Isola Astra MT77 / Tachyon</li>
+                            <li>Shengyi S1000-2 / S7439</li>
+                            <li>Cost-effective high-speed FR-4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Grid -->
+        <section class="container">
+            <h2 class="section-title center">Architecting the Backbone of Connectivity</h2>
+            
+            <div class="app-grid">
+                <div class="app-item">
+                    <svg class="app-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <h4>5G Base Stations</h4>
+                    <p class="text-content" style="font-size: 0.95rem;">Massive MIMO antennas and Remote Radio Units (RRU) requiring hybrid Rogers/FR-4 lamination.</p>
+                </div>
+                <div class="app-item">
+                    <svg class="app-icon" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
+                        <path d="M7 2v20M17 2v20M2 7h20M2 17h20"/>
+                        <circle cx="12" cy="12" r="2" fill="var(--pcb-glow)"/>
+                    </svg>
+                    <h4>Edge Computing Servers</h4>
+                    <p class="text-content" style="font-size: 0.95rem;">High-density 12-layer boards routing PCIe Gen 5 and advanced AI accelerators close to the data source.</p>
+                </div>
+                <div class="app-item">
+                    <svg class="app-icon" viewBox="0 0 24 24">
+                        <path d="M4 8h16v8H4z"/>
+                        <path d="M2 10h2v4H2zM20 10h2v4h-2z"/>
+                        <line x1="8" y1="12" x2="16" y2="12" stroke="var(--pcb-glow)" stroke-width="2"/>
+                        <circle cx="8" cy="12" r="1" fill="#fff"/>
+                        <circle cx="16" cy="12" r="1" fill="#fff"/>
+                    </svg>
+                    <h4>Optical Transceivers</h4>
+                    <p class="text-content" style="font-size: 0.95rem;">Ultra-compact QSFP/OSFP modules using Any-Layer HDI and Megtron materials for 400G networking.</p>
+                </div>
+            </div>
+        </section>

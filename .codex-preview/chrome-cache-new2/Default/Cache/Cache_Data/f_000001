@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMT PCB Assembly Service | XFPCB China PCB Manufacturer</title>
+    <meta name="description" content="SMT PCB assembly at XFPCB supports dense surface-mount boards with stencil printing, placement, reflow and inspection planning.">
+    <meta name="keywords" content="SMT PCB assembly, XFPCB, China PCB manufacturer, PCB fabrication, PCBA manufacturing">
+    <link rel="canonical" href="https://xfpcb.com/pcb-assembly/smt-pcb-assembly/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SMT PCB Assembly Service | XFPCB China PCB Manufacturer">
+    <meta property="og:description" content="SMT PCB assembly at XFPCB supports dense surface-mount boards with stencil printing, placement, reflow and inspection planning.">
+    <meta property="og:url" content="https://xfpcb.com/pcb-assembly/smt-pcb-assembly/">
+    <meta property="og:image" content="https://xfpcb.com/images/xfpcb-pcb-assembly-service.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/service-pages.css">
+    <link rel="icon" type="image/png" href="/images/xf-logo.png">
+    <link rel="apple-touch-icon" href="/images/xf-logo.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"SMT PCB Assembly Service","provider":{"@type":"Organization","name":"XingFeng PCB","url":"https://xfpcb.com/"},"areaServed":"Worldwide","url":"https://xfpcb.com/pcb-assembly/smt-pcb-assembly/","description":"SMT PCB assembly at XFPCB supports dense surface-mount boards with stencil printing, placement, reflow and inspection planning."}</script>
+</head>
+<body>
+    <app-header>
+        <div class="seo-links" style="display:none;">
+            <a href="/">Home</a>
+            <a href="/about/">About Us</a>
+            <a href="/products/">PCB Products and Capabilities</a>
+            <a href="/products/1-layer-pcb/">1-Layer PCB</a>
+            <a href="/products/2-layer-pcb/">2-Layer PCB</a>
+            <a href="/products/4-layer-pcb/">4-Layer PCB</a>
+            <a href="/products/6-layer-pcb/">6-Layer PCB</a>
+            <a href="/products/8-layer-pcb/">8-Layer PCB</a>
+            <a href="/products/10-layer-pcb/">10-Layer PCB</a>
+            <a href="/products/12-layer-pcb/">12-Layer PCB</a>
+            <a href="/products/14-layer-pcb/">14-Layer PCB</a>
+            <a href="/products/16-layer-pcb/">16-Layer PCB</a>
+            <a href="/products/20-layer-pcb/">20-Layer PCB</a>
+            <a href="/products/24-layer-pcb/">24-Layer PCB</a>
+            <a href="/products/32-layer-pcb/">32-Layer PCB</a>
+            <a href="/products/40-layer-pcb/">40-Layer PCB</a>
+            <a href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
+            <a href="/products/high-layer-count-pcb/">High Layer Count Facility</a>
+            <a href="/pcba-manufacturing/">PCBA Manufacturing</a>
+            <a href="/pcb-manufacturer-usa-vs-china/">PCB Manufacturer USA vs China</a>
+            <a href="/pcb-manufacturer-in-vietnam-vs-china/">PCB Manufacturer in Vietnam vs China</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms of Service</a>
+            <a href="/support/">Technical Support</a>
+            <a href="/sitemap/">HTML Sitemap</a>
+            <a href="/prototype-pcb/">PCB Prototype Services</a>
+            <a href="/pcb-manufacturing/">PCB Manufacturing Services</a>
+            <a href="/pcb-assembly/">PCB Assembly Services</a>
+            <a href="/pcb-manufacturer/">China PCB Manufacturer</a>
+            <a href="/pcb-manufacturer/pcb-manufacturer-in-china/">PCB Manufacturer in China</a>
+            <a href="/pcb-manufacturer/why-us/">Why Choose XFPCB</a>
+            <a href="/pcb-manufacturer/pcb-factory/">PCB Factory in China</a>
+            <a href="/pcb-manufacturer/quality-management/">PCB Quality Management</a>
+            <a href="/pcb-manufacturing/custom-circuit-board-printing/">Custom PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/quick-turn-pcb/">Quick Turn PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/low-cost-pcbs-fabrication/">Low Cost PCB Fabrication</a>
+            <a href="/pcb-manufacturing/bga-pcb/">BGA PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/hdi-pcb/">HDI PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/gold-fingers-pcb/">Gold Finger PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/high-frequency-pcb/">High Frequency PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/impedance-control-pcb/">Impedance Control PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/rigid-pcb/">Rigid PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/flexible-pcb/">Flexible PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/flexible-pcb/single-layer-flexible-pcb/">Single Layer Flexible PCB</a>
+            <a href="/pcb-manufacturing/flexible-pcb/double-sided-flex-pcb/">Double-Sided Flex PCB</a>
+            <a href="/pcb-manufacturing/flexible-pcb/multilayer-flex-pcb/">Multilayer Flexible PCB</a>
+            <a href="/pcb-manufacturing/rigid-flex-pcb/">Rigid-Flex PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/metal-core-pcb/">Metal Core PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/aluminum-pcbs/">Aluminum PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/led-pcb-board/">LED PCB Board Manufacturing</a>
+            <a href="/pcb-manufacturing/copper-based-pcb/">Copper Core PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/heavy-copper-pcb/">Heavy Copper PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/high-tg-pcb/">High Tg PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/pcb-mass-production/">PCB Mass Production</a>
+            <a href="/pcb-assembly/smt-pcb-assembly/">SMT PCB Assembly Service</a>
+            <a href="/pcb-assembly/through-hole-pcb-assembly/">Through-Hole PCB Assembly Service</a>
+            <a href="/pcb-assembly/mixed-technology-pcb-assembly-services/">Mixed Technology PCB Assembly</a>
+            <a href="/pcb-assembly/lead-free-pcb-assembly-service/">Lead-Free PCB Assembly Service</a>
+            <a href="/pcb-assembly/fast-prototype-pcb-assembly-service/">Prototype PCB Assembly Service</a>
+            <a href="/pcb-assembly/quick-turn-pcb-assembly/">Quick Turn PCB Assembly Service</a>
+            <a href="/pcb-assembly/low-cost-pcb-assembly/">Low-Cost PCB Assembly Service</a>
+            <a href="/pcb-assembly/full-turnkey-pcb-assembly-service/">Full and Partial Turnkey PCB Assembly</a>
+            <a href="/pcb-assembly/low-volume-assembly-service/">Low Volume PCB Assembly</a>
+            <a href="/pcb-assembly/high-volume-pcb-assembly-services/">High Volume PCB Assembly</a>
+            <a href="/pcb-assembly/led-pcb-assembly/">LED PCB Assembly Service</a>
+            <a href="/pcb-assembly/components-purchasing-services/">Component Sourcing Service</a>
+            <a href="/pcb-assembly/pcb-smt-stencil/">PCB SMT Stencil</a>
+            <a href="/laser-cut-smt-stencil/">Laser Cut SMT Stencil</a>
+            <a href="/step-stencil/">Step Stencil</a>
+            <a href="/nano-coating-pcb-stencil-manufacturing/">Nano-Coating PCB Stencil</a>
+            <a href="/custom-electroform-stencils/">Electroform Stencils</a>
+            <a href="/technical-capabilities/">PCB Manufacturing Capabilities</a>
+            <a href="/pcb-fabrication-process/">PCB Fabrication Process</a>
+            <a href="/technical-capabilities/rigid-pcb-fabrication-capability/">Rigid PCB Fabrication Capability</a>
+            <a href="/technical-capabilities/flexible-pcb-fabrication-capability/">Flexible PCB Fabrication Capability</a>
+            <a href="/technical-capabilities/rigid-flex-pcb-fabrication-capability/">Rigid-Flex PCB Fabrication Capability</a>
+            <a href="/technical-capabilities/hdi-pcb-board-fabrication-capabilities/">HDI PCB Board Fabrication Capability</a>
+            <a href="/pcb-assembly/pcb-assembly-capability/">PCB Assembly Capability</a>
+            <a href="/pcb-assembly/pcb-stencil-capability/">PCB SMT Stencil Capability</a>
+            <a href="/technical-capabilities/pcb-copper-thickness-capabilities/">PCB Copper Thickness Capabilities</a>
+            <a href="/how-to-place-an-order/">How to Place a PCB or PCBA Order</a>
+            <a href="/support/pcb-pcba-manufacturing-file/">PCB and PCBA Manufacturing Files</a>
+            <a href="/support/pcb-terminology-glossary/">PCB Terminology Glossary</a>
+            <a href="/pcb-materials/">PCB Materials Guide</a>
+            <a href="/pcb-board-testing-and-inspection/">PCB and PCBA Testing and Inspection</a>
+            <a href="/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb/">Flying Probe Testing for PCB</a>
+            <a href="/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly/">X-Ray Inspection in PCB Assembly</a>
+            <a href="/applications-and-industries-served/">Industries Served by XFPCB</a>
+            <a href="/applications-and-industries-served/pcbs-for-consumer-electronics/">PCBs for Consumer Electronics</a>
+            <a href="/applications-and-industries-served/new-energy-pcbs/">PCBs for New Energy Applications</a>
+            <a href="/applications-and-industries-served/new-energy-vehicle-pcb/">New Energy Vehicle PCB</a>
+            <a href="/applications-and-industries-served/pcbs-for-automobile-electronics/">PCBs for Automobile Electronics</a>
+            <a href="/applications-and-industries-served/pcbs-for-medical-devices/">PCBs for Medical Devices</a>
+            <a href="/applications-and-industries-served/pcbs-for-industrial-control-applications/">PCBs for Industrial Control Applications</a>
+            <a href="/applications-and-industries-served/pcbs-for-communication-equipment/">PCBs for Communication Equipment</a>
+            <a href="/applications-and-industries-served/server-and-data-storage-pcbs/">Server and Data Storage PCBs</a>
+            <a href="/applications-and-industries-served/security-and-access-control-systems-pcbs/">Security and Access Control System PCBs</a>
+            <a href="/applications-and-industries-served/pcbs-for-aerospace-and-defence/">PCBs for Aerospace and Defense</a>
+            <a href="/applications-and-industries-served/pcbs-for-led-lighting/">PCBs for LED Lighting</a>
+        </div>
+    </app-header>
+    <main>
+        <section class="service-hero">
+            <div class="service-wrap service-hero-grid">
+                <div>
+                    <div class="service-kicker">XFPCB service page</div>
+                    <h1>SMT PCB Assembly Service</h1>
+                    <p class="service-lead">SMT PCB assembly at XFPCB supports dense surface-mount boards with stencil printing, placement, reflow and inspection planning.</p>
+                    <div class="service-actions"><a class="service-primary" href="#quote">Request a Quote</a><a class="service-secondary" href="/support/">Ask Technical Support</a></div>
+                    <div class="service-tags"><span>SMT PCB Assembly Service</span><span>XFPCB SMT</span><span>China PCB manufacturer</span><span>DFM review</span><span>prototype to production</span></div>
+                </div>
+                <figure class="service-visual"><img src="/images/xfpcb-pcb-assembly-service.png" alt="SMT PCB Assembly Service at XFPCB" loading="eager"><figcaption>SMT PCB Assembly Service supported by XFPCB with practical engineering review, manufacturing communication and global shipment planning.</figcaption></figure>
+            </div>
+        </section>
+        <section class="service-section"><div class="service-wrap service-grid"><div><h2>Buyer Intent and XFPCB Fit</h2><p>Buyers searching for <strong>SMT PCB assembly</strong> are usually trying to reduce risk before they approve a supplier. They need more than a generic price; they need to know whether the manufacturer can review files, understand the application, control production details and communicate clearly when an engineering question appears.</p><p>XFPCB connects PCB fabrication, multilayer board knowledge and PCBA manufacturing support in one workflow. That matters because many product problems appear between design intent and production reality: stackup choices, copper thickness, solderability, component package accuracy, inspection method and delivery schedule all influence the final result.</p><p>For this service, we encourage buyers to send Gerber files, drill files, stackup requirements, quantity, target lead time and any assembly or testing notes. Our team can then confirm quotation assumptions and identify issues that should be resolved before production starts.</p></div><aside class="service-panel accent"><h3>What XFPCB Reviews</h3><ul class="service-list"><li>Board files, layer count, copper weight and surface finish.</li><li>Material, impedance, thermal and reliability requirements.</li><li>Assembly-sensitive details such as panelization and solderability.</li><li>Inspection, testing, packaging and repeat production expectations.</li></ul></aside></div></section>
+        <section class="service-section dark tight"><div class="service-wrap"><h2>Capabilities for SMT PCB Assembly Service</h2><div class="service-card-grid"><article class="service-card"><h3>SMT and through-hole</h3><p>SMT and through-hole assembly planning. XFPCB keeps the discussion practical so buyers can compare cost, lead time and manufacturing risk before approving the order.</p></article><article class="service-card"><h3>BOM review and</h3><p>BOM review and component sourcing support. XFPCB keeps the discussion practical so buyers can compare cost, lead time and manufacturing risk before approving the order.</p></article><article class="service-card"><h3>AOI, X-Ray or</h3><p>AOI, X-Ray or functional test options. XFPCB keeps the discussion practical so buyers can compare cost, lead time and manufacturing risk before approving the order.</p></article></div></div></section>
+        <section class="service-section"><div class="service-wrap"><h2>Typical Applications</h2><p>SMT PCB Assembly Service can be used in projects where the board must balance performance, reliability, lead time and cost. XFPCB supports both early engineering samples and repeat production when the design is ready to scale.</p><div class="service-two-col"><article class="service-panel"><h3>Common Use Cases</h3><ul class="service-list"><li>Industrial Controllers</li><li>IoT Devices</li><li>LED Modules</li><li>Medical Electronics</li></ul></article><article class="service-panel"><h3>Related XFPCB Pages</h3><ul class="service-list"><li><a href="/pcb-assembly/">PCB Assembly Services</a></li>
+<li><a href="/pcb-assembly/through-hole-pcb-assembly/">Through-Hole PCB Assembly Service</a></li>
+<li><a href="/pcb-assembly/mixed-technology-pcb-assembly-services/">Mixed Technology PCB Assembly</a></li>
+<li><a href="/pcb-assembly/lead-free-pcb-assembly-service/">Lead-Free PCB Assembly Service</a></li>
+<li><a href="/pcb-assembly/fast-prototype-pcb-assembly-service/">Prototype PCB Assembly Service</a></li>
+<li><a href="/pcb-assembly/quick-turn-pcb-assembly/">Quick Turn PCB Assembly Service</a></li></ul></article></div></div></section>
+        <section class="service-section dark"><div class="service-wrap"><h2>RFQ Checklist</h2><p>A complete RFQ makes the quotation faster and more reliable. If some files are not ready, send what you have and tell us what is still under review.</p><div class="service-table-wrap"><table class="service-table"><thead><tr><th>Area</th><th>What to Confirm</th></tr></thead><tbody><tr><td>Files to prepare</td><td>Gerber, BOM, pick-and-place, assembly drawing and testing requirements.</td></tr><tr><td>Process focus</td><td>Stencil, SMT placement, reflow, THT soldering and inspection based on board complexity.</td></tr><tr><td>Buyer benefit</td><td>One supplier can coordinate PCB fabrication, sourcing, assembly and quality feedback.</td></tr></tbody></table></div></div></section>
+        <section class="service-section" id="quote"><div class="service-wrap service-quote-grid"><div><h2>Request a SMT PCB Assembly Service Quote</h2><p>Send your project information to XFPCB and our team will review the key manufacturing details. For PCBA projects, include BOM and pick-and-place data. For bare PCB projects, include Gerber and drill files plus material, thickness, copper and surface finish requirements.</p><p>This page was created as an original XFPCB service page based on our own manufacturing scope and buyer communication process.</p></div><form class="service-form" action="https://api.web3forms.com/submit" method="POST"><input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df"><input type="hidden" name="honeypot" style="display:none;"><input type="hidden" name="page_url" value="https://xfpcb.com/pcb-assembly/smt-pcb-assembly/"><input type="hidden" name="page_path" value="/pcb-assembly/smt-pcb-assembly/"><input type="hidden" name="page_title" value="SMT PCB Assembly Service"><input type="hidden" name="site_host" value="xfpcb.com"><input type="hidden" name="subject" value="SMT PCB Assembly Service Inquiry from XFPCB Website"><input type="hidden" name="redirect" value="https://xfpcb.com/"><label for="name">Name / Company *</label><input id="name" type="text" name="name" autocomplete="name" required><label for="email">Work Email *</label><input id="email" type="email" name="email" autocomplete="email" required><label for="message">Project Details *</label><textarea id="message" name="message" rows="6" placeholder="Quantity, layer count, material, board size, BOM status, assembly or testing requirements, target lead time..." required></textarea><button type="submit">Send Inquiry</button></form></div></section>
+    </main>
+    <app-footer>
+        <div class="seo-links" style="display:none;">
+            <a href="/about/">About Us</a>
+            <a href="/products/">PCB Products and Capabilities</a>
+            <a href="/products/1-layer-pcb/">1-Layer PCB</a>
+            <a href="/products/2-layer-pcb/">2-Layer PCB</a>
+            <a href="/products/4-layer-pcb/">4-Layer PCB</a>
+            <a href="/products/6-layer-pcb/">6-Layer PCB</a>
+            <a href="/products/8-layer-pcb/">8-Layer PCB</a>
+            <a href="/products/10-layer-pcb/">10-Layer PCB</a>
+            <a href="/products/12-layer-pcb/">12-Layer PCB</a>
+            <a href="/products/14-layer-pcb/">14-Layer PCB</a>
+            <a href="/products/16-layer-pcb/">16-Layer PCB</a>
+            <a href="/products/20-layer-pcb/">20-Layer PCB</a>
+            <a href="/products/24-layer-pcb/">24-Layer PCB</a>
+            <a href="/products/32-layer-pcb/">32-Layer PCB</a>
+            <a href="/products/40-layer-pcb/">40-Layer PCB</a>
+            <a href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
+            <a href="/products/high-layer-count-pcb/">High Layer Count Facility</a>
+            <a href="/pcba-manufacturing/">PCBA Manufacturing</a>
+            <a href="/pcb-manufacturer-usa-vs-china/">PCB Manufacturer USA vs China</a>
+            <a href="/pcb-manufacturer-in-vietnam-vs-china/">PCB Manufacturer in Vietnam vs China</a>
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms of Service</a>
+            <a href="/support/">Technical Support</a>
+            <a href="/prototype-pcb/">PCB Prototype Services</a>
+            <a href="/pcb-manufacturing/">PCB Manufacturing Services</a>
+            <a href="/pcb-assembly/">PCB Assembly Services</a>
+            <a href="/pcb-manufacturer/">China PCB Manufacturer</a>
+            <a href="/pcb-manufacturer/pcb-manufacturer-in-china/">PCB Manufacturer in China</a>
+            <a href="/pcb-manufacturer/why-us/">Why Choose XFPCB</a>
+            <a href="/pcb-manufacturer/pcb-factory/">PCB Factory in China</a>
+            <a href="/pcb-manufacturer/quality-management/">PCB Quality Management</a>
+            <a href="/pcb-manufacturing/custom-circuit-board-printing/">Custom PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/quick-turn-pcb/">Quick Turn PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/low-cost-pcbs-fabrication/">Low Cost PCB Fabrication</a>
+            <a href="/pcb-manufacturing/bga-pcb/">BGA PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/hdi-pcb/">HDI PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/gold-fingers-pcb/">Gold Finger PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/high-frequency-pcb/">High Frequency PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/impedance-control-pcb/">Impedance Control PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/rigid-pcb/">Rigid PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/flexible-pcb/">Flexible PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/flexible-pcb/single-layer-flexible-pcb/">Single Layer Flexible PCB</a>
+            <a href="/pcb-manufacturing/flexible-pcb/double-sided-flex-pcb/">Double-Sided Flex PCB</a>
+            <a href="/pcb-manufacturing/flexible-pcb/multilayer-flex-pcb/">Multilayer Flexible PCB</a>
+            <a href="/pcb-manufacturing/rigid-flex-pcb/">Rigid-Flex PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/metal-core-pcb/">Metal Core PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/aluminum-pcbs/">Aluminum PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/led-pcb-board/">LED PCB Board Manufacturing</a>
+            <a href="/pcb-manufacturing/copper-based-pcb/">Copper Core PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/heavy-copper-pcb/">Heavy Copper PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/high-tg-pcb/">High Tg PCB Manufacturing</a>
+            <a href="/pcb-manufacturing/pcb-mass-production/">PCB Mass Production</a>
+            <a href="/pcb-assembly/smt-pcb-assembly/">SMT PCB Assembly Service</a>
+            <a href="/pcb-assembly/through-hole-pcb-assembly/">Through-Hole PCB Assembly Service</a>
+            <a href="/pcb-assembly/mixed-technology-pcb-assembly-services/">Mixed Technology PCB Assembly</a>
+            <a href="/pcb-assembly/lead-free-pcb-assembly-service/">Lead-Free PCB Assembly Service</a>
+            <a href="/pcb-assembly/fast-prototype-pcb-assembly-service/">Prototype PCB Assembly Service</a>
+            <a href="/pcb-assembly/quick-turn-pcb-assembly/">Quick Turn PCB Assembly Service</a>
+            <a href="/pcb-assembly/low-cost-pcb-assembly/">Low-Cost PCB Assembly Service</a>
+            <a href="/pcb-assembly/full-turnkey-pcb-assembly-service/">Full and Partial Turnkey PCB Assembly</a>
+            <a href="/pcb-assembly/low-volume-assembly-service/">Low Volume PCB Assembly</a>
+            <a href="/pcb-assembly/high-volume-pcb-assembly-services/">High Volume PCB Assembly</a>
+            <a href="/pcb-assembly/led-pcb-assembly/">LED PCB Assembly Service</a>
+            <a href="/pcb-assembly/components-purchasing-services/">Component Sourcing Service</a>
+            <a href="/pcb-assembly/pcb-smt-stencil/">PCB SMT Stencil</a>
+            <a href="/laser-cut-smt-stencil/">Laser Cut SMT Stencil</a>
+            <a href="/step-stencil/">Step Stencil</a>
+            <a href="/nano-coating-pcb-stencil-manufacturing/">Nano-Coating PCB Stencil</a>
+            <a href="/custom-electroform-stencils/">Electroform Stencils</a>
+            <a href="/technical-capabilities/">PCB Manufacturing Capabilities</a>
+            <a href="/pcb-fabrication-process/">PCB Fabrication Process</a>
+            <a href="/technical-capabilities/rigid-pcb-fabrication-capability/">Rigid PCB Fabrication Capability</a>
+            <a href="/technical-capabilities/flexible-pcb-fabrication-capability/">Flexible PCB Fabrication Capability</a>
+            <a href="/technical-capabilities/rigid-flex-pcb-fabrication-capability/">Rigid-Flex PCB Fabrication Capability</a>
+            <a href="/technical-capabilities/hdi-pcb-board-fabrication-capabilities/">HDI PCB Board Fabrication Capability</a>
+            <a href="/pcb-assembly/pcb-assembly-capability/">PCB Assembly Capability</a>
+            <a href="/pcb-assembly/pcb-stencil-capability/">PCB SMT Stencil Capability</a>
+            <a href="/technical-capabilities/pcb-copper-thickness-capabilities/">PCB Copper Thickness Capabilities</a>
+            <a href="/how-to-place-an-order/">How to Place a PCB or PCBA Order</a>
+            <a href="/support/pcb-pcba-manufacturing-file/">PCB and PCBA Manufacturing Files</a>
+            <a href="/support/pcb-terminology-glossary/">PCB Terminology Glossary</a>
+            <a href="/pcb-materials/">PCB Materials Guide</a>
+            <a href="/pcb-board-testing-and-inspection/">PCB and PCBA Testing and Inspection</a>
+            <a href="/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb/">Flying Probe Testing for PCB</a>
+            <a href="/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly/">X-Ray Inspection in PCB Assembly</a>
+            <a href="/applications-and-industries-served/">Industries Served by XFPCB</a>
+            <a href="/applications-and-industries-served/pcbs-for-consumer-electronics/">PCBs for Consumer Electronics</a>
+            <a href="/applications-and-industries-served/new-energy-pcbs/">PCBs for New Energy Applications</a>
+            <a href="/applications-and-industries-served/new-energy-vehicle-pcb/">New Energy Vehicle PCB</a>
+            <a href="/applications-and-industries-served/pcbs-for-automobile-electronics/">PCBs for Automobile Electronics</a>
+            <a href="/applications-and-industries-served/pcbs-for-medical-devices/">PCBs for Medical Devices</a>
+            <a href="/applications-and-industries-served/pcbs-for-industrial-control-applications/">PCBs for Industrial Control Applications</a>
+            <a href="/applications-and-industries-served/pcbs-for-communication-equipment/">PCBs for Communication Equipment</a>
+            <a href="/applications-and-industries-served/server-and-data-storage-pcbs/">Server and Data Storage PCBs</a>
+            <a href="/applications-and-industries-served/security-and-access-control-systems-pcbs/">Security and Access Control System PCBs</a>
+            <a href="/applications-and-industries-served/pcbs-for-aerospace-and-defence/">PCBs for Aerospace and Defense</a>
+            <a href="/applications-and-industries-served/pcbs-for-led-lighting/">PCBs for LED Lighting</a>
+        </div>
+    </app-footer>
+    <floating-form></floating-form>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

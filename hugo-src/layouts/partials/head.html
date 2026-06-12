@@ -1,0 +1,30 @@
+{{ $pageTitle := .Params.seoTitle }}
+{{ if not $pageTitle }}
+    {{ if .IsHome }}
+        {{ $pageTitle = site.Title }}
+    {{ else }}
+        {{ $pageTitle = printf "%s | %s" .Title site.Title }}
+    {{ end }}
+{{ end }}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ $pageTitle }}</title>
+    <meta name="description" content="{{ .Params.description | default site.Params.defaultDescription }}">
+    <meta name="keywords" content="{{ .Params.keywords | default site.Params.defaultKeywords }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ .Params.description | default site.Params.defaultDescription }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+    <meta property="og:image" content="{{ "/images/xf-logo.png" | absURL }}">
+
+    {{ $styles := .Params.styles | default site.Params.defaultStyles }}
+    {{ range $styles }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+    {{ end }}
+
+    <link rel="icon" type="image/png" href="{{ "/images/xf-logo.png" | relURL }}">
+    <link rel="apple-touch-icon" href="{{ "/images/xf-logo.png" | relURL }}">
+</head>

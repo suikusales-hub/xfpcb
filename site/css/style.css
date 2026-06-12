@@ -1,0 +1,45 @@
+/* css/style.css */
+:root {
+    --pcb-dark: #05140a;      /* PCB 典型的深绿色板材背景 */
+    --pcb-trace: #1a4225;     /* 较暗的铜箔走线颜色 */
+    --pcb-glow: #00ff41;      /* 游动光束的高亮荧光绿 */
+    --text-main: #e0f2e6;     /* 浅色文本 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--pcb-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* 首页内容区域基础样式 */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.hero h1 {
+    color: var(--pcb-glow);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.content-placeholder {
+    margin-top: 40px;
+    opacity: 0.7;
+}

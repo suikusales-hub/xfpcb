@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found | XFPCB</title>
+    <meta name="description" content="The XFPCB page you requested could not be found. Browse PCB manufacturing, PCBA manufacturing, products, support, or the sitemap.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="{{ "404.html" | absURL }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 Page Not Found | XFPCB">
+    <meta property="og:description" content="The XFPCB page you requested could not be found. Browse PCB manufacturing, PCBA manufacturing, products, support, or the sitemap.">
+    <meta property="og:url" content="{{ "404.html" | absURL }}">
+    <meta property="og:image" content="{{ "/images/xf-logo.png" | absURL }}">
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "/css/about.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "/css/info-pages.css" | relURL }}">
+    <link rel="icon" type="image/png" href="{{ "/images/xf-logo.png" | relURL }}">
+    <link rel="apple-touch-icon" href="{{ "/images/xf-logo.png" | relURL }}">
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <main>
+        <section class="info-hero">
+            <div class="info-wrap">
+                <div class="info-kicker">404 not found</div>
+                <h1>We Could Not Find This XFPCB Page</h1>
+                <p>The URL may be mistyped, moved, or no longer available. You can continue from the main XFPCB pages below, or send us your PCB / PCBA requirements directly.</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-wrap">
+                <h2>Continue Browsing XFPCB</h2>
+                <div class="info-card-grid">
+                    <article class="info-card">
+                        <h3>PCB Products</h3>
+                        <p>Browse layer-count PCB pages, multilayer PCB options, and high-layer-count PCB manufacturing information.</p>
+                        <a href="/products/">View Products</a>
+                    </article>
+                    <article class="info-card">
+                        <h3>PCB Manufacturing</h3>
+                        <p>Review rigid PCB, flexible PCB, HDI PCB, impedance control, thermal PCB, and quick-turn fabrication services.</p>
+                        <a href="/pcb-manufacturing/">View PCB Manufacturing</a>
+                    </article>
+                    <article class="info-card">
+                        <h3>PCBA Manufacturing</h3>
+                        <p>Send Gerber, BOM, CPL, assembly drawing, test notes, and quantity for turnkey PCBA quotation support.</p>
+                        <a href="/pcba-manufacturing/">View PCBA Manufacturing</a>
+                    </article>
+                    <article class="info-card">
+                        <h3>Technical Support</h3>
+                        <p>Ask XFPCB for DFM review, BOM sourcing discussion, stackup questions, testing requirements, or quotation help.</p>
+                        <a href="/support/">Contact Support</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section tight">
+            <div class="info-wrap support-grid">
+                <div>
+                    <h2>Need Help Finding a PCB or PCBA Service?</h2>
+                    <p>Use the sitemap if you are looking for a specific XFPCB service page, product page, material guide, testing page, or industry application page.</p>
+                    <p>If you already have production files, send your project details and our team can help confirm the best route for fabrication, assembly, inspection, and shipment.</p>
+                    <div class="info-actions">
+                        <a href="/sitemap/">Open Sitemap</a>
+                        <a href="/support/">Send Project Details</a>
+                    </div>
+                </div>
+                <aside class="info-panel accent">
+                    <h3>Useful RFQ Files</h3>
+                    <ul class="info-list">
+                        <li>Gerber and NC drill files</li>
+                        <li>Layer stackup and material requirements</li>
+                        <li>BOM and pick-and-place file for PCBA</li>
+                        <li>Assembly drawing, test notes, and quantity</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "floating-form.html" . }}
+    <script type="module" src="{{ "/js/main.js" | relURL }}"></script>
+</body>
+</html>

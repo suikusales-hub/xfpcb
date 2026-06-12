@@ -1,0 +1,156 @@
+{{ $nav := site.Data.navigation }}
+<style>
+    .site-footer {
+        display: block;
+        background-color: #05140a;
+        border-top: 2px solid #1a4225;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .site-footer .footer-container {
+        position: relative;
+        padding: 40px 20px 20px;
+        min-height: 200px;
+        color: #8da696;
+        text-align: center;
+    }
+
+    .site-footer .pcb-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.6;
+    }
+
+    .site-footer .content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .site-footer .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .site-footer .footer-logo img {
+        height: 40px;
+        display: block;
+        opacity: 0.9;
+        transition: opacity 0.3s;
+    }
+
+    .site-footer .footer-logo:hover img {
+        opacity: 1;
+    }
+
+    .site-footer .links {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-footer .links a {
+        color: #e0f2e6;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .site-footer .links a:hover {
+        color: #00ff41;
+    }
+
+    .site-footer .copyright {
+        font-size: 14px;
+        margin-top: 20px;
+        border-top: 1px solid #1a4225;
+        padding-top: 20px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .site-footer .beam {
+        stroke-dasharray: 100 2500;
+        stroke-linecap: round;
+    }
+
+    .site-footer .beam-footer-1 {
+        animation: footer-flow-reverse 5s linear infinite;
+    }
+
+    .site-footer .beam-footer-2 {
+        animation: footer-flow-reverse 4s linear infinite;
+        animation-delay: -1.5s;
+    }
+
+    @keyframes footer-flow-reverse {
+        from { stroke-dashoffset: -2500; }
+        to { stroke-dashoffset: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .site-footer .pcb-bg {
+            opacity: 0.2;
+        }
+
+        .site-footer .links {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+</style>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <svg class="pcb-bg" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" aria-hidden="true">
+            <defs>
+                <filter id="glow-footer" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+            </defs>
+            <g stroke="#1a4225" stroke-width="2" fill="none">
+                <path d="M-10,180 H400 L450,130 H1200 L1250,170 H1950" />
+                <path d="M-10,150 H200 L250,100 H800 L850,150 H1600 L1650,120 H1950" />
+                <path d="M400,180 V140" />
+                <path d="M1200,130 V90" />
+            </g>
+            <g fill="#1a4225">
+                <circle cx="400" cy="180" r="3"/>
+                <circle cx="450" cy="130" r="3"/>
+                <circle cx="200" cy="150" r="3"/>
+                <circle cx="250" cy="100" r="3"/>
+                <circle cx="400" cy="140" r="3"/>
+                <circle cx="1200" cy="90" r="3"/>
+            </g>
+            <g stroke="#ffcc00" stroke-width="2" fill="none" filter="url(#glow-footer)">
+                <path class="beam beam-footer-1" d="M-10,180 H400 L450,130 H1200 L1250,170 H1950" />
+                <path class="beam beam-footer-2" d="M-10,150 H200 L250,100 H800 L850,150 H1600 L1650,120 H1950" />
+            </g>
+        </svg>
+
+        <div class="content">
+            <a href="{{ "/" | relURL }}" class="footer-logo" aria-label="XingFeng PCB home">
+                <img src="{{ "/images/xf-logo.png" | relURL }}" alt="XingFeng PCB Logo">
+            </a>
+            <div class="links">
+                {{ range $nav.footer }}
+                <a href="{{ .url | relURL }}">{{ .title }}</a>
+                {{ end }}
+            </div>
+            <div class="copyright">
+                &copy; {{ now.Format "2006" }} XingFeng PCB. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,119 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Products"
+    url: "/products/"
+    columns:
+      - heading: "Layer Count"
+        links:
+          - { title: "1-Layer PCB", url: "/products/1-layer-pcb/" }
+          - { title: "2-Layer PCB", url: "/products/2-layer-pcb/" }
+          - { title: "4-Layer PCB", url: "/products/4-layer-pcb/" }
+          - { title: "6-Layer PCB", url: "/products/6-layer-pcb/" }
+          - { title: "8-Layer PCB", url: "/products/8-layer-pcb/" }
+          - { title: "10-Layer PCB", url: "/products/10-layer-pcb/" }
+      - heading: "Advanced Layers"
+        links:
+          - { title: "12-Layer PCB", url: "/products/12-layer-pcb/" }
+          - { title: "14-Layer PCB", url: "/products/14-layer-pcb/" }
+          - { title: "16-Layer PCB", url: "/products/16-layer-pcb/" }
+          - { title: "20-Layer PCB", url: "/products/20-layer-pcb/" }
+          - { title: "24-Layer PCB", url: "/products/24-layer-pcb/" }
+          - { title: "32-Layer PCB", url: "/products/32-layer-pcb/" }
+          - { title: "40-Layer PCB", url: "/products/40-layer-pcb/" }
+      - heading: "Specialty PCB"
+        links:
+          - { title: "HDI PCB", url: "/pcb-manufacturing/hdi-pcb/" }
+          - { title: "BGA PCB", url: "/pcb-manufacturing/bga-pcb/" }
+          - { title: "High Frequency PCB", url: "/pcb-manufacturing/high-frequency-pcb/" }
+          - { title: "Impedance Control PCB", url: "/pcb-manufacturing/impedance-control-pcb/" }
+          - { title: "Heavy Copper PCB", url: "/pcb-manufacturing/heavy-copper-pcb/" }
+          - { title: "High Tg PCB", url: "/pcb-manufacturing/high-tg-pcb/" }
+      - heading: "Flex & Metal Core"
+        links:
+          - { title: "Flexible PCB", url: "/pcb-manufacturing/flexible-pcb/" }
+          - { title: "Rigid-Flex PCB", url: "/pcb-manufacturing/rigid-flex-pcb/" }
+          - { title: "Aluminum PCB", url: "/pcb-manufacturing/aluminum-pcbs/" }
+          - { title: "Metal Core PCB", url: "/pcb-manufacturing/metal-core-pcb/" }
+          - { title: "LED PCB Board", url: "/pcb-manufacturing/led-pcb-board/" }
+          - { title: "Multilayer PCB Guide", url: "/products/multilayer-pcb/" }
+  - title: "Services"
+    url: "/pcb-manufacturing/"
+    columns:
+      - heading: "PCB Fabrication"
+        links:
+          - { title: "PCB Prototype", url: "/prototype-pcb/" }
+          - { title: "PCB Manufacturing", url: "/pcb-manufacturing/" }
+          - { title: "Custom PCB", url: "/pcb-manufacturing/custom-circuit-board-printing/" }
+          - { title: "Quick Turn PCB", url: "/pcb-manufacturing/quick-turn-pcb/" }
+          - { title: "Low Cost PCB", url: "/pcb-manufacturing/low-cost-pcbs-fabrication/" }
+          - { title: "PCB Mass Production", url: "/pcb-manufacturing/pcb-mass-production/" }
+      - heading: "PCB Assembly"
+        links:
+          - { title: "PCBA Manufacturing", url: "/pcba-manufacturing/" }
+          - { title: "PCB Assembly", url: "/pcb-assembly/" }
+          - { title: "SMT PCB Assembly", url: "/pcb-assembly/smt-pcb-assembly/" }
+          - { title: "Through-Hole Assembly", url: "/pcb-assembly/through-hole-pcb-assembly/" }
+          - { title: "Turnkey PCB Assembly", url: "/pcb-assembly/full-turnkey-pcb-assembly-service/" }
+          - { title: "Component Sourcing", url: "/pcb-assembly/components-purchasing-services/" }
+      - heading: "Stencil Services"
+        links:
+          - { title: "PCB SMT Stencil", url: "/pcb-assembly/pcb-smt-stencil/" }
+          - { title: "Laser Cut SMT Stencil", url: "/laser-cut-smt-stencil/" }
+          - { title: "Step Stencil", url: "/step-stencil/" }
+          - { title: "Nano-Coating Stencil", url: "/nano-coating-pcb-stencil-manufacturing/" }
+          - { title: "Electroform Stencils", url: "/custom-electroform-stencils/" }
+  - title: "Capabilities"
+    url: "/technical-capabilities/"
+    columns:
+      - heading: "Factory Capability"
+        links:
+          - { title: "PCB Capabilities", url: "/technical-capabilities/" }
+          - { title: "PCB Fabrication Process", url: "/pcb-fabrication-process/" }
+          - { title: "Rigid PCB Capability", url: "/technical-capabilities/rigid-pcb-fabrication-capability/" }
+          - { title: "Flexible PCB Capability", url: "/technical-capabilities/flexible-pcb-fabrication-capability/" }
+          - { title: "Rigid-Flex Capability", url: "/technical-capabilities/rigid-flex-pcb-fabrication-capability/" }
+      - heading: "Testing & Resources"
+        links:
+          - { title: "Testing & Inspection", url: "/pcb-board-testing-and-inspection/" }
+          - { title: "Flying Probe Testing", url: "/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb/" }
+          - { title: "X-Ray Inspection", url: "/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly/" }
+          - { title: "PCB Materials", url: "/pcb-materials/" }
+          - { title: "Manufacturing Files", url: "/support/pcb-pcba-manufacturing-file/" }
+  - title: "Industries"
+    url: "/applications-and-industries-served/"
+    columns:
+      - heading: "Applications"
+        links:
+          - { title: "Industries Served", url: "/applications-and-industries-served/" }
+          - { title: "Consumer Electronics", url: "/applications-and-industries-served/pcbs-for-consumer-electronics/" }
+          - { title: "New Energy", url: "/applications-and-industries-served/new-energy-pcbs/" }
+          - { title: "Automobile Electronics", url: "/applications-and-industries-served/pcbs-for-automobile-electronics/" }
+          - { title: "Medical Devices", url: "/applications-and-industries-served/pcbs-for-medical-devices/" }
+          - { title: "LED Lighting", url: "/applications-and-industries-served/pcbs-for-led-lighting/" }
+  - title: "Info"
+    url: "/sitemap/"
+    columns:
+      - heading: "Company"
+        links:
+          - { title: "About Us", url: "/about/" }
+          - { title: "China PCB Manufacturer", url: "/pcb-manufacturer/" }
+          - { title: "PCB Factory", url: "/pcb-manufacturer/pcb-factory/" }
+          - { title: "Quality Management", url: "/pcb-manufacturer/quality-management/" }
+          - { title: "Why Choose XFPCB", url: "/pcb-manufacturer/why-us/" }
+      - heading: "Guides & Support"
+        links:
+          - { title: "Order Guide", url: "/how-to-place-an-order/" }
+          - { title: "Technical Support", url: "/support/" }
+          - { title: "PCB Glossary", url: "/support/pcb-terminology-glossary/" }
+          - { title: "USA vs China PCB Guide", url: "/pcb-manufacturer-usa-vs-china/" }
+          - { title: "Vietnam vs China PCB Guide", url: "/pcb-manufacturer-in-vietnam-vs-china/" }
+footer:
+  - { title: "PCB Manufacturing", url: "/pcb-manufacturing/" }
+  - { title: "PCB Assembly", url: "/pcb-assembly/" }
+  - { title: "Capabilities", url: "/technical-capabilities/" }
+  - { title: "Industries", url: "/applications-and-industries-served/" }
+  - { title: "Technical Support", url: "/support/" }
+  - { title: "Privacy Policy", url: "/privacy/" }
+  - { title: "Terms of Service", url: "/terms/" }
+  - { title: "Sitemap", url: "/sitemap/" }

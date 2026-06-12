@@ -1,0 +1,546 @@
+[
+  {
+    "text": "JHYPCB",
+    "path": "/"
+  },
+  {
+    "text": "PCB Prototype",
+    "path": "/prototype-pcb"
+  },
+  {
+    "text": "Low Cost PCB Prototype",
+    "path": "/pcb-manufacturing/low-cost-pcbs-fabrication"
+  },
+  {
+    "text": "Quick Turn PCB Prototype",
+    "path": "/prototype-pcb/fast-turn-prototype-pcb-service"
+  },
+  {
+    "text": "Flexible PCB Prototype",
+    "path": "/pcb-manufacturing/flexible-pcb/flexible-pcb-prototyping"
+  },
+  {
+    "text": "Multilayer PCB Prototype",
+    "path": "/prototype-pcb/multilayer-pcb-prototype"
+  },
+  {
+    "text": "PCB Manufacturing",
+    "path": "/pcb-manufacturing"
+  },
+  {
+    "text": "Custom PCB",
+    "path": "/pcb-manufacturing/custom-circuit-board-printing"
+  },
+  {
+    "text": "Quick Turn PCB",
+    "path": "/pcb-manufacturing/quick-turn-pcb"
+  },
+  {
+    "text": "Single Layer PCB",
+    "path": "/pcb-manufacturing/single-layer-pcb"
+  },
+  {
+    "text": "Double-Sided PCB",
+    "path": "/pcb-manufacturing/double-sided-pcb"
+  },
+  {
+    "text": "Multilayer PCB",
+    "path": "/pcb-manufacturing/multilayer-pcb"
+  },
+  {
+    "text": "4 Layer PCB",
+    "path": "/pcb-manufacturing/multilayer-pcb/4-layer-pcb"
+  },
+  {
+    "text": "6 Layer PCB",
+    "path": "/pcb-manufacturing/multilayer-pcb/6-layer-pcb"
+  },
+  {
+    "text": "BGA PCB",
+    "path": "/pcb-manufacturing/bga-pcb"
+  },
+  {
+    "text": "HDI PCB",
+    "path": "/pcb-manufacturing/hdi-pcb"
+  },
+  {
+    "text": "Gold Finger PCB",
+    "path": "/pcb-manufacturing/gold-fingers-pcb"
+  },
+  {
+    "text": "High-frequency PCB",
+    "path": "/pcb-manufacturing/high-frequency-pcb"
+  },
+  {
+    "text": "Impedance Control PCB",
+    "path": "/pcb-manufacturing/impedance-control-pcb"
+  },
+  {
+    "text": "Rigid PCB",
+    "path": "/pcb-manufacturing/rigid-pcb"
+  },
+  {
+    "text": "Flexible PCB",
+    "path": "/pcb-manufacturing/flexible-pcb"
+  },
+  {
+    "text": "Single Layer Flexible PCB",
+    "path": "/pcb-manufacturing/flexible-pcb/single-layer-flexible-pcb"
+  },
+  {
+    "text": "Double-sided Flex PCB",
+    "path": "/pcb-manufacturing/flexible-pcb/double-sided-flex-pcb"
+  },
+  {
+    "text": "Multilayer Flexible PCB",
+    "path": "/pcb-manufacturing/flexible-pcb/multilayer-flex-pcb"
+  },
+  {
+    "text": "Rigid-Flex PCB",
+    "path": "/pcb-manufacturing/rigid-flex-pcb"
+  },
+  {
+    "text": "Metal Core PCB",
+    "path": "/pcb-manufacturing/metal-core-pcb"
+  },
+  {
+    "text": "Aluminum PCB",
+    "path": "/pcb-manufacturing/aluminum-pcbs"
+  },
+  {
+    "text": "LED PCB Board",
+    "path": "/pcb-manufacturing/led-pcb-board"
+  },
+  {
+    "text": "Copper Core PCB",
+    "path": "/pcb-manufacturing/copper-based-pcb"
+  },
+  {
+    "text": "Heavy Copper PCB",
+    "path": "/pcb-manufacturing/heavy-copper-pcb"
+  },
+  {
+    "text": "High TG PCB",
+    "path": "/pcb-manufacturing/high-tg-pcb"
+  },
+  {
+    "text": "PCB Assembly",
+    "path": "/pcb-assembly"
+  },
+  {
+    "text": "SMT PCB Assembly",
+    "path": "/pcb-assembly/smt-pcb-assembly"
+  },
+  {
+    "text": "Through-hole PCB Assembly",
+    "path": "/pcb-assembly/through-hole-pcb-assembly-2"
+  },
+  {
+    "text": "Mixed Technology PCB Assembly Services",
+    "path": "/mixed-technology-pcb-assembly-services"
+  },
+  {
+    "text": "Lead-free PCB Assembly Service",
+    "path": "/pcb-assembly/lead-free-pcb-assembly-service"
+  },
+  {
+    "text": "Fast Prototype PCB Assembly",
+    "path": "/pcb-assembly/fast-prototype-pcb-assembly-service"
+  },
+  {
+    "text": "Low-Cost PCB Assembly Service",
+    "path": "/pcb-assembly/low-cost-pcb-assembly-2"
+  },
+  {
+    "text": "Quick Turn PCB Assembly Service",
+    "path": "/pcb-assembly/quick-turn-pcb-assembly-2"
+  },
+  {
+    "text": "Full & Partial Turnkey PCB Assembly",
+    "path": "/pcb-assembly/full-turnkey-pcb-assembly-service"
+  },
+  {
+    "text": "Low Volume PCB Assembly",
+    "path": "/pcb-assembly/low-volume-assembly-service"
+  },
+  {
+    "text": "High Volume PCB Assembly Services",
+    "path": "/pcb-assembly/high-volume-pcb-assembly-services"
+  },
+  {
+    "text": "LED PCB Assembly",
+    "path": "/pcb-assembly/led-pcb-assembly"
+  },
+  {
+    "text": "Components Purchasing Services",
+    "path": "/pcb-assembly/components-purchasing-services"
+  },
+  {
+    "text": "PCB SMT Stencil",
+    "path": "/pcb-assembly/pcb-smt-stencil"
+  },
+  {
+    "text": "Laser Cut SMT Stencil",
+    "path": "/laser-cut-smt-stencil"
+  },
+  {
+    "text": "Step Stencil",
+    "path": "/step-stencil"
+  },
+  {
+    "text": "Nano-Coating PCB Stencil",
+    "path": "/nano-coating-pcb-stencil-manufacturing"
+  },
+  {
+    "text": "Electroform Stencils",
+    "path": "/custom-electroform-stencils"
+  },
+  {
+    "text": "About us",
+    "path": "/pcb-manufacturer"
+  },
+  {
+    "text": "PCB Manufacturer in China",
+    "path": "/pcb-manufacturer/pcb-manufacturer-in-china"
+  },
+  {
+    "text": "PCB China Factory",
+    "path": "/pcb-manufacturer/pcb-factory"
+  },
+  {
+    "text": "Quality Management",
+    "path": "/pcb-manufacturer/quality-management"
+  },
+  {
+    "text": "Contact",
+    "path": "/contact"
+  },
+  {
+    "text": "Why choose us",
+    "path": "/pcb-manufacturer/why-us"
+  },
+  {
+    "text": "PCB Manufacturing Capabilities",
+    "path": "/technical-capabilities"
+  },
+  {
+    "text": "PCB Fabrication Process",
+    "path": "/pcb-fabrication-process"
+  },
+  {
+    "text": "Rigid PCB Fabrication Capability",
+    "path": "/technical-capabilities/rigid-pcb-fabrication-capability"
+  },
+  {
+    "text": "Flexible PCB Fabrication Capability",
+    "path": "/technical-capabilities/flexible-pcb-fabrication-capability"
+  },
+  {
+    "text": "Rigid-Flex PCB Fabrication Capability",
+    "path": "/technical-capabilities/rigid-flex-pcb-fabrication-capability"
+  },
+  {
+    "text": "HDI PCB Board Fabrication Capability",
+    "path": "/technical-capabilities/hdi-pcb-board-fabrication-capabilities"
+  },
+  {
+    "text": "PCB Assembly Capability",
+    "path": "/pcb-assembly/pcb-assembly-capability"
+  },
+  {
+    "text": "PCB SMT Stencil Capability",
+    "path": "/pcb-assembly/pcb-stencil-capability"
+  },
+  {
+    "text": "PCB Copper Thickness Capabilities",
+    "path": "/technical-capabilities/pcb-copper-thickness-capabilities"
+  },
+  {
+    "text": "PCB Mass Production",
+    "path": "/pcb-manufacturing/pcb-mass-production"
+  },
+  {
+    "text": "Industries Served",
+    "path": "/applications-and-industries-served"
+  },
+  {
+    "text": "PCBs For Consumer electronics",
+    "path": "/applications-and-industries-served/pcbs-for-consumer-electronics"
+  },
+  {
+    "text": "PCBs For New Energy Applications",
+    "path": "/applications-and-industries-served/new-energy-pcbs"
+  },
+  {
+    "text": "New Energy Vehicle PCB",
+    "path": "/applications-and-industries-served/new-energy-vehicle-pcb"
+  },
+  {
+    "text": "PCBs for Automobile Electronics",
+    "path": "/applications-and-industries-served/pcbs-for-automobile-electronics"
+  },
+  {
+    "text": "PCBs for Medical Devices",
+    "path": "/applications-and-industries-served/pcbs-for-medical-devices"
+  },
+  {
+    "text": "PCBs for Industrial Control Applications",
+    "path": "/applications-and-industries-served/pcbs-for-industrial-control-applications"
+  },
+  {
+    "text": "PCBs for Communication Equipment",
+    "path": "/applications-and-industries-served/pcbs-for-communication-equipment"
+  },
+  {
+    "text": "Server and data storage PCBs",
+    "path": "/applications-and-industries-served/server-and-data-storage-pcbs"
+  },
+  {
+    "text": "Security and Access Control Systems PCBs",
+    "path": "/applications-and-industries-served/security-and-access-control-systems-pcbs"
+  },
+  {
+    "text": "PCBs for Aerospace and Defense",
+    "path": "/applications-and-industries-served/pcbs-for-aerospace-and-defence"
+  },
+  {
+    "text": "PCBs for LED Lighting",
+    "path": "/applications-and-industries-served/pcbs-for-led-lighting"
+  },
+  {
+    "text": "Resources",
+    "path": "/support"
+  },
+  {
+    "text": "Order Guide",
+    "path": "/how-to-place-an-order"
+  },
+  {
+    "text": "PCB & PCBA Manufacturing File",
+    "path": "/support/pcb-pcba-manufacturing-file"
+  },
+  {
+    "text": "What is the BOM?",
+    "path": "/blog/pcba-insights/what-is-the-bill-of-materials.html"
+  },
+  {
+    "text": "Glossary of Terms",
+    "path": "/support/pcb-terminology-glossary"
+  },
+  {
+    "text": "Free PCB Design Software",
+    "path": "/support/pcb-design-software-free-download"
+  },
+  {
+    "text": "PCB Materials",
+    "path": "/pcb-materials"
+  },
+  {
+    "text": "Testing & Inspection Methods for PCB and PCBA",
+    "path": "/pcb-board-testing-and-inspection"
+  },
+  {
+    "text": "Flying Probe Testing for PCB",
+    "path": "/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb"
+  },
+  {
+    "text": "X-ray Inspection in PCB Assembly",
+    "path": "/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly"
+  },
+  {
+    "text": "Get a Quote",
+    "path": "/how-to-place-an-order"
+  },
+  {
+    "text": "Get a Free Quote",
+    "path": "/how-to-place-an-order"
+  },
+  {
+    "text": "Learn more about our journey",
+    "path": "/pcb-manufacturer"
+  },
+  {
+    "text": "support your next PCB project",
+    "path": "/how-to-place-an-order"
+  },
+  {
+    "text": "Learn More",
+    "path": "/prototype-pcb"
+  },
+  {
+    "text": "Learn More",
+    "path": "/pcb-manufacturing"
+  },
+  {
+    "text": "Learn More",
+    "path": "/pcb-assembly"
+  },
+  {
+    "text": "Learn More",
+    "path": "/pcb-assembly/components-purchasing-services"
+  },
+  {
+    "text": "rapid PCB prototype service",
+    "path": "/prototype-pcb/fast-turn-prototype-pcb-service"
+  },
+  {
+    "text": "Get a Free Quote for Your Prototype",
+    "path": "/how-to-place-an-order"
+  },
+  {
+    "text": "Learn More Our PCB Capability",
+    "path": "/technical-capabilities"
+  },
+  {
+    "text": "Gold Fingers PCB",
+    "path": "/pcb-manufacturing/gold-fingers-pcb"
+  },
+  {
+    "text": "High Frequency PCB",
+    "path": "/pcb-manufacturing/high-frequency-pcb"
+  },
+  {
+    "text": "High Tg PCB",
+    "path": "/pcb-manufacturing/high-tg-pcb"
+  },
+  {
+    "text": "SMT Assembly",
+    "path": "/pcb-assembly/smt-pcb-assembly"
+  },
+  {
+    "text": "THT Assembly",
+    "path": "/pcb-assembly/through-hole-pcb-assembly-2"
+  },
+  {
+    "text": "Turnkey PCBA",
+    "path": "/pcb-assembly/full-turnkey-pcb-assembly-service"
+  },
+  {
+    "text": "Additional Services",
+    "path": "/pcb-assembly/pcb-smt-stencil"
+  },
+  {
+    "text": "Prototype PCB Assembly",
+    "path": "/pcb-assembly/fast-prototype-pcb-assembly-service"
+  },
+  {
+    "text": "Quick Turn PCB Assembly",
+    "path": "/pcb-assembly/quick-turn-pcb-assembly-2"
+  },
+  {
+    "text": "Lead Free PCB Assembly",
+    "path": "/pcb-assembly/lead-free-pcb-assembly-service"
+  },
+  {
+    "text": "Low-volume PCB Assembly",
+    "path": "/pcb-assembly/low-volume-assembly-service"
+  },
+  {
+    "text": "Flex PCB Adhesives and Bonding Materials Explained",
+    "path": "/blog/pcb-manufacturing-insights/flex-pcb-adhesives-and-bonding-materials-explained.html"
+  },
+  {
+    "text": "Flexible PCB Coverlay vs. Solder Mask: Which Protection Should You Choose?",
+    "path": "/blog/pcb-manufacturing-insights/flexible-pcb-coverlay-vs-solder-mask-which-protection-should-you-choose.html"
+  },
+  {
+    "text": "Explore Ceramic PCB Material Options: How to Choose the Right Substrate",
+    "path": "/blog/pcb-manufacturing-insights/explore-ceramic-pcb-material-options-how-to-choose-the-right-substrate.html"
+  },
+  {
+    "text": "From Prototype to Production: Essential PCB Assembly Tips for Engineers",
+    "path": "/blog/pcba-insights/from-prototype-to-production-essential-pcb-assembly-tips-for-engineers.html"
+  },
+  {
+    "text": "How to Evaluate SMT PCB Assembly Quality: A Buyer’s Checklist",
+    "path": "/blog/pcba-insights/how-to-evaluate-smt-pcb-assembly-quality-a-buyers-checklist.html"
+  },
+  {
+    "text": "IPC Standards in SMT PCB Assembly: What You Need to Know",
+    "path": "/blog/pcba-insights/ipc-standards-in-smt-pcb-assembly-what-you-need-to-know.html"
+  },
+  {
+    "text": "PCB Prototype Services",
+    "path": "/prototype-pcb"
+  },
+  {
+    "text": "Quick Turn PCB Manufacturing",
+    "path": "/pcb-manufacturing/quick-turn-pcb"
+  },
+  {
+    "text": "Low-cost PCBs Fabrication",
+    "path": "/pcb-manufacturing/low-cost-pcbs-fabrication"
+  },
+  {
+    "text": "Flexible PCB Fabrication",
+    "path": "/pcb-manufacturing/flexible-pcb"
+  },
+  {
+    "text": "Multilayer PCB Fabrication",
+    "path": "/pcb-manufacturing/multilayer-pcb"
+  },
+  {
+    "text": "Rigid-Flex PCB Fabrication",
+    "path": "/pcb-manufacturing/rigid-flex-pcb"
+  },
+  {
+    "text": "LED PCB Fabrication",
+    "path": "/pcb-manufacturing/led-pcb-board"
+  },
+  {
+    "text": "Aluminum PCB Fabrication",
+    "path": "/pcb-manufacturing/aluminum-pcbs"
+  },
+  {
+    "text": "PCB Assembly",
+    "path": "/technical-capabilities"
+  },
+  {
+    "text": "Prototype PCB Assembly Service",
+    "path": "/pcb-assembly/fast-prototype-pcb-assembly-service"
+  },
+  {
+    "text": "Low-volume PCB Assembly Service",
+    "path": "/pcb-assembly/low-volume-assembly-service"
+  },
+  {
+    "text": "SMT PCB Assembly Service",
+    "path": "/pcb-assembly/smt-pcb-assembly"
+  },
+  {
+    "text": "LED PCB Assembly Service",
+    "path": "/pcb-assembly/led-pcb-assembly"
+  },
+  {
+    "text": "Through Hole PCB Assembly Service",
+    "path": "/pcb-assembly/through-hole-pcb-assembly-2"
+  },
+  {
+    "text": "SMT Stencil",
+    "path": "/pcb-assembly/pcb-smt-stencil"
+  },
+  {
+    "text": "Component Sourcing Service",
+    "path": "/pcb-assembly/components-purchasing-services"
+  },
+  {
+    "text": "About Us",
+    "path": "/pcb-manufacturer"
+  },
+  {
+    "text": "Why Buy PCB From Us",
+    "path": "/pcb-manufacturer/why-us"
+  },
+  {
+    "text": "PCB Factory",
+    "path": "/pcb-manufacturer/pcb-factory"
+  },
+  {
+    "text": "Contact Us",
+    "path": "/contact"
+  },
+  {
+    "text": "Capabilities",
+    "path": "/technical-capabilities"
+  }
+]

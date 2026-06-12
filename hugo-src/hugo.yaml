@@ -1,0 +1,20 @@
+baseURL: "https://xfpcb.com/"
+languageCode: "en"
+title: "XingFeng PCB"
+
+disableKinds:
+  - taxonomy
+  - term
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  web3formsAccessKey: "40f0bc17-2a5a-45e0-85cf-99aa9d8b06df"
+  defaultDescription: "High-precision PCB manufacturing and assembly in China for prototypes, multilayer PCBs, and mass production."
+  defaultKeywords: "pcb manufacturing, pcb board manufacturer, pcba manufacturing, multilayer pcb, China PCB factory"
+  defaultStyles:
+    - "/css/style.css"
+    - "/css/about.css"

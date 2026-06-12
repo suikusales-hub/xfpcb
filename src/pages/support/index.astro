@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+title="Technical Support for PCB and PCBA Projects | XingFeng PCB"
+description="Get technical support from XFPCB for PCB fabrication, multilayer PCB, high-layer-count PCB, PCBA manufacturing, BOM review, DFM questions, and quote preparation."
+canonical="https://xfpcb.com/support/"
+  cssExtra={['/css/about.css', '/css/info-pages.css']}
+>
+  <main>
+<section class="info-hero">
+            <div class="info-wrap">
+                <div class="info-kicker">Engineering support</div>
+                <h1>Technical Support for PCB Fabrication and PCBA Manufacturing</h1>
+                <p>Send XFPCB the right information at the beginning of your project and we can respond faster with clearer DFM, BOM, assembly, and quotation feedback.</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-wrap support-grid">
+                <div>
+                    <h2>How XFPCB Can Help</h2>
+                    <p>Our support process is designed for engineers, sourcing teams, product companies, and electronics manufacturers who need practical help before placing a PCB or PCBA order. We can review fabrication files, clarify stackup questions, check assembly requirements, discuss component sourcing, and help you prepare a complete request for quotation.</p>
+                    <p>Support is most effective when your files are complete. For bare PCB projects, include Gerber files, drill files, board thickness, copper weight, material preference, surface finish, quantity, and lead-time target. For PCBA projects, also include a BOM, pick-and-place file, assembly drawing, component sourcing preference, testing requirements, and any firmware or programming notes.</p>
+                    <div class="info-card-grid">
+                        <article class="info-card">
+                            <h3>PCB Fabrication</h3>
+                            <p>Layer count, stackup, impedance, material, surface finish, copper weight, drill tolerance, and high-layer-count questions.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>PCBA Support</h3>
+                            <p>BOM review, component sourcing, SMT/THT assembly, BGA/QFN inspection, functional testing, and production preparation.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>Quote Preparation</h3>
+                            <p>Quantity, lead time, delivery terms, confirmed technical requirements, repeat production needs, and documentation requirements.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <form class="support-form" action="https://api.web3forms.com/submit" method="POST">
+                    <h2>Request Support</h2>
+                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+                    <input type="hidden" name="honeypot" style="display:none;">
+                    <input type="hidden" name="page_url" value="https://xfpcb.com/support/">
+                    <input type="hidden" name="page_path" value="/support/">
+                    <input type="hidden" name="page_title" value="Technical Support">
+                    <input type="hidden" name="site_host" value="xfpcb.com">
+                    <input type="hidden" name="subject" value="Technical Support Request from XFPCB Website">
+                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
+
+                    <label for="name">Name / Company *</label>
+                    <input id="name" type="text" name="name" autocomplete="name" required>
+
+                    <label for="email">Work Email *</label>
+                    <input id="email" type="email" name="email" autocomplete="email" required>
+
+                    <label for="support_type">Support Type *</label>
+                    <select id="support_type" name="support_type" required>
+                        <option value="">Select support type</option>
+                        <option value="pcb_fabrication">PCB fabrication quote</option>
+                        <option value="multilayer_hdi">Multilayer / HDI review</option>
+                        <option value="pcba">PCBA manufacturing</option>
+                        <option value="bom_sourcing">BOM and component sourcing</option>
+                        <option value="quality_testing">Quality or testing question</option>
+                    </select>
+
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Layer count, quantity, board size, material, BOM status, assembly needs, testing requirements, target lead time..." required></textarea>
+
+                    <button type="submit">Send Support Request</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="info-section tight">
+            <div class="info-wrap">
+                <h2>Checklist Before You Contact Us</h2>
+                <div class="info-table-wrap">
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>Project Type</th>
+                                <th>Files and Details to Prepare</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bare PCB fabrication</td>
+                                <td>Gerber files, drill files, layer count, thickness, copper weight, material, surface finish, solder mask color, quantity, and delivery target.</td>
+                            </tr>
+                            <tr>
+                                <td>Multilayer or HDI PCB</td>
+                                <td>Stackup, impedance requirements, blind/buried via structure, BGA pitch, minimum trace/space, material family, and inspection expectations.</td>
+                            </tr>
+                            <tr>
+                                <td>PCBA manufacturing</td>
+                                <td>Gerber files, BOM, pick-and-place file, assembly drawing, DNP list, component sourcing rules, test method, firmware notes, and packaging needs.</td>
+                            </tr>
+                            <tr>
+                                <td>Repeat production</td>
+                                <td>Previous order information, revision change notes, target annual volume, cost target, quality history, and any approved vendor list.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info-note">If you are unsure which files are needed, start with your Gerber files and BOM. Our team can tell you what is missing before the quotation becomes final.</div>
+            </div>
+        </section>
+  </main>
+</BaseLayout>

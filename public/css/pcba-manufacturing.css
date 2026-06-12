@@ -1,0 +1,477 @@
+.pcba-hero {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background-image:
+        linear-gradient(90deg, rgba(5, 20, 10, 0.97) 0%, rgba(5, 20, 10, 0.86) 44%, rgba(5, 20, 10, 0.25) 100%),
+        url('/images/pcba-manufacturing-hero.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.22);
+}
+
+.pcba-wrap {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.pcba-hero .pcba-wrap {
+    padding: 88px 0 76px;
+}
+
+.pcba-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #7dd3fc;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.86rem;
+    margin-bottom: 18px;
+}
+
+.pcba-eyebrow::before {
+    content: '';
+    width: 34px;
+    height: 2px;
+    background: #d49559;
+}
+
+.pcba-hero h1 {
+    max-width: 780px;
+    color: #fff;
+    font-size: clamp(2.35rem, 5vw, 4.8rem);
+    line-height: 1.04;
+    margin-bottom: 24px;
+    text-shadow: 0 8px 28px rgba(0, 0, 0, 0.58);
+}
+
+.pcba-hero h1 span {
+    color: var(--pcb-glow);
+}
+
+.pcba-hero h1 .pcba-h1-line {
+    display: block;
+}
+
+.pcba-lead {
+    max-width: 760px;
+    color: #e8f7ed;
+    font-size: 1.16rem;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.pcba-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.pcba-primary,
+.pcba-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 13px 22px;
+    border-radius: 6px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.pcba-primary {
+    background: var(--pcb-glow);
+    color: var(--pcb-dark);
+}
+
+.pcba-secondary {
+    color: #fff;
+    border: 1px solid rgba(125, 211, 252, 0.58);
+    background: rgba(125, 211, 252, 0.08);
+}
+
+.pcba-primary:hover,
+.pcba-secondary:hover {
+    transform: translateY(-2px);
+}
+
+.pcba-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.pcba-tags span {
+    border: 1px solid rgba(212, 149, 89, 0.44);
+    color: #fff6e8;
+    background: rgba(212, 149, 89, 0.12);
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-size: 0.9rem;
+}
+
+.pcba-section {
+    padding: 72px 0;
+}
+
+.pcba-section.tight {
+    padding-top: 36px;
+}
+
+.pcba-section h2 {
+    color: #fff;
+    font-size: clamp(1.85rem, 3.5vw, 3rem);
+    line-height: 1.16;
+    margin-bottom: 20px;
+}
+
+.pcba-section h3 {
+    color: #fff;
+    font-size: 1.45rem;
+    line-height: 1.28;
+    margin: 0 0 14px;
+}
+
+.pcba-section p {
+    color: var(--text-main);
+    font-size: 1.08rem;
+    line-height: 1.82;
+    margin-bottom: 18px;
+}
+
+.pcba-section a {
+    color: #7dd3fc;
+}
+
+.pcba-intro-grid,
+.pcba-card-grid,
+.pcba-two-col,
+.pcba-quote-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.pcba-intro-grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+    align-items: start;
+}
+
+.pcba-panel,
+.pcba-card,
+.pcba-step,
+.pcba-check-item {
+    border: 1px solid rgba(26, 66, 37, 0.95);
+    background: linear-gradient(145deg, rgba(26, 66, 37, 0.32), rgba(5, 20, 10, 0.86));
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.pcba-list,
+.pcba-plain-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pcba-list li,
+.pcba-plain-list li {
+    position: relative;
+    padding-left: 24px;
+    color: var(--text-main);
+    line-height: 1.68;
+    margin-bottom: 14px;
+}
+
+.pcba-list li::before,
+.pcba-plain-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.73em;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #d49559;
+    box-shadow: 0 0 12px rgba(212, 149, 89, 0.45);
+}
+
+.pcba-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pcba-card p {
+    font-size: 1rem;
+}
+
+.pcba-figure {
+    margin: 38px 0 10px;
+}
+
+.pcba-figure img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(26, 66, 37, 0.95);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
+}
+
+.pcba-figure figcaption {
+    color: #9bb7a5;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-top: 10px;
+}
+
+.pcba-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pcba-process {
+    counter-reset: step;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 26px;
+}
+
+.pcba-step {
+    counter-increment: step;
+    position: relative;
+}
+
+.pcba-step::before {
+    content: counter(step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(125, 211, 252, 0.14);
+    border: 1px solid rgba(125, 211, 252, 0.55);
+    color: #7dd3fc;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.pcba-table-wrap {
+    overflow-x: auto;
+    border: 1px solid rgba(26, 66, 37, 0.95);
+    border-radius: 8px;
+    background: rgba(5, 20, 10, 0.82);
+    margin-top: 28px;
+}
+
+.pcba-table {
+    width: 100%;
+    min-width: 840px;
+    border-collapse: collapse;
+}
+
+.pcba-table th,
+.pcba-table td {
+    padding: 17px 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(26, 66, 37, 0.92);
+    color: var(--text-main);
+    line-height: 1.62;
+    vertical-align: top;
+}
+
+.pcba-table th {
+    background: rgba(26, 66, 37, 0.86);
+    color: #fff;
+}
+
+.pcba-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.pcba-quote-band {
+    background:
+        linear-gradient(135deg, rgba(26, 66, 37, 0.54), rgba(5, 20, 10, 0.94)),
+        radial-gradient(circle at 85% 20%, rgba(125, 211, 252, 0.18), transparent 28%);
+    border-top: 1px solid rgba(0, 255, 65, 0.18);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.18);
+}
+
+.pcba-quote-grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+    align-items: start;
+}
+
+.pcba-form {
+    border: 1px solid rgba(0, 255, 65, 0.38);
+    background: rgba(5, 20, 10, 0.88);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.pcba-form label {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pcba-form input,
+.pcba-form textarea,
+.pcba-form select {
+    width: 100%;
+    border: 1px solid rgba(26, 66, 37, 0.95);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    padding: 12px 13px;
+    margin-bottom: 16px;
+    font: inherit;
+}
+
+.pcba-form select option {
+    color: #05140a;
+}
+
+.pcba-form input:focus,
+.pcba-form textarea:focus,
+.pcba-form select:focus {
+    outline: none;
+    border-color: var(--pcb-glow);
+    box-shadow: 0 0 0 3px rgba(0, 255, 65, 0.12);
+}
+
+.pcba-form button {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: var(--pcb-glow);
+    color: var(--pcb-dark);
+    font-weight: 900;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pcba-faq details {
+    border: 1px solid rgba(26, 66, 37, 0.95);
+    border-radius: 8px;
+    padding: 0;
+    margin-bottom: 16px;
+    background: rgba(5, 20, 10, 0.74);
+}
+
+.pcba-faq summary {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.12rem;
+    font-weight: 800;
+    padding: 20px 22px;
+}
+
+.pcba-faq details[open] summary {
+    color: var(--pcb-glow);
+}
+
+.pcba-faq details p {
+    padding: 0 22px 22px;
+    margin: 0;
+}
+
+@media (max-width: 960px) {
+    .pcba-hero {
+        min-height: auto;
+        background-position: 62% center;
+    }
+
+    .pcba-hero h1 {
+        font-size: clamp(1.8rem, 5.6vw, 2.35rem);
+        line-height: 1.15;
+        width: 520px;
+        max-width: calc(100vw - 28px);
+        overflow-wrap: anywhere;
+    }
+
+    .pcba-lead,
+    .pcba-actions,
+    .pcba-tags {
+        width: 520px;
+        max-width: calc(100vw - 28px);
+    }
+
+    .pcba-lead {
+        overflow-wrap: anywhere;
+    }
+
+    .pcba-intro-grid,
+    .pcba-card-grid,
+    .pcba-two-col,
+    .pcba-quote-grid,
+    .pcba-process {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .pcba-wrap {
+        width: min(calc(100% - 28px), 1120px);
+    }
+
+    .pcba-hero .pcba-wrap {
+        padding: 68px 0 58px;
+    }
+
+    .pcba-hero h1 {
+        font-size: clamp(1.62rem, 7vw, 2rem);
+        width: calc(100vw - 28px);
+        max-width: calc(100vw - 28px);
+        overflow-wrap: anywhere;
+    }
+
+    .pcba-lead {
+        font-size: 1rem;
+        line-height: 1.72;
+        width: 340px;
+        max-width: calc(100vw - 28px);
+        overflow-wrap: anywhere;
+    }
+
+    .pcba-actions,
+    .pcba-tags {
+        width: 340px;
+        max-width: calc(100vw - 28px);
+    }
+
+    .pcba-section h2 {
+        overflow-wrap: anywhere;
+    }
+
+    .pcba-actions {
+        flex-direction: column;
+    }
+
+    .pcba-primary,
+    .pcba-secondary {
+        width: 100%;
+    }
+
+    .pcba-section {
+        padding: 52px 0;
+    }
+
+    .pcba-panel,
+    .pcba-card,
+    .pcba-step,
+    .pcba-check-item,
+    .pcba-form {
+        padding: 20px;
+    }
+}

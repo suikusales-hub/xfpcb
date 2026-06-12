@@ -1,0 +1,88 @@
+{
+  "sourceUrl": "https://www.pcbelec.com/pcb-board-testing-and-inspection/x-ray-inspection-in-pcb-assembly",
+  "fetchedAt": "2026-05-28T05:32:00.782Z",
+  "title": "X-ray Inspection in PCB Assembly - JHYPCB",
+  "metaDescription": "This guide introduces X-ray inspection technology for PCB assembly, analyzing its principles, capabilities, limitations, and comparison to AOI. Helps better understand proper applications of X-ray in detecting assembly defects.",
+  "h1": "X-ray Inspection in PCB Assembly",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "X-ray Inspection in PCB Assembly"
+    },
+    {
+      "tag": "h2",
+      "text": "What is X-ray Inspection in PCB Manufacturing?"
+    },
+    {
+      "tag": "h2",
+      "text": "X-Ray Inspection Principle"
+    },
+    {
+      "tag": "h2",
+      "text": "How Does PCB X-ray Inspection Work?"
+    },
+    {
+      "tag": "h2",
+      "text": "Automatic X-ray Inspection Equipment"
+    },
+    {
+      "tag": "h2",
+      "text": "Applications of X-ray Inspection in PCBA"
+    },
+    {
+      "tag": "h2",
+      "text": "AXI Vs. AOI PCB Inspection"
+    },
+    {
+      "tag": "h2",
+      "text": "Conclusion"
+    },
+    {
+      "tag": "h3",
+      "text": "2D X-ray Transmission system:"
+    },
+    {
+      "tag": "h3",
+      "text": "3D X-ray Transmission system:"
+    },
+    {
+      "tag": "h3",
+      "text": "Application of X-ray Inspection in PCB Fabrication and assembly"
+    }
+  ],
+  "paragraphs": [
+    "JHYPCB is a reliable PCB manufacturer in China and offers rapid PCB prototype service for quick-turn PCB fabrication at high quality and low cost. We can prototype your PCB within 3-7 days.",
+    "JHYPCB offers full feature PCB manufacturing services with high reliability to be compatible with your requirement. PCB fabrication services include rigid FR4 PCB, Flexible PCB, Rigid-flex PCB, HDI PCB, High-Frequency PCB, Rogers PCB, Multilayer PCB, Heavy Copper PCB, etc.",
+    "Full turnkey PCB assembly services in China. JHYPCB specializes in prototype PCB assembly, quick turn PCB assembly, and low-to-high volume PCB assembly services with production capabilities.",
+    "We are a leading PCB manufacturing & PCB assembly manufacturer and supplier in China. We have over ten years of experience in custom PCB fabrication and assembly with advanced PCB technology, high-quality standards & RoHS compliance.",
+    "A full-service electronic manufacturing company headquartered in China specializes in printed circuit board manufacturing and assembly services. We will provide a full range of technical support and services for the smooth progress of your project.",
+    "Home Services Projects X-ray Inspection in PCB Assembly The Importance of X-ray Inspection in PCBA",
+    "PCB X-ray inspection is one of the breakthroughs in manufacturing. It allows designers and engineers to detect defects. The defects could be in several parts of their components like BGA, soldering, and CSP defects.",
+    "In recent years, area array packages including BGA and QFN, flip chip and CSP are widely used in various fields such as industrial control, communication, military, aviation, etc., making the solder joints hidden under the package. This fact prevents traditional inspection equipment from playing its perfect role in PCB inspection.",
+    "In addition, due to the appearance of surface mount technology (SMT) , which makes packages and leads smaller, traditional inspection methods (including optics, ultrasound, and thermal imaging) are not sufficient because PCBs have higher density and their solder joints Hidden, loopholes or blind holes .",
+    "In addition, with the increasing miniaturization of semiconductor component packages, the trend of miniaturization of current and future components cannot be ignored while considering X-ray inspection systems. Compared with other inspection methods, X-rays can penetrate into the inner packaging and check the quality of the solder joints.",
+    "During the mass production of various PCB prototypes and complex Printed circuit boards, x-ray inspection comes in. With this technology, PCB manufacturers can supply PCB components of high quality to customers.",
+    "What makes x-ray find application in an industrial setting is the high penetrating power. An X-ray can penetrate a substance that visible light cannot detect."
+  ],
+  "images": [
+    "https://www.pcbelec.com/wp-content/uploads/2021/09/Low-cost-PCB-prototype-fabrication-service-300x200.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Custom-PCB-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Multilayer-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Advanced-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Rigid-Flex-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Heavy-Copper-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Quick-Turn-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/High-Volume-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/LED-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2026/05/Components-Purchasing-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Stencil.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/PCB-X-ray-Inspection-Principle.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/A-general-X-ray-inspection-image.png",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/PCB-X-ray-Inspection.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/Automatic-X-RAY-Inspection-system-For-PCB-Inspection.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/The-2-D-x-ray-system-displays-the-entire-components-2D-image-from-both-sides-of-the-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/Application-of-X-ray-Inspection.jpg"
+  ],
+  "status": 200
+}

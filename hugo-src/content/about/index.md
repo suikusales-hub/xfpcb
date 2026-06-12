@@ -1,0 +1,186 @@
+﻿---
+title: 'About Us | XingFeng PCB - Excellence in Electronic Circuit Solutions'
+seoTitle: 'About Us | XingFeng PCB - Excellence in Electronic Circuit Solutions'
+description: 'Learn about XingFeng PCB, a premier global leader in printed circuit board (PCB) manufacturing and PCBA assembly in Shenzhen, China. Discover our capabilities, mission, and commitment to quality.'
+keywords: 'about XingFeng PCB, PCB manufacturer, PCBA assembly company, China PCB factory, printed circuit board solutions, electronic circuit manufacturing'
+styles:
+  - '/css/style.css'
+  - '/css/about.css'
+---
+
+<!-- Hero Section -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1>About XingFeng PCB</h1>
+                <p>Excellence in Electronic Circuit Solutions</p>
+            </div>
+        </section>
+
+        <!-- Corporate Overview -->
+        <section class="container">
+            <div class="overview-grid">
+                <div>
+                    <h2 class="section-title">A Legacy of Precision and Innovation</h2>
+                    <p class="text-content">
+                        Founded in the heart of China's technological hub, <strong>XingFeng PCB</strong> has established itself as a premier global leader in the printed circuit board (PCB) manufacturing and assembly industry. With our state-of-the-art facility located at 5th Floor, Building A, Block 6, Fujiu Industrial Zone, Shajing Street, Shenzhen, Guangdong Province, we are strategically positioned to serve the rapidly evolving electronics market.
+                    </p>
+                    <p class="text-content">
+                        Our journey began with a commitment to providing high-quality, reliable, and cost-effective circuit board solutions to engineers and businesses worldwide. Today, we are recognized as a top-tier one-stop PCBA service provider, combining decades of technical expertise with advanced automated production capabilities.
+                    </p>
+                    <p class="text-content">
+                        At XingFeng PCB, we understand that the printed circuit board is the backbone of every electronic device. Whether it's a simple consumer gadget or a complex aerospace control system, the quality of the PCB directly impacts the performance and longevity of the final product. That's why we have invested heavily in cutting-edge manufacturing equipment and a rigorous quality management system.
+                    </p>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <span class="stat-num">300+</span>
+                        <span class="stat-label">Dedicated Professionals</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">80+</span>
+                        <span class="stat-label">Countries Served</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">Senior R&D Engineers</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">40</span>
+                        <span class="stat-label">Max Layers Capability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Core Values -->
+        <section class="bg-darker">
+            <div class="container">
+                <h2 class="section-title center">Our Mission & Core Values</h2>
+                <p class="text-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <strong>Mission:</strong> "To empower global innovation through superior electronic circuit solutions." <br><br>
+                    We believe that by providing high-quality PCBs and seamless assembly services, we can help our clients bring their revolutionary ideas to life faster and more efficiently. Our vision is to become the world's most preferred electronic circuit intelligent manufacturer.
+                </p>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <svg class="value-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        <h3>Quality First</h3>
+                        <p class="text-content">We never compromise on the integrity of our products. Every PCB undergoes multiple stages of inspection to ensure it meets international standards.</p>
+                    </div>
+                    <div class="value-card">
+                        <svg class="value-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                        <h3>Innovation</h3>
+                        <p class="text-content">We embrace new technologies and processes to solve the most complex design challenges our clients face.</p>
+                    </div>
+                    <div class="value-card">
+                        <svg class="value-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/></svg>
+                        <h3>Integrity</h3>
+                        <p class="text-content">We build long-term relationships based on honesty, transparent pricing, and reliable delivery schedules.</p>
+                    </div>
+                    <div class="value-card">
+                        <svg class="value-icon" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        <h3>Customer Success</h3>
+                        <p class="text-content">Your goals are our goals. We provide proactive DFM (Design for Manufacturing) feedback to optimize your designs and reduce costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities & PCBA -->
+        <section class="container">
+            <div class="overview-grid">
+                <div>
+                    <h2 class="section-title">Comprehensive Capabilities</h2>
+                    <p class="text-content">
+                        XingFeng PCB offers a vast range of manufacturing capabilities to accommodate the diverse needs of our global clientele. Our expertise spans from standard FR-4 boards to highly specialized technologies.
+                    </p>
+                    <ul class="capabilities-list">
+                        <li><strong>HDI Technology:</strong> Blind and buried vias, micro-vias (1+N+1, 2+N+2), and staggered vias for high-density designs.</li>
+                        <li><strong>Flexible and Rigid-Flex PCBs:</strong> Durable and lightweight solutions for foldable electronics and compact medical devices.</li>
+                        <li><strong>Special Materials:</strong> High-TG FR-4, Halogen-free materials, Teflon, and ceramic substrates for extreme environments.</li>
+                        <li><strong>Surface Finishes:</strong> HASL (Lead-free), ENIG, Immersion Silver, OSP, and Hard Gold plating.</li>
+                        <li><strong>Fine Line/Space:</strong> Capabilities down to 3mil/3mil (0.075mm/0.075mm) for precision circuits.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="section-title">One-Stop PCBA Solution</h2>
+                    <p class="text-content">
+                        In today's competitive market, speed to market is critical. XingFeng PCB provides a true one-stop PCBA (Printed Circuit Board Assembly) solution, allowing our clients to manage their entire project through a single, reliable partner.
+                    </p>
+                    <p class="text-content">
+                        Our integrated service model includes PCB fabrication, component sourcing, SMT and through-hole assembly, and functional testing. By consolidating these steps, we eliminate the logistical headaches of dealing with multiple vendors and significantly reduce the overall turnaround time.
+                    </p>
+                    <p class="text-content">
+                        Our assembly facility features high-speed SMT lines capable of handling 01005 components, BGA, QFN, and fine-pitch ICs with extreme precision. Every assembly is subjected to AOI (Automated Optical Inspection) and X-Ray inspection.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality & Global Partnership -->
+        <section class="bg-darker">
+            <div class="container">
+                <div class="overview-grid">
+                    <div>
+                        <h2 class="section-title">Quality Assurance</h2>
+                        <p class="text-content">
+                            Quality is not just a buzzword at XingFeng PCB; it is a fundamental part of our DNA. Our facility is <strong>ISO 9001:2015 certified</strong>, and our products are <strong>UL recognized</strong>. We adhere to IPC-A-600 Class 2 and Class 3 standards, ensuring that every board we produce meets the highest levels of reliability and workmanship.
+                        </p>
+                        <p class="text-content">
+                            Our commitment to quality extends to our documentation and traceability. We maintain detailed records of all production batches, allowing for full traceability of materials and processes. We only use substrates and chemicals from industry-leading suppliers like Shengyi, Kingboard, Rogers, and Taiyo.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="section-title">Global Partnership</h2>
+                        <p class="text-content">
+                            While our roots are in Shenzhen, our vision is global. XingFeng PCB has built a robust international sales and support network to serve our clients across the globe. We offer 24/7 customer service, with dedicated account managers who are fluent in English and have deep technical knowledge.
+                        </p>
+                        <p class="text-content">
+                            We offer flexible shipping options through major international couriers like DHL, FedEx, and UPS, ensuring fast and reliable delivery to your doorstep. Join the thousands of companies that have discovered the XingFeng PCB advantage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="container">
+            <h2 class="section-title center">Connect with XingFeng PCB Today</h2>
+            <p class="text-content center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                We are always ready to discuss your next project. Whether you have a ready-to-print design or just an initial concept, our team is here to provide you with a competitive quote and expert technical support.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <div class="contact-details">
+                        <h4>Factory Address</h4>
+                        <p>5th Floor, Building A, Block 6, Fujiu Industrial Zone, Shajing Street, Shenzhen, Guangdong Province, China</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <div class="contact-details">
+                        <h4>Email Us</h4>
+                        <a href="/cdn-cgi/l/email-protection#1e777078715e66786e7d7c307d7173"><span class="__cf_email__" data-cfemail="e58c8b838aa59d83958687cb868a88">[email&#160;protected]</span></a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <div class="contact-details">
+                        <h4>Phone / WhatsApp</h4>
+                        <a href="tel:+8613510098136">+86-13510098136</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+                    <div class="contact-details">
+                        <h4>Official Website</h4>
+                        <a href="https://xfpcb.com" target="_blank">https://xfpcb.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>

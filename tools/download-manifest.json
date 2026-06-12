@@ -1,0 +1,380 @@
+﻿{
+    "base_url":  "https://xfpcb.com/",
+    "downloaded_at":  "2026-05-26T09:29:50",
+    "output_dir":  "C:\\Users\\Administrator\\Documents\\XFPCB\\site",
+    "total_items":  46,
+    "saved_items":  35,
+    "skipped_items":  11,
+    "failed_items":  0,
+    "localized_same_origin_assets":  true,
+    "items":  [
+                  {
+                      "url":  "https://xfpcb.com/",
+                      "status":  200,
+                      "saved_to":  "index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  18962,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/robots.txt",
+                      "status":  200,
+                      "saved_to":  "robots.txt",
+                      "content_type":  "text/plain; charset=utf-8",
+                      "bytes":  24,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/sitemap.xml",
+                      "status":  200,
+                      "saved_to":  "sitemap.xml",
+                      "content_type":  "text/xml; charset=utf-8",
+                      "bytes":  3951,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/css/style.css",
+                      "status":  200,
+                      "saved_to":  "css\\style.css",
+                      "content_type":  "text/css; charset=utf-8",
+                      "bytes":  836,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/css/about.css",
+                      "status":  200,
+                      "saved_to":  "css\\about.css",
+                      "content_type":  "text/css; charset=utf-8",
+                      "bytes":  5512,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/css/index.css",
+                      "status":  200,
+                      "saved_to":  "css\\index.css",
+                      "content_type":  "text/css; charset=utf-8",
+                      "bytes":  10163,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/about/",
+                      "status":  200,
+                      "saved_to":  "about\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  18061,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/",
+                      "status":  200,
+                      "saved_to":  "products\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  9343,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/1-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\1-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  10995,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/2-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\2-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  13030,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/4-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\4-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  12728,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/6-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\6-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  14694,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/8-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\8-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  13785,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/10-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\10-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  12734,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/12-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\12-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  11891,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/14-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\14-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  13465,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/16-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\16-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  19615,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/20-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\20-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  21372,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/24-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\24-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  20283,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/32-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\32-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  21823,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/40-layer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\40-layer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  20581,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/multilayer-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\multilayer-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  21138,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/high-layer-count-pcb/",
+                      "status":  200,
+                      "saved_to":  "products\\high-layer-count-pcb\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  21087,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/privacy/",
+                      "status":  200,
+                      "saved_to":  "privacy\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  18962,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/terms/",
+                      "status":  200,
+                      "saved_to":  "terms\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  18962,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/support/",
+                      "status":  200,
+                      "saved_to":  "support\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  18962,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/sitemap/",
+                      "status":  200,
+                      "saved_to":  "sitemap\\index.html",
+                      "content_type":  "text/html; charset=utf-8",
+                      "bytes":  18962,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/js/main.js",
+                      "status":  200,
+                      "saved_to":  "js\\main.js",
+                      "content_type":  "text/javascript; charset=utf-8",
+                      "bytes":  523,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/images/xf-logo.png",
+                      "status":  200,
+                      "saved_to":  "images\\xf-logo.png",
+                      "content_type":  "image/png",
+                      "bytes":  126042,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/cdn-cgi/l/email-protection",
+                      "status":  404,
+                      "saved_to":  null,
+                      "content_type":  "text/html",
+                      "bytes":  0,
+                      "note":  "Skipped non-success response"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+                      "status":  200,
+                      "saved_to":  "cdn-cgi\\scripts\\5c5dd728\\cloudflare-static\\email-decode.min.js",
+                      "content_type":  "application/javascript",
+                      "bytes":  1239,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/css/products.css",
+                      "status":  200,
+                      "saved_to":  "css\\products.css",
+                      "content_type":  "text/css; charset=utf-8",
+                      "bytes":  17486,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/images/675x542pcb.jpg",
+                      "status":  200,
+                      "saved_to":  "images\\675x542pcb.jpg",
+                      "content_type":  "image/jpeg",
+                      "bytes":  109515,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/4-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/6-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/8-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/10-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/16-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/20-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/40-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/12-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/14-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/products/24-layer-pcb",
+                      "status":  308,
+                      "saved_to":  null,
+                      "content_type":  "",
+                      "bytes":  0,
+                      "note":  "Redirect queued"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/js/components/header.js",
+                      "status":  200,
+                      "saved_to":  "js\\components\\header.js",
+                      "content_type":  "text/javascript; charset=utf-8",
+                      "bytes":  14987,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/js/components/footer.js",
+                      "status":  200,
+                      "saved_to":  "js\\components\\footer.js",
+                      "content_type":  "text/javascript; charset=utf-8",
+                      "bytes":  5518,
+                      "note":  "Saved"
+                  },
+                  {
+                      "url":  "https://xfpcb.com/js/components/floating-form.js",
+                      "status":  200,
+                      "saved_to":  "js\\components\\floating-form.js",
+                      "content_type":  "text/javascript; charset=utf-8",
+                      "bytes":  7976,
+                      "note":  "Saved"
+                  }
+              ]
+}

@@ -1,0 +1,284 @@
+/* css/about.css */
+
+/* 页面通用容器与排版 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--pcb-glow);
+    box-shadow: 0 0 10px var(--pcb-glow);
+}
+
+.section-title.center {
+    text-align: center;
+    display: block;
+}
+
+.section-title.center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.bg-darker {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid var(--pcb-trace);
+    border-bottom: 1px solid var(--pcb-trace);
+}
+
+/* 顶部 Hero 区域 */
+.about-hero {
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    background-color: var(--pcb-dark);
+    /* 纯 CSS 绘制科技感网格背景 */
+    background-image: 
+        linear-gradient(rgba(26, 66, 37, 0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26, 66, 37, 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
+    border-bottom: 1px solid var(--pcb-trace);
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, var(--pcb-dark) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+    letter-spacing: 2px;
+}
+
+.about-hero p {
+    font-size: 1.5rem;
+    color: var(--pcb-glow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Overview 区域的统计数据块 */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-box {
+    background: rgba(26, 66, 37, 0.2);
+    border: 1px solid var(--pcb-trace);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--pcb-glow);
+    box-shadow: 0 5px 20px rgba(0, 255, 65, 0.15);
+}
+
+.stat-num {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--pcb-glow);
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 核心价值观卡片 */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    background: linear-gradient(145deg, rgba(26, 66, 37, 0.4), rgba(5, 20, 10, 0.8));
+    border: 1px solid var(--pcb-trace);
+    padding: 40px 30px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--pcb-glow);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 255, 65, 0.3);
+}
+
+.value-card:hover::before {
+    transform: scaleX(1);
+}
+
+.value-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    fill: var(--pcb-glow);
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* 制造能力与列表 */
+.capabilities-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.capabilities-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.capabilities-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--pcb-glow);
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.capabilities-list strong {
+    color: #fff;
+}
+
+/* 联系信息区域 */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(26, 66, 37, 0.2);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--pcb-trace);
+}
+
+.contact-item svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--pcb-glow);
+    flex-shrink: 0;
+}
+
+.contact-details h4 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.contact-details p, .contact-details a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: var(--pcb-glow);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+    .about-hero p {
+        font-size: 1.2rem;
+    }
+}

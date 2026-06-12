@@ -1,0 +1,65 @@
+---
+// BaseLayout.astro — shared layout for all pages
+// Provides: <head> (title, meta, CSS), <body> (Header, slot, Footer, scripts)
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
+  keywords?: string;
+  cssExtra?: string[];  // extra CSS files to load
+  bodyClass?: string;
+}
+
+const { 
+  title, 
+  description, 
+  canonical, 
+  ogTitle, 
+  ogDescription, 
+  ogImage,
+  ogUrl,
+  keywords,
+  cssExtra = [],
+  bodyClass,
+} = Astro.props;
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+  {keywords && <meta name="keywords" content={keywords} />}
+  {canonical && <link rel="canonical" href={canonical} />}
+  {ogTitle && <meta property="og:title" content={ogTitle} />}
+  {ogDescription && <meta property="og:description" content={ogDescription} />}
+  {ogImage && <meta property="og:image" content={ogImage} />}
+  {ogUrl && <meta property="og:url" content={ogUrl} />}
+  {ogTitle && <meta property="og:type" content="website" />}
+  
+  <link rel="stylesheet" href="/css/style.css">
+  {cssExtra.map(css => <link rel="stylesheet" href={css} />)}
+  <link rel="icon" type="image/png" href="/images/xf-logo.png">
+  <link rel="apple-touch-icon" href="/images/xf-logo.png">
+</head>
+<body class={bodyClass || ''}>
+  <Header />
+
+  <slot />
+
+  <Footer />
+  <floating-form></floating-form>
+
+  <script type="module" src="/js/main.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"d1d027d07f4d422e808a4feb1adccb99","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

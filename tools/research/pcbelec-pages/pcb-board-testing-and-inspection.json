@@ -1,0 +1,164 @@
+{
+  "sourceUrl": "https://www.pcbelec.com/pcb-board-testing-and-inspection",
+  "fetchedAt": "2026-05-28T05:31:45.105Z",
+  "title": "PCB & PCBA Testing and Inspection Methods - JHYPCB",
+  "metaDescription": "This guide introduces PCB and PCBA testing and inspection methods like ICT, flying probes, AOI, X-ray, boundary scans, functional tests, and more. Helps understand the principles, defect coverage, and pros/cons of each method.",
+  "h1": "Testing & Inspection Methods for PCB and PCBA",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Testing & Inspection Methods for PCB and PCBA"
+    },
+    {
+      "tag": "h2",
+      "text": "What is PCB Testing?"
+    },
+    {
+      "tag": "h2",
+      "text": "What is the PCB test point?"
+    },
+    {
+      "tag": "h2",
+      "text": "Why is PCB Testing and Inspection Necessary?"
+    },
+    {
+      "tag": "h2",
+      "text": "1) The PCB Function Test"
+    },
+    {
+      "tag": "h2",
+      "text": "2) PCB Electrical Characteristic Test"
+    },
+    {
+      "tag": "h2",
+      "text": "3) Reliability Test"
+    },
+    {
+      "tag": "h2",
+      "text": "4) PCB Mechanical Characteristic Test"
+    },
+    {
+      "tag": "h2",
+      "text": "7 Types of PCB Testing and Inspection Methods"
+    },
+    {
+      "tag": "h2",
+      "text": "What is PCBA Test?"
+    },
+    {
+      "tag": "h2",
+      "text": "PCB and PCBA Testing videos"
+    },
+    {
+      "tag": "h3",
+      "text": "DFM Check (Design for Manufacturing)"
+    },
+    {
+      "tag": "h3",
+      "text": "Bare PCB Board Test"
+    },
+    {
+      "tag": "h3",
+      "text": "IN-CIRCUIT TEST"
+    },
+    {
+      "tag": "h3",
+      "text": "Flying Probe Test vs. ICT Testing"
+    },
+    {
+      "tag": "h3",
+      "text": "a) TDR Impedance Test"
+    },
+    {
+      "tag": "h3",
+      "text": "b) Withstand Voltage Test:"
+    },
+    {
+      "tag": "h3",
+      "text": "c) Interlayer (surface) Insulation Resistance:"
+    },
+    {
+      "tag": "h3",
+      "text": "1) PCB Section Analysis- The Most Important Analysis Method in the PCB Industry"
+    },
+    {
+      "tag": "h3",
+      "text": "2) Manual Visual Inspection"
+    },
+    {
+      "tag": "h3",
+      "text": "3) AOI"
+    },
+    {
+      "tag": "h3",
+      "text": "4) X-ray"
+    },
+    {
+      "tag": "h3",
+      "text": "5) Laser Inspection"
+    },
+    {
+      "tag": "h3",
+      "text": "6) Quadratic Element Dimensional Measurement"
+    },
+    {
+      "tag": "h3",
+      "text": "7) Hi-Potential Testing (Hi-Pot PCB Testing)"
+    },
+    {
+      "tag": "h3",
+      "text": "Recommended PCB Fabrication Services"
+    },
+    {
+      "tag": "h3",
+      "text": "What is the PCBA Test Principle?"
+    },
+    {
+      "tag": "h3",
+      "text": "What are the functional test methods of PCBA?"
+    },
+    {
+      "tag": "h3",
+      "text": "10 Types of PCBA First Article Inspection and Testing Methods"
+    },
+    {
+      "tag": "h3",
+      "text": "Recommended PCB Assembly Services"
+    }
+  ],
+  "paragraphs": [
+    "JHYPCB is a reliable PCB manufacturer in China and offers rapid PCB prototype service for quick-turn PCB fabrication at high quality and low cost. We can prototype your PCB within 3-7 days.",
+    "JHYPCB offers full feature PCB manufacturing services with high reliability to be compatible with your requirement. PCB fabrication services include rigid FR4 PCB, Flexible PCB, Rigid-flex PCB, HDI PCB, High-Frequency PCB, Rogers PCB, Multilayer PCB, Heavy Copper PCB, etc.",
+    "Full turnkey PCB assembly services in China. JHYPCB specializes in prototype PCB assembly, quick turn PCB assembly, and low-to-high volume PCB assembly services with production capabilities.",
+    "We are a leading PCB manufacturing & PCB assembly manufacturer and supplier in China. We have over ten years of experience in custom PCB fabrication and assembly with advanced PCB technology, high-quality standards & RoHS compliance.",
+    "A full-service electronic manufacturing company headquartered in China specializes in printed circuit board manufacturing and assembly services. We will provide a full range of technical support and services for the smooth progress of your project.",
+    "Home Services Projects Testing & Inspection Methods for PCB and PCBA Printed Circuit Board and PCB Assembly Testing: Competence, Acceptance, and Compliance",
+    "PCB testing is the last quality control link in the PCB manufacturing process . Today’s PCBs are smaller and more sophisticated than ever before. With the increasing application of multi-layer PCB, the test method of PCB with a digital multimeter is not feasible. Fortunately, now we have more viable ways to test PCB. Any PCB manufacturer should do an excellent job in PCB testing and inspection before PCB leaves the factory.",
+    "PCB test points simplify and optimize the test process after PCB assembly. By setting test points at the PCB design stage, the subsequent PCB assembly test can be improved.",
+    "To improve production efficiency, we can’t rely on a digital multimeter to test whether each resistance, capacitance, inductance, and IC circuit on PCBA is unblocked, so we use the ICT test method.",
+    "However, ICT uses multiple probes (we call it Bed-of-Nails fixture) to contact all the circuits on the PCB board that need to be tested and detected simultaneously. If these probes directly contact the electronic components or their pins on the PCB, they will likely crush some electronic components. Therefore, intelligent PCB engineers create “test points.”",
+    "When it comes to electronic products, the printed circuit board (PCB) as the carrier of electronic components plays an important part. For any designer or builder to achieve ultimate success, it must perform PCB testing and inspection . Understanding and mastering the testing and inspection methods of printed circuit boards is essential to ensure that the products can work typically. By testing circuit boards, you can minimize significant problems, find smaller errors, save time, and reduce overall costs.",
+    "PCB testing and inspection are mainly used to find problems in the entire PCB manufacturing process and the final PCB assembly process . These tests can also be used on PCB prototypes fabrication or low-volume PCB assembly , which can help identify potential problems in the final product."
+  ],
+  "images": [
+    "https://www.pcbelec.com/wp-content/uploads/2021/09/Low-cost-PCB-prototype-fabrication-service-300x200.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Custom-PCB-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Multilayer-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Advanced-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Rigid-Flex-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Heavy-Copper-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Quick-Turn-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/High-Volume-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/LED-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2026/05/Components-Purchasing-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Stencil.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2021/10/PCB-Testing.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2021/10/PCB-Testing-Point.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/Bare-PCB-Board.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/PCB-Sections.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2021/10/Cheap-PCB-Prototype.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2021/09/4-Layer-PCB.jpg"
+  ],
+  "status": 200
+}

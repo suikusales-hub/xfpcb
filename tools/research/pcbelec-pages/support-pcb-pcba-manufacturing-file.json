@@ -1,0 +1,124 @@
+{
+  "sourceUrl": "https://www.pcbelec.com/support/pcb-pcba-manufacturing-file",
+  "fetchedAt": "2026-05-28T05:33:22.375Z",
+  "title": "PCB & PCBA Manufacturing File - PCB Manufacturer - JHYPCB",
+  "metaDescription": "PCB & PCBA Manufacturing File Please provide detailed and accurate Gerber files and BOM lists required for PCB manufacturing and assembly, as well as other detailed parameter information. What Files Are Used For PCB Manufacturing And Assembly? The emergence of printed circuit board technology has managed to revolutionize the electronics&hellip;",
+  "h1": "PCB & PCBA Manufacturing File",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "PCB & PCBA Manufacturing File"
+    },
+    {
+      "tag": "h2",
+      "text": "What Files Are Used For PCB Manufacturing And Assembly?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Files Are Needed For PCB Manufacturing?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Files Are Needed For PCB Assembly?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Files Are Needed For Final Inspection And Test?"
+    },
+    {
+      "tag": "h2",
+      "text": "Final Thoughts"
+    },
+    {
+      "tag": "h3",
+      "text": "What is Gerber File?"
+    },
+    {
+      "tag": "h3",
+      "text": "What Is .BRD File?"
+    },
+    {
+      "tag": "h3",
+      "text": "NC Drill file"
+    },
+    {
+      "tag": "h3",
+      "text": "Other PCB board making information."
+    },
+    {
+      "tag": "h3",
+      "text": "JHYPCB PCB Manufacturing Capability"
+    },
+    {
+      "tag": "h3",
+      "text": "What Is BOM?"
+    },
+    {
+      "tag": "h3",
+      "text": "Example of Bill of Material Form"
+    },
+    {
+      "tag": "h3",
+      "text": "Centroid File"
+    },
+    {
+      "tag": "h3",
+      "text": "Reference Designator"
+    },
+    {
+      "tag": "h3",
+      "text": "Layer"
+    },
+    {
+      "tag": "h3",
+      "text": "Rotation"
+    },
+    {
+      "tag": "h3",
+      "text": "Location"
+    },
+    {
+      "tag": "h3",
+      "text": "The Files Required For PCBA PCB Assembly"
+    },
+    {
+      "tag": "h3",
+      "text": "KLARF File"
+    }
+  ],
+  "paragraphs": [
+    "JHYPCB is a reliable PCB manufacturer in China and offers rapid PCB prototype service for quick-turn PCB fabrication at high quality and low cost. We can prototype your PCB within 3-7 days.",
+    "JHYPCB offers full feature PCB manufacturing services with high reliability to be compatible with your requirement. PCB fabrication services include rigid FR4 PCB, Flexible PCB, Rigid-flex PCB, HDI PCB, High-Frequency PCB, Rogers PCB, Multilayer PCB, Heavy Copper PCB, etc.",
+    "Full turnkey PCB assembly services in China. JHYPCB specializes in prototype PCB assembly, quick turn PCB assembly, and low-to-high volume PCB assembly services with production capabilities.",
+    "We are a leading PCB manufacturing & PCB assembly manufacturer and supplier in China. We have over ten years of experience in custom PCB fabrication and assembly with advanced PCB technology, high-quality standards & RoHS compliance.",
+    "A full-service electronic manufacturing company headquartered in China specializes in printed circuit board manufacturing and assembly services. We will provide a full range of technical support and services for the smooth progress of your project.",
+    "Home Services Projects PCB & PCBA Manufacturing File Please provide detailed and accurate Gerber files and BOM lists required for PCB manufacturing and assembly, as well as other detailed parameter information.",
+    "The emergence of printed circuit board technology has managed to revolutionize the electronics industry. This could be due to its advantages which could be excellent shell life, it is re-workable, compact size and its low cost. Given all of these, it can be said that PCBs have become very popular amongst manufacturers of electronic devices in recent times.",
+    "The truth is that there are some factors that have been responsible for the success experienced by these circuit boards. A typical example is the files used in their manufacturing and assembly . These are data files that contain circuit board designs. This article will be aiming to explain some of the various files that are usually used for such purposes.",
+    "In this section, we will be looking at some of the materials or files that are used during the process of manufacturing PCBs. These could be:",
+    "This is an artwork (2-dimensional) that has the role of dictating the exact position where silkscreen, solder mask , or copper will be placed. It should be noted that just 1 Gerber file can‘t perform all the roles. For instance, if you have one PCB feature (one layer), information about such will be provided by one Gerber file. Therefore, if the board is 2-layered with each side having silkscreen, solder mask and copper, 6 Gerber files will be required.",
+    "It is fair enough to say that the Gerber file is the industry’s de-facto standard. This is due to how it is used in describing images on printed circuit boards. These could be drill data, legend, solder mask, copper layers and more.",
+    "The “ Gerber Job File Editor ” software can be downloaded from Ucamco’s website, and click here to learn more about the Gerber definition."
+  ],
+  "images": [
+    "https://www.pcbelec.com/wp-content/uploads/2021/09/Low-cost-PCB-prototype-fabrication-service-300x200.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Custom-PCB-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Multilayer-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Advanced-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Rigid-Flex-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Heavy-Copper-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Quick-Turn-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/High-Volume-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/LED-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2026/05/Components-Purchasing-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Stencil.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/05/PCB-Gerber-File-1.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/05/PCB-Gerber-File-2.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/05/PCB-Gerber-File-3.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2022/04/BRD-file-example-1024x707.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2022/04/NC-Drilling-File-1024x551.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/05/Example-of-Bom-form-1024x219.png"
+  ],
+  "status": 200
+}

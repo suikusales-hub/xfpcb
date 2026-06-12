@@ -1,0 +1,301 @@
+---
+title: '8 Layer PCB Manufacturer | HDI, High Speed and Controlled Impedance PCB | XFPCB'
+seoTitle: '8 Layer PCB Manufacturer | HDI, High Speed and Controlled Impedance PCB | XFPCB'
+description: 'XFPCB manufactures 8 layer PCB boards for high-speed, HDI, telecom, RF and dense electronics with stackup planning, DFM review and export support.'
+keywords: '8 layer PCB manufacturer, 8 layer PCB stackup, HDI PCB, high speed PCB, controlled impedance PCB, blind buried vias, signal integrity PCB, China PCB factory'
+styles:
+  - '/css/style.css?v=20260602-layer-pages'
+  - '/css/about.css?v=20260602-layer-pages'
+  - '/css/products.css?v=20260602-layer-pages'
+---
+<section class="product-hero layer-hero">
+            <div class="container product-hero-grid">
+                <div class="product-text">
+                    <p class="eyebrow">XFPCB China PCB Manufacturer</p>
+                    <h1>8 Layer PCB Manufacturer for High-Speed and HDI Projects</h1>
+                    <h2>Stackup planning, impedance discussion and dense multilayer fabrication for demanding overseas buyers</h2>
+                    <p class="desc">An 8 layer PCB is selected when routing density, signal integrity, power integrity and component pitch make a lower layer count risky. It is common in telecom hardware, networking equipment, RF modules, high-speed digital products, dense BGA designs and advanced industrial electronics. XFPCB helps procurement and engineering teams turn complex board data into a manufacturable PCB quotation with clear DFM feedback.</p>
+                    <div class="layer-hero-pills">
+                        <span>8 layer stackup</span>
+                        <span>High-speed PCB</span>
+                        <span>HDI options</span>
+                        <span>Controlled impedance</span>
+                    </div>
+                    <div class="layer-hero-actions">
+                        <a href="#quote" class="cta-btn">Request 8-Layer PCB Quote</a>
+                        <a href="/products/" class="layer-secondary-btn">View PCB Products</a>
+                    </div>
+                </div>
+                <div class="product-visual">
+                    <div class="product-image-wrapper layer-image-frame">
+                        <img src="/images/675x542pcb.jpg" alt="XFPCB 8 layer high speed HDI PCB manufacturing">
+                    </div>
+                    <div class="layer-visual-note">
+                        <strong>Buyer focus:</strong> DFM review, stable fabrication, export communication and repeat-order support.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-darker layer-intent-section">
+            <div class="container">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Procurement intent</p>
+                    <h2>What buyers expect when searching for an 8 layer PCB manufacturer</h2>
+                    <p>For 8 layer PCB buyers, the real concern is whether the supplier can discuss HDI needs, high-speed routing, material loss, drill structure, controlled impedance and inspection in a way that reduces the risk of a complex order.</p>
+                </div>
+                <div class="layer-card-grid">
+                    <article class="layer-card">
+                        <span>Signal integrity</span>
+                        <h3>More reference planes for high-speed routes</h3>
+                        <p>Eight layers make it easier to place critical signals near solid reference planes and reduce crosstalk in compact layouts.</p>
+                    </article>
+                    <article class="layer-card">
+                        <span>HDI planning</span>
+                        <h3>Blind, buried and via-in-pad options by project</h3>
+                        <p>Dense BGA escape routing can require advanced via structures. XFPCB reviews these options against cost, yield and lead time before quoting.</p>
+                    </article>
+                    <article class="layer-card">
+                        <span>Material strategy</span>
+                        <h3>FR-4, high Tg and low-loss laminates discussed early</h3>
+                        <p>At higher frequencies, material choice affects loss and consistency. The RFQ should include speed, frequency and impedance requirements when they matter.</p>
+                    </article>
+                    <article class="layer-card">
+                        <span>Procurement risk</span>
+                        <h3>Complex boards need exact communication</h3>
+                        <p>The quote should reflect stackup, drill plan, finish, testing and special acceptance requirements, not only board area.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container layer-content-section">
+            <div class="layer-section-heading">
+                <p class="eyebrow">Manufacturing specification</p>
+                <h2>8-Layer PCB buying guide and RFQ details</h2>
+                <p>For an 8 layer PCB, the manufacturing conversation should start with stackup, via structure and material choice. XFPCB reviews these points so the buyer can understand tradeoffs before approving cost and lead time.</p>
+            </div>
+            <div class="layer-table-wrap">
+                    <table class="layer-spec-table">
+                        <thead>
+                            <tr><th>Complexity driver</th><th>Common buyer requirement</th><th>XFPCB review focus</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>High-speed routing</td><td>PCIe, Ethernet, USB, DDR, LVDS or other controlled routes</td><td>Impedance target, reference plane continuity, trace layer and material behavior.</td></tr>
+                            <tr><td>HDI structure</td><td>Blind vias, buried vias, microvias or via-in-pad where needed</td><td>Sequential lamination, drill feasibility, plating reliability, cost and yield impact.</td></tr>
+                            <tr><td>RF or low-loss need</td><td>Low Dk/Df material, hybrid stackup or special laminate</td><td>Availability, stackup compatibility, price and lead time.</td></tr>
+                            <tr><td>BGA escape</td><td>Fine pitch packages and dense component placement</td><td>Via size, pad design, solder mask, finish and test access.</td></tr>
+                            <tr><td>Inspection plan</td><td>Electrical test, AOI, X-ray or impedance coupon when required</td><td>Define requirements at RFQ stage so acceptance criteria are clear.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+
+        <section class="container layer-content-section">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Stackup planning</p>
+                    <h2>Example 8-Layer PCB stackup discussion</h2>
+                    <p>This is a practical starting point, not a locked universal stackup. XFPCB confirms dielectric spacing, copper weight, material and impedance targets against your real files before fabrication.</p>
+                </div>
+                <div class="stackup-container layer-stackup">
+                    <div class="stackup-diagram">
+                        <div class="stackup-layer layer-cu">
+                            <span>L1: Top Signal</span>
+                            <span class="layer-desc">Critical components and high-speed fanout</span>
+                        </div>
+                        <div class="stackup-layer layer-prepreg">
+                            <span>Prepreg</span>
+                            <span class="layer-desc">Dielectric for microstrip control</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L2: Ground Plane</span>
+                            <span class="layer-desc">Primary reference plane</span>
+                        </div>
+                        <div class="stackup-layer layer-core">
+                            <span>Core</span>
+                            <span class="layer-desc">Lamination structure</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L3: Signal</span>
+                            <span class="layer-desc">Stripline routing</span>
+                        </div>
+                        <div class="stackup-layer layer-prepreg">
+                            <span>Prepreg</span>
+                            <span class="layer-desc">Controlled spacing</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L4: Power Plane</span>
+                            <span class="layer-desc">Power distribution</span>
+                        </div>
+                        <div class="stackup-layer layer-core">
+                            <span>Core</span>
+                            <span class="layer-desc">Balanced center</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L5: Ground / Power</span>
+                            <span class="layer-desc">Reference or power by design</span>
+                        </div>
+                        <div class="stackup-layer layer-prepreg">
+                            <span>Prepreg</span>
+                            <span class="layer-desc">Controlled spacing</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L6: Signal</span>
+                            <span class="layer-desc">Stripline routing</span>
+                        </div>
+                        <div class="stackup-layer layer-core">
+                            <span>Core</span>
+                            <span class="layer-desc">Lamination structure</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L7: Ground Plane</span>
+                            <span class="layer-desc">Secondary reference plane</span>
+                        </div>
+                        <div class="stackup-layer layer-prepreg">
+                            <span>Prepreg</span>
+                            <span class="layer-desc">Outer dielectric</span>
+                        </div>
+                        <div class="stackup-layer layer-cu">
+                            <span>L8: Bottom Signal</span>
+                            <span class="layer-desc">Components, routing and test access</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <section class="bg-darker layer-content-section">
+            <div class="container layer-two-column">
+                <article class="layer-text-panel">
+                    <p class="eyebrow">High-speed buying</p>
+                    <h2>An 8 layer PCB quote must connect engineering and purchasing</h2>
+                    <p>A procurement team may ask for the lowest price, while the design team needs controlled impedance, stable power planes, fine-pitch reliability and low signal loss. XFPCB helps connect those requirements by reviewing the manufacturing data and asking for missing technical details before the quote is locked.</p>
+                    <p>This matters because a small change in via structure, material, copper weight or impedance tolerance can change the cost and lead time significantly. A clear conversation early protects both engineering schedule and purchasing budget.</p>
+                </article>
+                <article class="layer-text-panel">
+                    <p class="eyebrow">Manufacturability</p>
+                    <h2>HDI and advanced via decisions should be justified</h2>
+                    <p>Blind vias, buried vias and via-in-pad can solve routing problems, but they are not free features. They add process steps and must be matched to the real need of the layout. XFPCB reviews whether standard through vias are enough, or whether an HDI structure is justified by BGA pitch, board size, layer density or signal requirements.</p>
+                    <p>For high-speed and RF boards, XFPCB can discuss stackup, material and impedance requirements before fabrication. If the design requires special acceptance criteria, include them in the RFQ so the quotation is aligned with the final inspection plan.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container layer-content-section">
+            <div class="layer-section-heading">
+                <p class="eyebrow">Order workflow</p>
+                <h2>How XFPCB moves your 8-Layer PCB project from files to shipment</h2>
+                <p>Procurement teams need predictable communication. The steps below show how XFPCB turns design files into a manufacturing plan that can be quoted, produced and shipped with fewer surprises.</p>
+            </div>
+            <div class="layer-process-grid">
+                <article class="layer-process-step">
+                    <h3>1. Technical RFQ</h3>
+                    <p>Provide Gerber, drill, stackup, impedance table, material preference and special notes.</p>
+                </article>
+                <article class="layer-process-step">
+                    <h3>2. Stackup and via review</h3>
+                    <p>XFPCB checks whether the build structure is practical for fabrication, cost and lead time.</p>
+                </article>
+                <article class="layer-process-step">
+                    <h3>3. Controlled manufacturing</h3>
+                    <p>Complex inner layers, lamination, drilling, plating, surface finish and profiling follow confirmed instructions.</p>
+                </article>
+                <article class="layer-process-step">
+                    <h3>4. Final verification</h3>
+                    <p>Inspection and electrical test are handled according to the accepted order requirements before export packing.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-darker layer-content-section">
+            <div class="container">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Applications</p>
+                    <h2>Where buyers commonly use 8-Layer PCB</h2>
+                    <p>XFPCB writes each quote around the real product environment, not a generic layer-count label. Tell us where the board will be used so material, finish and testing choices can match the risk level.</p>
+                </div>
+                <div class="layer-application-grid">
+                    <div class="layer-application-item">Telecom and networking hardware</div>
+                    <div class="layer-application-item">RF and wireless communication modules</div>
+                    <div class="layer-application-item">Dense BGA and FPGA boards</div>
+                    <div class="layer-application-item">High-speed industrial and embedded systems</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container layer-content-section">
+            <div class="layer-section-heading">
+                <p class="eyebrow">FAQ</p>
+                <h2>8-Layer PCB questions buyers ask before placing an order</h2>
+            </div>
+            <div class="layer-faq-list">
+                <article class="faq-item">
+                    <h4>When should I choose an 8 layer PCB?</h4>
+                    <p>Choose 8 layers when routing density, signal integrity, power integrity or fine-pitch components make 4 or 6 layers risky or inefficient.</p>
+                </article>
+                <article class="faq-item">
+                    <h4>Does XFPCB support HDI structures for 8 layer boards?</h4>
+                    <p>XFPCB can review HDI needs such as blind vias, buried vias and via-in-pad by project. The final process depends on files, stackup, quantity, lead time and acceptance requirements.</p>
+                </article>
+                <article class="faq-item">
+                    <h4>What information is needed for a high-speed 8 layer PCB quote?</h4>
+                    <p>Send stackup, impedance targets, material preference, copper weight, via structure, Gerber and drill files, test needs, quantity and delivery country.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="layer-rfq-section" id="quote">
+            <div class="container layer-rfq-grid">
+                <div class="layer-rfq-copy">
+                    <p class="eyebrow">Send RFQ to XFPCB</p>
+                    <h2>Get a practical quotation for 8-Layer PCB</h2>
+                    <p>For 8 layer PCB projects, XFPCB needs enough technical detail to review stackup and via decisions before price and lead time are confirmed.</p>
+                    <ul class="layer-check-list">
+                    <li>Gerber, drill and complete stackup</li>
+                    <li>Impedance table and signal layer notes</li>
+                    <li>HDI or via-in-pad requirement if any</li>
+                    <li>Material preference, quantity and delivery schedule</li>
+                </ul>
+                    <p class="layer-rfq-note">For a faster engineering reply, include Gerber files, drill files, PCB specification, quantity, delivery country and any impedance, material or assembly requirements.</p>
+                </div>
+                <form class="layer-rfq-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+                    <input type="hidden" name="honeypot" style="display:none;">
+                    <input type="hidden" name="page_url" value="https://xfpcb.com/products/8-layer-pcb/">
+                    <input type="hidden" name="page_path" value="/products/8-layer-pcb/">
+                    <input type="hidden" name="subject" value="8-Layer PCB RFQ from XFPCB product page">
+                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
+                    <label>
+                        Name
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="name@company.com" required>
+                    </label>
+                    <label>
+                        Project Requirements
+                        <textarea name="message" placeholder="Example: 8 layer high-speed PCB, ENIG, 100 ohm differential pairs, blind vias under BGA, 200 prototypes and 1,000 production pcs." required></textarea>
+                    </label>
+                    <button type="submit">Send 8-Layer PCB Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="bg-darker">
+            <div class="container">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Related PCB products</p>
+                    <h2>Compare layer counts before you send your RFQ</h2>
+                    <p>Many buyers begin with one layer count and change after DFM review, enclosure checks or cost comparison. These XFPCB pages help you select the most suitable PCB structure before production.</p>
+                </div>
+                <div class="related-layer-links">
+                    <a class="related-layer-link" href="/products/1-layer-pcb/">1-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/2-layer-pcb/">2-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/4-layer-pcb/">4-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/6-layer-pcb/">6-Layer PCB</a>
+                    <a class="related-layer-link active" href="/products/8-layer-pcb/">8-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
+                    <a class="related-layer-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
+                </div>
+            </div>
+        </section>

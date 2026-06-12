@@ -1,0 +1,231 @@
+---
+title: '1 Layer PCB Manufacturer | Single Sided PCB Factory for Cost-Controlled Production | XFPCB'
+seoTitle: '1 Layer PCB Manufacturer | Single Sided PCB Factory for Cost-Controlled Production | XFPCB'
+description: 'XFPCB manufactures 1 layer PCB and single sided PCB boards for LED, power, control and cost-sensitive production with DFM review and export support.'
+keywords: '1 layer PCB manufacturer, single sided PCB manufacturer, single layer PCB, FR4 single sided PCB, aluminum PCB, LED PCB manufacturer, China PCB factory'
+styles:
+  - '/css/style.css?v=20260602-layer-pages'
+  - '/css/about.css?v=20260602-layer-pages'
+  - '/css/products.css?v=20260602-layer-pages'
+---
+<section class="product-hero layer-hero">
+            <div class="container product-hero-grid">
+                <div class="product-text">
+                    <p class="eyebrow">XFPCB China PCB Manufacturer</p>
+                    <h1>1 Layer PCB Manufacturer for Cost-Controlled Single Sided Boards</h1>
+                    <h2>Direct China PCB factory support for LED, power, control and high-volume simple circuits</h2>
+                    <p class="desc">A 1 layer PCB is selected when the circuit is simple, the target price is strict, and the purchasing team needs a stable board that can be repeated thousands or millions of times without unnecessary process cost. XFPCB supports overseas buyers with single sided PCB fabrication, CAM review, material selection, panelization advice and export shipment planning from prototype validation to production release.</p>
+                    <div class="layer-hero-pills">
+                        <span>Single sided PCB</span>
+                        <span>FR-4 / CEM-1 / CEM-3</span>
+                        <span>Aluminum PCB option</span>
+                        <span>Cost-focused production</span>
+                    </div>
+                    <div class="layer-hero-actions">
+                        <a href="#quote" class="cta-btn">Request 1-Layer PCB Quote</a>
+                        <a href="/products/" class="layer-secondary-btn">View PCB Products</a>
+                    </div>
+                </div>
+                <div class="product-visual">
+                    <div class="product-image-wrapper layer-image-frame">
+                        <img src="/images/675x542pcb.jpg" alt="XFPCB single sided 1 layer PCB manufacturing for export buyers">
+                    </div>
+                    <div class="layer-visual-note">
+                        <strong>Buyer focus:</strong> DFM review, stable fabrication, export communication and repeat-order support.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-darker layer-intent-section">
+            <div class="container">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Procurement intent</p>
+                    <h2>What international buyers usually need from a 1 layer PCB supplier</h2>
+                    <p>Most 1 layer PCB buyers start with a cost target, but the successful order depends on more than a low unit price. The factory must understand material choice, tooling route, solderability, panel efficiency and repeat production stability before the board can move smoothly into assembly.</p>
+                </div>
+                <div class="layer-card-grid">
+                    <article class="layer-card">
+                        <span>Cost control</span>
+                        <h3>Panel efficiency before price promises</h3>
+                        <p>XFPCB reviews outline, V-cut, routing, copper balance and tooling direction so the quote reflects the real manufacturing route instead of a rough board-area calculation.</p>
+                    </article>
+                    <article class="layer-card">
+                        <span>Material choice</span>
+                        <h3>Use the laminate that fits the job</h3>
+                        <p>FR-4 is common for general electronics, CEM-1 or CEM-3 can reduce cost for suitable high-volume designs, and aluminum base material helps LED and power boards move heat away from components.</p>
+                    </article>
+                    <article class="layer-card">
+                        <span>Assembly yield</span>
+                        <h3>Solderability matters on simple boards</h3>
+                        <p>A single sided PCB still needs clean solder mask registration, reliable pad finish, readable markings and consistent board flatness for manual, wave or selective soldering.</p>
+                    </article>
+                    <article class="layer-card">
+                        <span>Export buying</span>
+                        <h3>Clear specs reduce RFQ back-and-forth</h3>
+                        <p>Procurement teams can compare suppliers faster when the RFQ includes material, copper weight, finish, board outline, tolerance, packaging and delivery expectations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container layer-content-section">
+            <div class="layer-section-heading">
+                <p class="eyebrow">Manufacturing specification</p>
+                <h2>1-Layer PCB buying guide and RFQ details</h2>
+                <p>For 1 layer PCB projects, the most important decisions are often material, surface finish, copper weight and mechanical processing. XFPCB confirms each point against your Gerber files and end-use requirements before production.</p>
+            </div>
+            <div class="layer-table-wrap">
+                    <table class="layer-spec-table">
+                        <thead>
+                            <tr><th>Buying item</th><th>XFPCB recommendation</th><th>Why it matters</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>General consumer boards</td><td>FR-4 single sided PCB with HASL, lead-free HASL or OSP</td><td>A practical balance between price, solderability and availability for power adapters, controls and simple electronics.</td></tr>
+                            <tr><td>High-volume cost-sensitive boards</td><td>CEM-1 or CEM-3 when the design and application allow it</td><td>Can support lower material cost and efficient punching routes for repeat orders after tooling confirmation.</td></tr>
+                            <tr><td>LED and thermal boards</td><td>Aluminum base PCB with suitable dielectric thermal conductivity</td><td>Helps move heat from LEDs or power components to the metal base and enclosure.</td></tr>
+                            <tr><td>Power and high-current traces</td><td>Wider copper, correct creepage and copper weight review</td><td>Reduces voltage-drop, thermal and safety risk before the board moves to mass production.</td></tr>
+                            <tr><td>Stable assembly supply</td><td>Finish selection based on assembly date and storage plan</td><td>OSP is cost effective for fast assembly; HASL or ENIG may be selected when shelf life or pad flatness requirements differ.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+
+        
+
+        <section class="bg-darker layer-content-section">
+            <div class="container layer-two-column">
+                <article class="layer-text-panel">
+                    <p class="eyebrow">DFM review</p>
+                    <h2>Single sided does not mean no engineering review</h2>
+                    <p>Many sourcing teams treat 1 layer PCB manufacturing as a commodity, but small design choices can change cost and production stability. XFPCB checks annular clearance around holes, solder mask opening, copper-to-edge distance, trace width, copper balance, panel tooling holes and routing direction. For LED boards, we also look at thermal pad geometry and whether the aluminum substrate specification matches the heat path required by the product.</p>
+                    <p>When the board is intended for high quantity, our team can discuss whether CNC routing, V-scoring, punching or combined processing is the better route. This helps the buyer understand not just the prototype price, but also the cost of repeat production.</p>
+                </article>
+                <article class="layer-text-panel">
+                    <p class="eyebrow">Quality control</p>
+                    <h2>How XFPCB protects simple PCB orders from avoidable defects</h2>
+                    <p>The production plan includes CAM file checking, incoming material confirmation, solder mask and legend inspection, dimensional control and electrical testing when required by the order. For single sided boards used in power, appliance and lighting products, we pay attention to solderability, board flatness, copper adhesion and packing protection because these details directly affect assembly yield.</p>
+                    <p>For overseas procurement, XFPCB can package boards by lot, part number and purchase order requirement, making incoming inspection easier for your warehouse or assembly partner.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container layer-content-section">
+            <div class="layer-section-heading">
+                <p class="eyebrow">Order workflow</p>
+                <h2>How XFPCB moves your 1-Layer PCB project from files to shipment</h2>
+                <p>Procurement teams need predictable communication. The steps below show how XFPCB turns design files into a manufacturing plan that can be quoted, produced and shipped with fewer surprises.</p>
+            </div>
+            <div class="layer-process-grid">
+                <article class="layer-process-step">
+                    <h3>1. Send Gerber and target quantity</h3>
+                    <p>Include material preference, finish, board thickness, copper weight and delivery country.</p>
+                </article>
+                <article class="layer-process-step">
+                    <h3>2. CAM and cost review</h3>
+                    <p>XFPCB checks whether the design can be produced efficiently and flags details that may affect cost or lead time.</p>
+                </article>
+                <article class="layer-process-step">
+                    <h3>3. Prototype or sample confirmation</h3>
+                    <p>For new projects, a short validation run helps confirm fit, solderability and mechanical requirements.</p>
+                </article>
+                <article class="layer-process-step">
+                    <h3>4. Repeat production and shipment</h3>
+                    <p>After approval, the same data package can be used for stable repeat orders and export delivery.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-darker layer-content-section">
+            <div class="container">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Applications</p>
+                    <h2>Where buyers commonly use 1-Layer PCB</h2>
+                    <p>XFPCB writes each quote around the real product environment, not a generic layer-count label. Tell us where the board will be used so material, finish and testing choices can match the risk level.</p>
+                </div>
+                <div class="layer-application-grid">
+                    <div class="layer-application-item">LED tubes, downlights and lighting drivers</div>
+                    <div class="layer-application-item">Power adapters and charger boards</div>
+                    <div class="layer-application-item">Simple appliance controls and relay boards</div>
+                    <div class="layer-application-item">Basic sensor, alarm and display modules</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container layer-content-section">
+            <div class="layer-section-heading">
+                <p class="eyebrow">FAQ</p>
+                <h2>1-Layer PCB questions buyers ask before placing an order</h2>
+            </div>
+            <div class="layer-faq-list">
+                <article class="faq-item">
+                    <h4>Is a 1 layer PCB always the cheapest option?</h4>
+                    <p>Usually it is the lowest-cost structure, but the final price still depends on material, copper weight, finish, board size, panel utilization, outline process, quantity and inspection requirements.</p>
+                </article>
+                <article class="faq-item">
+                    <h4>Can XFPCB make aluminum 1 layer PCBs for LED lighting?</h4>
+                    <p>Yes. XFPCB can review aluminum PCB requirements for LED and power applications, including dielectric thermal performance, copper weight, surface finish and mechanical outline.</p>
+                </article>
+                <article class="faq-item">
+                    <h4>What should I send for an accurate single sided PCB quote?</h4>
+                    <p>Send Gerber files, drill files, material and thickness, copper weight, surface finish, solder mask color, silkscreen, quantity, delivery country and any assembly or packaging requirement.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="layer-rfq-section" id="quote">
+            <div class="container layer-rfq-grid">
+                <div class="layer-rfq-copy">
+                    <p class="eyebrow">Send RFQ to XFPCB</p>
+                    <h2>Get a practical quotation for 1-Layer PCB</h2>
+                    <p>A useful 1 layer PCB quote needs more than board size. The more complete your manufacturing details are, the faster XFPCB can recommend the right material and production route.</p>
+                    <ul class="layer-check-list">
+                    <li>Gerber and drill files</li>
+                    <li>Material preference: FR-4, CEM-1, CEM-3 or aluminum</li>
+                    <li>Copper weight, board thickness and surface finish</li>
+                    <li>Target quantity, annual forecast and delivery country</li>
+                </ul>
+                    <p class="layer-rfq-note">For a faster engineering reply, include Gerber files, drill files, PCB specification, quantity, delivery country and any impedance, material or assembly requirements.</p>
+                </div>
+                <form class="layer-rfq-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+                    <input type="hidden" name="honeypot" style="display:none;">
+                    <input type="hidden" name="page_url" value="https://xfpcb.com/products/1-layer-pcb/">
+                    <input type="hidden" name="page_path" value="/products/1-layer-pcb/">
+                    <input type="hidden" name="subject" value="1-Layer PCB RFQ from XFPCB product page">
+                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
+                    <label>
+                        Name
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="name@company.com" required>
+                    </label>
+                    <label>
+                        Project Requirements
+                        <textarea name="message" placeholder="Example: 1 layer FR-4 PCB, 1.6 mm, 1 oz copper, green solder mask, lead-free HASL, 5,000 pcs, ship to Germany." required></textarea>
+                    </label>
+                    <button type="submit">Send 1-Layer PCB Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="bg-darker">
+            <div class="container">
+                <div class="layer-section-heading">
+                    <p class="eyebrow">Related PCB products</p>
+                    <h2>Compare layer counts before you send your RFQ</h2>
+                    <p>Many buyers begin with one layer count and change after DFM review, enclosure checks or cost comparison. These XFPCB pages help you select the most suitable PCB structure before production.</p>
+                </div>
+                <div class="related-layer-links">
+                    <a class="related-layer-link active" href="/products/1-layer-pcb/">1-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/2-layer-pcb/">2-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/4-layer-pcb/">4-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/6-layer-pcb/">6-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/8-layer-pcb/">8-Layer PCB</a>
+                    <a class="related-layer-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
+                    <a class="related-layer-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
+                </div>
+            </div>
+        </section>

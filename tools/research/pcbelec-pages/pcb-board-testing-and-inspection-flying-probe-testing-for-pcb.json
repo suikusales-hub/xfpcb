@@ -1,0 +1,76 @@
+{
+  "sourceUrl": "https://www.pcbelec.com/pcb-board-testing-and-inspection/flying-probe-testing-for-pcb",
+  "fetchedAt": "2026-05-28T05:31:50.483Z",
+  "title": "Flying Probe Testing for PCB - JHYPCB",
+  "metaDescription": "Flying probe testing (FPT) is used to test electronic components on PCBs. It uses one or more probes that move across the PCB and make electrical measurements at each test point. FPT can test various components on a PCB, including resistors, capacitors, diodes, transistors, and integrated circuits.",
+  "h1": "Flying Probe Testing for PCB",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Flying Probe Testing for PCB"
+    },
+    {
+      "tag": "h2",
+      "text": "What is Flying Probe Testing?"
+    },
+    {
+      "tag": "h2",
+      "text": "How does Flying Probe Tester Work?"
+    },
+    {
+      "tag": "h2",
+      "text": "The Function of the Electrical Test for PCBs"
+    },
+    {
+      "tag": "h2",
+      "text": "Advantages of Flying Probe Test"
+    },
+    {
+      "tag": "h2",
+      "text": "Disadvantages of Flying Probe Test"
+    },
+    {
+      "tag": "h2",
+      "text": "ICT Testing vs. Flying Probe Testing-Which Suits Your Project?"
+    },
+    {
+      "tag": "h2",
+      "text": "JHYPCB: You One Step Testing Solution"
+    }
+  ],
+  "paragraphs": [
+    "JHYPCB is a reliable PCB manufacturer in China and offers rapid PCB prototype service for quick-turn PCB fabrication at high quality and low cost. We can prototype your PCB within 3-7 days.",
+    "JHYPCB offers full feature PCB manufacturing services with high reliability to be compatible with your requirement. PCB fabrication services include rigid FR4 PCB, Flexible PCB, Rigid-flex PCB, HDI PCB, High-Frequency PCB, Rogers PCB, Multilayer PCB, Heavy Copper PCB, etc.",
+    "Full turnkey PCB assembly services in China. JHYPCB specializes in prototype PCB assembly, quick turn PCB assembly, and low-to-high volume PCB assembly services with production capabilities.",
+    "We are a leading PCB manufacturing & PCB assembly manufacturer and supplier in China. We have over ten years of experience in custom PCB fabrication and assembly with advanced PCB technology, high-quality standards & RoHS compliance.",
+    "A full-service electronic manufacturing company headquartered in China specializes in printed circuit board manufacturing and assembly services. We will provide a full range of technical support and services for the smooth progress of your project.",
+    "Home Services Projects Flying Probe Testing for PCB Flying probe testing is a method for low-volume and for prototype circuit boards.",
+    "Excellent electronic manufacturing service (EMS) providers or PCB assembly manufacturers should apply the best technology to provide customers with the best quality products and services.",
+    "Printed Circuit Boards (PCBs) contain complex and compact circuits that may have some errors, such as short circuits, open circuits, diode issues, and bad solder. All these problems are not easily visible through the naked eye. Some PCB manufacturers do the manual inspection, but flying proper testing is necessary. There are various tests used to ensure the performance of PCB and find out possible faults. One of the most preferred tests is Flying Probe Testing (FPT) .",
+    "Flying Probe Testing is a test in which several probes move from one node/pad to another node/pad to check the PCB or PCBA . The probes move here and there, and it looks like they are flying from one place to another; therefore, this test is known as the flying probe test.",
+    "At first, the flying probe test was only used to test the bare board (board without components). After some technological advancements, now the test is used for bare boards as well as assembled PCBs. It can detect short circuits, open circuits, wrong component placement, reverse polarity, and failure.",
+    "Flying probe testing is usually preferred for prototype , small-volume , and PCB assembly . It is cost-effective and convenient for small batches of PCBs. All PCB manufacturers use this method to detect the faults in PCBs and the finished assemblies.",
+    "The working of the flying probe tester is extremely simple. It is almost like testing, checking component value, and measuring the resistance using a multimeter. The probes in the flying probe tester check each and every point on the board and ensure the board’s expected working and the components."
+  ],
+  "images": [
+    "https://www.pcbelec.com/wp-content/uploads/2021/09/Low-cost-PCB-prototype-fabrication-service-300x200.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Custom-PCB-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Multilayer-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Advanced-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Rigid-Flex-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Heavy-Copper-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Quick-Turn-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/High-Volume-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/LED-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2026/05/Components-Purchasing-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Stencil.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/Flying-Probe-Testing-for-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/PCB-Bare-Board-is-Undergoing-Flying-Probe-Test.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/Flying-Probe-Tester.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/Flying-Probe-Test-for-PCBA.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2020/12/PCB-Electrical-Testing-Flying-Probe-Testing.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2019/12/Payment-Methods.png"
+  ],
+  "status": 200
+}

@@ -1,0 +1,49 @@
+{
+  "sourceUrl": "https://www.pcbelec.com/support/pcb-terminology-glossary",
+  "fetchedAt": "2026-05-28T05:33:19.746Z",
+  "title": "Over 200 PCB Terminology Glossary You Have to Know (Updated Continuously)",
+  "metaDescription": "Having a basic understanding of printed circuit board terminology can make working with a PCB manufacturing company much faster and easier.",
+  "h1": "Glossary of Terms",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Glossary of Terms"
+    },
+    {
+      "tag": "h2",
+      "text": "SMT processing factory commonly used terms and their abbreviations"
+    }
+  ],
+  "paragraphs": [
+    "JHYPCB is a reliable PCB manufacturer in China and offers rapid PCB prototype service for quick-turn PCB fabrication at high quality and low cost. We can prototype your PCB within 3-7 days.",
+    "JHYPCB offers full feature PCB manufacturing services with high reliability to be compatible with your requirement. PCB fabrication services include rigid FR4 PCB, Flexible PCB, Rigid-flex PCB, HDI PCB, High-Frequency PCB, Rogers PCB, Multilayer PCB, Heavy Copper PCB, etc.",
+    "Full turnkey PCB assembly services in China. JHYPCB specializes in prototype PCB assembly, quick turn PCB assembly, and low-to-high volume PCB assembly services with production capabilities.",
+    "We are a leading PCB manufacturing & PCB assembly manufacturer and supplier in China. We have over ten years of experience in custom PCB fabrication and assembly with advanced PCB technology, high-quality standards & RoHS compliance.",
+    "A full-service electronic manufacturing company headquartered in China specializes in printed circuit board manufacturing and assembly services. We will provide a full range of technical support and services for the smooth progress of your project.",
+    "Home Services Projects Glossary of Terms This glossary is intended to provide some quick definitions of terms commonly used in the design and manufacture of printed circuit boards. We will continue to increase this list, so I hope to help you!",
+    "Having a basic understanding of printed circuit board terminology can make working with a PCB manufacturing company much faster and easier. This glossary of circuit board terms will help you understand some of the most common words in the industry. While this isn’t an all-inclusive list, it is an excellent resource for your reference.",
+    "This term refers to a type of component that is dependent on the flow direction of an electrical current. For example, a transistor, rectifier or valve would be considered active.",
+    "Short for any layer inner via hole, this is a type of technology used to build multi-layer BUM PCBs. This method uses solder to create an electrical connection between PCB layers. ALIVH often replaces traditional vias and is a useful production method for creating high-density BUM PCBs.",
+    "It refers to circuits processing analog signals (continuous and variable signal). The output is non-binary within this type of circuit.",
+    "This term refers to the copper pad area that is left after a hole is drilled through it. This ring is measured from the edge of the pad to the edge of the hole and is an important consideration in PCB design, as it allows an electrical connection to be made from one side of the hole to the other.",
+    "This type of technology is commonly applied in SMT production lines with the goal of limiting the amount of tin involved in the stencil process. This is done by making a stencil on the board and creating openings at places where the solder ball tends to be produced so that the tin paste will flow to the openings."
+  ],
+  "images": [
+    "https://www.pcbelec.com/wp-content/uploads/2021/09/Low-cost-PCB-prototype-fabrication-service-300x200.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Custom-PCB-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Multilayer-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Advanced-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Rigid-Flex-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Heavy-Copper-PCB.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/Quick-Turn-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/High-Volume-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/LED-PCB-Assembly.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2026/05/Components-Purchasing-Services.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2025/05/SMT-Stencil.jpg",
+    "https://www.pcbelec.com/wp-content/uploads/2019/12/Payment-Methods.png",
+    "https://www.pcbelec.com/wp-content/uploads/2019/12/Delivery-Services.png",
+    "https://www.pcbelec.com/wp-content/uploads/2019/12/Verified-by.jpg"
+  ],
+  "status": 200
+}

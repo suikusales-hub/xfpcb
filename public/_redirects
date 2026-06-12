@@ -1,0 +1,3 @@
+# Cloudflare Pages 301 重定向
+# xfpcb2.pages.dev 所有路径 → xfpcb.com 对应路径
+/* https://xfpcb.com/:splat 301

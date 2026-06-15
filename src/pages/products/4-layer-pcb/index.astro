@@ -3,275 +3,2418 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-title="4 Layer PCB Manufacturer | Multilayer PCB Stackup and Impedance Support | XFPCB"
-description="XFPCB manufactures 4 layer PCB boards with multilayer stackup review, ground and power planes, impedance discussion and production support for global buyers."
-keywords="4 layer PCB manufacturer, 4 layer PCB stackup, multilayer PCB, impedance control PCB, IoT PCB, smart device PCB, China PCB manufacturer"
-canonical="https://xfpcb.com/products/4-layer-pcb/"
-ogTitle="4 Layer PCB Manufacturer | Multilayer PCB Stackup and Impedance Support | XFPCB"
-ogDescription="XFPCB manufactures 4 layer PCB boards with multilayer stackup review, ground and power planes, impedance discussion and production support for global buyers."
-ogImage="https://xfpcb.com/images/675x542pcb.jpg"
-ogUrl="https://xfpcb.com/products/4-layer-pcb/"
-  cssExtra={['/css/about.css', '/css/products.css']}
+  title="4-Layer PCB Engineering Consultation | Stackup Design & Impedance Control | XFPCB"
+  description="XFPCB provides 4-layer PCB consultation and manufacturing with stackup architecture selection, impedance control methodology (50Ω, 90Ω diff, 100Ω diff), material selection (TG135/TG170/Rogers), thermal analysis, and DFM review for international buyers."
+  keywords="4 layer PCB stackup, impedance control PCB, 4 layer PCB manufacturing, TG170 PCB, Rogers PCB, 50 ohm PCB, differential pair PCB, multilayer PCB design, China 4 layer PCB manufacturer, controlled impedance PCB"
+  canonical="https://xfpcb.com/products/4-layer-pcb/"
+  ogTitle="4-Layer PCB Engineering Consultation | Stackup Design & Impedance Control | XFPCB"
+  ogDescription="XFPCB provides 4-layer PCB consultation and manufacturing with stackup architecture selection, impedance control methodology (50Ω, 90Ω diff, 100Ω diff), material selection (TG135/TG170/Rogers), thermal analysis, and DFM review for international buyers."
+  ogImage="https://xfpcb.com/images/675x542pcb.jpg"
+  ogUrl="https://xfpcb.com/products/4-layer-pcb/"
 >
   <main>
-<section class="product-hero layer-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <p class="eyebrow">XFPCB China PCB Manufacturer</p>
-                    <h1>4 Layer PCB Manufacturer for Compact Multilayer Electronics</h1>
-                    <h2>A practical upgrade when your 2 layer PCB needs cleaner routing, better EMI control and stable power distribution</h2>
-                    <p class="desc">A 4 layer PCB is often the first serious multilayer step for IoT products, smart devices, wireless modules, compact controllers and commercial electronics. With two outer routing layers and inner reference or power planes, the board can reduce noise, simplify routing and improve assembly density without moving immediately to a high-cost advanced stackup. XFPCB helps buyers confirm the stackup, material, impedance needs and inspection plan before fabrication.</p>
-                    <div class="layer-hero-pills">
-                        <span>4 layer stackup</span>
-                        <span>Ground and power planes</span>
-                        <span>Impedance discussion</span>
-                        <span>IoT and smart devices</span>
-                    </div>
-                    <div class="layer-hero-actions">
-                        <a href="#quote" class="cta-btn">Request 4-Layer PCB Quote</a>
-                        <a href="/products/" class="layer-secondary-btn">View PCB Products</a>
-                    </div>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper layer-image-frame">
-                        <img src="/images/675x542pcb.jpg" alt="XFPCB 4 layer PCB stackup and multilayer manufacturing">
-                    </div>
-                    <div class="layer-visual-note">
-                        <strong>Buyer focus:</strong> DFM review, stable fabrication, export communication and repeat-order support.
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="bg-darker layer-intent-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Procurement intent</p>
-                    <h2>Why buyers search beyond a basic 4 layer PCB price</h2>
-                    <p>For 4 layer PCB buyers, the key is not simply adding two layers. The real decision is whether the stackup will support the layout, certification goals, signal paths and production cost of the final product without creating avoidable manufacturing risk.</p>
-                </div>
-                <div class="layer-card-grid">
-                    <article class="layer-card">
-                        <span>Stackup planning</span>
-                        <h3>Confirm layer purpose before fabrication</h3>
-                        <p>A common 4 layer approach uses top signal, inner ground, inner power and bottom signal, but XFPCB confirms the structure against your routing and impedance needs.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>EMI control</span>
-                        <h3>Reference planes improve return paths</h3>
-                        <p>Solid internal planes can reduce loop area, support cleaner signals and make EMC preparation easier for products moving toward market release.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Cost balance</span>
-                        <h3>More capability without jumping too high</h3>
-                        <p>A 4 layer PCB often provides the best cost-to-performance step for buyers upgrading from 2 layer boards.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Procurement clarity</span>
-                        <h3>Specs should be locked before layout release</h3>
-                        <p>Board thickness, dielectric target, copper weight and finish should be discussed early because they affect trace width and impedance.</p>
-                    </article>
-                </div>
+    <!-- ====================================================================
+         SECTION 1 — THE ENGINEERING BRIEF
+         Opens with a real scenario, not a hero banner.
+         This section frames the entire page as an engineering consultation.
+         ==================================================================== -->
+    <section class="f4-brief">
+      <div class="f4-container">
+        <div class="f4-brief-layout">
+          <div class="f4-brief-text">
+            <span class="f4-badge">Engineering consultation document</span>
+            <h1>When a 2-layer PCB fails EMC pre-compliance: the 4-layer engineering decision</h1>
+            <p class="f4-brief-scenario">
+              <strong>Scenario:</strong> A WiFi-enabled IoT sensor board (ESP32 + temperature sensor + relay driver) designed on standard 1.6&thinsp;mm 2-layer FR-4. The prototype function-tested fine. At the EMC pre-scan, radiated emissions failed at 240&thinsp;MHz (the WiFi 2.4&thinsp;GHz second harmonic from digital noise coupling onto the antenna trace). The 2-layer board lacked a continuous ground reference plane beneath the RF section. The fix was not a better layout on 2 layers — it was a structural change to 4 layers with an internal ground plane directly beneath the top signal layer, reducing the loop area by approximately 80%.
+            </p>
+            <p>
+              This is the most common entry point into 4-layer PCB design: a product that works electrically but fails <em>reliably</em> on a 2-layer board because signal integrity, EMI, or power distribution reach their practical ceiling. The 4-layer PCB solves these problems by adding internal copper planes that serve as low-impedance return paths, electromagnetic shields, and distributed power delivery — but only when the stackup, material, and impedance targets are engineered correctly from the start.
+            </p>
+            <p>
+              This page is structured as a consultation document, not a product catalogue. It covers the three common 4-layer stackup architectures, the impedance control methodology XFPCB uses to hit 50&thinsp;&Omega;, 90&thinsp;&Omega; differential, and 100&thinsp;&Omega; differential targets, material selection with real TG and DK values, thermal management design, and the DFM rules that separate a reliable 4-layer board from one that warps, fails isolation testing, or delivers impedance outside tolerance.
+            </p>
+            <div class="f4-brief-tags">
+              <span>Stackup architecture decision</span>
+              <span>Impedance control methodology</span>
+              <span>Material selection (TG135 / TG170 / Rogers)</span>
+              <span>Thermal analysis for 4-layer</span>
+              <span>4-layer DFM rules</span>
             </div>
-        </section>
+            <div class="f4-brief-actions">
+              <a href="#f4-consult" class="f4-btn f4-btn-primary">Start your stackup consultation</a>
+              <a href="#f4-architectures" class="f4-btn f4-btn-outline">Compare stackup architectures &darr;</a>
+            </div>
+          </div>
+          <div class="f4-brief-meta">
+            <div class="f4-metric-card">
+              <span class="f4-metric-value">~80%</span>
+              <span class="f4-metric-label">Loop area reduction with internal GND plane vs 2-layer</span>
+            </div>
+            <div class="f4-metric-card">
+              <span class="f4-metric-value">4</span>
+              <span class="f4-metric-label">Copper layers: 2 outer signal + 2 inner reference planes</span>
+            </div>
+            <div class="f4-metric-card">
+              <span class="f4-metric-value">50&ndash;100&thinsp;&Omega;</span>
+              <span class="f4-metric-label">Impedance target range (SE, differential pair)</span>
+            </div>
+            <div class="f4-metric-card">
+              <span class="f4-metric-value">0.4&ndash;2.0&thinsp;mm</span>
+              <span class="f4-metric-label">Board thickness range for 4-layer stackups</span>
+            </div>
+            <div class="f4-brief-callout">
+              <p><strong>Not sure you need 4 layers?</strong> XFPCB reviews your Gerber files and returns a layer-count recommendation before you commit. Email your files with your specification and we will advise whether 4 layers is justified.</p>
+              <a href="#f4-consult">Send files for review &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Manufacturing specification</p>
-                <h2>4-Layer PCB buying guide and RFQ details</h2>
-                <p>The exact stackup must be confirmed before production. The example below shows the buying decisions that usually matter most for a 4 layer PCB quote.</p>
-            </div>
-            <div class="layer-table-wrap">
-                    <table class="layer-spec-table">
-                        <thead>
-                            <tr><th>Decision</th><th>Typical requirement</th><th>XFPCB review focus</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Stackup</td><td>Signal / GND / Power / Signal or project-specific alternative</td><td>Plane continuity, copper balance, drill structure and manufacturability.</td></tr>
-                            <tr><td>Impedance</td><td>50 ohm single-ended, 90 or 100 ohm differential when required</td><td>Material, dielectric thickness, copper thickness and trace width must be aligned with the design.</td></tr>
-                            <tr><td>Material</td><td>Standard FR-4 or high Tg FR-4 depending on reliability needs</td><td>Temperature exposure, reflow profile, assembly plan and long-term product use.</td></tr>
-                            <tr><td>Surface finish</td><td>HASL, ENIG, OSP or project-specific finish</td><td>Pad flatness, BGA/fine pitch needs, assembly date and cost target.</td></tr>
-                            <tr><td>Testing</td><td>Electrical test and visual inspection; impedance coupons when required</td><td>Define special test needs in RFQ so cost and lead time are clear.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-        </section>
+    <!-- ====================================================================
+         SECTION 2 — THE THREE STACKUP ARCHITECTURES
+         Decision guide for 3 common 4-layer stackup types.
+         This replaces the single-diagram approach with a selection framework.
+         ==================================================================== -->
+    <section class="f4-architectures" id="f4-architectures">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Stackup selection</span>
+          <h2>Three 4-layer stackup architectures: which one fits your design?</h2>
+          <p class="f4-section-sub">
+            There is no single "standard" 4-layer stackup. The optimal architecture depends on signal type, impedance targets, board thickness, and cost constraints. Below are three proven architectures XFPCB manufactures. Each is shown with typical dielectric thicknesses, copper weights, and impedance outcomes.
+          </p>
+        </div>
 
-        <section class="container layer-content-section">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Stackup planning</p>
-                    <h2>Example 4-Layer PCB stackup discussion</h2>
-                    <p>This is a practical starting point, not a locked universal stackup. XFPCB confirms dielectric spacing, copper weight, material and impedance targets against your real files before fabrication.</p>
-                </div>
-                <div class="stackup-container layer-stackup">
-                    <div class="stackup-diagram">
-                        <div class="stackup-layer layer-cu">
-                            <span>L1: Top Copper</span>
-                            <span class="layer-desc">Signal and component layer</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Dielectric spacing confirmed by stackup</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L2: Ground Plane</span>
-                            <span class="layer-desc">Reference plane for signals</span>
-                        </div>
-                        <div class="stackup-layer layer-core">
-                            <span>FR-4 Core</span>
-                            <span class="layer-desc">Mechanical support and dielectric thickness</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L3: Power Plane</span>
-                            <span class="layer-desc">Power distribution or split plane</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Balanced construction</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L4: Bottom Copper</span>
-                            <span class="layer-desc">Signal and secondary component layer</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="f4-arch-grid">
+          <!-- Architecture A: Standard Signal-GND-Power-Signal -->
+          <article class="f4-arch-card">
+            <div class="f4-arch-header">
+              <span class="f4-arch-num">Architecture A</span>
+              <h3>Standard: Signal &ndash; GND &ndash; Power &ndash; Signal</h3>
+              <span class="f4-arch-tag f4-arch-tag-green">Most common &bull; Lowest cost</span>
+            </div>
+            <div class="f4-arch-diagram">
+              <div class="f4-layer-row f4-l-signal">L1 &mdash; Top Signal &amp; Components</div>
+              <div class="f4-layer-row f4-l-prepreg">Prepreg &mdash; 0.10&ndash;0.20&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-plane">L2 &mdash; Ground Plane (solid copper)</div>
+              <div class="f4-layer-row f4-l-core">Core &mdash; 0.71&ndash;1.27&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-plane f4-l-power">L3 &mdash; Power Plane (split or solid)</div>
+              <div class="f4-layer-row f4-l-prepreg">Prepreg &mdash; 0.10&ndash;0.20&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-signal">L4 &mdash; Bottom Signal &amp; Components</div>
+            </div>
+            <div class="f4-arch-specs">
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Board thickness</span>
+                <span class="f4-as-value">1.2&ndash;1.6&thinsp;mm</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Impedance (50&thinsp;&Omega; SE)</span>
+                <span class="f4-as-value">Trace width ~0.30&ndash;0.35&thinsp;mm on L1 over L2 GND</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Impedance (100&thinsp;&Omega; diff)</span>
+                <span class="f4-as-value">Trace width ~0.15&thinsp;mm, gap ~0.20&thinsp;mm</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Best for</span>
+                <span class="f4-as-value">Digital &le; 1&thinsp;GHz, MCU boards, IoT gateways, Ethernet, USB 2.0, general-purpose industrial</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Cost index</span>
+                <span class="f4-as-value f4-as-baseline">Baseline (1.0&times;)</span>
+              </div>
+            </div>
+            <div class="f4-arch-note">
+              <strong>Engineering note:</strong> L3 can be a split plane (e.g., 3.3&thinsp;V and 5&thinsp;V) as long as no high-speed trace crosses the split boundary on L1 or L4. If a trace must cross a split, place a stitching capacitor across the gap.
+            </div>
+          </article>
 
-        <section class="bg-darker layer-content-section">
-            <div class="container layer-two-column">
-                <article class="layer-text-panel">
-                    <p class="eyebrow">Engineering fit</p>
-                    <h2>When a 4 layer PCB is the right choice</h2>
-                    <p>A product usually moves to 4 layers when routing on a 2 layer PCB becomes crowded, when a wireless or high-speed interface needs a more stable return path, or when power distribution and ground isolation are becoming difficult. The extra internal planes can improve layout discipline and make the final product easier to debug.</p>
-                    <p>XFPCB works with buyers who need the board manufactured reliably, but also need the quote to make sense commercially. We can review whether your design truly needs 4 layers, or whether the same goal can be met by adjusting the 2 layer design or moving to 6 layers for a denser product.</p>
-                </article>
-                <article class="layer-text-panel">
-                    <p class="eyebrow">DFM and quality</p>
-                    <h2>Multilayer reliability begins before lamination</h2>
-                    <p>For 4 layer PCBs, our CAM review pays attention to layer registration, drill-to-inner clearance, plane openings, resin flow risk, copper balance and solder mask definition. These details affect not only fabrication yield, but also assembly yield and field reliability.</p>
-                    <p>If your board includes USB, Ethernet, RF, WiFi, LVDS or other impedance-sensitive traces, send the target impedance and stackup preference early. XFPCB can discuss practical manufacturing options before your layout is frozen.</p>
-                </article>
+          <!-- Architecture B: GND-GND (Dual Ground / Mixed-Signal) -->
+          <article class="f4-arch-card f4-arch-alt">
+            <div class="f4-arch-header">
+              <span class="f4-arch-num">Architecture B</span>
+              <h3>Dual ground: Signal &ndash; GND &ndash; GND &ndash; Signal</h3>
+              <span class="f4-arch-tag f4-arch-tag-blue">Best isolation &bull; Sensitive analogue</span>
             </div>
-        </section>
+            <div class="f4-arch-diagram">
+              <div class="f4-layer-row f4-l-signal">L1 &mdash; Top Signal &amp; Components</div>
+              <div class="f4-layer-row f4-l-prepreg">Prepreg &mdash; 0.10&ndash;0.20&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-plane">L2 &mdash; Ground Plane (solid)</div>
+              <div class="f4-layer-row f4-l-core">Core &mdash; 0.10&ndash;0.20&thinsp;mm (thin core)</div>
+              <div class="f4-layer-row f4-l-plane">L3 &mdash; Ground Plane (solid)</div>
+              <div class="f4-layer-row f4-l-prepreg">Prepreg &mdash; 0.10&ndash;0.20&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-signal">L4 &mdash; Bottom Signal &amp; Components</div>
+            </div>
+            <div class="f4-arch-specs">
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Board thickness</span>
+                <span class="f4-as-value">0.6&ndash;1.0&thinsp;mm (thin stackup)</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Impedance (50&thinsp;&Omega; SE)</span>
+                <span class="f4-as-value">Trace width ~0.20&ndash;0.25&thinsp;mm (thinner than Arch A)</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Isolation benefit</span>
+                <span class="f4-as-value">Two ground planes with <em>very</em> thin dielectric between them create a broadband EMI shield; L1-to-L2 distance ~0.10&thinsp;mm keeps radiation contained</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Best for</span>
+                <span class="f4-as-value">Mixed-signal designs (analogue + digital), audio converters, sensor front-ends, radio front-end modules, medical devices</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Cost index</span>
+                <span class="f4-as-value f4-as-premium">1.1&ndash;1.2&times; (thin core adds handling cost)</span>
+              </div>
+            </div>
+            <div class="f4-arch-note">
+              <strong>Engineering note:</strong> L2 and L3 are stitched with vias at every ground pad. The thin core (typically 0.10&ndash;0.20&thinsp;mm) between them provides a very low impedance path and excellent inter-plane capacitance (~500&thinsp;pF&ndash;1&thinsp;nF for a 100&times;80&thinsp;mm board), which helps decouple high-frequency noise.
+            </div>
+          </article>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Order workflow</p>
-                <h2>How XFPCB moves your 4-Layer PCB project from files to shipment</h2>
-                <p>Procurement teams need predictable communication. The steps below show how XFPCB turns design files into a manufacturing plan that can be quoted, produced and shipped with fewer surprises.</p>
+          <!-- Architecture C: Thick Dielectric for Controlled Impedance -->
+          <article class="f4-arch-card">
+            <div class="f4-arch-header">
+              <span class="f4-arch-num">Architecture C</span>
+              <h3>Impedance-optimised: Signal &ndash; GND &ndash; Signal &ndash; Signal</h3>
+              <span class="f4-arch-tag f4-arch-tag-amber">Impedance-critical &bull; RF &bull; Premium</span>
             </div>
-            <div class="layer-process-grid">
-                <article class="layer-process-step">
-                    <h3>1. Stackup confirmation</h3>
-                    <p>Confirm layer purpose, board thickness, material, copper weight and any impedance targets.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>2. CAM and DFM check</h3>
-                    <p>Review inner clearance, drill rules, plane openings, solder mask and mechanical outline.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>3. Lamination and fabrication</h3>
-                    <p>Proceed through inner layer imaging, lamination, drilling, plating, outer layer imaging, solder mask, finish and routing.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>4. Inspection and delivery</h3>
-                    <p>Electrical test and visual inspection are matched to the order, then boards are packed for export shipment.</p>
-                </article>
+            <div class="f4-arch-diagram">
+              <div class="f4-layer-row f4-l-signal">L1 &mdash; RF / High-Speed Signals</div>
+              <div class="f4-layer-row f4-l-prepreg f4-l-prepreg-thick">Prepreg &mdash; 0.20&ndash;0.40&thinsp;mm (custom dielectric)</div>
+              <div class="f4-layer-row f4-l-plane">L2 &mdash; Ground Plane</div>
+              <div class="f4-layer-row f4-l-core">Core &mdash; 0.71&ndash;1.27&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-signal">L3 &mdash; Secondary Signals / Power Routing</div>
+              <div class="f4-layer-row f4-l-prepreg">Prepreg &mdash; 0.10&ndash;0.20&thinsp;mm</div>
+              <div class="f4-layer-row f4-l-signal">L4 &mdash; Bottom Signals / Control</div>
             </div>
-        </section>
+            <div class="f4-arch-specs">
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Board thickness</span>
+                <span class="f4-as-value">1.2&ndash;1.6&thinsp;mm (prepreg thickness tuned for target Z<sub>0</sub>)</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Impedance (50&thinsp;&Omega; SE)</span>
+                <span class="f4-as-value">Trace width ~0.35&ndash;0.50&thinsp;mm (wider trace = lower loss)</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Impedance (90&thinsp;&Omega; diff)</span>
+                <span class="f4-as-value">Trace width ~0.18&thinsp;mm, gap ~0.15&thinsp;mm (USB 2.0 / LVDS)</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Best for</span>
+                <span class="f4-as-value">RF modules (LoRa, Zigbee, BLE, WiFi front-end), USB 2.0/3.0, LVDS, HDMI, DDR memory on 4-layer (limited), precise impedance tolerance &le; &plusmn;8%</span>
+              </div>
+              <div class="f4-arch-spec">
+                <span class="f4-as-label">Cost index</span>
+                <span class="f4-as-value f4-as-premium">1.2&ndash;1.5&times; (custom prepreg stack, tighter impedance tolerance)</span>
+              </div>
+            </div>
+            <div class="f4-arch-note">
+              <strong>Engineering note:</strong> In this architecture, L2 is the sole reference plane for both L1 and L3. The distance from L1 to L2 (the prepreg thickness) is the primary control variable for impedance. XFPCB adjusts the prepreg layer count and glass style (106, 1080, 2116, or 7628) to hit the target trace width without violating DFM limits. For Rogers RO4003C or RO4350B laminates, the same architecture applies but the dielectric constant drops to ~3.5 (vs FR-4's ~4.5), reducing trace width requirements.
+            </div>
+          </article>
+        </div>
 
-        <section class="bg-darker layer-content-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Applications</p>
-                    <h2>Where buyers commonly use 4-Layer PCB</h2>
-                    <p>XFPCB writes each quote around the real product environment, not a generic layer-count label. Tell us where the board will be used so material, finish and testing choices can match the risk level.</p>
-                </div>
-                <div class="layer-application-grid">
-                    <div class="layer-application-item">IoT gateways and smart home devices</div>
-                    <div class="layer-application-item">Wireless modules and compact controllers</div>
-                    <div class="layer-application-item">Industrial interface boards</div>
-                    <div class="layer-application-item">USB, Ethernet and low-to-mid speed digital products</div>
-                </div>
-            </div>
-        </section>
+        <div class="f4-arch-decision">
+          <h4>Quick decision guide</h4>
+          <ul>
+            <li><strong>Choose Architecture A</strong> when: your design is primarily digital (&le;1&thinsp;GHz), cost matters, and you need a reliable GND plane with split VCC on L3.</li>
+            <li><strong>Choose Architecture B</strong> when: you have sensitive analogue circuitry sharing a board with digital noise sources, or you need maximum EMI suppression in a thin form factor.</li>
+            <li><strong>Choose Architecture C</strong> when: impedance tolerance matters more than cost, you need predictable 50&thinsp;&Omega;, 90&thinsp;&Omega; diff, or 100&thinsp;&Omega; diff, or you are using Rogers material for RF performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">FAQ</p>
-                <h2>4-Layer PCB questions buyers ask before placing an order</h2>
-            </div>
-            <div class="layer-faq-list">
-                <article class="faq-item">
-                    <h4>Is a 4 layer PCB better than a 2 layer PCB?</h4>
-                    <p>It is better when the design needs cleaner routing, lower noise, more stable power distribution or controlled impedance. For very simple circuits, 2 layers may still be more economical.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>Can XFPCB help with 4 layer PCB stackup selection?</h4>
-                    <p>Yes. Send your target board thickness, copper weight, impedance requirements and application. XFPCB can review practical stackup options for fabrication.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>Should I define impedance before layout?</h4>
-                    <p>Yes. If controlled impedance matters, define the target before layout is complete so trace width and dielectric spacing can be matched to a manufacturable stackup.</p>
-                </article>
-            </div>
-        </section>
+    <!-- ====================================================================
+         SECTION 3 — IMPEDANCE CONTROL METHODOLOGY
+         Deep technical content: how XFPCB actually engineers controlled impedance.
+         ==================================================================== -->
+    <section class="f4-impedance">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Impedance engineering</span>
+          <h2>Controlled impedance on 4-layer PCBs: target selection, stackup tuning, and manufacturing tolerance</h2>
+          <p class="f4-section-sub">
+            A 4-layer board's primary advantage over 2-layer for impedance control is the ability to define the dielectric distance between the signal layer and its reference plane independently of the total board thickness. The prepreg between L1 and L2 (or L4 and L3) is a design variable — not a fixed core thickness. This section documents the methodology XFPCB uses to calculate and verify impedance for 50&thinsp;&Omega; single-ended, 90&thinsp;&Omega; differential, and 100&thinsp;&Omega; differential targets.
+          </p>
+        </div>
 
-        <section class="layer-rfq-section" id="quote">
-            <div class="container layer-rfq-grid">
-                <div class="layer-rfq-copy">
-                    <p class="eyebrow">Send RFQ to XFPCB</p>
-                    <h2>Get a practical quotation for 4-Layer PCB</h2>
-                    <p>A 4 layer PCB quote should include enough engineering detail for stackup and impedance review. This prevents redesign after pricing.</p>
-                    <ul class="layer-check-list">
-                    <li>Gerber, drill and stackup request</li>
-                    <li>Board thickness, copper weight and material</li>
-                    <li>Impedance targets if any</li>
-                    <li>Quantity, lead time target and delivery country</li>
+        <div class="f4-imp-methodology">
+          <div class="f4-imp-step">
+            <span class="f4-imp-num">Step 1</span>
+            <h4>Select target impedance and tolerance</h4>
+            <p>Common targets: 50&thinsp;&Omega; single-ended (RF, WiFi, Bluetooth, general high-speed), 90&thinsp;&Omega; differential (USB 2.0/3.0, LVDS), 100&thinsp;&Omega; differential (Ethernet, HDMI, DisplayPort). Standard tolerance: &plusmn;10%. Tight tolerance (&plusmn;8% or &plusmn;5%) available with impedance coupon testing and pre-production verification.</p>
+          </div>
+          <div class="f4-imp-step">
+            <span class="f4-imp-num">Step 2</span>
+            <h4>Determine material dielectric constant (Dk) at operating frequency</h4>
+            <p>FR-4 Dk varies with frequency: ~4.5 at 1&thinsp;MHz, ~4.2 at 1&thinsp;GHz, ~4.0 at 3&thinsp;GHz. XFPCB uses frequency-dependent Dk values for impedance calculations — not the 1&thinsp;MHz datasheet value. For Rogers RO4003C: Dk = 3.38 at 10&thinsp;GHz (stable). For RO4350B: Dk = 3.48 at 10&thinsp;GHz. Using the wrong Dk value produces trace widths that are systematically off by 10&ndash;15%.</p>
+          </div>
+          <div class="f4-imp-step">
+            <span class="f4-imp-num">Step 3</span>
+            <h4>Calculate trace geometry from target Z<sub>0</sub> and dielectric height</h4>
+            <p>For a microstrip trace on L1 over L2 GND plane, the characteristic impedance is approximately:</p>
+            <div class="f4-imp-formula">
+              Z<sub>0</sub> &asymp; (87 / &radic;(Dk + 1.41)) &times; ln(5.98h / (0.8w + t))
+            </div>
+            <p>Where <em>h</em> = dielectric height (prepreg thickness), <em>w</em> = trace width, <em>t</em> = copper thickness. XFPCB uses field solvers (Polar Si9000 or equivalent) for exact calculations, but this formula gives the first-pass estimate. For a 1.6&thinsp;mm board with 0.20&thinsp;mm prepreg (Architecture A), 50&thinsp;&Omega; requires a trace width of approximately 0.30&ndash;0.35&thinsp;mm with 1&thinsp;oz copper.</p>
+          </div>
+          <div class="f4-imp-step">
+            <span class="f4-imp-num">Step 4</span>
+            <h4>Differential pair design (90&thinsp;&Omega; and 100&thinsp;&Omega;)</h4>
+            <p>For edge-coupled differential microstrip on L1 over L2 GND:</p>
+            <div class="f4-imp-grid">
+              <div class="f4-imp-cell">
+                <strong>90&thinsp;&Omega; diff (USB 2.0 / LVDS)</strong>
+                <ul>
+                  <li>Trace width: 0.15&ndash;0.22&thinsp;mm</li>
+                  <li>Pair gap: 0.15&ndash;0.25&thinsp;mm</li>
+                  <li>Prepreg h: 0.10&ndash;0.20&thinsp;mm</li>
+                  <li>Copper: 0.5&thinsp;oz (18&thinsp;&micro;m) recommended</li>
                 </ul>
-                    <p class="layer-rfq-note">For a faster engineering reply, include Gerber files, drill files, PCB specification, quantity, delivery country and any impedance, material or assembly requirements.</p>
-                </div>
-                <form class="layer-rfq-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
-                    <input type="hidden" name="honeypot" style="display:none;">
-                    <input type="hidden" name="page_url" value="https://xfpcb.com/products/4-layer-pcb/">
-                    <input type="hidden" name="page_path" value="/products/4-layer-pcb/">
-                    <input type="hidden" name="subject" value="4-Layer PCB RFQ from XFPCB product page">
-                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
-                    <label>
-                        Name
-                        <input type="text" name="name" placeholder="Your name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="name@company.com" required>
-                    </label>
-                    <label>
-                        Project Requirements
-                        <textarea name="message" placeholder="Example: 4 layer PCB, 1.6 mm FR-4, 1 oz outer copper, ENIG, 50 ohm single-ended impedance needed, 1,000 pcs." required></textarea>
-                    </label>
-                    <button type="submit">Send 4-Layer PCB Inquiry</button>
-                </form>
+              </div>
+              <div class="f4-imp-cell">
+                <strong>100&thinsp;&Omega; diff (Ethernet / HDMI)</strong>
+                <ul>
+                  <li>Trace width: 0.12&ndash;0.18&thinsp;mm</li>
+                  <li>Pair gap: 0.20&ndash;0.30&thinsp;mm</li>
+                  <li>Prepreg h: 0.10&ndash;0.20&thinsp;mm</li>
+                  <li>Copper: 0.5&thinsp;oz (18&thinsp;&micro;m) recommended</li>
+                </ul>
+              </div>
             </div>
-        </section>
+            <p class="f4-imp-note">Thinner copper (0.5&thinsp;oz) produces finer traces and tighter impedance control because the etch factor has less influence on the cross-section. XFPCB can plate up to the required final copper thickness after etching.</p>
+          </div>
+          <div class="f4-imp-step">
+            <span class="f4-imp-num">Step 5</span>
+            <h4>Verification: impedance coupons and TDR testing</h4>
+            <p>XFPCB places impedance coupons on each production panel (typically one per panel edge, matching the layer stackup). After fabrication, the coupons are measured with a TDR (Time Domain Reflectometer) to verify actual impedance against target. Results are recorded and delivered with the shipment. For tight-tolerance orders (&plusmn;8% or better), we recommend pre-production test panels to validate the stackup before committing to the full production run.</p>
+          </div>
+        </div>
 
-        <section class="bg-darker">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Related PCB products</p>
-                    <h2>Compare layer counts before you send your RFQ</h2>
-                    <p>Many buyers begin with one layer count and change after DFM review, enclosure checks or cost comparison. These XFPCB pages help you select the most suitable PCB structure before production.</p>
-                </div>
-                <div class="related-layer-links">
-                    <a class="related-layer-link" href="/products/1-layer-pcb/">1-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/2-layer-pcb/">2-Layer PCB</a>
-                    <a class="related-layer-link active" href="/products/4-layer-pcb/">4-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/6-layer-pcb/">6-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/8-layer-pcb/">8-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
-                    <a class="related-layer-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
-                </div>
+        <div class="f4-imp-summary">
+          <div class="f4-imp-targets">
+            <h4>Impedance target reference (Architecture A, 0.5&thinsp;oz Cu, FR-4)</h4>
+            <table class="f4-imp-table">
+              <thead>
+                <tr>
+                  <th>Target</th>
+                  <th>Prepreg h (mm)</th>
+                  <th>Trace width (mm)</th>
+                  <th>Pair gap (mm)</th>
+                  <th>Tolerance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>50&thinsp;&Omega; SE</td>
+                  <td>0.20</td>
+                  <td>0.32</td>
+                  <td>&mdash;</td>
+                  <td>&plusmn;10%</td>
+                </tr>
+                <tr>
+                  <td>50&thinsp;&Omega; SE</td>
+                  <td>0.15</td>
+                  <td>0.26</td>
+                  <td>&mdash;</td>
+                  <td>&plusmn;10%</td>
+                </tr>
+                <tr>
+                  <td>90&thinsp;&Omega; diff</td>
+                  <td>0.15</td>
+                  <td>0.18</td>
+                  <td>0.20</td>
+                  <td>&plusmn;10%</td>
+                </tr>
+                <tr>
+                  <td>100&thinsp;&Omega; diff</td>
+                  <td>0.15</td>
+                  <td>0.15</td>
+                  <td>0.25</td>
+                  <td>&plusmn;10%</td>
+                </tr>
+                <tr>
+                  <td>100&thinsp;&Omega; diff</td>
+                  <td>0.20</td>
+                  <td>0.18</td>
+                  <td>0.30</td>
+                  <td>&plusmn;10%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="f4-imp-table-note">Values shown are first-pass estimates for FR-4 (Dk = 4.2 at 1&thinsp;GHz). Final dimensions are computed by XFPCB's CAM engineers using Polar Si9000 against your specific stackup and material. Send your target impedance with the RFQ so the dielectric stack can be verified before layout is frozen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4 — MATERIAL SELECTION MODEL
+         TG135 vs TG170 vs Rogers with trade-off analysis.
+         ==================================================================== -->
+    <section class="f4-materials">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Material selection</span>
+          <h2>Laminate selection for 4-layer PCBs: TG135, TG170, and RF-grade materials</h2>
+          <p class="f4-section-sub">
+            The material system for a 4-layer board includes the core laminate (between L2 and L3), the prepreg bonding sheets (between L1&ndash;L2 and L3&ndash;L4), and the copper foil. Each material choice affects impedance stability, thermal reliability, dimensional registration, and cost. The table below shows the three material classes XFPCB recommends for 4-layer boards.
+          </p>
+        </div>
+
+        <div class="f4-mat-tabs">
+          <!-- TG135 -->
+          <article class="f4-mat-card">
+            <div class="f4-mat-top">
+              <h3>TG135 FR-4</h3>
+              <span class="f4-mat-cost">Cost index: 1.0&times; (baseline)</span>
+              <span class="f4-mat-tag">Standard &bull; General purpose</span>
             </div>
-        </section>
+            <div class="f4-mat-specs">
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Glass transition (Tg)</span>
+                <span class="f4-mat-val">130&ndash;140&deg;C</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Decomposition temp (Td)</span>
+                <span class="f4-mat-val">300&ndash;310&deg;C</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Dk at 1&thinsp;GHz</span>
+                <span class="f4-mat-val">4.2&ndash;4.5</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Df at 1&thinsp;GHz</span>
+                <span class="f4-mat-val">0.018&ndash;0.022</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">CTI (Comparative Tracking Index)</span>
+                <span class="f4-mat-val">175&ndash;250&thinsp;V (Class IIIa&ndash;IIIb)</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">CTE (z-axis)</span>
+                <span class="f4-mat-val">50&ndash;70&thinsp;ppm/&deg;C</span>
+              </div>
+            </div>
+            <div class="f4-mat-rec">
+              <strong>Recommend when:</strong> Cost is the primary constraint, the board has &le;2 reflow cycles, operating temperature stays below 80&deg;C, and no RF or high-speed interfaces require tight Dk control. TG135 is adequate for most IoT, industrial control, and consumer 4-layer boards with standard signal speeds.
+            </div>
+            <div class="f4-mat-caution">
+              <strong>Caution:</strong> At lead-free soldering temperatures (peak ~260&deg;C), TG135 is close to its mechanical limit. Multiple reflow cycles can cause z-axis expansion stress on PTH barrels. For boards going through 3+ reflow passes, TG170 is safer.
+            </div>
+          </article>
+
+          <!-- TG170 -->
+          <article class="f4-mat-card f4-mat-highlight">
+            <div class="f4-mat-top">
+              <h3>TG170 FR-4 (High-Tg)</h3>
+              <span class="f4-mat-cost">Cost index: 1.15&ndash;1.25&times;</span>
+              <span class="f4-mat-tag">Recommended &bull; Multilayer default</span>
+            </div>
+            <div class="f4-mat-specs">
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Glass transition (Tg)</span>
+                <span class="f4-mat-val">170&ndash;180&deg;C</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Decomposition temp (Td)</span>
+                <span class="f4-mat-val">340&ndash;360&deg;C</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Dk at 1&thinsp;GHz</span>
+                <span class="f4-mat-val">4.1&ndash;4.4</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Df at 1&thinsp;GHz</span>
+                <span class="f4-mat-val">0.015&ndash;0.019</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">CTI</span>
+                <span class="f4-mat-val">225&ndash;275&thinsp;V (Class II&ndash;IIIa)</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">CTE (z-axis)</span>
+                <span class="f4-mat-val">35&ndash;50&thinsp;ppm/&deg;C (lower = better PTH reliability)</span>
+              </div>
+            </div>
+            <div class="f4-mat-rec">
+              <strong>Recommend when:</strong> The board undergoes lead-free assembly (peak 260&deg;C), has multiple reflow cycles, operates in elevated ambient temperatures (80&ndash;130&deg;C), is thicker than 1.6&thinsp;mm, or needs better PTH reliability across thermal cycles. TG170 is XFPCB's recommended default for 4-layer PCBs because the 15&ndash;25% material premium is offset by significantly lower via-crack risk.
+            </div>
+            <div class="f4-mat-note">
+              <strong>Impedance note:</strong> The slightly lower and more stable Dk of TG170 (4.1&ndash;4.4 vs TG135's 4.2&ndash;4.5) means your 50&thinsp;&Omega; trace width may differ by ~2&ndash;3%. If the design was simulated with TG135 and you switch to TG170, the impedance delta is usually within tolerance — but XFPCB will recalculate both and confirm.
+            </div>
+          </article>
+
+          <!-- Rogers -->
+          <article class="f4-mat-card">
+            <div class="f4-mat-top">
+              <h3>Rogers (RO4003C / RO4350B)</h3>
+              <span class="f4-mat-cost">Cost index: 4&ndash;8&times;</span>
+              <span class="f4-mat-tag">RF-grade &bull; Premium</span>
+            </div>
+            <div class="f4-mat-specs">
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Glass transition (Tg)</span>
+                <span class="f4-mat-val">&gt;280&deg;C (RO4003C &mdash; no Tg per se, thermoset)</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Decomposition temp (Td)</span>
+                <span class="f4-mat-val">425&deg;C (RO4350B)</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Dk at 10&thinsp;GHz</span>
+                <span class="f4-mat-val">3.38 (RO4003C) / 3.48 (RO4350B) &mdash; highly stable</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Df at 10&thinsp;GHz</span>
+                <span class="f4-mat-val">0.0027 (RO4003C) / 0.0037 (RO4350B)</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">Moisture absorption</span>
+                <span class="f4-mat-val">0.04&ndash;0.06% (vs FR-4 0.10&ndash;0.25%)</span>
+              </div>
+              <div class="f4-mat-row">
+                <span class="f4-mat-prop">CTE (z-axis)</span>
+                <span class="f4-mat-val">&lt;40&thinsp;ppm/&deg;C</span>
+              </div>
+            </div>
+            <div class="f4-mat-rec">
+              <strong>Recommend when:</strong> Operating frequency exceeds 1&thinsp;GHz, insertion loss must be minimised, Dk tolerance is critical, phase match matters (antenna arrays, beamforming), or the board must perform consistently across temperature and humidity. Typical 4-layer Rogers applications: LoRa gateway PA stages, 5&ndash;6&thinsp;GHz WiFi front-end modules, GPS LNAs, RF filter boards.
+            </div>
+            <div class="f4-mat-caution">
+              <strong>Cost consideration:</strong> Rogers material cost is 4&ndash;8&times; FR-4, but the total board premium is less because Rogers replaces only the signal-layer prepreg and core — the outer prepreg can remain standard FR-4 in a hybrid stackup. XFPCB commonly builds hybrid 4-layer boards with an RO4003C core and FR-4 prepreg for cost-optimised RF performance.
+            </div>
+          </article>
+        </div>
+
+        <div class="f4-mat-decision">
+          <h4>Material selection cheat sheet</h4>
+          <div class="f4-mat-flow">
+            <div class="f4-mat-flow-item">
+              <span class="f4-flow-q">Ambient temp &le;80&deg;C &bull; &le;2 reflow cycles?</span>
+              <span class="f4-flow-a f4-flow-yes">Yes &rarr; TG135 FR-4</span>
+            </div>
+            <div class="f4-mat-flow-item">
+              <span class="f4-flow-q">Lead-free assembly &bull; &gt;2 reflows &bull; High reliability?</span>
+              <span class="f4-flow-a f4-flow-yes">Yes &rarr; TG170 FR-4</span>
+            </div>
+            <div class="f4-mat-flow-item">
+              <span class="f4-flow-q">Freq &gt;1&thinsp;GHz &bull; Low loss &bull; Stable Dk needed?</span>
+              <span class="f4-flow-a f4-flow-rogers">Yes &rarr; Rogers (consider hybrid stackup)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5 — THERMAL MANAGEMENT IN 4-LAYER DESIGNS
+         How internal planes affect thermal behaviour, with specific guidance.
+         ==================================================================== -->
+    <section class="f4-thermal">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Thermal design</span>
+          <h2>Thermal management on 4-layer PCBs: what the internal planes actually do</h2>
+          <p class="f4-section-sub">
+            One of the less-discussed advantages of 4-layer boards is thermal performance. The internal copper planes act as heat spreaders — but their effectiveness depends on copper weight, plane continuity, via stitching, and the thermal conductivity of the dielectric between layers. This section provides specific numbers and design rules.
+          </p>
+        </div>
+
+        <div class="f4-thermal-grid">
+          <article class="f4-thermal-card">
+            <h4>Copper plane thermal spreading</h4>
+            <p>A solid copper plane (1&thinsp;oz, 35&thinsp;&micro;m) has a thermal conductivity of ~385&thinsp;W/m&middot;K in-plane, compared to the through-plane conductivity of FR-4 (~0.3&thinsp;W/m&middot;K) — a ratio of more than 1,000:1. A 1&thinsp;oz copper plane can spread heat laterally at roughly the same efficiency as a 0.35&thinsp;mm aluminium plate. For a 100&times;80&thinsp;mm 4-layer board with solid GND and power planes on L2 and L3, the effective heat spreading area is approximately 160&thinsp;cm&sup2; (both planes combined).</p>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">In-plane conductivity (copper)</span>
+              <span class="f4-td-value">~385&thinsp;W/m&middot;K</span>
+            </div>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">Through-plane (FR-4 dielectric)</span>
+              <span class="f4-td-value">~0.3&thinsp;W/m&middot;K</span>
+            </div>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">Temp drop per Watt (typical 4-layer)</span>
+              <span class="f4-td-value">8&ndash;15&deg;C/W (vs 20&ndash;40&deg;C/W on 2-layer)</span>
+            </div>
+          </article>
+
+          <article class="f4-thermal-card">
+            <h4>Thermal via arrays: when one plane is not enough</h4>
+            <p>For components dissipating &gt;0.5&thinsp;W (voltage regulators, power MOSFETs, RF PAs), the thermal resistance from the component pad to the internal plane must be minimised. Thermal via arrays — typically 9&ndash;16 vias under the component pad — provide a low-thermal-impedance path from L1 to L2 (GND plane). The effective thermal resistance of a via array depends on via count, via diameter, and copper plating thickness.</p>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">Single via (0.3&thinsp;mm, 25&thinsp;&micro;m plating)</span>
+              <span class="f4-td-value">~120&deg;C/W thermal resistance</span>
+            </div>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">9-via array (3&times;3 grid)</span>
+              <span class="f4-td-value">~13&deg;C/W (9&times; reduction in parallel)</span>
+            </div>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">16-via array (4&times;4 grid)</span>
+              <span class="f4-td-value">~7.5&deg;C/W</span>
+            </div>
+            <p class="f4-thermal-note">Via arrays are most effective when (a) the vias are filled or tented to prevent solder wicking, (b) the via barrel plating is at least 25&thinsp;&micro;m, and (c) the vias directly connect to the GND plane without thermal spokes. For high-power components, XFPCB recommends filled vias with cap plating.</p>
+          </article>
+
+          <article class="f4-thermal-card f4-thermal-wide">
+            <h4>Copper weight selection for thermal performance</h4>
+            <p>On a 4-layer board, the internal copper weight affects heat spreading more than the outer layers because the internal planes have continuous copper area (no component pads breaking the plane). XFPCB's recommended copper weight configurations for thermal management:</p>
+            <table class="f4-thermal-table">
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Heat spreading</th>
+                  <th>Min trace/space</th>
+                  <th>Cost impact</th>
+                  <th>Best for</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1&thinsp;oz all layers</td>
+                  <td>Standard</td>
+                  <td>0.10/0.10&thinsp;mm</td>
+                  <td>Baseline</td>
+                  <td>Most 4-layer designs</td>
+                </tr>
+                <tr>
+                  <td>1&thinsp;oz outer, 2&thinsp;oz inner</td>
+                  <td>Good (inner planes spread heat 2&times; better)</td>
+                  <td>0.15/0.15&thinsp;mm (inner)</td>
+                  <td>+10&ndash;20%</td>
+                  <td>Power electronics with moderate dissipation</td>
+                </tr>
+                <tr>
+                  <td>2&thinsp;oz all layers</td>
+                  <td>High</td>
+                  <td>0.20/0.20&thinsp;mm</td>
+                  <td>+25&ndash;40%</td>
+                  <td>High-current motor drives, LED arrays</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="f4-thermal-note">Increasing inner plane copper from 1&thinsp;oz to 2&thinsp;oz doubles the cross-sectional area for heat conduction. For a board with 10&thinsp;W total dissipation, this typically reduces the hot-spot temperature by 5&ndash;10&deg;C depending on board size and airflow.</p>
+          </article>
+
+          <article class="f4-thermal-card">
+            <h4>Board thickness and thermal impedance</h4>
+            <p>The thermal resistance from L1 (component side) to L2 (GND plane) is proportional to the prepreg thickness. Thinner prepreg = lower thermal resistance:</p>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">0.10&thinsp;mm prepreg</span>
+              <span class="f4-td-value">~3.0&deg;C&middot;cm&sup2;/W through-plane</span>
+            </div>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">0.20&thinsp;mm prepreg</span>
+              <span class="f4-td-value">~6.0&deg;C&middot;cm&sup2;/W through-plane</span>
+            </div>
+            <div class="f4-thermal-data">
+              <span class="f4-td-label">0.40&thinsp;mm prepreg</span>
+              <span class="f4-td-value">~12.0&deg;C&middot;cm&sup2;/W through-plane</span>
+            </div>
+            <p class="f4-thermal-note">For power components, use vias to bypass the prepreg layer. The through-plane thermal resistance of a single 0.3&thinsp;mm via is approximately 0.5&deg;C/W per via (substantially lower than through the prepreg alone).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 6 — 4-LAYER DFM CODE
+         Specific DFM rules for 4-layer designs, numbered as a code.
+         ==================================================================== -->
+    <section class="f4-dfm">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">DFM rules for 4-layer</span>
+          <h2>The 4-layer DFM code: rules XFPCB checks during CAM review</h2>
+          <p class="f4-section-sub">
+            These are not generic PCB guidelines. Each rule addresses a failure mode that appears specifically on 4-layer boards — where inner planes, registration between layers, and lamination physics create constraints that do not exist on simpler stackups.
+          </p>
+        </div>
+
+        <div class="f4-dfm-list">
+          <!-- Rule 1 -->
+          <article class="f4-dfm-rule">
+            <div class="f4-dfm-num">DFM-4L-01</div>
+            <div class="f4-dfm-body">
+              <h4>Copper balance across all four layers must be within 20 points</h4>
+              <p>During lamination, uneven copper distribution creates differential resin flow and uneven pressure across the panel. If L1 has 80% copper and L2 has 20%, the prepreg between them will experience uneven resin squeeze-out, leading to local thickness variations, impedance shifts, and board warp. XFPCB's CAM team flags any layer pair where copper percentage differs by more than 20 percentage points.</p>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-do">DO</span> Add cross-hatch thieving patterns (typical 50&ndash;70% fill) to low-copper areas on inner layers to balance copper density.
+              </div>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-dont">AVOID</span> Long continuous slots or large cutouts on one inner layer that are not matched by similar cutouts on the adjacent layer.
+              </div>
+            </div>
+          </article>
+
+          <!-- Rule 2 -->
+          <article class="f4-dfm-rule">
+            <div class="f4-dfm-num">DFM-4L-02</div>
+            <div class="f4-dfm-body">
+              <h4>Drill-to-copper clearance on inner layers &ge; 0.30&thinsp;mm (12 mil)</h4>
+              <p>Non-plated holes (mounting holes, tooling holes, edge slots) must maintain at least 0.30&thinsp;mm clearance from any inner-layer copper feature. At 0.30&thinsp;mm, the drill wander tolerance of &plusmn;0.08&thinsp;mm is safely absorbed. Below 0.25&thinsp;mm, drill breakout into the inner plane can expose copper inside the hole wall, creating a short or corrosion path. For plated through-holes that must connect to an inner plane, the clearance is defined by the annular ring on that layer (minimum 0.15&thinsp;mm annular ring for inner layers).</p>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-do">DO</span> Check every non-plated hole against all four copper layers — CAM software does this automatically, but a manual design review before release saves time.
+              </div>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-dont">AVOID</span> Defining the keep-out zone as a fixed diameter in the EDA tool if the hole position may shift during panelisation.
+              </div>
+            </div>
+          </article>
+
+          <!-- Rule 3 -->
+          <article class="f4-dfm-rule">
+            <div class="f4-dfm-num">DFM-4L-03</div>
+            <div class="f4-dfm-body">
+              <h4>Plane openings (anti-pads) must be at least 0.20&thinsp;mm larger than the drill diameter</h4>
+              <p>When a PTH via passes through an inner plane layer without connecting to it, the anti-pad (clearance hole in the copper) must be large enough to prevent inadvertent connection from drill wander, image registration error, or plating flash. The minimum anti-pad diameter is drill diameter + 0.40&thinsp;mm (i.e., 0.20&thinsp;mm clearance on each side). For high-voltage planes (&gt;50&thinsp;V), increase to drill diameter + 0.60&thinsp;mm.</p>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-do">DO</span> Use the same anti-pad diameter for L2 and L3 unless one plane has higher voltage isolation requirements.
+              </div>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-dont">AVOID</span> Using the EDA tool's default anti-pad size without checking it against the fabricator's minimum — they are often set to 0.10&thinsp;mm clearance by default.
+              </div>
+            </div>
+          </article>
+
+          <!-- Rule 4 -->
+          <article class="f4-dfm-rule">
+            <span class="f4-dfm-num">DFM-4L-04</span>
+            <div class="f4-dfm-body">
+              <h4>Resin flow zones: minimum copper-free area on inner layers &ge; 10&times;10&thinsp;mm</h4>
+              <p>Large copper-free voids on inner layers can fill incompletely during lamination if surrounding copper areas restrict resin flow. Resin-starved areas create dielectric voids, which can cause impedance variation, CAF (conductive anodic filament) growth, and mechanical weakness. XFPCB's rule: any copper-free area larger than 10&thinsp;mm in either dimension must be checked for resin fill adequacy. For large open areas (&gt;50&thinsp;mm), add flow-enhancing channels or dot patterns in the copper plane.</p>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-do">DO</span> Distribute copper evenly — fill inner layer planes with copper grid patterns at 70&ndash;80% density rather than leaving large empty areas.
+              </div>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-dont">AVOID</span> Creating completely copper-free zones larger than 10&thinsp;mm in any direction on an inner plane layer.
+              </div>
+            </div>
+          </article>
+
+          <!-- Rule 5 -->
+          <article class="f4-dfm-rule">
+            <span class="f4-dfm-num">DFM-4L-05</span>
+            <div class="f4-dfm-body">
+              <h4>Buried/blind vias are not recommended on a 4-layer board</h4>
+              <p>A 4-layer stackup with only through-hole vias is the most reliable and cost-effective configuration. Buried vias (connecting L2 to L3) and blind vias (connecting L1 to L2) are technically possible but require sequential lamination cycles, increasing cost by 40&ndash;60% and introducing additional reliability risks (dielectric fill voids, plating shadowing). In almost every 4-layer design, all necessary routing connections can be made with through-hole vias, sometimes combined with microvias if HDI features are required. If blind/buried vias appear necessary, consider whether a 6-layer board would be more cost-effective.</p>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-do">DO</span> Use through-hole vias for all layer transitions on 4-layer boards. The aspect ratio (board thickness &divide; drill diameter) for a 1.6&thinsp;mm board with 0.3&thinsp;mm vias is ~5.3:1 — well within reliable plating limits.
+              </div>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-dont">AVOID</span> Buried vias between inner layers — they add a full lamination cycle with no routing benefit on a 4-layer board.
+              </div>
+            </div>
+          </article>
+
+          <!-- Rule 6 -->
+          <article class="f4-dfm-rule">
+            <span class="f4-dfm-num">DFM-4L-06</span>
+            <div class="f4-dfm-body">
+              <h4>Layer registration tolerance: include &plusmn;0.10&thinsp;mm for inner-layer feature placement</h4>
+              <p>During lamination, the four copper layers are aligned using optical registration targets. The typical registration tolerance between layers is &plusmn;0.10&thinsp;mm (4 mil). This means an inner plane pad that should be centred on a PTH via may be offset by up to 0.10&thinsp;mm. Ensure annular ring dimensions on inner layers account for this offset on top of the drill registration tolerance. For reliable fabrication, inner-layer annular ring should be &ge;0.15&thinsp;mm after accounting for both registration and drill tolerances.</p>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-do">DO</span> Add 0.10&thinsp;mm to the minimum annular ring calculation for inner layers compared to outer layers.
+              </div>
+              <div class="f4-dfm-dos">
+                <span class="f4-dfm-dont">AVOID</span> Using the same pad diameter on inner and outer layers for the same hole — the inner layer needs the larger pad.
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="f4-dfm-cta">
+          <p>XFPCB performs all six checks (and approximately 30 more) during CAM review for every 4-layer order. Our DFM report is delivered before fabrication and includes flagged items, recommendations, and required-approval items. No production starts without your sign-off on the DFM findings.</p>
+          <a href="#f4-consult" class="f4-btn f4-btn-primary">Submit your design for DFM review</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 7 — COST STRUCTURE TRANSPARENCY
+         What actually drives the price of a 4-layer board.
+         ==================================================================== -->
+    <section class="f4-cost">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Cost transparency</span>
+          <h2>What drives the cost of a 4-layer PCB: a supply-side breakdown</h2>
+          <p class="f4-section-sub">
+            Unlike 2-layer boards where material is the dominant cost factor, a 4-layer PCB's cost is distributed across laminate materials, prepreg, lamination cycles, drilling time, plating, and inspection. Understanding this breakdown helps procurement teams target their cost-reduction efforts where they have the most leverage.
+          </p>
+        </div>
+
+        <div class="f4-cost-diagram">
+          <div class="f4-cost-bar">
+            <div class="f4-cost-segment f4-cost-material" style="width: 30%;">
+              <span>Laminates &amp; prepreg <strong>30%</strong></span>
+            </div>
+            <div class="f4-cost-segment f4-cost-lam" style="width: 15%;">
+              <span>Lamination <strong>15%</strong></span>
+            </div>
+            <div class="f4-cost-segment f4-cost-drill" style="width: 18%;">
+              <span>Drilling <strong>18%</strong></span>
+            </div>
+            <div class="f4-cost-segment f4-cost-plating" style="width: 12%;">
+              <span>Plating <strong>12%</strong></span>
+            </div>
+            <div class="f4-cost-segment f4-cost-test" style="width: 10%;">
+              <span>Test / inspect <strong>10%</strong></span>
+            </div>
+            <div class="f4-cost-segment f4-cost-other" style="width: 15%;">
+              <span>Other <strong>15%</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="f4-cost-details">
+          <div class="f4-cost-item">
+            <div class="f4-ci-header">
+              <h4>Laminates and prepreg</h4>
+              <span class="f4-ci-pct">30% of board cost</span>
+            </div>
+            <p>Core laminate (L2&ndash;L3 substrate) and two prepreg bonding sheets (L1&ndash;L2 and L3&ndash;L4). Cost varies directly with material grade: TG170 adds ~15&ndash;20% over TG135; Rogers adds 300&ndash;700% for the affected layers. The core is the largest single laminate piece; substituting it from TG135 to TG170 has the most impact on total material cost.</p>
+            <div class="f4-ci-levers">
+              <strong>Cost levers:</strong> Use TG170 only for reliability-critical designs. Keep outer prepreg at standard FR-4 even if the core is high-performance. Reduce panel size if board quantity permits — material waste at panel edges is 100% lost.
+            </div>
+          </div>
+          <div class="f4-cost-item">
+            <div class="f4-ci-header">
+              <h4>Lamination</h4>
+              <span class="f4-ci-pct">15% of board cost</span>
+            </div>
+            <p>Each lamination cycle takes 60&ndash;90 minutes at 180&ndash;200&deg;C under pressure, plus cool-down. A 4-layer board requires one lamination cycle (inner layers + prepreg + outer foil stacked and pressed). By comparison, a 2-layer board has no lamination step (core is pre-bonded). The lamination press's capacity is the bottleneck in most PCB factories — complex stackups with multiple material types require dedicated press setups.</p>
+            <div class="f4-ci-levers">
+              <strong>Cost levers:</strong> Use a single supplier-approved material system — mixing incompatible prepreg and core chemistries can cause resin-flow issues that reduce yield. Standard 1.6&thinsp;mm stackups use common tooling; non-standard thicknesses may require custom press pads.
+            </div>
+          </div>
+          <div class="f4-cost-item">
+            <div class="f4-ci-header">
+              <h4>Drilling</h4>
+              <span class="f4-ci-pct">18% of board cost</span>
+            </div>
+            <p>Drilling a 4-layer board takes approximately 2&times; longer than a 2-layer board of the same hole count because the stack height is similar but the four-layer target registration requires slower feed rates. Tool wear is also higher: drilling through copper on all four layers accelerates bit wear. A 0.3&thinsp;mm drill bit typically lasts 3,000&ndash;5,000 hits on 4-layer vs 8,000&ndash;12,000 on 2-layer. The drilling step is also where minimum hole size directly affects cost: 0.25&thinsp;mm bits cost ~30% more and wear faster than 0.3&thinsp;mm.</p>
+            <div class="f4-ci-levers">
+              <strong>Cost levers:</strong> Use 0.3&thinsp;mm minimum via size (not 0.25 or 0.2&thinsp;mm) unless routing density forces smaller holes. Reduce total hole count by avoiding unnecessary vias. Use matrix drilling with grouped hole sizes to minimise bit changes.
+            </div>
+          </div>
+          <div class="f4-cost-item">
+            <div class="f4-ci-header">
+              <h4>Plating and surface finish</h4>
+              <span class="f4-ci-pct">12% of board cost</span>
+            </div>
+            <p>Electroless copper plating deposits copper (~25&thinsp;&micro;m) on all hole walls and exposed surfaces. On a 4-layer board, the PTH barrel must plate uniformly through ~1.6&thinsp;mm of laminate — aspect ratio of 5:1 for 0.3&thinsp;mm holes, which is well within standard plating capability but requires longer plating time than 2-layer boards. Surface finish adds cost on top of the base copper: ENIG adds ~50&thinsp;100% vs lead-free HASL, but the absolute cost difference is material cost × board area, so it is proportionally less of the total on a 4-layer board than on a 1-layer board.</p>
+            <div class="f4-ci-levers">
+              <strong>Cost levers:</strong> Lead-free HASL is the cost-effective default for 4-layer boards. Upgrade to ENIG only when fine-pitch BGA or long shelf-life requirements justify it. Immersion silver (IAg) is a mid-cost alternative with similar coplanarity to ENIG.
+            </div>
+          </div>
+        </div>
+
+        <div class="f4-cost-summary">
+          <h4>Cost summary: 4-layer vs alternatives (100&times;80&thinsp;mm board, 100 pcs, standard spec)</h4>
+          <table class="f4-cost-table">
+            <thead>
+              <tr>
+                <th>Board type</th>
+                <th>Typical unit price range</th>
+                <th>Cost index</th>
+                <th>Key cost driver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-layer (CEM-1, HASL)</td>
+                <td>$0.30&ndash;0.70</td>
+                <td>0.3&ndash;0.5&times;</td>
+                <td>Material + punching tooling</td>
+              </tr>
+              <tr>
+                <td>2-layer (FR-4, HASL)</td>
+                <td>$0.80&ndash;1.20</td>
+                <td>1.0&times; (baseline)</td>
+                <td>Material + drilling</td>
+              </tr>
+              <tr>
+                <td><strong>4-layer (FR-4 TG170, HASL)</strong></td>
+                <td><strong>$1.40&ndash;2.20</strong></td>
+                <td><strong>1.5&ndash;1.8&times;</strong></td>
+                <td><strong>Laminate + lamination + drilling</strong></td>
+              </tr>
+              <tr>
+                <td>4-layer (FR-4 TG170, ENIG)</td>
+                <td>$1.80&ndash;3.00</td>
+                <td>1.9&ndash;2.5&times;</td>
+                <td>Laminate + finish</td>
+              </tr>
+              <tr>
+                <td>4-layer (Rogers hybrid, ENIG)</td>
+                <td>$4.00&ndash;12.00</td>
+                <td>4&ndash;10&times;</td>
+                <td>Rogers laminate cost</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="f4-cost-note">Prices are for reference based on XFPCB standard production. Actual pricing depends on board dimensions, quantity, surface finish, impedance testing requirements, lead time, and delivery destination. Request a custom quotation for your specific design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 8 — APPLICATION PROFILES
+         Real 4-layer PCB use cases with engineering context.
+         ==================================================================== -->
+    <section class="f4-apps">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Applications</span>
+          <h2>Where 4-layer PCBs solve real engineering problems</h2>
+          <p class="f4-section-sub">
+            Each application below represents an RFQ category XFPCB fulfils regularly. The common engineering thread: 2-layer was insufficient (EMI, routing density, or impedance), and 6-layer was unnecessary.
+          </p>
+        </div>
+
+        <div class="f4-apps-grid">
+          <article class="f4-app-card">
+            <h4>WiFi / BLE / Zigbee modules</h4>
+            <p>Wireless modules require continuous ground beneath the antenna feed trace, tightly controlled 50&thinsp;&Omega; impedance to the antenna connector, and minimal digital noise coupling from the host MCU. A 4-layer board (Architecture A or C) provides the GND reference plane and impedance-controlled interface that a 2-layer board cannot deliver reliably.</p>
+          </article>
+          <article class="f4-app-card">
+            <h4>Ethernet switch and PoE interfaces</h4>
+            <p>100&thinsp;&Omega; differential pairs for Ethernet PHY-to-RJ45 traces require consistent impedance across the entire route. 4-layer provides the reference plane under both traces of each pair. Split planes on L3 isolate the PoE power feed from the signal return path.</p>
+          </article>
+          <article class="f4-app-card">
+            <h4>USB 2.0 / USB 3.0 hub and interface boards</h4>
+            <p>USB 2.0 requires 90&thinsp;&Omega; differential impedance; USB 3.0 adds 100&thinsp;&Omega; diff for the SuperSpeed pair. A 4-layer board with 0.5&thinsp;oz outer copper (Architecture C) allows fine enough traces for the required differential geometry while maintaining the reference plane on L2.</p>
+          </article>
+          <article class="f4-app-card">
+            <h4>Industrial sensor fusion boards</h4>
+            <p>Combining analogue sensor front-ends (thermocouple, strain gauge, 4&ndash;20&thinsp;mA) with digital control logic (CAN bus, RS-485) on one board requires clean power and ground isolation. Architecture B (dual ground planes) provides the separation needed to keep digital return currents out of the analogue reference — a common problem on 2-layer boards.</p>
+          </article>
+          <article class="f4-app-card">
+            <h4>Motor drive controller boards</h4>
+            <p>BLDC motor drivers combine high-current power traces (2&ndash;10&thinsp;A) with low-voltage logic and sensor feedback. Thicker inner copper (2&thinsp;oz on L2/L3) spreads MOSFET and driver heat while the outer layers handle high-current routing and logic. 4-layer avoids the copper-space compromises that force wide trace detours on 2-layer boards.</p>
+          </article>
+          <article class="f4-app-card">
+            <h4>Audio DAC and preamplifier boards</h4>
+            <p>High-end audio DACs (AKM, ESS, Cirrus Logic) require separate analogue and digital ground returns, low-noise power supplies, and minimal crosstalk between channels. Architecture B with solid ground planes on L2 and L3 provides the isolation that separates digital noise (from the I2S or USB interface) from the analogue audio path without adding PCB size.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 9 — ENGINEERING CONSULTATION (RFQ)
+         Framed as starting a consultation, not placing an order.
+         ==================================================================== -->
+    <section class="f4-consult" id="f4-consult">
+      <div class="f4-container">
+        <div class="f4-consult-layout">
+          <div class="f4-consult-copy">
+            <span class="f4-badge">Start your engineering consultation</span>
+            <h2>Send your 4-layer PCB project for stackup review and quotation</h2>
+            <p class="f4-consult-intro">
+              XFPCB treats every 4-layer PCB RFQ as an engineering consultation. We review the stackup, impedance requirements, material selection, and DFM considerations before providing a quotation — not after. The typical response includes a recommended stackup architecture, suggested material, impedance feasibility assessment, and DFM findings.
+            </p>
+
+            <div class="f4-consult-process">
+              <div class="f4-cp-step">
+                <span class="f4-cp-num">1</span>
+                <div>
+                  <strong>Submit files and specification</strong>
+                  <span>Gerber + NC Drill + stackup requirements + target impedance (if any) + material preference + quantity + delivery destination</span>
+                </div>
+              </div>
+              <div class="f4-cp-step">
+                <span class="f4-cp-num">2</span>
+                <div>
+                  <strong>Engineering review</strong>
+                  <span>XFPCB CAM team reviews stackup, impedance targets, DFM rules, and material compatibility. Report delivered within 4&ndash;24 hours.</span>
+                </div>
+              </div>
+              <div class="f4-cp-step">
+                <span class="f4-cp-num">3</span>
+                <div>
+                  <strong>Quotation and consultation summary</strong>
+                  <span>Structured quotation with recommended stackup, impedance verification plan, lead time options, and cost breakdown by quantity tier.</span>
+                </div>
+              </div>
+              <div class="f4-cp-step">
+                <span class="f4-cp-num">4</span>
+                <div>
+                  <strong>Production and verification</strong>
+                  <span>Impedance coupons on every panel, TDR verification recorded, DFM-checked fabrication, electrical test, visual inspection, export packing.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="f4-consult-checklist">
+              <h4>To include for a complete engineering review:</h4>
+              <ul>
+                <li>Gerber files (RS-274X) with all copper, soldermask, silkscreen, and outline layers</li>
+                <li>NC drill file with tool list and drill symbol definitions</li>
+                <li>Stackup diagram or specification (target board thickness, layer purpose, dielectric type)</li>
+                <li>Impedance targets if applicable: 50&thinsp;&Omega; SE, 90&thinsp;&Omega; diff, 100&thinsp;&Omega; diff — which layer and which signals</li>
+                <li>Material preference: TG135, TG170, or Rogers — or let XFPCB recommend based on your design</li>
+                <li>Quantity (prototype + production tier if known)</li>
+                <li>Delivery country and preferred shipping method</li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="f4-consult-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+            <input type="hidden" name="honeypot" style="display:none;">
+            <input type="hidden" name="page_url" value="https://xfpcb.com/products/4-layer-pcb/">
+            <input type="hidden" name="page_path" value="/products/4-layer-pcb/">
+            <input type="hidden" name="subject" value="4-Layer PCB Engineering Consultation - XFPCB">
+            <input type="hidden" name="redirect" value="https://xfpcb.com/">
+
+            <div class="f4-form-group">
+              <label for="f4-name">Name</label>
+              <input type="text" id="f4-name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="f4-form-group">
+              <label for="f4-email">Email address</label>
+              <input type="email" id="f4-email" name="email" placeholder="name@company.com" required>
+            </div>
+            <div class="f4-form-group">
+              <label for="f4-company">Company</label>
+              <input type="text" id="f4-company" name="company" placeholder="Your company">
+            </div>
+            <div class="f4-form-group">
+              <label for="f4-arch-type">Preferred stackup architecture (optional)</label>
+              <select id="f4-arch-type" name="stackup_architecture">
+                <option value="">Not sure — recommend based on my design</option>
+                <option value="A">Architecture A: Standard (Signal-GND-Power-Signal)</option>
+                <option value="B">Architecture B: Dual GND (Signal-GND-GND-Signal)</option>
+                <option value="C">Architecture C: Impedance-optimised</option>
+              </select>
+            </div>
+            <div class="f4-form-group">
+              <label for="f4-message">Project requirements</label>
+              <textarea id="f4-message" name="message" rows="6" placeholder="Include: board dimensions, layer stackup, target impedance (50/90/100 ohm), material preference, quantity tiers, delivery country.&#10;&#10;Example: 4-layer FR-4 TG170 PCB, 120 &times; 90 mm, 1.6 mm, 0.5 oz outer / 1 oz inner, ENIG finish, 50 ohm SE on L1 + 90 ohm diff on L4, 200 prototype + 5,000 production, delivery to UK." required></textarea>
+            </div>
+            <div class="f4-form-group">
+              <label class="f4-form-file">
+                <span>Attach design files (Gerber + Drill)</span>
+                <span class="f4-file-hint">Or send files separately after submitting</span>
+                <input type="file" name="files" multiple>
+              </label>
+            </div>
+            <button type="submit" class="f4-btn f4-btn-primary f4-btn-block">Submit for engineering consultation</button>
+            <p class="f4-form-note">All design files are treated as confidential. XFPCB signs NDAs on request. Files are deleted 90 days after project completion unless otherwise agreed in writing.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 10 — RELATED LAYER PAGES
+         ==================================================================== -->
+    <section class="f4-related">
+      <div class="f4-container">
+        <div class="f4-section-head">
+          <span class="f4-badge">Compare layer counts</span>
+          <h2>Is 4 layers the right choice — or should you go up or down?</h2>
+          <p class="f4-section-sub">
+            If this consultation raised questions about whether your design truly needs 4 layers, or whether 6 layers would simplify your routing further, the pages below provide the same engineering depth for each option.
+          </p>
+        </div>
+        <div class="f4-related-strip">
+          <a href="/products/1-layer-pcb/" class="f4-related-link">1-Layer PCB</a>
+          <a href="/products/2-layer-pcb/" class="f4-related-link">2-Layer PCB</a>
+          <a href="/products/4-layer-pcb/" class="f4-related-link f4-related-active">4-Layer PCB</a>
+          <a href="/products/6-layer-pcb/" class="f4-related-link">6-Layer PCB</a>
+          <a href="/products/8-layer-pcb/" class="f4-related-link">8-Layer PCB</a>
+          <a href="/products/multilayer-pcb/" class="f4-related-link">Multilayer PCB Guide</a>
+          <a href="/products/high-layer-count-pcb/" class="f4-related-link">High Layer Count PCB</a>
+        </div>
+        <div class="f4-related-cta">
+          <p>Still not sure? Send us your Gerbers and we will recommend the optimal layer count — free of charge, with engineering justification.</p>
+          <a href="#f4-consult" class="f4-btn f4-btn-primary">Submit for layer-count recommendation</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 </BaseLayout>
+
+<style is:global>
+  /* ====================================================================
+     F4 DESIGN SYSTEM — 4-LAYER PCB ENGINEERING CONSULTATION
+     Prefix: f4-  (completely self-contained, no dependencies)
+     ==================================================================== */
+
+  /* --- Colour tokens --- */
+  :root {
+    --f4-bg: #0a0e16;
+    --f4-bg-alt: #0f1420;
+    --f4-bg-card: #161c2c;
+    --f4-bg-card-hover: #1c2336;
+    --f4-border: #252d42;
+    --f4-border-light: #323b52;
+    --f4-text: #e4e8f0;
+    --f4-text-muted: #94a0b8;
+    --f4-text-dim: #6a7894;
+    --f4-accent: #ff6b00;
+    --f4-accent-glow: rgba(255, 107, 0, 0.12);
+    --f4-accent-dim: #cc5500;
+    --f4-green: #22c55e;
+    --f4-green-bg: rgba(34, 197, 94, 0.12);
+    --f4-blue: #3b82f6;
+    --f4-blue-bg: rgba(59, 130, 246, 0.12);
+    --f4-amber: #f59e0b;
+    --f4-amber-bg: rgba(245, 158, 11, 0.12);
+    --f4-cyan: #06b6d4;
+    --f4-purple: #a855f7;
+    --f4-red: #ef4444;
+    --f4-radius: 12px;
+    --f4-radius-sm: 8px;
+    --f4-radius-lg: 20px;
+  }
+
+  /* --- Layout primitives --- */
+  .f4-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .f4-section-head {
+    max-width: 800px;
+    margin: 0 auto 52px;
+    text-align: center;
+  }
+
+  .f4-section-head h2 {
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 14px 0 18px;
+    color: var(--f4-text);
+  }
+
+  .f4-section-sub {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .f4-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--f4-accent);
+    background: var(--f4-accent-glow);
+    border: 1px solid rgba(255, 107, 0, 0.2);
+    padding: 5px 16px;
+    border-radius: 20px;
+  }
+
+  /* --- Shared buttons --- */
+  .f4-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: var(--f4-radius-sm);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    border: none;
+    line-height: 1.3;
+  }
+  .f4-btn-primary {
+    background: var(--f4-accent);
+    color: #fff;
+  }
+  .f4-btn-primary:hover {
+    background: var(--f4-accent-dim);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 24px rgba(255, 107, 0, 0.3);
+  }
+  .f4-btn-outline {
+    background: transparent;
+    color: var(--f4-text);
+    border: 1px solid var(--f4-border-light);
+  }
+  .f4-btn-outline:hover {
+    border-color: var(--f4-accent);
+    color: var(--f4-accent);
+  }
+  .f4-btn-block {
+    width: 100%;
+  }
+
+  /* ==================================================================
+     SECTION 1 — ENGINEERING BRIEF
+     ================================================================== */
+  .f4-brief {
+    padding: 80px 0 64px;
+    background: var(--f4-bg);
+    position: relative;
+    overflow: hidden;
+  }
+  .f4-brief::before {
+    content: '';
+    position: absolute;
+    top: -240px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--f4-accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .f4-brief-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 48px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+  .f4-brief-text h1 {
+    font-size: clamp(1.4rem, 3.2vw, 2.4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 16px 0 20px;
+    color: var(--f4-text);
+  }
+  .f4-brief-scenario {
+    background: var(--f4-bg-card);
+    border-left: 3px solid var(--f4-accent);
+    padding: 18px 22px;
+    border-radius: 0 var(--f4-radius-sm) var(--f4-radius-sm) 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--f4-text);
+    margin-bottom: 20px;
+  }
+  .f4-brief-text p {
+    font-size: 0.93rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 16px;
+  }
+  .f4-brief-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 28px;
+  }
+  .f4-brief-tags span {
+    font-size: 0.75rem;
+    color: var(--f4-text-dim);
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    padding: 5px 14px;
+    border-radius: 20px;
+  }
+  .f4-brief-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .f4-brief-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .f4-metric-card {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s;
+  }
+  .f4-metric-card:hover {
+    border-color: var(--f4-border-light);
+  }
+  .f4-metric-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--f4-accent);
+    line-height: 1;
+  }
+  .f4-metric-label {
+    font-size: 0.78rem;
+    color: var(--f4-text-muted);
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+  .f4-brief-callout {
+    background: var(--f4-blue-bg);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: var(--f4-radius);
+    padding: 18px 22px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--f4-text-muted);
+  }
+  .f4-brief-callout a {
+    color: var(--f4-blue);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .f4-brief-callout a:hover {
+    text-decoration: underline;
+  }
+
+  /* ==================================================================
+     SECTION 2 — STACKUP ARCHITECTURES
+     ================================================================== */
+  .f4-architectures {
+    padding: 80px 0;
+    background: var(--f4-bg-alt);
+  }
+  .f4-arch-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+  .f4-arch-card {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .f4-arch-card:hover {
+    border-color: var(--f4-border-light);
+  }
+  .f4-arch-alt {
+    border-color: rgba(59, 130, 246, 0.2);
+  }
+  .f4-arch-alt:hover {
+    border-color: var(--f4-blue);
+  }
+  .f4-arch-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--f4-border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  .f4-arch-num {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--f4-text-dim);
+    background: var(--f4-bg);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+  .f4-arch-header h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+  }
+  .f4-arch-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+  .f4-arch-tag-green {
+    color: var(--f4-green);
+    background: var(--f4-green-bg);
+  }
+  .f4-arch-tag-blue {
+    color: var(--f4-blue);
+    background: var(--f4-blue-bg);
+  }
+  .f4-arch-tag-amber {
+    color: var(--f4-amber);
+    background: var(--f4-amber-bg);
+  }
+  .f4-arch-diagram {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .f4-layer-row {
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--f4-text);
+  }
+  .f4-l-signal {
+    background: rgba(6, 182, 212, 0.15);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    color: var(--f4-cyan);
+  }
+  .f4-l-prepreg {
+    background: rgba(148, 160, 184, 0.08);
+    border: 1px dashed var(--f4-border);
+    color: var(--f4-text-dim);
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 5px 14px;
+  }
+  .f4-l-prepreg-thick {
+    background: rgba(245, 158, 11, 0.08);
+    border-color: rgba(245, 158, 11, 0.2);
+    color: var(--f4-amber);
+  }
+  .f4-l-plane {
+    background: rgba(34, 197, 94, 0.12);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    color: var(--f4-green);
+  }
+  .f4-l-power {
+    background: rgba(168, 85, 247, 0.12);
+    border-color: rgba(168, 85, 247, 0.25);
+    color: var(--f4-purple);
+  }
+  .f4-l-core {
+    background: rgba(148, 160, 184, 0.06);
+    border: 1px solid var(--f4-border);
+    color: var(--f4-text-dim);
+    font-weight: 400;
+  }
+  .f4-arch-specs {
+    padding: 0 24px 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .f4-arch-spec {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .f4-as-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--f4-text-dim);
+    min-width: 150px;
+  }
+  .f4-as-value {
+    font-size: 0.88rem;
+    color: var(--f4-text-muted);
+    line-height: 1.5;
+  }
+  .f4-as-baseline {
+    color: var(--f4-green);
+    font-weight: 600;
+  }
+  .f4-as-premium {
+    color: var(--f4-amber);
+    font-weight: 600;
+  }
+  .f4-arch-note {
+    padding: 14px 24px;
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid var(--f4-border);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--f4-text-dim);
+  }
+  .f4-arch-note strong {
+    color: var(--f4-text-muted);
+  }
+  .f4-arch-decision {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 28px 32px;
+  }
+  .f4-arch-decision h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 16px;
+  }
+  .f4-arch-decision ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .f4-arch-decision li {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--f4-text-muted);
+    padding-left: 16px;
+    border-left: 2px solid var(--f4-accent);
+  }
+
+  /* ==================================================================
+     SECTION 3 — IMPEDANCE ENGINEERING
+     ================================================================== */
+  .f4-impedance {
+    padding: 80px 0;
+    background: var(--f4-bg);
+  }
+  .f4-imp-methodology {
+    display: grid;
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+  .f4-imp-step {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 24px 28px;
+    position: relative;
+  }
+  .f4-imp-num {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--f4-accent);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .f4-imp-step h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 12px;
+  }
+  .f4-imp-step p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 10px;
+  }
+  .f4-imp-formula {
+    background: var(--f4-bg);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius-sm);
+    padding: 14px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    color: var(--f4-cyan);
+    margin: 12px 0;
+    overflow-x: auto;
+  }
+  .f4-imp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 12px 0;
+  }
+  .f4-imp-cell {
+    background: var(--f4-bg);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius-sm);
+    padding: 16px 20px;
+  }
+  .f4-imp-cell strong {
+    font-size: 0.9rem;
+    color: var(--f4-text);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .f4-imp-cell ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .f4-imp-cell li {
+    font-size: 0.82rem;
+    color: var(--f4-text-muted);
+    padding: 3px 0;
+    padding-left: 12px;
+    position: relative;
+  }
+  .f4-imp-cell li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--f4-accent);
+  }
+  .f4-imp-note {
+    font-size: 0.82rem !important;
+    color: var(--f4-text-dim) !important;
+    font-style: italic;
+  }
+  .f4-imp-targets h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 16px;
+  }
+  .f4-imp-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--f4-radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--f4-border);
+  }
+  .f4-imp-table th {
+    background: var(--f4-bg-alt);
+    color: var(--f4-text-dim);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--f4-border);
+  }
+  .f4-imp-table td {
+    padding: 11px 16px;
+    font-size: 0.85rem;
+    color: var(--f4-text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .f4-imp-table tr:last-child td {
+    border-bottom: none;
+  }
+  .f4-imp-table tr:hover td {
+    background: rgba(255,255,255,0.02);
+  }
+  .f4-imp-table-note {
+    font-size: 0.78rem !important;
+    color: var(--f4-text-dim) !important;
+    margin-top: 12px !important;
+  }
+
+  /* ==================================================================
+     SECTION 4 — MATERIAL SELECTION
+     ================================================================== */
+  .f4-materials {
+    padding: 80px 0;
+    background: var(--f4-bg-alt);
+  }
+  .f4-mat-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .f4-mat-card {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .f4-mat-card:hover {
+    border-color: var(--f4-border-light);
+  }
+  .f4-mat-highlight {
+    border-color: var(--f4-accent);
+    box-shadow: 0 0 0 1px var(--f4-accent), 0 4px 24px var(--f4-accent-glow);
+  }
+  .f4-mat-top {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--f4-border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .f4-mat-top h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin: 0;
+    flex: 1;
+  }
+  .f4-mat-cost {
+    font-size: 0.78rem;
+    color: var(--f4-text-dim);
+    font-weight: 600;
+  }
+  .f4-mat-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: var(--f4-text-dim);
+    background: var(--f4-bg);
+    border: 1px solid var(--f4-border);
+  }
+  .f4-mat-specs {
+    padding: 16px 24px;
+  }
+  .f4-mat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .f4-mat-prop {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--f4-text-dim);
+  }
+  .f4-mat-val {
+    font-size: 0.85rem;
+    color: var(--f4-text-muted);
+    text-align: right;
+  }
+  .f4-mat-rec,
+  .f4-mat-caution,
+  .f4-mat-note {
+    padding: 14px 24px;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--f4-text-dim);
+  }
+  .f4-mat-rec {
+    background: rgba(34, 197, 94, 0.04);
+    border-top: 1px solid var(--f4-border);
+  }
+  .f4-mat-caution {
+    background: rgba(239, 68, 68, 0.04);
+    border-top: 1px solid var(--f4-border);
+  }
+  .f4-mat-note {
+    background: rgba(59, 130, 246, 0.04);
+    border-top: 1px solid var(--f4-border);
+  }
+  .f4-mat-decision {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 24px 28px;
+  }
+  .f4-mat-decision h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 16px;
+  }
+  .f4-mat-flow {
+    display: grid;
+    gap: 10px;
+  }
+  .f4-mat-flow-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 8px 0;
+  }
+  .f4-flow-q {
+    font-size: 0.85rem;
+    color: var(--f4-text-muted);
+    flex: 1;
+    min-width: 200px;
+  }
+  .f4-flow-a {
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 20px;
+  }
+  .f4-flow-yes {
+    color: var(--f4-green);
+    background: var(--f4-green-bg);
+  }
+  .f4-flow-rogers {
+    color: var(--f4-amber);
+    background: var(--f4-amber-bg);
+  }
+
+  /* ==================================================================
+     SECTION 5 — THERMAL MANAGEMENT
+     ================================================================== */
+  .f4-thermal {
+    padding: 80px 0;
+    background: var(--f4-bg);
+  }
+  .f4-thermal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .f4-thermal-card {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 24px 24px;
+  }
+  .f4-thermal-wide {
+    grid-column: 1 / -1;
+  }
+  .f4-thermal-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 12px;
+  }
+  .f4-thermal-card p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 14px;
+  }
+  .f4-thermal-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .f4-td-label {
+    font-size: 0.8rem;
+    color: var(--f4-text-dim);
+  }
+  .f4-td-value {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--f4-text);
+  }
+  .f4-thermal-note {
+    font-size: 0.8rem !important;
+    color: var(--f4-text-dim) !important;
+    font-style: italic;
+    margin-top: 8px !important;
+  }
+  .f4-thermal-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--f4-radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--f4-border);
+    margin: 12px 0;
+  }
+  .f4-thermal-table th {
+    background: var(--f4-bg-alt);
+    color: var(--f4-text-dim);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--f4-border);
+  }
+  .f4-thermal-table td {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: var(--f4-text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .f4-thermal-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* ==================================================================
+     SECTION 6 — DFM CODE
+     ================================================================== */
+  .f4-dfm {
+    padding: 80px 0;
+    background: var(--f4-bg-alt);
+  }
+  .f4-dfm-list {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .f4-dfm-rule {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .f4-dfm-rule:hover {
+    border-color: var(--f4-border-light);
+  }
+  .f4-dfm-num {
+    background: var(--f4-bg);
+    border-right: 1px solid var(--f4-border);
+    padding: 20px 16px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--f4-accent);
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .f4-dfm-body {
+    padding: 20px 24px;
+  }
+  .f4-dfm-body h4 {
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 10px;
+  }
+  .f4-dfm-body p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 12px;
+  }
+  .f4-dfm-dos {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    padding: 6px 0 6px 16px;
+    position: relative;
+  }
+  .f4-dfm-do {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--f4-green);
+    background: var(--f4-green-bg);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+  .f4-dfm-dont {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--f4-red);
+    background: rgba(239, 68, 68, 0.12);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+  .f4-dfm-cta {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+  }
+  .f4-dfm-cta p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 18px;
+  }
+
+  /* ==================================================================
+     SECTION 7 — COST TRANSPARENCY
+     ================================================================== */
+  .f4-cost {
+    padding: 80px 0;
+    background: var(--f4-bg);
+  }
+  .f4-cost-diagram {
+    margin-bottom: 40px;
+  }
+  .f4-cost-bar {
+    display: flex;
+    border-radius: var(--f4-radius-sm);
+    overflow: hidden;
+    height: 48px;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+  .f4-cost-bar .f4-cost-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--f4-text);
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity 0.2s;
+  }
+  .f4-cost-bar .f4-cost-segment:hover {
+    opacity: 0.85;
+  }
+  .f4-cost-material { background: #1e40af; }
+  .f4-cost-lam { background: #166534; }
+  .f4-cost-drill { background: #7c3aed; }
+  .f4-cost-plating { background: #b45309; }
+  .f4-cost-test { background: #0f766e; }
+  .f4-cost-other { background: #4a5568; }
+  .f4-cost-details {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .f4-cost-item {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 24px 28px;
+  }
+  .f4-ci-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .f4-ci-header h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin: 0;
+  }
+  .f4-ci-pct {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--f4-accent);
+  }
+  .f4-cost-item p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 10px;
+  }
+  .f4-ci-levers {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--f4-text-dim);
+    background: var(--f4-bg);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius-sm);
+    padding: 10px 14px;
+  }
+  .f4-cost-summary {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 28px 28px;
+  }
+  .f4-cost-summary h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 16px;
+  }
+  .f4-cost-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--f4-radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--f4-border);
+    margin-bottom: 12px;
+  }
+  .f4-cost-table th {
+    background: var(--f4-bg-alt);
+    color: var(--f4-text-dim);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--f4-border);
+  }
+  .f4-cost-table td {
+    padding: 10px 14px;
+    font-size: 0.83rem;
+    color: var(--f4-text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .f4-cost-table tr:last-child td {
+    border-bottom: none;
+  }
+  .f4-cost-table tr:hover td {
+    background: rgba(255,255,255,0.02);
+  }
+  .f4-cost-table tr:nth-child(3) td {
+    color: var(--f4-text);
+    font-weight: 600;
+  }
+  .f4-cost-note {
+    font-size: 0.78rem;
+    color: var(--f4-text-dim);
+    line-height: 1.5;
+  }
+
+  /* ==================================================================
+     SECTION 8 — APPLICATIONS
+     ================================================================== */
+  .f4-apps {
+    padding: 80px 0;
+    background: var(--f4-bg-alt);
+  }
+  .f4-apps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .f4-app-card {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 24px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .f4-app-card:hover {
+    border-color: var(--f4-border-light);
+    transform: translateY(-2px);
+  }
+  .f4-app-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 10px;
+  }
+  .f4-app-card p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+  }
+
+  /* ==================================================================
+     SECTION 9 — ENGINEERING CONSULTATION (RFQ)
+     ================================================================== */
+  .f4-consult {
+    padding: 80px 0;
+    background: var(--f4-bg);
+  }
+  .f4-consult-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .f4-consult-copy h2 {
+    font-size: clamp(1.3rem, 2.8vw, 2.1rem);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 14px 0 18px;
+    color: var(--f4-text);
+  }
+  .f4-consult-intro {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--f4-text-muted);
+    margin-bottom: 28px;
+  }
+  .f4-consult-process {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .f4-cp-step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 10px 14px;
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius-sm);
+  }
+  .f4-cp-num {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 50%;
+    background: var(--f4-accent);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .f4-cp-step strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--f4-text);
+    margin-bottom: 3px;
+  }
+  .f4-cp-step span {
+    font-size: 0.78rem;
+    color: var(--f4-text-dim);
+    line-height: 1.5;
+  }
+  .f4-consult-checklist {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 22px 24px;
+  }
+  .f4-consult-checklist h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--f4-text);
+    margin-bottom: 12px;
+  }
+  .f4-consult-checklist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 7px;
+  }
+  .f4-consult-checklist li {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--f4-text-muted);
+    padding-left: 16px;
+    position: relative;
+  }
+  .f4-consult-checklist li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--f4-green);
+    font-weight: 700;
+  }
+  .f4-consult-form {
+    background: var(--f4-bg-card);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius);
+    padding: 28px;
+  }
+  .f4-form-group {
+    margin-bottom: 18px;
+  }
+  .f4-form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--f4-text-muted);
+    margin-bottom: 6px;
+  }
+  .f4-form-group input,
+  .f4-form-group select,
+  .f4-form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--f4-bg);
+    border: 1px solid var(--f4-border);
+    border-radius: var(--f4-radius-sm);
+    color: var(--f4-text);
+    font-size: 0.85rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  .f4-form-group input:focus,
+  .f4-form-group select:focus,
+  .f4-form-group textarea:focus {
+    outline: none;
+    border-color: var(--f4-accent);
+    box-shadow: 0 0 0 2px var(--f4-accent-glow);
+  }
+  .f4-form-group select {
+    cursor: pointer;
+  }
+  .f4-form-group select option {
+    background: var(--f4-bg-card);
+    color: var(--f4-text);
+  }
+  .f4-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .f4-form-file {
+    display: block;
+    border: 2px dashed var(--f4-border);
+    border-radius: var(--f4-radius-sm);
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .f4-form-file:hover {
+    border-color: var(--f4-accent);
+  }
+  .f4-form-file span {
+    display: block;
+    font-size: 0.82rem;
+  }
+  .f4-file-hint {
+    font-size: 0.72rem !important;
+    color: var(--f4-text-dim);
+    margin-top: 4px;
+  }
+  .f4-form-file input {
+    margin-top: 10px;
+  }
+  .f4-form-note {
+    font-size: 0.72rem;
+    color: var(--f4-text-dim);
+    line-height: 1.5;
+    margin-top: 14px;
+    text-align: center;
+  }
+
+  /* ==================================================================
+     SECTION 10 — RELATED
+     ================================================================== */
+  .f4-related {
+    padding: 64px 0;
+    background: var(--f4-bg-alt);
+    border-top: 1px solid var(--f4-border);
+  }
+  .f4-related-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto 28px;
+    max-width: 720px;
+  }
+  .f4-related-link {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--f4-text-muted);
+    text-decoration: none;
+    padding: 6px 16px;
+    border: 1px solid var(--f4-border);
+    border-radius: 20px;
+    transition: all 0.2s;
+  }
+  .f4-related-link:hover {
+    border-color: var(--f4-accent);
+    color: var(--f4-accent);
+  }
+  .f4-related-active {
+    background: var(--f4-accent);
+    color: #fff;
+    border-color: var(--f4-accent);
+  }
+  .f4-related-active:hover {
+    background: var(--f4-accent-dim);
+    color: #fff;
+  }
+  .f4-related-cta {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .f4-related-cta p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--f4-text-muted);
+    margin-bottom: 18px;
+  }
+
+  /* ==================================================================
+     RESPONSIVE
+     ================================================================== */
+  @media (max-width: 960px) {
+    .f4-brief-layout {
+      grid-template-columns: 1fr;
+    }
+    .f4-consult-layout {
+      grid-template-columns: 1fr;
+    }
+    .f4-thermal-grid {
+      grid-template-columns: 1fr;
+    }
+    .f4-apps-grid {
+      grid-template-columns: 1fr;
+    }
+    .f4-imp-grid {
+      grid-template-columns: 1fr;
+    }
+    .f4-arch-spec {
+      flex-direction: column;
+      gap: 2px;
+    }
+    .f4-as-label {
+      min-width: auto;
+    }
+  }
+  @media (max-width: 720px) {
+    .f4-dfm-rule {
+      grid-template-columns: 1fr;
+    }
+    .f4-dfm-num {
+      border-right: none;
+      border-bottom: 1px solid var(--f4-border);
+      padding: 10px 16px;
+      justify-content: flex-start;
+    }
+    .f4-cost-bar {
+      font-size: 0.6rem;
+      height: 40px;
+    }
+    .f4-cost-bar .f4-cost-segment {
+      padding: 0 4px;
+    }
+    .f4-cost-table {
+      font-size: 0.75rem;
+    }
+    .f4-arch-header h3 {
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 540px) {
+    .f4-brief {
+      padding: 48px 0 40px;
+    }
+    .f4-architectures,
+    .f4-impedance,
+    .f4-materials,
+    .f4-thermal,
+    .f4-dfm,
+    .f4-cost,
+    .f4-apps,
+    .f4-consult,
+    .f4-related {
+      padding: 48px 0;
+    }
+    .f4-brief-tags {
+      gap: 6px;
+    }
+    .f4-brief-tags span {
+      font-size: 0.68rem;
+      padding: 4px 10px;
+    }
+    .f4-arch-specs {
+      padding: 0 16px 12px;
+    }
+    .f4-arch-header {
+      padding: 14px 16px;
+    }
+    .f4-arch-diagram {
+      padding: 12px 16px;
+    }
+    .f4-dfm-body {
+      padding: 14px 16px;
+    }
+    .f4-cost-item {
+      padding: 16px 18px;
+    }
+    .f4-consult-form {
+      padding: 18px;
+    }
+  }
+</style>

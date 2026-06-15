@@ -3,183 +3,529 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-title="32 Layer PCB Board Maker | ATE & AI Supercomputing | XingFeng PCB"
-description="Elite 32 layer PCB board maker specializing in Semiconductor ATE (Load Boards) and AI Server hardware. Conquering extreme aspect ratios, massive BGA fan-outs, and large format PCB fabrication."
-keywords="32 layer PCB board maker, ATE load board manufacturer, semiconductor probe card PCB, extreme aspect ratio PCB, massive BGA fan-out, AI server PCB, Nvidia HGX baseboard, large format PCB fabrication"
-canonical="https://xfpcb.com/products/32-layer-pcb/"
+  title="32 Layer PCB Board Manufacturer | Quantum Computing & Core Routers | XFPCB"
+  description="Elite 32-layer PCB manufacturer for quantum computing cryogenic interfaces and terabit core routers. Mastering 5+ sequential lamination cycles, material shrinkage compensation, X-ray alignment verification, and copper balance across 32 layers."
+  keywords="32 layer PCB, quantum computing PCB, core router PCB, sequential lamination PCB, material shrinkage compensation, X-ray registration PCB, copper balance PCB, high-layer count PCB"
+  canonical="https://xfpcb.com/products/32-layer-pcb/"
   cssExtra={['/css/about.css', '/css/products.css']}
 >
   <main>
-<!-- Hero Section -->
-        <section class="product-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <h1>Elite <span>32-Layer PCB</span> Board Maker for ATE & Supercomputing</h1>
-                    <h2>Overcoming the Physical Limits of High-Density Interconnects</h2>
-                    <p class="desc">
-                        For Semiconductor Automated Test Equipment (ATE) Engineers and High-Performance Computing (HPC) Hardware Designers, standard fabrication limits simply do not apply. When you are developing the baseboards for next-generation AI training clusters (such as architectures similar to the Nvidia HGX) or designing ultra-complex Load Boards and Probe Cards to test the world's most advanced silicon, you need a fabrication partner operating at the absolute bleeding edge of materials science. XingFeng PCB is an elite 32-layer PCB board maker. We specialize in conquering extreme thickness-to-hole aspect ratios (exceeding 20:1), resolving massive BGA fan-outs for 5000+ pin ASICs, and executing flawless large-format PCB fabrication. We engineer the impossible.
-                    </p>
-                    <a href="#quote" class="cta-btn">Initiate an Architectural Review</a>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper">
-                        <!-- 嵌入指定�?675x542 比例图片 -->
-                        <img src="/images/675x542pcb.jpg" alt="32 Layer PCB Board Maker for ATE and Supercomputing">
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="product-hero">
+      <div class="container product-hero-grid">
+        <div class="product-text">
+          <h1>Mastering the Impossible: <span>32-Layer PCB</span> Manufacturing</h1>
+          <h2>Quantum Computing Interfaces, Terabit Core Routers, and the Limits of Layer Stacking</h2>
+          <p class="desc">
+            For Quantum Computing Engineers designing cryogenic control interfaces and Core Network Architects building the next generation of terabit routers, 32 layers is not a choice — it is a physical necessity. At XFPCB, we have invested over a decade in mastering the extreme challenges of 30+ layer PCB fabrication: compensating for material shrinkage across 5+ sequential lamination cycles, achieving copper balance across 32 independent layers, and preventing resin starvation in stackups over 5.0mm thick. Our 32-layer PCBs are built for the applications where physics itself seems to push back.
+          </p>
+          <a href="#quote" class="cta-btn">Initiate a Joint Engineering Partnership</a>
+        </div>
+        <div class="product-visual">
+          <div class="product-image-wrapper">
+            <img src="/images/675x542pcb.jpg" alt="32 Layer PCB Board for Quantum Computing and Core Routers">
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Long-form Technical Content -->
-        <section class="container long-article">
-            <h2 class="section-title center">The Pinnacle of Structural Complexity</h2>
-            <p class="text-content center" style="text-align: center; max-width: 1050px; margin: 0 auto 50px;">
-                Manufacturing a 32-layer printed circuit board pushes the boundaries of chemistry, fluid dynamics, and mechanical engineering. These are not merely circuit boards; they are massive, three-dimensional copper architectures designed to channel immense power and process terabits of data simultaneously.
-            </p>
+    <!-- 1. The Physics of Alignment: Layer Shift Demystified -->
+    <section class="container" style="padding-top: 60px;">
+      <div style="background: rgba(5, 20, 10, 0.8); border: 1px solid var(--pcb-trace); border-radius: 12px; padding: 50px; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--pcb-glow), transparent, var(--pcb-glow));"></div>
+        <div class="layer-section-heading" style="margin-bottom: 30px;">
+          <span style="display: inline-block; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--pcb-glow); margin-bottom: 12px;">Exclusive Technical Feature</span>
+          <h2 style="color: #fff; font-size: clamp(1.8rem, 2.8vw, 2.5rem); line-height: 1.18; margin: 0 0 16px;">The Physics of Alignment: Layer Shift Demystified</h2>
+          <p style="color: var(--text-main); font-size: 1.06rem; line-height: 1.75;">Why 32-layer boards fail — and how XFPCB's proprietary compensation technology overcomes the fundamental limits of material science.</p>
+        </div>
 
-            <h3>The Aspect Ratio Barrier: Plating the Abyss</h3>
-            <p>
-                One of the most profound challenges in fabricating a 32-layer PCB is the "Aspect Ratio" barrier. Because a 32-layer board must accommodate 32 distinct layers of copper foil and 31 layers of dielectric insulation (prepreg and core), the overall physical thickness of the board frequently reaches 4.0mm, 5.0mm, or even 6.0mm. However, the advanced BGA components mounted on these boards still require extremely small plated through-holes (PTH) and microvias—often as small as 0.2mm or 0.15mm in diameter—to successfully fan out the high-density signals.
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+          <div>
+            <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-bottom: 1px solid var(--pcb-trace); padding-bottom: 10px;">The Layer Shift Problem</h3>
+            <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 20px;">
+              Every 32-layer board undergoes at least 5–7 sequential lamination press cycles. Each cycle subjects the board to temperatures exceeding 190°C and pressures of 350–500 PSI. At these conditions, the copper foil, glass weave, and epoxy resin each exhibit different Coefficients of Thermal Expansion (CTE):
             </p>
-            <p>
-                When you mechanically drill a 0.2mm hole through a 4.0mm thick board, you create an aspect ratio of 20:1. In a 5.0mm board, it becomes 25:1. This creates a microscopic, deep canyon. During the electroplating process, standard chemical baths fail completely; the copper ions deplete before they can reach the center of the deep hole, resulting in "dog-boning" (thick copper at the surface, zero copper in the middle of the barrel). This leads to immediate electrical opens or catastrophic reliability failures under thermal stress.
+            <ul style="margin-bottom: 20px; padding-left: 0; list-style: none;">
+              <li style="padding: 10px 0; border-bottom: 1px solid rgba(0, 255, 65, 0.1); display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--pcb-glow); font-size: 1.2rem;">▸</span>
+                <span><strong style="color: #fff;">Copper:</strong> CTE ≈ 17 ppm/°C — expands and contracts consistently</span>
+              </li>
+              <li style="padding: 10px 0; border-bottom: 1px solid rgba(0, 255, 65, 0.1); display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--pcb-glow); font-size: 1.2rem;">▸</span>
+                <span><strong style="color: #fff;">FR-4 Laminate (X/Y):</strong> CTE ≈ 14–16 ppm/°C — close to copper, but not identical</span>
+              </li>
+              <li style="padding: 10px 0; border-bottom: 1px solid rgba(0, 255, 65, 0.1); display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--pcb-glow); font-size: 1.2rem;">▸</span>
+                <span><strong style="color: #fff;">Epoxy Resin (Z-axis):</strong> CTE ≈ 60–80 ppm/°C above Tg — expands dramatically, creating internal stress</span>
+              </li>
+              <li style="padding: 10px 0; display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--pcb-glow); font-size: 1.2rem;">▸</span>
+                <span><strong style="color: #fff;">Glass Weave:</strong> CTE ≈ 5 ppm/°C — rigid and stable, but randomly oriented</span>
+              </li>
+            </ul>
+            <p style="color: var(--text-main); line-height: 1.8;">
+              After the first lamination (say, a 4-layer sub-assembly), the combined CTE of the stack is different from any individual material. When you press a second sub-assembly on top, the pre-cured first sub-assembly has a different expansion profile than the new, uncured prepreg and copper. <strong>This cumulative, non-linear mismatch is the root cause of layer shift in 32-layer boards.</strong>
             </p>
-            <p>
-                XingFeng PCB conquers the aspect ratio barrier utilizing proprietary fluid dynamics and advanced electrochemistry. We employ highly specialized, high-throw-power electroplating baths combined with <strong>Periodic Reverse Pulse Plating (PRPP)</strong>. Instead of applying a continuous direct current, our rectifiers pulse the current forward to drive copper ions deep into the 20:1 abyss, and then briefly reverse the polarity to strip away excess copper building up at the surface edges of the hole. Furthermore, we utilize high-pressure, ultrasonic agitation within the plating tanks to force the chemical solution continuously through these microscopic capillaries. This guarantees a perfectly uniform, IPC Class 3 compliant copper thickness (minimum 1.0 mil / 25µm) from the top surface all the way down through the 32nd layer, ensuring indestructible via reliability.
+          </div>
+          <div>
+            <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-bottom: 1px solid var(--pcb-trace); padding-bottom: 10px;">XFPCB's Compensation System</h3>
+            <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 20px;">
+              XFPCB's solution is not a single technique but a <strong>three-tier compensation architecture</strong> that accounts for shift at every stage of the sequential lamination process:
             </p>
-
-            <h3>Massive BGA Fan-out Solutions</h3>
-            <p>
-                The primary reason hardware architects resort to a 32-layer stackup is the sheer impossibility of routing modern silicon. Today's AI accelerators, massive FPGAs, and core network switch ASICs feature Ball Grid Arrays (BGAs) with 4,000, 5,000, or even 7,000+ pins, packed into ultra-dense 0.8mm or 0.6mm pitches. It is mathematically impossible to route all these signals out of the BGA footprint on just 10 or 12 layers.
-            </p>
-            <p>
-                A 32-layer architecture provides the massive volumetric space required for these extreme fan-outs. We work closely with your layout engineers to implement staggered, multi-tier escape routing strategies. This involves dedicating specific internal signal layers (e.g., layers 5, 7, 9, 11, etc.) to specific quadrants or rings of the BGA footprint. 
-            </p>
-            <p>
-                To achieve this without degrading signal integrity, we utilize extensive <strong>Via-in-Pad Plated Over (VIPPO)</strong> structures. We drill microvias directly into the BGA landing pads, fill them with highly thermally conductive epoxy (to draw heat away from the massive AI processors), and plate them perfectly flat. This allows signals to drop vertically straight down into the exact 32-layer routing channel they require, minimizing parasitic inductance and maximizing the available surface area for decoupling capacitors directly beneath the ASIC. Furthermore, we employ advanced blind and buried via architectures (e.g., L1-L4, L29-L32) to free up critical routing channels in the center of the dense 32-layer stackup.
-            </p>
-
-            <h3>Large Format PCB Fabrication: The ATE Probe Card Challenge</h3>
-            <p>
-                In the Semiconductor Automated Test Equipment (ATE) industry, Load Boards and Probe Cards are not just thick; they are physically massive. It is common for these 32-layer testing interfaces to measure 600mm x 600mm (24 inches x 24 inches) or larger, while weighing several kilograms.
-            </p>
-            <p>
-                Large format manufacturing introduces extreme complexities in layer-to-layer registration. During lamination, the thermal expansion of a 600mm panel means that a shift of just 0.01% translates to a massive physical misalignment at the edges of the board. If layer 16 shifts relative to layer 1, the mechanical drills will sever the internal traces, ruining a board that costs thousands of dollars to produce.
-            </p>
-            <p>
-                XingFeng PCB operates specialized large-format Direct Imaging Systems (DIS) and ultra-large vacuum hydraulic presses specifically designed for the ATE market. We optically measure the dimensional stability of every single one of the 30 internal cores across the entire 600mm expanse. Our CAM systems apply localized, non-linear dynamic scaling to the imaging and drill files, compensating for the exact stretch and shrink profile of that specific panel. This guarantees that even at the extreme corners of a massive 32-layer Load Board, the 0.2mm drill bit strikes the absolute dead center of the 10-mil internal pad.
-            </p>
-
-            <h3>Impedance Control and Power Integrity (PI)</h3>
-            <p>
-                In an AI server baseboard, delivering hundreds of amps of ultra-clean power to the GPUs is just as critical as routing the high-speed PCIe Gen 5/Gen 6 signals. A 32-layer stackup allows hardware architects to design an incredibly robust Power Distribution Network (PDN). We can dedicate 10 to 15 layers entirely to heavy copper (2oz or 3oz) ground and VCC planes. This massive parallel plane capacitance drastically lowers the PDN impedance across a wide frequency range, ensuring the AI processors receive stable power during massive transient load spikes.
-            </p>
-            <p>
-                Simultaneously, the remaining signal layers are meticulously separated by these solid reference planes to prevent crosstalk. We utilize TDR (Time-Domain Reflectometry) to verify that all 112G PAM4 differential pairs hit their strict ±5% impedance targets, ensuring flawless data transmission between the clustered GPUs.
-            </p>
-        </section>
-
-        <!-- Quality Assurance Section -->
-        <section class="container long-article">
-            <h2 class="section-title center">Uncompromising Quality Assurance for 32 Layers</h2>
-            <p class="text-content center" style="text-align: center; max-width: 950px; margin: 0 auto 40px;">
-                When you invest in a 32-layer ATE Load Board or AI baseboard, you are not buying a prototype; you are buying absolute certainty. We deploy the most advanced metrology and inspection equipment on the planet to guarantee zero defects.
-            </p>
-            <h3>3D X-Ray Inspection and Micro-Sectioning</h3>
-            <p>
-                Because visual inspection of internal layers is impossible after lamination, we rely on advanced real-time 3D X-Ray tomography. This allows our quality control engineers to peer through 5.0mm of solid fiberglass and copper, verifying the perfect alignment of all 32 layers and ensuring that complex blind/buried via transitions are perfectly formed. Furthermore, from every single manufacturing lot, we extract test coupons and perform destructive Micro-Sectioning (cross-section inspection). We polish these samples and examine them under high-magnification electron microscopes to measure the exact copper plating thickness deep within the 20:1 aspect ratio vias, ensuring absolute compliance with IPC Class 3 standards.
-            </p>
-            <h3>100% Flying Probe and Grid Testing</h3>
-            <p>
-                A 32-layer board can contain hundreds of thousands of individual nets and vias. We subject every single board to 100% electrical testing. For large-format ATE boards, we utilize high-speed, multi-head flying probe testers equipped with high-voltage capabilities to detect microscopic, high-resistance shorts (leakage) between densely packed traces, ensuring the board will perform flawlessly under the extreme electrical loads of semiconductor burn-in testing.
-            </p>
-        </section>
-
-        <!-- Applications Grid -->
-        <section class="bg-darker" style="padding: 60px 0;">
-            <div class="container">
-                <h2 class="section-title center">Architecting the Future of Computing</h2>
-                <p class="text-content center" style="text-align: center; max-width: 900px; margin: 0 auto 40px;">
-                    XingFeng PCB is the silent partner behind the world's most powerful silicon. Our 32-layer boards are the foundation upon which the future of artificial intelligence and semiconductor metrology is built.
-                </p>
-                
-                <div class="app-grid">
-                    <div class="app-item">
-                        <svg class="app-icon" viewBox="0 0 24 24">
-                            <path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 17H5v-2h14v2zm0-4H5v-2h14v2zm0-4H5V5h14v6z"/>
-                            <circle cx="12" cy="8" r="1.5" fill="var(--pcb-glow)"/>
-                        </svg>
-                        <h4>ATE Load Boards & Probe Cards</h4>
-                        <p class="text-content" style="font-size: 0.95rem;">
-                            The ultimate test interface for the semiconductor industry. Massive, large-format 32-layer boards designed to interface between the Automated Test Equipment and the raw silicon wafer. They must withstand thousands of high-temperature insertions while maintaining pristine signal integrity for high-speed memory and logic testing.
-                        </p>
-                    </div>
-                    <div class="app-item">
-                        <svg class="app-icon" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                            <rect x="10" y="10" width="4" height="4" fill="var(--pcb-glow)"/>
-                        </svg>
-                        <h4>AI / HPC Server Baseboards</h4>
-                        <p class="text-content" style="font-size: 0.95rem;">
-                            The motherboards for Artificial Intelligence. Highly complex 32-layer architectures designed to interconnect 4, 8, or 16 massive GPUs via high-speed NVLink or PCIe Gen 5 fabrics. These boards feature extreme heavy copper inner layers to distribute hundreds of amps of power to the processing clusters.
-                        </p>
-                    </div>
-                    <div class="app-item">
-                        <svg class="app-icon" viewBox="0 0 24 24">
-                            <path d="M4 6h16v4H4zM4 14h16v4H4z"/>
-                            <circle cx="8" cy="8" r="1" fill="var(--pcb-glow)"/>
-                            <circle cx="16" cy="8" r="1" fill="var(--pcb-glow)"/>
-                            <circle cx="8" cy="16" r="1" fill="var(--pcb-glow)"/>
-                            <circle cx="16" cy="16" r="1" fill="var(--pcb-glow)"/>
-                            <path d="M2 4v16h20V4H2zm18 14H4V6h16v12z" fill="none" stroke="currentColor"/>
-                        </svg>
-                        <h4>Supercomputer Backplanes</h4>
-                        <p class="text-content" style="font-size: 0.95rem;">
-                            Ultra-thick, 32-layer backplanes forming the spine of enterprise supercomputers. They require mathematically perfect press-fit hole tolerances to accommodate thousands of high-speed connector pins without fracturing the thick FR-4 substrate.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Engineering FAQ -->
-        <section class="container faq-section">
-            <h2 class="section-title center">Engineering FAQ: 32-Layer Fabrication Limits</h2>
             
-            <div class="faq-item">
-                <h4>What is the maximum board thickness you can manufacture for a 32-layer PCB?</h4>
-                <p>
-                    For advanced ATE Load Boards and Supercomputing backplanes, we can successfully manufacture 32-layer PCBs with an overall physical thickness up to <strong>7.0mm (275 mils)</strong>. Fabricating at this extreme thickness requires specialized, extended-length drill bits to prevent breakage, as well as highly customized lamination press profiles to ensure uniform resin flow across such a massive Z-axis cross-section.
-                </p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>Are there weight limits for Large Format 32-layer ATE boards?</h4>
-                <p>
-                    A fully assembled, large-format 32-layer Load Board (e.g., 600mm x 600mm at 5.0mm thickness) can weigh upwards of 5 to 8 kilograms (11 to 17 lbs) due to the massive volume of copper and fiberglass. We utilize heavy-duty, automated material handling equipment throughout our facility to prevent physical stress or micro-fractures during the manufacturing and chemical plating processes. We impose no strict weight limits, provided the board dimensions fit within our large-format vacuum presses.
-                </p>
+            <div style="background: rgba(26, 66, 37, 0.3); border-radius: 8px; padding: 25px; margin-bottom: 20px;">
+              <h4 style="color: var(--pcb-glow); font-size: 1.1rem; margin-bottom: 10px;">Tier 1: Pre-Lamination Prediction</h4>
+              <p style="color: var(--text-main); line-height: 1.6; font-size: 0.95rem;">
+                Using finite element analysis (FEA) modeling, we simulate the thermal-mechanical behavior of the entire 32-layer stackup before manufacturing begins. The model predicts the shift vector (magnitude and direction) for every layer at every point on the panel, based on the copper distribution, material properties, and press cycle parameters.
+              </p>
             </div>
 
-            <div class="faq-item">
-                <h4>Can we use heavy copper (e.g., 3oz or 4oz) on multiple internal layers of a 32-layer AI server board?</h4>
-                <p>
-                    Yes, but it requires masterful engineering. Using heavy copper on a 32-layer board dramatically increases the risk of resin starvation and extreme warpage. We must utilize ultra-high-resin-content prepregs to fill the deep etched valleys. Our CAM engineers will work with you to ensure perfectly symmetrical copper distribution and extensive cross-hatching to guarantee the board remains planar (&lt; 0.5% warpage) for the mounting of your massive AI GPUs.
-                </p>
+            <div style="background: rgba(26, 66, 37, 0.3); border-radius: 8px; padding: 25px; margin-bottom: 20px;">
+              <h4 style="color: var(--pcb-glow); font-size: 1.1rem; margin-bottom: 10px;">Tier 2: Iterative Scaling</h4>
+              <p style="color: var(--text-main); line-height: 1.6; font-size: 0.95rem;">
+                Instead of a single global compensation factor, we apply unique non-linear scaling to each sub-assembly at each sequential lamination step. Scaling is applied as a 3rd-order polynomial with up to 16 control points per layer. The compensation is recalculated after every press cycle based on X-ray measurements of the previous sub-assembly.
+              </p>
             </div>
 
-            <div class="faq-item">
-                <h4>How do you handle back-drilling on a 32-layer board that is 5.0mm thick?</h4>
-                <p>
-                    Back-drilling a 5.0mm thick 32-layer board is a highly delicate operation. Because the board is so thick, the mechanical drill bit must travel a significant distance, increasing the risk of drill wander or runout. We utilize ultra-rigid, laser-guided CNC drilling systems equipped with highly sensitive surface contact mapping. This allows us to map the exact topography of the thick board and precisely back-drill the via stubs to within ±3 mils of the target internal layer, preserving your high-speed signal integrity.
-                </p>
+            <div style="background: rgba(26, 66, 37, 0.3); border-radius: 8px; padding: 25px;">
+              <h4 style="color: var(--pcb-glow); font-size: 1.1rem; margin-bottom: 10px;">Tier 3: Closed-Loop Correction</h4>
+              <p style="color: var(--text-main); line-height: 1.6; font-size: 0.95rem;">
+                After each sequential lamination, we measure the actual layer shift using high-resolution X-ray metrology. The measured shift is fed back into the compensation algorithm, which adjusts the scaling for the next sub-assembly. This closed-loop process converges to <strong>sub-micron residual shift</strong> by the final lamination cycle.
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div class="faq-item">
-                <h4>What materials do you recommend for a 32-layer high-speed application?</h4>
-                <p>
-                    Due to the extreme layer count and the necessity of multiple sequential laminations, the material must possess an ultra-high Glass Transition Temperature (Tg) and incredible mechanical stability. We strongly recommend elite materials such as <strong>Panasonic Megtron 6 or Megtron 7</strong> for their ultra-low insertion loss, or <strong>Isola 370HR / Tachyon 100G</strong> for their exceptional resistance to Z-axis expansion and CAF growth. We frequently employ hybrid stackups to optimize cost while maximizing RF performance on critical outer layers.
-                </p>
+        <div style="margin-top: 40px; padding: 30px; background: rgba(0, 255, 65, 0.05); border: 1px solid var(--pcb-glow); border-radius: 8px; text-align: center;">
+          <div style="font-size: 3rem; font-weight: 900; color: var(--pcb-glow); margin-bottom: 8px;">±1.5 mil</div>
+          <p style="color: #fff; font-size: 1.1rem; margin: 0;">Guaranteed layer-to-layer registration across all 32 layers with XFPCB's closed-loop compensation system</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Sequential Lamination: 5+ Cycles of Precision -->
+    <section class="bg-darker" style="padding: 60px 0;">
+      <div class="container">
+        <div class="layer-section-heading">
+          <h2>Sequential Lamination Engineering: 5+ Cycles to Perfection</h2>
+          <p>A 32-layer PCB cannot be pressed in a single lamination cycle. It requires a carefully orchestrated sequence of sub-assembly build-ups, each with its own press profile and verification checkpoint.</p>
+        </div>
+
+        <div style="margin-top: 40px;">
+          <!-- Lamination cycle steps -->
+          <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin-bottom: 40px;">
+            <div style="background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; padding: 20px; text-align: center;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--pcb-glow); color: var(--pcb-dark); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; margin: 0 auto 12px;">1</div>
+              <h4 style="color: #fff; font-size: 1rem; margin-bottom: 8px;">Core Build</h4>
+              <p style="color: var(--text-main); font-size: 0.85rem; line-height: 1.5;">Layer 16–17 pressed as 2-layer core. All remaining layers are loose cores at this stage.</p>
             </div>
-        </section>
+            <div style="background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; padding: 20px; text-align: center;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--pcb-glow); color: var(--pcb-dark); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; margin: 0 auto 12px;">2</div>
+              <h4 style="color: #fff; font-size: 1rem; margin-bottom: 8px;">Quad Build</h4>
+              <p style="color: var(--text-main); font-size: 0.85rem; line-height: 1.5;">Layers 14–19 pressed (dual sub-assemblies around core). X-ray checks alignment.</p>
+            </div>
+            <div style="background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; padding: 20px; text-align: center;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--pcb-glow); color: var(--pcb-dark); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; margin: 0 auto 12px;">3</div>
+              <h4 style="color: #fff; font-size: 1rem; margin-bottom: 8px;">Octa Build</h4>
+              <p style="color: var(--text-main); font-size: 0.85rem; line-height: 1.5;">Layers 10–23 pressed. Compensation adjusted based on Cycle 2 X-ray data.</p>
+            </div>
+            <div style="background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; padding: 20px; text-align: center;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--pcb-glow); color: var(--pcb-dark); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; margin: 0 auto 12px;">4</div>
+              <h4 style="color: #fff; font-size: 1rem; margin-bottom: 8px;">Hexdec Build</h4>
+              <p style="color: var(--text-main); font-size: 0.85rem; line-height: 1.5;">Layers 4–27 pressed. Stackup reaches ~60% of final thickness. Alignment verified.</p>
+            </div>
+            <div style="background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; padding: 20px; text-align: center;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--pcb-glow); color: var(--pcb-dark); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; margin: 0 auto 12px;">5+</div>
+              <h4 style="color: #fff; font-size: 1rem; margin-bottom: 8px;">Final Press</h4>
+              <p style="color: var(--text-main); font-size: 0.85rem; line-height: 1.5;">Layers 1–32: final lamination with outer copper foil. Full X-ray + cross-section validation.</p>
+            </div>
+          </div>
+
+          <div style="background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; padding: 30px;">
+            <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 20px;">Lamination Press Cycle Parameters</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div>
+                <ul class="capabilities-list" style="margin-top: 0;">
+                  <li><strong>Temperature ramp:</strong> 2–4°C/min to 190°C. Slower for hybrid material combinations</li>
+                  <li><strong>Pressure profile:</strong> 150 PSI initial → 400 PSI at gel point → hold through cure</li>
+                  <li><strong>Vacuum level:</strong> &lt; 10 Torr absolute pressure throughout cycle</li>
+                  <li><strong>Dwell time at Tg:</strong> 20–30 minutes to ensure complete resin flow before gelation</li>
+                </ul>
+              </div>
+              <div>
+                <ul class="capabilities-list" style="margin-top: 0;">
+                  <li><strong>Cooling rate:</strong> 3°C/min controlled cooling to prevent thermal shock</li>
+                  <li><strong>Total cycle time:</strong> 4–6 hours per lamination step</li>
+                  <li><strong>Total cycles:</strong> 5–7 per 32-layer board</li>
+                  <li><strong>Total press time:</strong> 20–42 hours across all cycles</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding: 20px; background: rgba(0, 255, 65, 0.08); border: 1px solid var(--pcb-glow); border-radius: 8px; text-align: center;">
+            <p style="color: #fff; margin: 0; font-size: 1.05rem;">
+              <strong>Key insight:</strong> Each sequential lamination cycle adds thermal history that changes the material properties of previously cured sub-assemblies. XFPCB's closed-loop correction accounts for this cumulative thermal degradation, adjusting subsequent press parameters to prevent over-curing or brittleness in the buried layers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Material Shrinkage Compensation Technology -->
+    <section class="container long-article">
+      <h2 class="section-title center">Material Shrinkage Compensation: Predicting the Unpredictable</h2>
+      <p class="text-content center" style="text-align: center; max-width: 950px; margin: 0 auto 40px;">
+        In a 32-layer board with 5+ sequential lamination cycles, each material experiences different shrinkage at each cycle. Predicting and compensating for this requires a proprietary simulation and measurement feedback loop.
+      </p>
+
+      <h3>The Shrinkage Problem</h3>
+      <p>
+        When a prepreg layer cures during lamination, it shrinks. But the shrinkage is not uniform: it varies based on:
+      </p>
+      <ul>
+        <li><strong>Glass style:</strong> 106 prepreg (thin, high-resin content) shrinks ~3x more than 7628 prepreg (thick, low-resin content)</li>
+        <li><strong>Copper density:</strong> Areas with high copper coverage constrain shrinkage, creating localized stress gradients</li>
+        <li><strong>Thermal position in press:</strong> The center of a panel heats slightly slower than the edges, creating a temperature gradient that delays gelation and allows more resin flow in the center</li>
+        <li><strong>Sequential cycling:</strong> A prepreg layer cured in Cycle 1 undergoes additional thermal excursions in Cycles 2–5, causing post-cure shrinkage that is different from the initial cure shrinkage</li>
+      </ul>
+
+      <h3>XFPCB's Shrinkage Compensation Protocol</h3>
+      <p>
+        Our protocol begins with a pre-production shrinkage characterization run. We fabricate a test coupon panel using the exact stackup and press profile planned for the production run. The test panel is measured before and after each sequential lamination cycle using an automated optical measurement system with 1 µm resolution. These measurements generate a 5-dimensional shrinkage model (X, Y, copper density, glass style, cycle number).
+      </p>
+      <p>
+        The model is then applied to the production panel's Gerber data: each layer's imaging and drill files are geometrically distorted by the inverse of the predicted shrinkage. This means the layers are intentionally etched slightly oversized in areas where shrinkage is highest, so that after the cumulative shrinkage of all 5+ cycles, they settle at the correct final dimensions.
+      </p>
+      <p>
+        For critical registration targets — such as BGA landing pads that must align with buried via targets across 5+ lamination cycles — we add <strong>optical registration fiducials</strong> on every sub-assembly layer. These fiducials are measured by X-ray after each press cycle, providing real-time feedback that updates the shrinkage compensation model for subsequent cycles.
+      </p>
+
+      <div style="margin: 30px 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;">
+        <div class="layer-process-step">
+          <h3>Characterization</h3>
+          <p>Pre-production test coupon panel fabricated with exact stackup. 1 µm resolution pre/post measurements after each cycle generate the shrinkage model.</p>
+        </div>
+        <div class="layer-process-step">
+          <h3>Compensation</h3>
+          <p>5D shrinkage model applied to Gerber — each layer's imaging and drill files are non-linearly distorted to pre-compensate for cumulative shrinkage.</p>
+        </div>
+        <div class="layer-process-step">
+          <h3>Verification</h3>
+          <p>Optical registration fiducials on every sub-assembly. X-ray measured after each cycle. Model updated iteratively for closed-loop convergence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Copper Balance & Resin Starvation Prevention -->
+    <section class="bg-darker" style="padding: 60px 0;">
+      <div class="container">
+        <div class="layer-section-heading">
+          <h2>Copper Balance & Resin Starvation Prevention Protocol</h2>
+          <p>At 32 layers, the copper-to-resin ratio must be engineered with surgical precision. A 1% imbalance in copper density between mirrored layers can cause 1mm+ of warpage.</p>
+        </div>
+
+        <div class="layer-two-column">
+          <div class="layer-text-panel">
+            <h2>Copper Balance: The Symmetry Imperative</h2>
+            <p>
+              In a 32-layer board, the stackup is divided into mirrored pairs around the Z-axis center. Layer 1 must have approximately the same copper density as Layer 32, Layer 2 as Layer 31, and so on. If the copper density differs by more than 15–20% between any mirrored pair, the differential CTE during cooling will cause the board to bow toward the side with less copper.
+            </p>
+            <p>
+              Our CAM engineers enforce copper balance through several techniques:
+            </p>
+            <ul class="capabilities-list" style="margin-top: 15px;">
+              <li><strong>Copper thieving:</strong> Adding non-functional copper dots (≈ 5–10 mil diameter in a cross-hatched pattern) to sparse areas of inner layers to bring copper density up to match the mirrored layer.</li>
+              <li><strong>Pour splitting:</strong> Dividing large solid copper pours into smaller, cross-hatched sections (typically 70% fill) to reduce the thermal mass differential between signal-rich and plane-rich layers.</li>
+              <li><strong>Dummy pad insertion:</strong> In areas with very low trace density, adding non-net-connected pads that match the density of adjacent layers.</li>
+              <li><strong>Symmetry verification:</strong> Automated DFM tools calculate and compare copper density for every layer pair, flagging any pair with >15% mismatch for CAM review.</li>
+            </ul>
+          </div>
+          <div class="layer-text-panel">
+            <h2>Resin Starvation Prevention</h2>
+            <p>
+              Resin starvation is the single most common defect in high-layer-count PCBs. It occurs when there is insufficient epoxy resin to fill the gaps between etched copper features during lamination. In a 32-layer board, the total gap volume (the "valley" volume between traces) can be substantial — particularly if multiple inner layers use heavy copper.
+            </p>
+            <p>
+              Our resin flow engineering process:
+            </p>
+            <ul class="capabilities-list" style="margin-top: 15px;">
+              <li><strong>Gap volume calculation:</strong> CAM software calculates the total gap volume per layer by analyzing the etched copper pattern. This is summed across all 31 prepreg interfaces.</li>
+              <li><strong>Prepreg selection:</strong> We select prepreg styles with resin content (RC%) that provides at least 120% of the calculated gap volume — the extra 20% accounts for resin that flows out of the bond line (resin bleed) at the panel edges.</li>
+              <li><strong>Multi-ply optimization:</strong> For layers with high gap volume, we use multiple plies of thin, high-resin-content prepreg (e.g., 2× 106 instead of 1× 2116) to ensure complete fill without excessive resin bleed.</li>
+              <li><strong>Vacuum ramp profiling:</strong> The vacuum is applied in a stepped profile — initial rough vacuum removes bulk air, followed by a dwell period at 15 Torr to allow resin to flow before full vacuum (&lt; 10 Torr) is applied for the final cure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 25px; background: rgba(0, 255, 65, 0.05); border: 1px solid var(--pcb-trace); border-radius: 8px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; text-align: center;">
+          <div>
+            <div style="font-size: 2rem; font-weight: 900; color: var(--pcb-glow);">120%</div>
+            <p style="color: var(--text-main); margin: 5px 0 0;">Minimum resin volume margin</p>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 900; color: var(--pcb-glow);">15%</div>
+            <p style="color: var(--text-main); margin: 5px 0 0;">Max copper density mismatch (mirrored layers)</p>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 900; color: var(--pcb-glow);">&lt; 0.5%</div>
+            <p style="color: var(--text-main); margin: 5px 0 0;">Guaranteed warpage after final lamination</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. X-Ray Registration Verification Protocol -->
+    <section class="container long-article">
+      <h2 class="section-title center">X-Ray Registration Verification: The 32-Layer Audit Trail</h2>
+      <p class="text-content center" style="text-align: center; max-width: 950px; margin: 0 auto 40px;">
+        When a 32-layer board costs thousands of dollars per unit and takes weeks to manufacture, you cannot afford to discover a registration failure at final electrical test. XFPCB's X-ray verification protocol creates a complete audit trail of layer alignment at every stage.
+      </p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
+        <div>
+          <h3>Real-Time 3D X-Ray Tomography</h3>
+          <p>
+            XFPCB operates a state-of-the-art real-time 3D X-ray inspection system that can penetrate a fully laminated 32-layer stackup and resolve individual copper features at any depth. The system uses a 160 kV microfocus X-ray source with a 5 µm focal spot size and a high-resolution flat-panel detector. During inspection, the panel rotates on a precision goniometer while the detector captures images at 0.5° increments. Computed tomography (CT) reconstruction software generates a 3D volume model of the entire board, allowing our engineers to "slice" through the stackup at any layer to measure registration.
+          </p>
+          <p>
+            This system is used at two critical points:
+          </p>
+          <ul>
+            <li><strong>Mid-process:</strong> After each sequential lamination sub-assembly is pressed, the entire sub-assembly is X-rayed and registration is measured. Any shift exceeding the tolerance band triggers a compensation update for the next assembly.</li>
+            <li><strong>Final verification:</strong> The completed 32-layer board receives a full 3D X-ray scan. A registration report is generated showing the measured XY position of every target layer relative to the nominal design position.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Registration Target Design & Measurement</h3>
+          <p>
+            Every 32-layer design at XFPCB includes a dedicated set of <strong>registration measurement targets</strong> in the tooling strip. These targets are:
+          </p>
+          <ul>
+            <li><strong>Layer-specific fiducials:</strong> A unique fiducial pattern is placed on each layer, allowing the X-ray system to identify which layer a particular feature belongs to.</li>
+            <li><strong>Cross-layer targets:</strong> Concentric ring targets that span multiple layers. When layers are perfectly aligned, the rings form a concentric bullseye pattern. Any shift causes the rings to become eccentric, and the measured eccentricity directly quantifies the layer shift in microns.</li>
+            <li><strong>Drill target verification:</strong> After drilling, the X-ray system measures whether the drill bit struck the exact center of the internal copper pad on every layer. The system reports the annular ring remaining on each layer for every drill target.</li>
+          </ul>
+          <p style="margin-top: 20px;">
+            The entire X-ray data package — including the 3D volume model, target registration measurements, and annular ring analysis — is included with every 32-layer shipment. This audit trail provides complete traceability of layer alignment throughout the manufacturing process.
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;">
+        <div style="padding: 20px; background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; text-align: center;">
+          <div style="font-size: 1.5rem; font-weight: 900; color: var(--pcb-glow);">160 kV</div>
+          <p style="color: var(--text-main); font-size: 0.9rem; margin-top: 5px;">X-ray source power for deep penetration</p>
+        </div>
+        <div style="padding: 20px; background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; text-align: center;">
+          <div style="font-size: 1.5rem; font-weight: 900; color: var(--pcb-glow);">5 µm</div>
+          <p style="color: var(--text-main); font-size: 0.9rem; margin-top: 5px;">X-ray focal spot resolution</p>
+        </div>
+        <div style="padding: 20px; background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; text-align: center;">
+          <div style="font-size: 1.5rem; font-weight: 900; color: var(--pcb-glow);">±1.5 mil</div>
+          <p style="color: var(--text-main); font-size: 0.9rem; margin-top: 5px;">Registration verification accuracy</p>
+        </div>
+        <div style="padding: 20px; background: rgba(26, 66, 37, 0.3); border: 1px solid var(--pcb-trace); border-radius: 8px; text-align: center;">
+          <div style="font-size: 1.5rem; font-weight: 900; color: var(--pcb-glow);">100%</div>
+          <p style="color: var(--text-main); font-size: 0.9rem; margin-top: 5px;">Production panels X-ray verified</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Comprehensive Capabilities Matrix -->
+    <section class="bg-darker" style="padding: 60px 0;">
+      <div class="container">
+        <div class="layer-section-heading">
+          <h2>32-Layer PCB Comprehensive Capabilities Matrix</h2>
+          <p>XFPCB's full manufacturing envelope for 32-layer boards. Parameters marked with † require advanced engineering review and may extend lead time.</p>
+        </div>
+
+        <div class="layer-table-wrap" style="margin-top: 40px;">
+          <table class="layer-spec-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Parameter</th>
+                <th>Specification</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3" style="font-weight: 700; color: #fff;">Stackup</td>
+                <td>Layer count</td>
+                <td>32</td>
+                <td>Even counts only; 34† possible with review</td>
+              </tr>
+              <tr>
+                <td>Sequential lamination cycles</td>
+                <td>5–7</td>
+                <td>Depends on blind/buried via architecture</td>
+              </tr>
+              <tr>
+                <td>Overall thickness</td>
+                <td>3.2 mm – 6.0 mm</td>
+                <td>Up to 7.0 mm† with extended drill tooling</td>
+              </tr>
+              <tr>
+                <td rowspan="3" style="font-weight: 700; color: #fff;">Registration</td>
+                <td>Layer-to-layer (standard)</td>
+                <td>±3 mil (±0.075 mm)</td>
+                <td>Optical DIS + dynamic scaling</td>
+              </tr>
+              <tr>
+                <td>Layer-to-layer (advanced)</td>
+                <td>±1.5 mil (±0.038 mm)</td>
+                <td>Closed-loop X-ray compensation required</td>
+              </tr>
+              <tr>
+                <td>X-ray verification</td>
+                <td>100% of production panels</td>
+                <td>3D CT scan + target measurement report</td>
+              </tr>
+              <tr>
+                <td rowspan="3" style="font-weight: 700; color: #fff;">Drilling & Plating</td>
+                <td>Min. mechanical drill Ø</td>
+                <td>0.2 mm (8 mil)</td>
+                <td>0.15 mm† with aspect ratio limit</td>
+              </tr>
+              <tr>
+                <td>Max aspect ratio (PTH)</td>
+                <td>16:1 (standard), 20:1 (PRPP)</td>
+                <td>25:1† possible with extended plating</td>
+              </tr>
+              <tr>
+                <td>Backdrilling depth tolerance</td>
+                <td>±3 mil (±0.075 mm)</td>
+                <td>Laser-guided; ±2 mil† advanced</td>
+              </tr>
+              <tr>
+                <td rowspan="2" style="font-weight: 700; color: #fff;">Materials</td>
+                <td>High-speed laminates</td>
+                <td>Megtron 6/7, Tachyon 100G, Astra MT77</td>
+                <td>Hybrid stackups supported</td>
+              </tr>
+              <tr>
+                <td>High-Tg FR-4</td>
+                <td>S1000-2, IT-180A, 370HR</td>
+                <td>Tg ≥ 170°C, CTE ≤ 35 ppm/°C Z-axis</td>
+              </tr>
+              <tr>
+                <td rowspan="2" style="font-weight: 700; color: #fff;">Copper</td>
+                <td>Inner layer copper weight</td>
+                <td>0.5 oz – 4 oz</td>
+                <td>≥3 oz requires high-RC prepreg</td>
+              </tr>
+              <tr>
+                <td>Copper balance tolerance</td>
+                <td>≤ 15% density mismatch (mirrored layers)</td>
+                <td>Automated DFM verification</td>
+              </tr>
+              <tr>
+                <td rowspan="2" style="font-weight: 700; color: #fff;">Quality</td>
+                <td>Registration audit trail</td>
+                <td>3D X-ray model + annular ring report</td>
+                <td>Included with every shipment</td>
+              </tr>
+              <tr>
+                <td>Warpage guarantee</td>
+                <td>≤ 0.5%</td>
+                <td>3D laser profilometer verified</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Applications: Quantum & Core Router Infrastructure -->
+    <section class="container" style="padding-top: 60px; padding-bottom: 40px;">
+      <h2 class="section-title center">32-Layer Applications: The Most Demanding Environments in Electronics</h2>
+      <p class="text-content center" style="text-align: center; max-width: 900px; margin: 0 auto 50px;">
+        A 32-layer PCB is never a casual design choice. It is deployed only where the combination of routing density, signal integrity, and power delivery cannot be achieved any other way.
+      </p>
+
+      <div class="layer-application-grid">
+        <div class="layer-application-item">Quantum Computing Cryogenic Interface</div>
+        <div class="layer-application-item">Terabit Core Network Router Backplane</div>
+        <div class="layer-application-item">Semiconductor ATE Load Board</div>
+        <div class="layer-application-item">AI/HPC Server Motherboard</div>
+        <div class="layer-application-item">Probe Card Interface Board</div>
+        <div class="layer-application-item">National Lab Supercomputer Backplane</div>
+        <div class="layer-application-item">400G/800G Switch Fabric Module</div>
+        <div class="layer-application-item">Radar Signal Processing Board</div>
+      </div>
+
+      <div style="margin-top: 50px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+        <article class="layer-card">
+          <span>Application Deep Dive</span>
+          <h3>Quantum Computing Cryogenic Interface</h3>
+          <p>
+            The interface between room-temperature control electronics and a dilution refrigerator operating at milli-Kelvin temperatures. These 32-layer boards must route hundreds of DC bias lines, RF control signals, and readout resonators through extreme thermal gradients. They require non-magnetic surface finishes (EPIG or Immersion Silver), specialized low-outgassing materials to prevent contamination of the quantum processor, and carefully controlled dielectric properties that remain stable across a 300°C temperature range. XFPCB is one of the few manufacturers with proven capability in this domain.
+          </p>
+        </article>
+        <article class="layer-card">
+          <span>Application Deep Dive</span>
+          <h3>Terabit Core Router Backplane</h3>
+          <p>
+            The central fabric of a core internet router that switches multiple terabits per second between line cards. These 32-layer backplanes can measure 900mm × 600mm and weigh over 10 kg. They require absolute layer-to-layer registration across an enormous panel area, precision backdrilling for thousands of 112G PAM4 channels, and press-fit connector PTHs that survive decades of field operation. XFPCB's large-format lamination and X-ray verification capabilities are purpose-built for this application.
+          </p>
+        </article>
+        <article class="layer-card">
+          <span>Application Deep Dive</span>
+          <h3>Semiconductor ATE Load Board</h3>
+          <p>
+            The interface between automated test equipment (ATE) and the silicon wafer under test. These 32-layer boards are massive (up to 600mm × 600mm), extremely thick (5.0–6.0mm), and pack the highest routing density in the PCB industry. Every signal must arrive at the device-under-test with precisely matched delay and impedance. Our X-ray audit trail provides ATE engineers with complete confidence that every one of the thousands of interconnects is perfectly formed.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 8. Engineering FAQ -->
+    <section class="container faq-section" style="margin-top: 60px; margin-bottom: 80px;">
+      <h2 class="section-title center">32-Layer PCB Engineering FAQ</h2>
+      
+      <div class="faq-item">
+        <h4>What is the typical lead time for a 32-layer PCB prototype?</h4>
+        <p>
+          Due to the complexity of 5+ sequential lamination cycles, each requiring dedicated press profiling and X-ray verification, typical lead time for 32-layer prototypes is 20–30 working days for the initial engineering lot. Production volumes require 25–35 working days. Expedited service may be available for qualified engineering customers with prior CAM schedule review — but as a rule, we do not rush 32-layer boards. Each lamination cycle must follow its precise temperature and pressure profile; compressing the timeline risks introducing registration errors that cannot be corrected.
+        </p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Can a 32-layer board include buried and blind vias in the same stackup?</h4>
+        <p>
+          Yes — in fact, a 32-layer board almost always requires a complex via architecture combining through-hole, buried, and blind vias. A typical architecture might use: (a) L1–L4 laser microvias for BGA fan-out, (b) L4–L8 buried vias for local routing, (c) L8–L26 through-hole vias for power distribution and backplane signals, and (d) L26–L32 blind vias for bottom-side BGA fan-out. Each via type is formed at a different sequential lamination stage. We strongly recommend a joint CAM review early in the design phase to optimize the via architecture for your specific stackup.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>What is the maximum panel size you can process for 32-layer boards?</h4>
+        <p>
+          XFPCB's large-format vacuum hydraulic presses can accommodate panels up to 620 mm × 1030 mm. For 32-layer boards, the effective usable area depends on the complexity of the lamination architecture and the need for tooling strip space (typically 15–25mm per side for registration targets and X-ray fiducials). We recommend consulting our CAM team to optimize panel utilization for your specific design.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How do you handle the different press temperature requirements of hybrid materials (Megtron + FR-4) across 32 layers?</h4>
+        <p>
+          This is one of our core competencies. Megtron 6 requires a peak press temperature of approximately 190–200°C with a specific ramp rate, while FR-4 materials typically press at 175–185°C. When combining these in a single 32-layer hybrid stackup, we design a custom multi-stage press profile: the initial ramp targets the lower-temperature material's gel point, followed by a dwell period, then a secondary ramp to the higher-temperature material's cure temperature. The entire profile is validated on a thermocouple-instrumented test panel before production. We have successfully fabricated hundreds of hybrid 32-layer designs using this methodology.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Do you provide X-ray registration data as part of the standard delivery package?</h4>
+        <p>
+          Yes. For every 32-layer board, we provide a complete X-ray registration report including: (a) 3D CT volume model of the board (viewable with free software), (b) measured XY position of every registration target on every layer, (c) calculated layer shift vectors, and (d) annular ring analysis for all drill targets. This documentation is invaluable for engineers who need to verify that the physical board matches the design intent before proceeding with assembly.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>What is the minimum copper weight you recommend for inner layers of a 32-layer board?</h4>
+        <p>
+          While we can process 0.5oz (18 µm) inner layers, we strongly recommend 1oz (35 µm) minimum for most 32-layer designs. The reason is mechanical: during 5+ sequential lamination cycles, thin 0.5oz copper has been observed to develop microscopic cracks at the transition points between etched features, particularly near buried via targets where the copper-to-resin adhesion is stressed by multiple thermal cycles. At 1oz, the copper has sufficient mechanical strength to survive the full lamination sequence without degradation.
+        </p>
+      </div>
+    </section>
   </main>
 </BaseLayout>

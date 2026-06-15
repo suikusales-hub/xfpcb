@@ -14,226 +14,727 @@ ogUrl="https://xfpcb.com/products/1-layer-pcb/"
   cssExtra={['/css/about.css', '/css/products.css']}
 >
   <main>
-<section class="product-hero layer-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <p class="eyebrow">XFPCB China PCB Manufacturer</p>
-                    <h1>1 Layer PCB Manufacturer for Cost-Controlled Single Sided Boards</h1>
-                    <h2>Direct China PCB factory support for LED, power, control and high-volume simple circuits</h2>
-                    <p class="desc">A 1 layer PCB is selected when the circuit is simple, the target price is strict, and the purchasing team needs a stable board that can be repeated thousands or millions of times without unnecessary process cost. XFPCB supports overseas buyers with single sided PCB fabrication, CAM review, material selection, panelization advice and export shipment planning from prototype validation to production release.</p>
-                    <div class="layer-hero-pills">
-                        <span>Single sided PCB</span>
-                        <span>FR-4 / CEM-1 / CEM-3</span>
-                        <span>Aluminum PCB option</span>
-                        <span>Cost-focused production</span>
-                    </div>
-                    <div class="layer-hero-actions">
-                        <a href="#quote" class="cta-btn">Request 1-Layer PCB Quote</a>
-                        <a href="/products/" class="layer-secondary-btn">View PCB Products</a>
-                    </div>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper layer-image-frame">
-                        <img src="/images/675x542pcb.jpg" alt="XFPCB single sided 1 layer PCB manufacturing for export buyers">
-                    </div>
-                    <div class="layer-visual-note">
-                        <strong>Buyer focus:</strong> DFM review, stable fabrication, export communication and repeat-order support.
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="bg-darker layer-intent-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Procurement intent</p>
-                    <h2>What international buyers usually need from a 1 layer PCB supplier</h2>
-                    <p>Most 1 layer PCB buyers start with a cost target, but the successful order depends on more than a low unit price. The factory must understand material choice, tooling route, solderability, panel efficiency and repeat production stability before the board can move smoothly into assembly.</p>
-                </div>
-                <div class="layer-card-grid">
-                    <article class="layer-card">
-                        <span>Cost control</span>
-                        <h3>Panel efficiency before price promises</h3>
-                        <p>XFPCB reviews outline, V-cut, routing, copper balance and tooling direction so the quote reflects the real manufacturing route instead of a rough board-area calculation.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Material choice</span>
-                        <h3>Use the laminate that fits the job</h3>
-                        <p>FR-4 is common for general electronics, CEM-1 or CEM-3 can reduce cost for suitable high-volume designs, and aluminum base material helps LED and power boards move heat away from components.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Assembly yield</span>
-                        <h3>Solderability matters on simple boards</h3>
-                        <p>A single sided PCB still needs clean solder mask registration, reliable pad finish, readable markings and consistent board flatness for manual, wave or selective soldering.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Export buying</span>
-                        <h3>Clear specs reduce RFQ back-and-forth</h3>
-                        <p>Procurement teams can compare suppliers faster when the RFQ includes material, copper weight, finish, board outline, tolerance, packaging and delivery expectations.</p>
-                    </article>
-                </div>
+    <!-- SECTION 1: The question most procurement engineers don't ask early enough -->
+    <section class="oneL-reality">
+      <div class="container">
+        <div class="oneL-reality-grid">
+          <div class="oneL-reality-text">
+            <p class="oneL-eyebrow">Procurement engineering perspective</p>
+            <h1>1 Layer PCB: Is a single-sided board the right structure for your product?</h1>
+            <p class="oneL-lead">
+              Every procurement engineer evaluating a 1-layer PCB faces the same starting question: <em>will a board with copper on one side deliver the electrical performance, mechanical reliability, and assembly yield my production line needs?</em>
+            </p>
+            <p>
+              The answer is not a simple yes or no. A single-sided PCB is the lowest-cost substrate structure available, but it carries real trade-offs in routing density, signal integrity, component placement flexibility, and mechanical rigidity. The engineering decision depends on trace count, component count, operating environment, assembly method, and volume.
+            </p>
+            <p>
+              This page exists to help you answer that question with data — not marketing. XFPCB manufactures 1-layer PCBs for LED lighting, power adapters, appliance controls, sensor modules, and cost-optimised consumer electronics. We also help buyers identify when a double-sided or multilayer board would be the more reliable long-term choice.
+            </p>
+            <div class="oneL-meta-badges">
+              <span class="oneL-badge">FR-4 / CEM-1 / CEM-3 compatible</span>
+              <span class="oneL-badge">Aluminum base option available</span>
+              <span class="oneL-badge">HASL / Lead-free / OSP / ENIG</span>
+              <span class="oneL-badge">Panel-optimised pricing</span>
             </div>
-        </section>
+          </div>
+          <div class="oneL-reality-visual">
+            <div class="oneL-image-card">
+              <img src="/images/675x542pcb.jpg" alt="XFPCB 1 layer single sided PCB board for export buyers" loading="eager">
+            </div>
+            <div class="oneL-callout">
+              <strong>Engineering-first procurement:</strong> XFPCB provides CAM review, material recommendations, panel layout advice, and surface finish guidance before you commit to production. Every quote includes a DFM report.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Manufacturing specification</p>
-                <h2>1-Layer PCB buying guide and RFQ details</h2>
-                <p>For 1 layer PCB projects, the most important decisions are often material, surface finish, copper weight and mechanical processing. XFPCB confirms each point against your Gerber files and end-use requirements before production.</p>
-            </div>
-            <div class="layer-table-wrap">
-                    <table class="layer-spec-table">
-                        <thead>
-                            <tr><th>Buying item</th><th>XFPCB recommendation</th><th>Why it matters</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>General consumer boards</td><td>FR-4 single sided PCB with HASL, lead-free HASL or OSP</td><td>A practical balance between price, solderability and availability for power adapters, controls and simple electronics.</td></tr>
-                            <tr><td>High-volume cost-sensitive boards</td><td>CEM-1 or CEM-3 when the design and application allow it</td><td>Can support lower material cost and efficient punching routes for repeat orders after tooling confirmation.</td></tr>
-                            <tr><td>LED and thermal boards</td><td>Aluminum base PCB with suitable dielectric thermal conductivity</td><td>Helps move heat from LEDs or power components to the metal base and enclosure.</td></tr>
-                            <tr><td>Power and high-current traces</td><td>Wider copper, correct creepage and copper weight review</td><td>Reduces voltage-drop, thermal and safety risk before the board moves to mass production.</td></tr>
-                            <tr><td>Stable assembly supply</td><td>Finish selection based on assembly date and storage plan</td><td>OSP is cost effective for fast assembly; HASL or ENIG may be selected when shelf life or pad flatness requirements differ.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-        </section>
+    <!-- SECTION 2: Decision framework — Single-sided vs Double-sided -->
+    <section class="oneL-decision">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Decision framework</span>
+          <h2>Single-sided vs double-sided: when does 1 layer make engineering sense?</h2>
+          <p>The most valuable decision a procurement team makes is not which supplier to choose — it is whether the board structure itself fits the product. This comparison table maps the trade-offs with specific numbers.</p>
+        </div>
 
-        
+        <div class="oneL-compare-table-wrapper">
+          <table class="oneL-compare-table">
+            <thead>
+              <tr>
+                <th>Evaluation criterion</th>
+                <th>1-Layer (single-sided) PCB</th>
+                <th>2-Layer (double-sided) PCB</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="oneL-criterion">Relative substrate cost</td>
+                <td class="oneL-good">Baseline — lowest cost per cm²</td>
+                <td class="oneL-neutral">+40–60% over 1-layer</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Routing density limit</td>
+                <td>~1.0–1.5 traces/mm per side — one routing layer only</td>
+                <td>~2.0–3.0 traces/mm total across both sides with PTH jumpers</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Component placement density</td>
+                <td>Components on one side only. Wire jumpers or zero-ohm resistors needed for cross-traces.</td>
+                <td>Components on both sides. PTH vias replace wire jumpers.</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Typical assembly method</td>
+                <td>Wave soldering, selective soldering, or manual — single pass</td>
+                <td>Wave soldering or reflow — single or double pass</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Signal integrity ceiling</td>
+                <td>&lt;10 MHz — no ground plane, higher loop inductance</td>
+                <td>&lt;50 MHz — ground plane possible on bottom side</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Mechanical rigidity</td>
+                <td>Lower — no copper on bottom reduces overall board stiffness by ~30% compared to equal-thickness double-sided board</td>
+                <td>Higher — copper on both sides adds structural stiffness</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Best-fit applications</td>
+                <td>LED tubes, power adapters, appliance relays, basic sensors, calculator-level circuits</td>
+                <td>IoT nodes, motor drives, power supplies with feedback, display interfaces</td>
+              </tr>
+              <tr>
+                <td class="oneL-criterion">Volume sweet spot</td>
+                <td>1,000–100,000+ pcs — tooling amortises well at scale</td>
+                <td>500–50,000 pcs — PTH adds per-board cost but avoids jumper labour</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <section class="bg-darker layer-content-section">
-            <div class="container layer-two-column">
-                <article class="layer-text-panel">
-                    <p class="eyebrow">DFM review</p>
-                    <h2>Single sided does not mean no engineering review</h2>
-                    <p>Many sourcing teams treat 1 layer PCB manufacturing as a commodity, but small design choices can change cost and production stability. XFPCB checks annular clearance around holes, solder mask opening, copper-to-edge distance, trace width, copper balance, panel tooling holes and routing direction. For LED boards, we also look at thermal pad geometry and whether the aluminum substrate specification matches the heat path required by the product.</p>
-                    <p>When the board is intended for high quantity, our team can discuss whether CNC routing, V-scoring, punching or combined processing is the better route. This helps the buyer understand not just the prototype price, but also the cost of repeat production.</p>
-                </article>
-                <article class="layer-text-panel">
-                    <p class="eyebrow">Quality control</p>
-                    <h2>How XFPCB protects simple PCB orders from avoidable defects</h2>
-                    <p>The production plan includes CAM file checking, incoming material confirmation, solder mask and legend inspection, dimensional control and electrical testing when required by the order. For single sided boards used in power, appliance and lighting products, we pay attention to solderability, board flatness, copper adhesion and packing protection because these details directly affect assembly yield.</p>
-                    <p>For overseas procurement, XFPCB can package boards by lot, part number and purchase order requirement, making incoming inspection easier for your warehouse or assembly partner.</p>
-                </article>
-            </div>
-        </section>
+        <div class="oneL-insight-box">
+          <h4>Engineering insight</h4>
+          <p>The crossover point where a 2-layer board becomes cheaper than a 1-layer board with jumpers is typically around <strong>8–12 jumper wires per board</strong> in medium-to-high volume. Before that threshold, the single-sided board with selective jumpers is usually the lower total-cost option. XFPCB can review your BOM and netlist to advise on the crossover before you finalise the layer count.</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Order workflow</p>
-                <h2>How XFPCB moves your 1-Layer PCB project from files to shipment</h2>
-                <p>Procurement teams need predictable communication. The steps below show how XFPCB turns design files into a manufacturing plan that can be quoted, produced and shipped with fewer surprises.</p>
-            </div>
-            <div class="layer-process-grid">
-                <article class="layer-process-step">
-                    <h3>1. Send Gerber and target quantity</h3>
-                    <p>Include material preference, finish, board thickness, copper weight and delivery country.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>2. CAM and cost review</h3>
-                    <p>XFPCB checks whether the design can be produced efficiently and flags details that may affect cost or lead time.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>3. Prototype or sample confirmation</h3>
-                    <p>For new projects, a short validation run helps confirm fit, solderability and mechanical requirements.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>4. Repeat production and shipment</h3>
-                    <p>After approval, the same data package can be used for stable repeat orders and export delivery.</p>
-                </article>
-            </div>
-        </section>
+    <!-- SECTION 3: Material selection guidance with specific numbers -->
+    <section class="oneL-materials">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Material selection</span>
+          <h2>Laminate materials for 1-layer PCBs: engineering properties and cost trade-offs</h2>
+          <p>The laminate you choose determines electrical performance, thermal behaviour, mechanical stability, and unit cost. Most competitor pages list material names without the numbers that procurement engineers actually need to make a decision.</p>
+        </div>
 
-        <section class="bg-darker layer-content-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Applications</p>
-                    <h2>Where buyers commonly use 1-Layer PCB</h2>
-                    <p>XFPCB writes each quote around the real product environment, not a generic layer-count label. Tell us where the board will be used so material, finish and testing choices can match the risk level.</p>
-                </div>
-                <div class="layer-application-grid">
-                    <div class="layer-application-item">LED tubes, downlights and lighting drivers</div>
-                    <div class="layer-application-item">Power adapters and charger boards</div>
-                    <div class="layer-application-item">Simple appliance controls and relay boards</div>
-                    <div class="layer-application-item">Basic sensor, alarm and display modules</div>
-                </div>
+        <div class="oneL-mat-grid">
+          <article class="oneL-mat-card">
+            <div class="oneL-mat-header">
+              <h3>FR-4</h3>
+              <span class="oneL-mat-cost">Cost index: 1.0 (baseline)</span>
             </div>
-        </section>
+            <ul class="oneL-mat-props">
+              <li><strong>Tg:</strong> 130–140°C (standard) / 170–180°C (high-Tg)</li>
+              <li><strong>Td (decomposition):</strong> 300–350°C</li>
+              <li><strong>DK (1 MHz):</strong> 4.5–4.8</li>
+              <li><strong>CTI:</strong> 175–250 V (class IIIa–IIIb)</li>
+              <li><strong>Moisture absorption:</strong> 0.10–0.25%</li>
+            </ul>
+            <p>Best for general-purpose electronics, appliances, power adapters, and any board requiring UL recognition. FR-4 provides the best balance of mechanical strength, electrical insulation, and processability for 1-layer PCBs. Standard Tg is sufficient for most single-sided designs; high-Tg only needed for lead-free soldering with multiple thermal cycles.</p>
+            <p class="oneL-mat-rec"><strong>Recommend when:</strong> Solderability, mechanical stability, and UL certification matter. Avoid when strict cost targets below $0.02/cm² justify a CEM grade.</p>
+          </article>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">FAQ</p>
-                <h2>1-Layer PCB questions buyers ask before placing an order</h2>
+          <article class="oneL-mat-card">
+            <div class="oneL-mat-header">
+              <h3>CEM-1</h3>
+              <span class="oneL-mat-cost">Cost index: 0.70–0.80</span>
             </div>
-            <div class="layer-faq-list">
-                <article class="faq-item">
-                    <h4>Is a 1 layer PCB always the cheapest option?</h4>
-                    <p>Usually it is the lowest-cost structure, but the final price still depends on material, copper weight, finish, board size, panel utilization, outline process, quantity and inspection requirements.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>Can XFPCB make aluminum 1 layer PCBs for LED lighting?</h4>
-                    <p>Yes. XFPCB can review aluminum PCB requirements for LED and power applications, including dielectric thermal performance, copper weight, surface finish and mechanical outline.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>What should I send for an accurate single sided PCB quote?</h4>
-                    <p>Send Gerber files, drill files, material and thickness, copper weight, surface finish, solder mask color, silkscreen, quantity, delivery country and any assembly or packaging requirement.</p>
-                </article>
-            </div>
-        </section>
+            <ul class="oneL-mat-props">
+              <li><strong>Tg:</strong> 120–130°C</li>
+              <li><strong>Construction:</strong> Woven glass fabric top + cellulose paper core</li>
+              <li><strong>DK (1 MHz):</strong> 4.8–5.2</li>
+              <li><strong>CTI:</strong> 175 V (class IIIa)</li>
+              <li><strong>Punchability:</strong> Excellent — suitable for high-speed punching instead of routing</li>
+            </ul>
+            <p>CEM-1 uses a paper core with glass fabric top and bottom layers. It punches cleanly at high speed, making it attractive for very high-volume 1-layer PCB production where the tooling cost can be amortised. The trade-off is lower mechanical strength and higher moisture sensitivity compared to FR-4.</p>
+            <p class="oneL-mat-rec"><strong>Recommend when:</strong> High volume (50,000+ pcs/year), non-critical consumer electronics, cost is the primary driver, and the board does not experience high humidity or thermal cycling.</p>
+          </article>
 
-        <section class="layer-rfq-section" id="quote">
-            <div class="container layer-rfq-grid">
-                <div class="layer-rfq-copy">
-                    <p class="eyebrow">Send RFQ to XFPCB</p>
-                    <h2>Get a practical quotation for 1-Layer PCB</h2>
-                    <p>A useful 1 layer PCB quote needs more than board size. The more complete your manufacturing details are, the faster XFPCB can recommend the right material and production route.</p>
-                    <ul class="layer-check-list">
-                    <li>Gerber and drill files</li>
-                    <li>Material preference: FR-4, CEM-1, CEM-3 or aluminum</li>
-                    <li>Copper weight, board thickness and surface finish</li>
-                    <li>Target quantity, annual forecast and delivery country</li>
-                </ul>
-                    <p class="layer-rfq-note">For a faster engineering reply, include Gerber files, drill files, PCB specification, quantity, delivery country and any impedance, material or assembly requirements.</p>
-                </div>
-                <form class="layer-rfq-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
-                    <input type="hidden" name="honeypot" style="display:none;">
-                    <input type="hidden" name="page_url" value="https://xfpcb.com/products/1-layer-pcb/">
-                    <input type="hidden" name="page_path" value="/products/1-layer-pcb/">
-                    <input type="hidden" name="subject" value="1-Layer PCB RFQ from XFPCB product page">
-                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
-                    <label>
-                        Name
-                        <input type="text" name="name" placeholder="Your name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="name@company.com" required>
-                    </label>
-                    <label>
-                        Project Requirements
-                        <textarea name="message" placeholder="Example: 1 layer FR-4 PCB, 1.6 mm, 1 oz copper, green solder mask, lead-free HASL, 5,000 pcs, ship to Germany." required></textarea>
-                    </label>
-                    <button type="submit">Send 1-Layer PCB Inquiry</button>
-                </form>
+          <article class="oneL-mat-card">
+            <div class="oneL-mat-header">
+              <h3>CEM-3</h3>
+              <span class="oneL-mat-cost">Cost index: 0.75–0.85</span>
             </div>
-        </section>
+            <ul class="oneL-mat-props">
+              <li><strong>Tg:</strong> 125–135°C</li>
+              <li><strong>Construction:</strong> Glass fabric throughout (unlike CEM-1)</li>
+              <li><strong>DK (1 MHz):</strong> 4.7–5.1</li>
+              <li><strong>CTI:</strong> 175 V (class IIIa)</li>
+              <li><strong>Appearance:</strong> Opaque white or natural — transparent if backlit</li>
+            </ul>
+            <p>CEM-3 is sometimes described as a "punchable FR-4 alternative." Unlike CEM-1, it uses glass fabric reinforcement throughout the laminate, giving it closer mechanical properties to FR-4 while still supporting high-speed punching for through-holes and outlines. It is commonly used in consumer electronics where cost pressure is high but some through-hole reliability is still expected.</p>
+            <p class="oneL-mat-rec"><strong>Recommend when:</strong> Volume is moderate-to-high, material cost is critical, but you need better hole-wall quality than CEM-1 provides.</p>
+          </article>
 
-        <section class="bg-darker">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Related PCB products</p>
-                    <h2>Compare layer counts before you send your RFQ</h2>
-                    <p>Many buyers begin with one layer count and change after DFM review, enclosure checks or cost comparison. These XFPCB pages help you select the most suitable PCB structure before production.</p>
-                </div>
-                <div class="related-layer-links">
-                    <a class="related-layer-link active" href="/products/1-layer-pcb/">1-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/2-layer-pcb/">2-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/4-layer-pcb/">4-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/6-layer-pcb/">6-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/8-layer-pcb/">8-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
-                    <a class="related-layer-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
-                </div>
+          <article class="oneL-mat-card">
+            <div class="oneL-mat-header">
+              <h3>Aluminum base (IMS)</h3>
+              <span class="oneL-mat-cost">Cost index: 1.5–3.0 (depending on dielectric thickness)</span>
             </div>
-        </section>
+            <ul class="oneL-mat-props">
+              <li><strong>Thermal conductivity:</strong> 1.0–4.0 W/m·K (dielectric layer) / 150–220 W/m·K (aluminum base)</li>
+              <li><strong>Dielectric breakdown:</strong> 3–6 kV (depending on dielectric thickness)</li>
+              <li><strong>Typical dielectric thickness:</strong> 50–150 µm</li>
+              <li><strong>Copper weight:</strong> 1 oz to 6 oz available</li>
+              <li><strong>Board thickness:</strong> 0.8–3.2 mm (base + dielectric + copper)</li>
+            </ul>
+            <p>Aluminum-base PCBs (Insulated Metal Substrate) replace the FR-4 core with an aluminum plate covered by a thermally conductive dielectric layer and copper foil. The metal base acts as a heat spreader, pulling heat away from LEDs, power transistors, and rectifiers. The dielectric layer is the performance bottleneck — thinner dielectric = better thermal transfer but lower voltage isolation.</p>
+            <p class="oneL-mat-rec"><strong>Recommend when:</strong> LED lighting (≥0.5 W per LED), power converters with heat-generating components, automotive lighting, or any board where junction temperature must stay below 85°C in a sealed enclosure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Surface finish decision matrix -->
+    <section class="oneL-finish">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Surface finish selection</span>
+          <h2>Choosing the right surface finish for a 1-layer PCB: price, shelf life, and solderability</h2>
+          <p>The surface finish accounts for roughly 5–15% of the total board cost, but it can determine whether your assembly line runs at 98% yield or 92% yield. For single-sided PCBs, the finish choice is usually between HASL, lead-free HASL, OSP, and (less commonly) ENIG. Here is the decision matrix.</p>
+        </div>
+
+        <div class="oneL-finish-grid">
+          <div class="oneL-finish-card oneL-finish-highlight">
+            <div class="oneL-finish-top">
+              <h3>HASL (Hot Air Solder Leveling)</h3>
+              <div class="oneL-finish-cost">Lowest cost</div>
+            </div>
+            <div class="oneL-finish-body">
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Cost impact</span>
+                <span class="oneL-fm-value">Baseline (1.0×)</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Shelf life</span>
+                <span class="oneL-fm-value">12 months (controlled environment)</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Pad flatness</span>
+                <span class="oneL-fm-value">Moderate — uneven surface tolerable for wave solder</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Solderability</span>
+                <span class="oneL-fm-value">Excellent — best for wave and selective soldering</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Best for</span>
+                <span class="oneL-fm-value">THT and wave-soldered assemblies. Most common choice for 1-layer boards.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-finish-card">
+            <div class="oneL-finish-top">
+              <h3>Lead-free HASL</h3>
+              <div class="oneL-finish-cost">Low cost (RoHS)</div>
+            </div>
+            <div class="oneL-finish-body">
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Cost impact</span>
+                <span class="oneL-fm-value">1.1–1.15× vs HASL</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Shelf life</span>
+                <span class="oneL-fm-value">12 months</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Pad flatness</span>
+                <span class="oneL-fm-value">Moderate — similar to leaded HASL</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Solderability</span>
+                <span class="oneL-fm-value">Good — requires higher soldering temperature (~260°C peak)</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Best for</span>
+                <span class="oneL-fm-value">RoHS-compliant products. Standard choice for EU-bound electronics.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-finish-card">
+            <div class="oneL-finish-top">
+              <h3>OSP (Organic Solderability Preservative)</h3>
+              <div class="oneL-finish-cost">Low cost, short shelf life</div>
+            </div>
+            <div class="oneL-finish-body">
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Cost impact</span>
+                <span class="oneL-fm-value">0.85–0.95× vs HASL</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Shelf life</span>
+                <span class="oneL-fm-value">6 months — shorter if high humidity</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Pad flatness</span>
+                <span class="oneL-fm-value">Excellent — perfectly flat surface</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Solderability</span>
+                <span class="oneL-fm-value">Good — requires clean handling and timely assembly</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Best for</span>
+                <span class="oneL-fm-value">SMT with fine-pitch parts. Boards assembled within weeks of delivery.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-finish-card">
+            <div class="oneL-finish-top">
+              <h3>ENIG (Electroless Nickel Immersion Gold)</h3>
+              <div class="oneL-finish-cost">Moderate cost</div>
+            </div>
+            <div class="oneL-finish-body">
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Cost impact</span>
+                <span class="oneL-fm-value">1.5–2.0× vs HASL</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Shelf life</span>
+                <span class="oneL-fm-value">12+ months — very stable</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Pad flatness</span>
+                <span class="oneL-fm-value">Excellent — flat, coplanar surface for fine-pitch assembly</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Solderability</span>
+                <span class="oneL-fm-value">Excellent — consistent wetting, good for multiple reflow cycles</span>
+              </div>
+              <div class="oneL-finish-metric">
+                <span class="oneL-fm-label">Best for</span>
+                <span class="oneL-fm-value">Aluminum PCBs, fine-pitch SMT, long storage before assembly, or repeated thermal exposure.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="oneL-insight-box">
+          <h4>Practical recommendation for 1-layer PCBs</h4>
+          <p>For the majority of single-sided boards going through wave soldering, <strong>standard HASL</strong> is the most cost-effective and solder-reliable finish. Upgrade to <strong>lead-free HASL</strong> only if RoHS compliance is required. Switch to <strong>OSP</strong> if you need flat pads for SMT components and you can schedule assembly within 4–6 weeks of receiving boards. Use <strong>ENIG</strong> on aluminum-base PCBs or when the board will be stored before assembly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Panel utilization economics -->
+    <section class="oneL-panel">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Manufacturing economics</span>
+          <h2>Panel utilisation: the hidden cost lever in 1-layer PCB pricing</h2>
+          <p>Most buyers compare quotes by board-area price. The real driver of unit cost is how efficiently your board fits onto a standard production panel. For 1-layer PCBs, panel utilisation directly determines material waste, process time, and the number of boards per press cycle.</p>
+        </div>
+
+        <div class="oneL-panel-content">
+          <div class="oneL-panel-text">
+            <h3>Standard panel sizes and their economics</h3>
+            <p>XFPCB typically builds 1-layer PCBs on standard laminate panel sizes. The most common are:</p>
+            <ul class="oneL-panel-list">
+              <li><strong>940 mm × 620 mm</strong> (37 × 24.4 in) — Largest standard, best for high-volume panelisation, but requires larger tooling</li>
+              <li><strong>610 mm × 510 mm</strong> (24 × 20 in) — Common production panel, good balance of utilisation and handling</li>
+              <li><strong>500 mm × 400 mm</strong> (19.7 × 15.7 in) — Typical for mid-volume, easier to handle in plating and solder mask lines</li>
+            </ul>
+
+            <h3>How panelisation affects cost per board</h3>
+            <p>The number of boards per panel is rarely a whole-number fit. The two key calculations are:</p>
+            <ul class="oneL-panel-list">
+              <li><strong>Panel utilisation ratio</strong> = (total board area on panel) ÷ (panel area). Target: ≥75%. Below 60%, material waste starts dominating cost.</li>
+              <li><strong>Tooling cost amortisation:</strong> The initial tooling (punch die or routing program) is a fixed cost. At 500 boards, tooling may add $0.08–0.15 per board. At 50,000 boards, it drops below $0.005 per board.</li>
+            </ul>
+
+            <h3>Outline method: routing vs. V-scoring vs. punching</h3>
+            <p>The outline method significantly affects per-board cost at different volumes:</p>
+            <ul class="oneL-panel-list">
+              <li><strong>CNC routing</strong> — Flexible, no tooling charge. Best for prototypes and low-volume (&lt;1,000 pcs). Adds $0.02–0.08 per board routing time.</li>
+              <li><strong>V-scoring</strong> — Low per-board cost, clean break. Requires straight edges. Ideal for rectangular boards in mid-to-high volume.</li>
+              <li><strong>Punching (steel rule die)</strong> — Highest upfront tooling cost ($200–800 per die), but lowest per-board cost at high volume (&gt;10,000 pcs). 1–3 seconds per board versus 30–60 seconds per board for routing. Only suitable for CEM-1, CEM-3, or thin FR-4.</li>
+            </ul>
+          </div>
+          <div class="oneL-panel-numbers">
+            <div class="oneL-stat-block">
+              <span class="oneL-stat-value">75%</span>
+              <span class="oneL-stat-label">Minimum panel utilisation target</span>
+            </div>
+            <div class="oneL-stat-block">
+              <span class="oneL-stat-value">$0.005</span>
+              <span class="oneL-stat-label">Per-board tooling cost at 50,000 pcs</span>
+            </div>
+            <div class="oneL-stat-block">
+              <span class="oneL-stat-value">3 s</span>
+              <span class="oneL-stat-label">Punch time per board vs. 45 s routing</span>
+            </div>
+            <div class="oneL-stat-block">
+              <span class="oneL-stat-value">1.5–5.0×</span>
+              <span class="oneL-stat-label">Cost per cm² range (FR-4 vs punched CEM-1 at volume)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Cost driver breakdown -->
+    <section class="oneL-costs">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Cost transparency</span>
+          <h2>What actually drives the price of a 1-layer PCB</h2>
+          <p>Rather than a black-box quote, here is how each specification choice moves the unit price. Understanding these drivers helps procurement engineers target the most impactful cost-reduction levers.</p>
+        </div>
+
+        <div class="oneL-cost-drivers">
+          <div class="oneL-driver-row">
+            <div class="oneL-driver-name">
+              <span class="oneL-driver-icon">①</span>
+              <div>
+                <h4>Material grade</h4>
+                <p>FR-4 vs CEM-1 vs CEM-3 vs aluminum</p>
+              </div>
+            </div>
+            <div class="oneL-driver-bar-wrapper">
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 100%;">FR-4: baseline</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-secondary">
+                <span class="oneL-driver-fill" style="width: 78%;">CEM-3: −22%</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-secondary">
+                <span class="oneL-driver-fill" style="width: 73%;">CEM-1: −27%</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-costly">
+                <span class="oneL-driver-fill" style="width: 180%;">Aluminum: +50–200%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-driver-row">
+            <div class="oneL-driver-name">
+              <span class="oneL-driver-icon">②</span>
+              <div>
+                <h4>Copper weight</h4>
+                <p>Impact on material and etching cost</p>
+              </div>
+            </div>
+            <div class="oneL-driver-bar-wrapper">
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 100%;">1 oz: baseline</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-costly">
+                <span class="oneL-driver-fill" style="width: 135%;">2 oz: +30–40%</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-costly">
+                <span class="oneL-driver-fill" style="width: 175%;">3 oz: +60–90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-driver-row">
+            <div class="oneL-driver-name">
+              <span class="oneL-driver-icon">③</span>
+              <div>
+                <h4>Surface finish</h4>
+                <p>HASL vs lead-free vs OSP vs ENIG</p>
+              </div>
+            </div>
+            <div class="oneL-driver-bar-wrapper">
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 100%;">HASL: baseline</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-secondary">
+                <span class="oneL-driver-fill" style="width: 113%;">Lead-free: +10–15%</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-secondary">
+                <span class="oneL-driver-fill" style="width: 93%;">OSP: −5–10%</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-costly">
+                <span class="oneL-driver-fill" style="width: 160%;">ENIG: +50–100%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-driver-row">
+            <div class="oneL-driver-name">
+              <span class="oneL-driver-icon">④</span>
+              <div>
+                <h4>Board thickness</h4>
+                <p>0.8 mm vs 1.6 mm vs 2.4 mm</p>
+              </div>
+            </div>
+            <div class="oneL-driver-bar-wrapper">
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 100%;">1.6 mm: baseline</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-costly">
+                <span class="oneL-driver-fill" style="width: 115%;">0.8 mm: +5–15% (thin handling)</span>
+              </div>
+              <div class="oneL-driver-bar oneL-bar-costly">
+                <span class="oneL-driver-fill" style="width: 122%;">2.4 mm: +10–25% (longer drill cycles)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="oneL-driver-row">
+            <div class="oneL-driver-name">
+              <span class="oneL-driver-icon">⑤</span>
+              <div>
+                <h4>Quantity break</h4>
+                <p>How volume changes per-board cost</p>
+              </div>
+            </div>
+            <div class="oneL-driver-bar-wrapper">
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 100%;">100 pcs: baseline</span>
+              </div>
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 55%;">1,000 pcs: −45%</span>
+              </div>
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 38%;">10,000 pcs: −62%</span>
+              </div>
+              <div class="oneL-driver-bar">
+                <span class="oneL-driver-fill" style="width: 28%;">100,000 pcs: −72%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="oneL-cost-note">* All percentages approximate and depend on specific panel utilisation, material availability, and current copper market pricing. XFPCB provides itemised quotes so you can see exactly where each cost component comes from.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 7: When NOT to use 1-layer PCB -->
+    <section class="oneL-notfor">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Engineering honesty</span>
+          <h2>When a 1-layer PCB is the wrong choice</h2>
+          <p>Every PCB structure has limits. These are the conditions where a single-sided board will create more problems than it solves — and where XFPCB will recommend a double-sided or multilayer board instead.</p>
+        </div>
+
+        <div class="oneL-notfor-grid">
+          <article class="oneL-notfor-card oneL-notfor-severe">
+            <h3>Signal edges faster than 10 MHz</h3>
+            <p>Without a ground plane, the return current path for high-frequency signals is uncontrolled. Loop inductance increases, and the board will radiate EMI. At 50 MHz and above, the signal integrity degradation can render the circuit non-functional. A 2-layer board with a ground plane is the minimum viable structure for clocked digital circuits.</p>
+          </article>
+
+          <article class="oneL-notfor-card">
+            <h3>More than 15–20 components</h3>
+            <p>As component count increases, the trace routing on a single layer becomes circuitous. Wire jumpers or zero-ohm resistors accumulate. Each jumper adds a reliability point, a manual assembly step, and a potential failure mode. Beyond 15–20 components, the total-cost crossover with a 2-layer board has usually been reached.</p>
+          </article>
+
+          <article class="oneL-notfor-card">
+            <h3>Board size above 200 cm² (31 sq in)</h3>
+            <p>Large single-sided boards lack the structural stiffness of double-sided boards at the same thickness. Copper on only one side means the board will bow or twist more under thermal stress during soldering. For boards over 200 cm², XFPCB recommends either moving to a double-sided structure or increasing board thickness to 1.6 mm minimum and specifying flatness requirements.</p>
+          </article>
+
+          <article class="oneL-notfor-card">
+            <h3>Fine-pitch SMT components (≤0.5 mm pitch)</h3>
+            <p>Single-sided PCBs with HASL finish have uneven pad surfaces. This can cause tombstoning, solder balling, or poor wetting on fine-pitch parts. If your design includes QFP or SOP packages with 0.5 mm or tighter pitch, XFPCB will recommend OSP or ENIG finish — and if density is also an issue, a 2-layer board.</p>
+          </article>
+
+          <article class="oneL-notfor-card">
+            <h3>Vibration or high-G environments</h3>
+            <p>A single-sided PCB in a vibrating environment (automotive, industrial machinery, power tools) is at higher risk of copper trace fatigue and solder joint failure because the thermal and mechanical stresses are concentrated on a single copper layer. Through-hole components on a double-sided board provide stronger mechanical anchorage.</p>
+          </article>
+
+          <article class="oneL-notfor-card">
+            <h3>High ambient humidity or condensation exposure</h3>
+            <p>In humid environments, single-sided boards with exposed traces on the component side can experience surface leakage current, electrochemical migration (dendrite growth), or corrosion — especially if the solder mask coverage is incomplete at trace edges. Conformal coating can mitigate this, but a double-sided board with ground plane shielding may be a more robust solution.</p>
+          </article>
+        </div>
+
+        <div class="oneL-verdict-box">
+          <p><strong>XFPCB policy:</strong> If our CAM review identifies any of these risk conditions in your design, we will flag them before quoting. We would rather help you select the right board structure than manufacture a board that creates problems at assembly or in the field.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Quick technical spec reference (compact, not a template table) -->
+    <section class="oneL-specs">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Technical reference</span>
+          <h2>1-Layer PCB manufacturing capabilities at XFPCB</h2>
+        </div>
+
+        <div class="oneL-specs-grid">
+          <div class="oneL-specs-col">
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Copper weight</span>
+              <span class="oneL-spec-val">0.5 oz to 6 oz (18–210 µm)</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Board thickness</span>
+              <span class="oneL-spec-val">0.4 mm to 3.2 mm</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Min. trace width / spacing</span>
+              <span class="oneL-spec-val">0.10 mm / 0.10 mm (4 mil / 4 mil)</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Min. drill diameter</span>
+              <span class="oneL-spec-val">0.25 mm (10 mil) mechanical</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Solder mask colours</span>
+              <span class="oneL-spec-val">Green, white, black, blue, red, yellow, matte</span>
+            </div>
+          </div>
+          <div class="oneL-specs-col">
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Surface finishes</span>
+              <span class="oneL-spec-val">HASL, lead-free HASL, OSP, ENIG, immersion tin</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Max. board dimensions</span>
+              <span class="oneL-spec-val">500 mm × 600 mm (19.7 × 23.6 in)</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Solder mask registration</span>
+              <span class="oneL-spec-val">±0.075 mm (±3 mil)</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Electrical testing</span>
+              <span class="oneL-spec-val">Flying probe or fixture — 100% option</span>
+            </div>
+            <div class="oneL-spec-item">
+              <span class="oneL-spec-key">Certifications</span>
+              <span class="oneL-spec-val">UL 94V-0, RoHS, REACH, ISO 9001</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="oneL-spec-notes">
+          <p>Minimum feature sizes depend on copper weight. 4 mil trace/space is achievable at 1 oz copper. Thicker copper (3 oz+) requires larger minimum features. XFPCB reviews each design against its specific copper weight and material choice before confirming manufacturability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: RFQ preparation checklist -->
+    <section class="oneL-rfq-prep">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">RFQ preparation</span>
+          <h2>Procurement checklist: what to include in your 1-layer PCB inquiry</h2>
+          <p>A complete RFQ saves 1–3 days of email back-and-forth. This checklist covers the information XFPCB needs to provide an accurate, binding quote for single-sided PCB production.</p>
+        </div>
+
+        <div class="oneL-checklist-grid">
+          <div class="oneL-checklist-col">
+            <h4>Mandatory information</h4>
+            <ul class="oneL-checklist">
+              <li><span class="oneL-check-icon">✓</span> Gerber files (RS-274X) + drill files (Excellon)</li>
+              <li><span class="oneL-check-icon">✓</span> Board dimensions (mm or inches)</li>
+              <li><span class="oneL-check-icon">✓</span> Material: FR-4, CEM-1, CEM-3, or aluminum</li>
+              <li><span class="oneL-check-icon">✓</span> Board thickness (standard: 0.8 / 1.0 / 1.2 / 1.6 mm)</li>
+              <li><span class="oneL-check-icon">✓</span> Copper weight (typically 1 oz, 2 oz, or 3 oz)</li>
+              <li><span class="oneL-check-icon">✓</span> Surface finish (HASL, LF-HASL, OSP, ENIG)</li>
+              <li><span class="oneL-check-icon">✓</span> Solder mask colour and side</li>
+              <li><span class="oneL-check-icon">✓</span> Quantity required</li>
+              <li><span class="oneL-check-icon">✓</span> Delivery country (for export logistics)</li>
+            </ul>
+          </div>
+          <div class="oneL-checklist-col">
+            <h4>Helpful extras</h4>
+            <ul class="oneL-checklist">
+              <li><span class="oneL-check-icon">▸</span> Silkscreen colour (white, black, yellow)</li>
+              <li><span class="oneL-check-icon">▸</span> Outline method preference (routing / V-scoring / punching)</li>
+              <li><span class="oneL-check-icon">▸</span> Annual volume forecast (helps select tooling route)</li>
+              <li><span class="oneL-check-icon">▸</span> Panelisation preference, if any</li>
+              <li><span class="oneL-check-icon">▸</span> Target lead time</li>
+              <li><span class="oneL-check-icon">▸</span> Inspection requirements (visual, electrical test, impedance)</li>
+              <li><span class="oneL-check-icon">▸</span> Packaging specification (vacuum, anti-static, cardboard)</li>
+              <li><span class="oneL-check-icon">▸</span> UL certification required?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="oneL-checklist-footnote">
+          <p><strong>Typical lead times:</strong> Prototype (1–10 pcs): 3–5 working days. Production (100–10,000 pcs): 7–12 working days. High volume (50,000+ pcs): schedule-based, discuss with XFPCB sales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: RFQ form -->
+    <section class="oneL-rfq" id="quote">
+      <div class="container">
+        <div class="oneL-rfq-layout">
+          <div class="oneL-rfq-intro">
+            <p class="oneL-eyebrow">Send your RFQ</p>
+            <h2>Get an itemised quotation for 1-layer PCB production</h2>
+            <p>XFPCB replies with a detailed quote including unit price, tooling cost (if any), lead time, and delivery options. If your design has DFM flags, they are communicated before production, not after.</p>
+            <ul class="oneL-rfq-benefits">
+              <li>CAM review included with every quote</li>
+              <li>Material and finish recommendations based on your application</li>
+              <li>Panel layout optimisation for lowest unit cost</li>
+              <li>Export packaging and logistics from Shenzhen, China</li>
+            </ul>
+          </div>
+          <form class="oneL-rfq-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+            <input type="hidden" name="honeypot" style="display:none;">
+            <input type="hidden" name="page_url" value="https://xfpcb.com/products/1-layer-pcb/">
+            <input type="hidden" name="page_path" value="/products/1-layer-pcb/">
+            <input type="hidden" name="subject" value="1-Layer PCB RFQ from XFPCB product page">
+            <input type="hidden" name="redirect" value="https://xfpcb.com/">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Company name (optional)">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@company.com" required>
+            </label>
+            <label>
+              Project requirements
+              <textarea name="message" placeholder="Example: 1-layer FR-4 PCB, 1.6 mm, 1 oz copper, green SM, lead-free HASL, 5,000 pcs, ship to Germany. Gerber files attached separately." required></textarea>
+            </label>
+            <button type="submit">Send 1-Layer PCB Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: Related products -->
+    <section class="oneL-related">
+      <div class="container">
+        <div class="oneL-section-label">
+          <span class="oneL-label-tag">Compare structures</span>
+          <h2>Not sure if 1 layer is right? Review other board types before deciding</h2>
+          <p>Many RFQs start as a 1-layer inquiry and change after DFM review reveals routing density or signal integrity requirements. These pages help your team compare structures before committing to a design.</p>
+        </div>
+        <div class="oneL-related-links">
+          <a href="/products/1-layer-pcb/" class="oneL-rel-link oneL-rel-active">1-Layer PCB</a>
+          <a href="/products/2-layer-pcb/" class="oneL-rel-link">2-Layer PCB</a>
+          <a href="/products/4-layer-pcb/" class="oneL-rel-link">4-Layer PCB</a>
+          <a href="/products/6-layer-pcb/" class="oneL-rel-link">6-Layer PCB</a>
+          <a href="/products/8-layer-pcb/" class="oneL-rel-link">8-Layer PCB</a>
+          <a href="/products/multilayer-pcb/" class="oneL-rel-link">Multilayer PCB Guide</a>
+          <a href="/products/high-layer-count-pcb/" class="oneL-rel-link">High Layer Count PCB</a>
+        </div>
+        <div class="oneL-related-contact">
+          <p>Still evaluating? <a href="#quote">Send your RFQ</a> and XFPCB will review your design and recommend the most cost-effective board structure — even if it is not 1-layer.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 </BaseLayout>

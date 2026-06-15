@@ -3,291 +3,2557 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-title="6 Layer PCB Manufacturer | Industrial Multilayer PCB with Impedance Control | XFPCB"
-description="XFPCB manufactures 6 layer PCB boards for industrial, automotive-style and dense electronics with stackup review, DFM support and quality control."
-keywords="6 layer PCB manufacturer, 6 layer PCB stackup, impedance control PCB, industrial PCB, automotive PCB, multilayer PCB manufacturer, China PCB factory"
-canonical="https://xfpcb.com/products/6-layer-pcb/"
-ogTitle="6 Layer PCB Manufacturer | Industrial Multilayer PCB with Impedance Control | XFPCB"
-ogDescription="XFPCB manufactures 6 layer PCB boards for industrial, automotive-style and dense electronics with stackup review, DFM support and quality control."
-ogImage="https://xfpcb.com/images/675x542pcb.jpg"
-ogUrl="https://xfpcb.com/products/6-layer-pcb/"
-  cssExtra={['/css/about.css', '/css/products.css']}
+  title="6-Layer PCB Engineering Guide | Signal Integrity, Sequential Lamination & Stackup Design | XFPCB"
+  description="Engineering consultation for 6-layer PCBs: signal integrity analysis, sequential lamination process, via architecture (through/buried/microvia), stackup selection with 3 architectures, DFM rules for layer registration, and 4-layer vs 6-layer cross-comparison. XFPCB China."
+  keywords="6 layer PCB signal integrity, 6 layer PCB sequential lamination, 6 layer PCB stackup design, buried via PCB, microvia PCB, 6 layer PCB DFM, 4 layer vs 6 layer PCB, PCB layer registration, 6 layer PCB manufacturer, XFPCB"
+  canonical="https://xfpcb.com/products/6-layer-pcb/"
+  ogTitle="6-Layer PCB Engineering Guide | Signal Integrity, Sequential Lamination & Stackup Design | XFPCB"
+  ogDescription="Engineering consultation for 6-layer PCBs: signal integrity analysis, sequential lamination process, via architecture (through/buried/microvia), stackup selection with 3 architectures, and DFM rules for layer registration."
+  ogImage="https://xfpcb.com/images/675x542pcb.jpg"
+  ogUrl="https://xfpcb.com/products/6-layer-pcb/"
 >
   <main>
-<section class="product-hero layer-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <p class="eyebrow">XFPCB China PCB Manufacturer</p>
-                    <h1>6 Layer PCB Manufacturer for Dense Industrial Electronics</h1>
-                    <h2>Better routing density, multiple power domains and controlled signal paths for demanding PCB projects</h2>
-                    <p class="desc">A 6 layer PCB is chosen when a 4 layer board no longer gives enough routing space, isolation or power-plane flexibility. It is common in industrial controllers, measurement devices, automotive-style electronics, communication modules and compact products using fine-pitch components. XFPCB supports overseas buyers with stackup discussion, DFM review, multilayer fabrication control and practical export quotation support.</p>
-                    <div class="layer-hero-pills">
-                        <span>6 layer stackup</span>
-                        <span>Industrial electronics</span>
-                        <span>Controlled impedance</span>
-                        <span>BGA routing support</span>
+
+    <!-- ====================================================================
+         SECTION 1 — THE SIGNAL INTEGRITY THRESHOLD
+         Opens with the real engineering trigger that drives designers from
+         4-layer to 6-layer: not routing density alone, but signal integrity.
+         ==================================================================== -->
+    <section class="s6-threshold">
+      <div class="s6-container">
+        <div class="s6-threshold-layout">
+          <div class="s6-threshold-text">
+            <span class="s6-badge">Engineering threshold analysis</span>
+            <h1>When 4 layers stop being enough: the 6-layer signal integrity threshold</h1>
+            <div class="s6-threshold-scenario">
+              <p class="s6-scenario-label">Common engineering scenario</p>
+              <blockquote>
+                You designed a 4-layer board around an SoC with a&nbsp;DDR3&nbsp;interface (800&nbsp;MHz), one&nbsp;GbE PHY, a&nbsp;USB&nbsp;2.0 host controller, three power domains (3.3&nbsp;V, 1.8&nbsp;V, 1.2&nbsp;V), and an analog sensor front-end. The 4-layer stackup gave you two signal layers and two planes. After layout, you discovered: the DDR address bus could not route on a single layer without layer changes that broke the reference plane. The GbE differential pairs crossed a split in the power plane because there was no room for a dedicated ground island. The analog section picked up 50&nbsp;MHz digital harmonics from the SoC's PLL, visible at the ADC output. You need another pair of signal-and-plane layers — but only two more, not four.
+              </blockquote>
+            </div>
+            <p>
+              This is the signal integrity threshold: the point at which a 4-layer board has enough copper layers for the schematic but not enough <em>structural signal integrity</em> for the design to pass pre-compliance testing. The 6-layer PCB exists specifically to solve this problem. It adds one additional signal–plane pair (or two additional routing layers, depending on the stackup architecture), giving you the headroom to dedicate planes to individual power domains, maintain continuous reference planes for high-speed signals, and isolate sensitive analog sections from digital switching noise.
+            </p>
+            <p>
+              Unlike the jump from 2 to 4 layers — which is a structural shift (adding internal planes where none existed) — the jump from 4 to 6 layers is a <em>signal integrity engineering decision</em>. It is driven by constraints that appear during layout, not schematic capture: return path continuity, layer-change via count, reference plane assignment, and routing channel availability for the highest-speed nets. This page is structured as a diagnostic framework to help you determine whether your design has crossed this threshold, and how to build a 6-layer board that actually solves the problem.
+            </p>
+            <div class="s6-threshold-tags">
+              <span>Signal integrity engineering</span>
+              <span>4-layer to 6-layer upgrade</span>
+              <span>Return path continuity</span>
+              <span>DDR / GbE / USB routing</span>
+              <span>Sequential lamination</span>
+              <span>Via architecture planning</span>
+            </div>
+            <div class="s6-threshold-actions">
+              <a href="#s6-consult" class="s6-btn s6-btn-primary">Diagnose your 6-layer requirements</a>
+              <a href="#s6-comparison" class="s6-btn s6-btn-outline">Compare 4-layer vs 6-layer &darr;</a>
+            </div>
+          </div>
+          <div class="s6-threshold-sidebar">
+            <div class="s6-signal-metric">
+              <span class="s6-metric-value">2</span>
+              <span class="s6-metric-label">Additional routing layers vs 4-layer</span>
+            </div>
+            <div class="s6-signal-metric">
+              <span class="s6-metric-value">~40%</span>
+              <span class="s6-metric-label">Typical improvement in routing density ceiling</span>
+            </div>
+            <div class="s6-signal-metric">
+              <span class="s6-metric-value">3</span>
+              <span class="s6-metric-label">Distinct stackup architectures for 6-layer</span>
+            </div>
+            <div class="s6-signal-metric">
+              <span class="s6-metric-value">&plusmn;8%</span>
+              <span class="s6-metric-label">Impedance tolerance achievable with coupon verification</span>
+            </div>
+            <div class="s6-threshold-callout">
+              <strong>Not sure you need 6 layers?</strong>
+              <p>Send your Gerber files and we will prepare a DFM report with a layer-count recommendation — before you commit to production pricing.</p>
+              <a href="#s6-consult">Send files for review &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 2 — THE FOUR-LAYER CEILING
+         A structured cross-comparison between 4-layer and 6-layer PCB designs.
+         Not a marketing table — an engineering trade-off analysis with the
+         actual signal types and layout constraints that drive the decision.
+         ==================================================================== -->
+    <section class="s6-comparison" id="s6-comparison">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Cross-comparison analysis</span>
+          <h2>The 4-layer ceiling: a signal-by-signal comparison</h2>
+          <p class="s6-section-sub">
+            The decision to move from 4 to 6 layers is rarely driven by a single signal type. It accumulates across multiple interfaces — DDR, Gigabit Ethernet, USB, analog precision, and power distribution. The table below shows how each signal class performs on a 4-layer board and where it starts to need 6 layers.
+          </p>
+        </div>
+
+        <div class="s6-compare-grid">
+          <!-- Signal: DDR3 / DDR4 -->
+          <article class="s6-compare-row">
+            <div class="s6-compare-signal">
+              <h3>DDR3 / DDR4 Memory Bus</h3>
+              <span class="s6-compare-speed">800&ndash;1600 MHz clock</span>
+            </div>
+            <div class="s6-compare-4layer">
+              <span class="s6-compare-heading">4-Layer</span>
+              <p>Data lines route on L1, address/control on L4. Both reference internal GND plane (L2). Clock pair must stay on one layer to avoid via-induced skew. With one signal layer per side, a x16 bus using ~45&nbsp;traces fills L1&nbsp;completely, forcing address lines to share L4 with general signals &mdash; creating cross-talk risk. DDR3-800 on 4 layers is <em>possible</em> but leaves no margin for layout error. DDR4-1600 on 4 layers is not recommended.</p>
+            </div>
+            <div class="s6-compare-6layer">
+              <span class="s6-compare-heading">6-Layer</span>
+              <p>With two dedicated signal layers (L1, L3) and two plane layers (L2&nbsp;GND, L5&nbsp;VCC), data and address buses can be separated by layer. L1 carries DQ/DQS&nbsp;+&nbsp;clock (referenced to L2&nbsp;GND). L3 carries address/command/control (referenced to L4&nbsp;GND or L5&nbsp;VCC). L6 handles general-purpose routing. This separation reduces cross-talk by approximately 15&ndash;20&nbsp;dB and provides enough routing channels for DDR4-1600 without via congestion.</p>
+            </div>
+          </article>
+
+          <!-- Signal: Gigabit Ethernet -->
+          <article class="s6-compare-row">
+            <div class="s6-compare-signal">
+              <h3>Gigabit Ethernet (1000BASE-T)</h3>
+              <span class="s6-compare-speed">125 MHz, 4 differential pairs</span>
+            </div>
+            <div class="s6-compare-4layer">
+              <span class="s6-compare-heading">4-Layer</span>
+              <p>Four differential pairs (8 traces) plus magnetics routing easily fit on one layer, and 1000BASE-T operates over 4-layer boards successfully. The constraint appears when the PHY is on the opposite side of the board from the RJ45 connector &mdash; traces must change layers, crossing plane splits or via anti-pads that degrade common-mode rejection. 4-layer works if the PHY-to-connector route stays on one layer and reference plane continuity is maintained.</p>
+            </div>
+            <div class="s6-compare-6layer">
+              <span class="s6-compare-heading">6-Layer</span>
+              <p>A dedicated signal layer (L3 or L6) for all four differential pairs, with a solid reference plane (L4&nbsp;GND or L5&nbsp;GND) directly beneath, eliminates the layer-change problem. The additional plane also provides a low-impedance return path for the common-mode currents that generate EMI in Ethernet systems. For 2.5&nbsp;GbE or automotive Ethernet (1000BASE-T1), 6-layer is strongly preferred.</p>
+            </div>
+          </article>
+
+          <!-- Signal: USB 2.0 / 3.0 -->
+          <article class="s6-compare-row">
+            <div class="s6-compare-signal">
+              <h3>USB 2.0 / USB 3.0</h3>
+              <span class="s6-compare-speed">480 Mbps (2.0) / 5 Gbps (3.0)</span>
+            </div>
+            <div class="s6-compare-4layer">
+              <span class="s6-compare-heading">4-Layer</span>
+              <p>USB 2.0 (one differential pair) is comfortable on 4 layers. USB 3.0 adds two SuperSpeed differential pairs (SSTX, SSRX) for a total of 3 differential pairs (6 traces). On a 4-layer board, these must all route on one signal layer (typically L1). When connectors, ESD protection, MUX, and decoupling capacitors are factored in, L1 becomes congested, forcing one of the SuperSpeed pairs to L4 &mdash; crossing a via that adds 0.5&ndash;1&nbsp;dB of insertion loss at 2.5&nbsp;GHz, possibly violating the USB 3.0 &minus;4&nbsp;dB loss budget.</p>
+            </div>
+            <div class="s6-compare-6layer">
+              <span class="s6-compare-heading">6-Layer</span>
+              <p>Distribute the two SuperSpeed pairs across separate signal layers (SSTX on L1, SSRX on L3 or L6) to avoid via transitions entirely. Each pair references a solid GND plane. This keeps insertion loss per pair under &minus;2&nbsp;dB and preserves the 2&nbsp;dB margin required by the USB 3.0 specification. The 6-layer stackup also provides a dedicated power island for the USB 3.0 PHY's 3.3&nbsp;V rail without splitting the main VCC plane.</p>
+            </div>
+          </article>
+
+          <!-- Signal: Mixed analog + digital -->
+          <article class="s6-compare-row">
+            <div class="s6-compare-signal">
+              <h3>Mixed-signal: Analog Front-End + Digital Processing</h3>
+              <span class="s6-compare-speed">DC &ndash; 100 MHz analog bandwidth</span>
+            </div>
+            <div class="s6-compare-4layer">
+              <span class="s6-compare-heading">4-Layer</span>
+              <p>On a standard 4-layer stackup (L1&nbsp;signal, L2&nbsp;GND, L3&nbsp;power, L4&nbsp;signal), the analog section shares L1 with digital traces. The internal GND plane provides some isolation, but digital return currents on L2&nbsp;induce a voltage gradient across the ground plane that couples into the analog reference. With only one power plane (L3), the analog VCC and digital VCC must share a split plane &mdash; the split seam radiates and creates a noise coupling path.</p>
+            </div>
+            <div class="s6-compare-6layer">
+              <span class="s6-compare-heading">6-Layer</span>
+              <p>Architecture B (the dual-ground stackup, described below) dedicates L2 and L3 both as ground planes separated by a thin core. This creates a broadband EMI shield between the analog section on L1 and the digital section on L6. The analog ground reference on L2 is undisturbed by digital return currents on L3. L4 becomes the split power plane (analog VCC island + digital VCC island), and L5 provides an additional routing layer for low-speed control signals. ADC SNR improves by 6&ndash;12&nbsp;dB in typical designs.</p>
+            </div>
+          </article>
+
+          <!-- Signal: Power distribution -->
+          <article class="s6-compare-row">
+            <div class="s6-compare-signal">
+              <h3>Power Distribution (3+ Domains)</h3>
+              <span class="s6-compare-speed">DC &ndash; 10 MHz ripple</span>
+            </div>
+            <div class="s6-compare-4layer">
+              <span class="s6-compare-heading">4-Layer</span>
+              <p>With one internal plane (L3) available for power, splitting 3+ voltage domains means the 3.3&nbsp;V island, 1.8&nbsp;V island, and 1.2&nbsp;V island must share the same copper layer. Each split seam is a potential antenna. High-current paths (1.2&nbsp;V core supply, 5&nbsp;A or more) require wide copper polygons that are hard to fit when sharing the plane with other domains. The result: IR drop issues and plane congestion that force power routing onto signal layers, consuming routing channels.</p>
+            </div>
+            <div class="s6-compare-6layer">
+              <span class="s6-compare-heading">6-Layer</span>
+              <p>Two or even three internal plane layers (L2, L4, L5) can be assigned to power and ground. Common assignment: L2&nbsp;=&nbsp;GND (solid, no splits), L4&nbsp;=&nbsp;3.3&nbsp;V / 1.8&nbsp;V split, L5&nbsp;=&nbsp;1.2&nbsp;V core (solid). This arrangement gives each voltage domain its own unbroken plane (or nearly so), reducing IR drop by approximately 50&nbsp;% compared to a single shared power plane. Decoupling capacitor placement becomes easier because each domain's vias reach its dedicated plane without crossing split seams.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="s6-compare-decision">
+          <h4>When to upgrade: a decision checklist</h4>
+          <div class="s6-compare-checklist">
+            <div class="s6-check-item">
+              <span class="s6-check-icon">&#9744;</span>
+              <span>Does your design include a DDR3-1066 (or faster) bus with 16&nbsp;or more data lines?</span>
+            </div>
+            <div class="s6-check-item">
+              <span class="s6-check-icon">&#9744;</span>
+              <span>Do you have 3 or more power domains requiring dedicated plane copper?</span>
+            </div>
+            <div class="s6-check-item">
+              <span class="s6-check-icon">&#9744;</span>
+              <span>Are you routing USB 3.0 and Gigabit Ethernet on the same board?</span>
+            </div>
+            <div class="s6-check-item">
+              <span class="s6-check-icon">&#9744;</span>
+              <span>Does your design include an analog sensor front-end with &ge;16-bit ADC resolution sharing a board with digital processing?</span>
+            </div>
+            <div class="s6-check-item">
+              <span class="s6-check-icon">&#9744;</span>
+              <span>Have you already attempted a 4-layer layout and found via congestion or routing channel shortage around the BGA?</span>
+            </div>
+            <div class="s6-check-item">
+              <span class="s6-check-icon">&#9744;</span>
+              <span>Are you targeting automotive, medical, or industrial qualification (IEC 60601, ISO 26262, IEC 61000)?</span>
+            </div>
+          </div>
+          <p class="s6-compare-note">If 3 or more items are checked, a 6-layer PCB is likely the correct starting point — not an upgrade.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 — SEQUENTIAL LAMINATION EXPLAINED
+         How 6-layer boards are actually manufactured. This is the process
+         knowledge that separates experienced buyers from one-off shoppers.
+         ==================================================================== -->
+    <section class="s6-lamination">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Manufacturing process</span>
+          <h2>Sequential lamination: why 6-layer is not just "4 layers plus two"</h2>
+          <p class="s6-section-sub">
+            A 2-layer board is a single core with copper on both sides. A 4-layer board is a core with prepreg bonded to each side, laminated once. A 6-layer board requires <em>sequential lamination</em> — two separate press cycles with an intermediate etch step. This fundamental process difference affects registration accuracy, material selection, drill strategy, and cost structure.
+          </p>
+        </div>
+
+        <div class="s6-lam-diagram">
+          <div class="s6-lam-step">
+            <div class="s6-lam-num">1</div>
+            <div class="s6-lam-content">
+              <h4>Core preparation</h4>
+              <p>Two double-sided copper-clad cores are etched: the L3&ndash;L4 core (inner layers) and the L2&ndash;L5 core (middle pair). Each core is fabricated independently with its own inner-layer imaging, etching, AOI, and oxide treatment. At this stage, L3 and L4 are already defined as copper patterns.</p>
+            </div>
+            <div class="s6-lam-preview">
+              <div class="s6-lam-mini-layer s6-lam-cu">L2</div>
+              <div class="s6-lam-mini-layer s6-lam-core">Core A</div>
+              <div class="s6-lam-mini-layer s6-lam-cu">L3</div>
+              <div class="s6-lam-pregap"></div>
+              <div class="s6-lam-mini-layer s6-lam-cu">L4</div>
+              <div class="s6-lam-mini-layer s6-lam-core">Core B</div>
+              <div class="s6-lam-mini-layer s6-lam-cu">L5</div>
+            </div>
+          </div>
+
+          <div class="s6-lam-arrow">&darr; First lamination press</div>
+
+          <div class="s6-lam-step">
+            <div class="s6-lam-num">2</div>
+            <div class="s6-lam-content">
+              <h4>First lamination: bond the two cores together</h4>
+              <p>The L2&ndash;L3 core and L4&ndash;L5 core are pressed together with a prepreg sheet between them (between L3 and L4). Temperature (~180&deg;C), pressure (~350&nbsp;psi), and dwell time are controlled to ensure complete resin flow, void-free bonding, and correct dielectric thickness between L3 and L4. After lamination, the now-4-layer assembly (L2&ndash;L5) is drilled for buried vias if the design uses them, then plated.</p>
+            </div>
+            <div class="s6-lam-preview">
+              <div class="s6-lam-stack">
+                <div class="s6-lam-mini-layer s6-lam-cu">L2</div>
+                <div class="s6-lam-mini-layer s6-lam-core">Core A</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L3</div>
+                <div class="s6-lam-mini-layer s6-lam-prepreg">Prepreg</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L4</div>
+                <div class="s6-lam-mini-layer s6-lam-core">Core B</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="s6-lam-arrow">&darr; Second lamination press</div>
+
+          <div class="s6-lam-step">
+            <div class="s6-lam-num">3</div>
+            <div class="s6-lam-content">
+              <h4>Second lamination: bond outer prepreg and copper foil</h4>
+              <p>The assembled L2&ndash;L5 sub-stack enters a second press cycle. A prepreg sheet and copper foil are bonded to each side (L1 on top, L6 on bottom). The temperature and pressure profile for the second lamination must be controlled precisely to avoid disturbing the already-bonded L3&ndash;L4 interface. After cooling, the full 6-layer stack is drilled (through-holes), electroless copper plated, then outer-layer imaging, pattern plating, and etching follow.</p>
+            </div>
+            <div class="s6-lam-preview">
+              <div class="s6-lam-stack s6-lam-stack-full">
+                <div class="s6-lam-mini-layer s6-lam-cu">L1</div>
+                <div class="s6-lam-mini-layer s6-lam-prepreg">Prepreg</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L2</div>
+                <div class="s6-lam-mini-layer s6-lam-core">Core A</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L3</div>
+                <div class="s6-lam-mini-layer s6-lam-prepreg">Prepreg</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L4</div>
+                <div class="s6-lam-mini-layer s6-lam-core">Core B</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L5</div>
+                <div class="s6-lam-mini-layer s6-lam-prepreg">Prepreg</div>
+                <div class="s6-lam-mini-layer s6-lam-cu">L6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="s6-lam-process-note">
+          <div class="s6-lam-note-card">
+            <h4>Why sequential lamination matters for your design</h4>
+            <ul class="s6-lam-impacts">
+              <li>
+                <strong>Registration tolerance:</strong> Each lamination cycle introduces a potential shift between layers. A 6-layer board has two registration events (first press + second press), which means the accumulated tolerance between L1 and L6 is wider than between L2 and L5. XFPCB compensates for this in the CAM tooling by adjusting the artwork for each press stage.
+              </li>
+              <li>
+                <strong>Buried via feasibility:</strong> Sequential lamination makes buried vias (vias that connect L2&ndash;L5 without reaching L1 or L6) possible. They are drilled and plated after the first lamination, then the second lamination encapsulates them. This is a genuine 6-layer advantage (see the via architecture section below).
+              </li>
+              <li>
+                <strong>Copper balance requirement:</strong> Each individual core must have balanced copper distribution on both sides before lamination. An unbalanced core can bow during the press, causing the prepreg to flow unevenly and producing a wedge-shaped dielectric (resin-starved on one side, resin-rich on the other). XFPCB reviews copper density per layer pair during CAM.
+              </li>
+              <li>
+                <strong>Material shrinkage:</strong> FR-4 shrinks during lamination (typically 0.04&ndash;0.08&nbsp;%). In a two-press process, the L3&ndash;L4 core shrinks first, then the outer layers shrink around it. The CAM engineer pre-compensates the artwork for each stage to maintain drill-to-copper registration within &plusmn;0.10&nbsp;mm.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 — VIA ARCHITECTURE FOR 6-LAYER DESIGNS
+         Practical guidance on through vias, buried vias, and microvias.
+         This is a decision guide, not a generic list.
+         ==================================================================== -->
+    <section class="s6-vias">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Via technology selection</span>
+          <h2>Six-layer via architecture: matching via type to signal requirement</h2>
+          <p class="s6-section-sub">
+            A 6-layer board supports three via types: through-hole (all layers), buried vias (between inner layers only), and microvias (laser-drilled, typically L1&ndash;L2 or L6&ndash;L5). Each type has a different cost, impedance impact, and reliability profile. The correct via architecture depends on BGA pitch, signal speed, and board thickness. This section documents the trade-offs.
+          </p>
+        </div>
+
+        <div class="s6-via-grid">
+          <!-- Through via -->
+          <article class="s6-via-card">
+            <div class="s6-via-visual">
+              <div class="s6-via-symbol">
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+              </div>
+              <span class="s6-via-label-symbol">Through-hole via</span>
+            </div>
+            <div class="s6-via-body">
+              <h3>Through-Hole Via (PTH)</h3>
+              <span class="s6-via-tag s6-via-tag-default">Default &bull; Lowest cost</span>
+              <p>The mechanically drilled via that penetrates all six layers. It is the lowest-cost via option and is suitable for nets that connect across the entire stackup or that do not require stubs shorter than the total board thickness.</p>
+              <div class="s6-via-specs">
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Drill diameter range</span>
+                  <span class="s6-via-spec-val">0.20&ndash;0.60&nbsp;mm (mechanical)</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Aspect ratio (6-layer 1.6&nbsp;mm)</span>
+                  <span class="s6-via-spec-val">8:1&ndash;10:1 typical</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Stub length</span>
+                  <span class="s6-via-spec-val">Full board thickness (1.2&ndash;2.0&nbsp;mm)</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Cost impact</span>
+                  <span class="s6-via-spec-val">Baseline (included in standard fabrication)</span>
+                </div>
+              </div>
+              <div class="s6-via-note">
+                <strong>When to use:</strong> General-purpose signal routing, power distribution, ground stitching, nets that connect more than 3 layers. Avoid for high-frequency signals (&gt;3&nbsp;GHz) because the via stub acts as a resonant stub filter.
+              </div>
+              <div class="s6-via-note s6-via-caution">
+                <strong>Caution:</strong> In a 6-layer board, a through via that connects L1 to L3 creates a 3-layer stub (L4&ndash;L6). For signals above 1&nbsp;GHz, back-drilling the stub can reduce the resonance, but this adds cost. Consider buried vias instead.
+              </div>
+            </div>
+          </article>
+
+          <!-- Buried via -->
+          <article class="s6-via-card s6-via-card-accent">
+            <div class="s6-via-visual">
+              <div class="s6-via-symbol s6-via-symbol-buried">
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+              </div>
+              <span class="s6-via-label-symbol">Buried via</span>
+            </div>
+            <div class="s6-via-body">
+              <h3>Buried Via (L2&ndash;L5)</h3>
+              <span class="s6-via-tag s6-via-tag-blue">6-layer exclusive &bull; Advanced</span>
+              <p>A via that connects inner layers only (typically L2&ndash;L5) and is completely encapsulated within the board. It is drilled and plated after the first lamination (when the L2&ndash;L5 sub-stack exists), then the second lamination covers it with the outer prepreg and copper foil. Buried vias are unique to boards with sequential lamination (6+ layers).</p>
+              <div class="s6-via-specs">
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Drill diameter range</span>
+                  <span class="s6-via-spec-val">0.20&ndash;0.40&nbsp;mm (before outer layers)</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Stub length</span>
+                  <span class="s6-via-spec-val">Zero (internal only)</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Signal integrity</span>
+                  <span class="s6-via-spec-val">Excellent — no stub resonance</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Cost impact</span>
+                  <span class="s6-via-spec-val">+15&ndash;30% (2 drill + 2 plate cycles)</span>
+                </div>
+              </div>
+              <div class="s6-via-note">
+                <strong>When to use:</strong> High-speed signals that route on inner layers (L3, L4) and must connect to the reference plane (L2, L5) without creating a stub through the outer layers. Also useful for BGA fan-out on inner layers when the outer layers are congested. Buried vias free up routing channels on L1 and L6 because the inner-layer connection does not consume outer-layer pad area.
+              </div>
+              <div class="s6-via-note s6-via-caution">
+                <strong>Process requirement:</strong> Buried vias require the designer to specify which layers are connected. Most EDA tools support this in the via definition (e.g., "via from L2 to L5, buried"). XFPCB checks buried via placement against the sequential lamination plan during CAM review — vias must stay within the L2&ndash;L5 region and cannot intersect with the outer prepreg boundaries.
+              </div>
+            </div>
+          </article>
+
+          <!-- Microvia -->
+          <article class="s6-via-card">
+            <div class="s6-via-visual">
+              <div class="s6-via-symbol s6-via-symbol-micro">
+                <span class="s6-via-bar"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+                <span class="s6-via-bar s6-via-bar-inactive"></span>
+              </div>
+              <span class="s6-via-label-symbol">Microvia (L1&ndash;L2)</span>
+            </div>
+            <div class="s6-via-body">
+              <h3>Microvia / Laser-Drillled Via</h3>
+              <span class="s6-via-tag s6-via-tag-amber">HDI &bull; Fine-pitch BGA</span>
+              <p>A laser-drilled via that typically connects L1 to L2 (or L6 to L5) through the outer prepreg only. In a 6-layer board, microvias are useful when fanning out from a fine-pitch BGA (pitch &le; 0.65&nbsp;mm) where through vias would be too large to fit between adjacent pads. Microvias are not standard for 6-layer boards but can be added as an HDI option.</p>
+              <div class="s6-via-specs">
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Drill diameter range</span>
+                  <span class="s6-via-spec-val">0.075&ndash;0.150&nbsp;mm (laser)</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Via-in-pad capable</span>
+                  <span class="s6-via-spec-val">Yes (with conductive fill + cap plating)</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Signal integrity</span>
+                  <span class="s6-via-spec-val">Excellent — very low inductance</span>
+                </div>
+                <div class="s6-via-spec">
+                  <span class="s6-via-spec-label">Cost impact</span>
+                  <span class="s6-via-spec-val">+40&ndash;60% (laser drill + fill process)</span>
+                </div>
+              </div>
+              <div class="s6-via-note">
+                <strong>When to use:</strong> Designs that combine 6-layer routing density with fine-pitch BGAs (0.5&ndash;0.65&nbsp;mm pitch), where through vias cannot fit between BGA pads. Also useful for very thin boards (&lt;1.0&nbsp;mm) where mechanical drilling at small diameters approaches the aspect ratio limit. Microvias in a 6-layer board are typically part of a 6+N+6 HDI structure, where the outer layers use microvias and the inner layers use through vias.
+              </div>
+              <div class="s6-via-note s6-via-caution">
+                <strong>Design note:</strong> Microvias require a via-in-pad or via-in-pad-with-fill approach for BGA fan-out. If the microvia is not filled, solder will wick into the via during reflow, causing a head-in-pillow defect. XFPCB offers copper-filled and conductive-epoxy-filled microvias for reliable via-in-pad assembly.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 — THREE STACKUP ARCHITECTURES
+         Three distinct 6-layer stackup patterns with pros/cons.
+         Like the 4-layer page had three architectures, but for 6 layers.
+         ==================================================================== -->
+    <section class="s6-architectures">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Stackup architecture</span>
+          <h2>Three 6-layer stackup architectures: what each one is good for</h2>
+          <p class="s6-section-sub">
+            There is no single "standard" 6-layer stackup. The optimal layer arrangement depends on the number of high-speed signals, the power domain count, the need for analog isolation, and the board thickness. Below are three proven architectures that represent different trade-offs between signal integrity, power distribution, and cost.
+          </p>
+        </div>
+
+        <div class="s6-arch-accordion">
+          <!-- Architecture 1: Signal-GND-Signal-GND-Signal-GND (Three plane pairs) -->
+          <details class="s6-arch-panel" open>
+            <summary class="s6-arch-summary">
+              <span class="s6-arch-num">Architecture 1</span>
+              <span class="s6-arch-title">Signal &ndash; GND &ndash; Signal &ndash; GND &ndash; Signal &ndash; GND</span>
+              <span class="s6-arch-tag s6-arch-tag-green">Most common &bull; Best SI</span>
+              <span class="s6-arch-toggle">&#9660;</span>
+            </summary>
+            <div class="s6-arch-detail">
+              <div class="s6-arch-detail-grid">
+                <div class="s6-arch-diagram">
+                  <div class="s6-arch-layer s6-arch-signal">L1 &mdash; Signal / Components</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.10&ndash;0.20&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-plane">L2 &mdash; Ground Plane (solid, no splits)</div>
+                  <div class="s6-arch-layer s6-arch-core">Core &mdash; 0.25&ndash;0.50&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-signal">L3 &mdash; Signal / High-speed traces</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.20&ndash;0.40&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-plane">L4 &mdash; Ground Plane (solid)</div>
+                  <div class="s6-arch-layer s6-arch-core">Core &mdash; 0.25&ndash;0.50&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-signal">L5 &mdash; Signal / Power routing</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.10&ndash;0.20&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-plane">L6 &mdash; Ground Plane (solid, secondary components)</div>
+                </div>
+                <div class="s6-arch-info">
+                  <div class="s6-arch-specs">
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Board thickness target</span>
+                      <span class="s6-arch-spec-val">1.2&ndash;1.6&nbsp;mm</span>
                     </div>
-                    <div class="layer-hero-actions">
-                        <a href="#quote" class="cta-btn">Request 6-Layer PCB Quote</a>
-                        <a href="/products/" class="layer-secondary-btn">View PCB Products</a>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Signal layers with GND reference</span>
+                      <span class="s6-arch-spec-val">3 (L1, L3, L5 all reference an adjacent GND plane)</span>
                     </div>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper layer-image-frame">
-                        <img src="/images/675x542pcb.jpg" alt="XFPCB 6 layer multilayer PCB manufacturing for industrial electronics">
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Power planes</span>
+                      <span class="s6-arch-spec-val">None dedicated — power distributed via polygons on L5 or L3</span>
                     </div>
-                    <div class="layer-visual-note">
-                        <strong>Buyer focus:</strong> DFM review, stable fabrication, export communication and repeat-order support.
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Impedance control</span>
+                      <span class="s6-arch-spec-val">Excellent on all three signal layers</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-darker layer-intent-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Procurement intent</p>
-                    <h2>What serious buyers want from a 6 layer PCB factory</h2>
-                    <p>For 6 layer PCB procurement teams, the pain point is usually supplier confidence: can the factory understand the stackup, prevent inner-layer defects and communicate clearly when a design is close to the process window? XFPCB writes each quote around that practical manufacturing conversation.</p>
-                </div>
-                <div class="layer-card-grid">
-                    <article class="layer-card">
-                        <span>Density</span>
-                        <h3>More internal routing and plane options</h3>
-                        <p>Six layers give engineers room for high-pin-count components, multiple power rails and cleaner separation between noisy and sensitive circuits.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Reliability</span>
-                        <h3>Inner-layer quality must be controlled</h3>
-                        <p>XFPCB reviews registration, drill-to-inner clearance, lamination balance and copper distribution so fabrication risk is visible before production.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Impedance</span>
-                        <h3>Useful for high-speed and measurement products</h3>
-                        <p>Controlled impedance can be discussed for USB, Ethernet, differential pairs, clock routes and other signals that need consistent geometry.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Production planning</span>
-                        <h3>Prototype decisions should not block mass production</h3>
-                        <p>Material, finish, stackup and test choices are reviewed with both sample and repeat production in mind.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Manufacturing specification</p>
-                <h2>6-Layer PCB buying guide and RFQ details</h2>
-                <p>A 6 layer PCB quote should not be treated as a simple board-area calculation. The stackup, copper distribution and testing plan directly affect lead time, yield and long-term product reliability.</p>
-            </div>
-            <div class="layer-table-wrap">
-                    <table class="layer-spec-table">
-                        <thead>
-                            <tr><th>Procurement topic</th><th>What to define</th><th>Why XFPCB asks</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Layer purpose</td><td>Signal, GND, power and split-plane use by layer</td><td>Prevents ambiguous CAM decisions and supports better signal return paths.</td></tr>
-                            <tr><td>Board material</td><td>FR-4 grade, high Tg requirement or special laminate</td><td>Industrial and automotive-style products may need stronger thermal and reliability margins.</td></tr>
-                            <tr><td>Impedance</td><td>Target values and tolerance where needed</td><td>Trace geometry depends on dielectric thickness, copper weight and stackup.</td></tr>
-                            <tr><td>Drill structure</td><td>PTH, slots, via size and BGA fanout requirements</td><td>Fine-pitch designs may require tighter review before price and lead time are confirmed.</td></tr>
-                            <tr><td>Inspection</td><td>Electrical test, AOI and any impedance coupon requirement</td><td>Testing expectations should be included early so the quotation is complete.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-        </section>
-
-        <section class="container layer-content-section">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Stackup planning</p>
-                    <h2>Example 6-Layer PCB stackup discussion</h2>
-                    <p>This is a practical starting point, not a locked universal stackup. XFPCB confirms dielectric spacing, copper weight, material and impedance targets against your real files before fabrication.</p>
-                </div>
-                <div class="stackup-container layer-stackup">
-                    <div class="stackup-diagram">
-                        <div class="stackup-layer layer-cu">
-                            <span>L1: Top Signal</span>
-                            <span class="layer-desc">Components, fanout and microstrip routing</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Controlled dielectric spacing</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L2: Ground Plane</span>
-                            <span class="layer-desc">Reference plane and EMI control</span>
-                        </div>
-                        <div class="stackup-layer layer-core">
-                            <span>Core</span>
-                            <span class="layer-desc">Lamination structure</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L3: Inner Signal</span>
-                            <span class="layer-desc">Stripline routing when required</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Center dielectric</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L4: Inner Signal / Power</span>
-                            <span class="layer-desc">Signal or split power by design</span>
-                        </div>
-                        <div class="stackup-layer layer-core">
-                            <span>Core</span>
-                            <span class="layer-desc">Balanced build</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L5: Power or Ground</span>
-                            <span class="layer-desc">Power domains or additional reference</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Outer dielectric spacing</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L6: Bottom Signal</span>
-                            <span class="layer-desc">Secondary components and routing</span>
-                        </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Cost index</span>
+                      <span class="s6-arch-spec-val s6-arch-baseline">Baseline (1.0&times;)</span>
                     </div>
+                  </div>
+                  <div class="s6-arch-pros">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Every signal layer has an adjacent ground plane — the ideal arrangement for controlled impedance and return current management.</li>
+                      <li>L2 and L4 provide inter-plane capacitance for high-frequency decoupling (~200&ndash;500&nbsp;pF for a typical 100&times;80&nbsp;mm board).</li>
+                      <li>Best architecture for mixed-signal designs when analog and digital signals can be assigned to different signal layers.</li>
+                    </ul>
+                  </div>
+                  <div class="s6-arch-cons">
+                    <h4>Limitations</h4>
+                    <ul>
+                      <li>No dedicated power plane — power routing on signal layers consumes routing channels and requires wider traces for current &gt;1&nbsp;A.</li>
+                      <li>If multiple power domains are needed, L5 must carry split power polygons, which reduces its effectiveness as a routing layer.</li>
+                      <li>Board thickness may exceed 1.6&nbsp;mm if thick cores are used, requiring longer drill cycles.</li>
+                    </ul>
+                  </div>
+                  <div class="s6-arch-bestfor">
+                    <strong>Best for:</strong> Designs with 2&ndash;3 power domains, digital-heavy routing with DDR / GbE / USB, and where SI performance is the primary requirement. This is XFPCB's recommended default for most 6-layer boards.
+                  </div>
                 </div>
-            </section>
-
-        <section class="bg-darker layer-content-section">
-            <div class="container layer-two-column">
-                <article class="layer-text-panel">
-                    <p class="eyebrow">Application fit</p>
-                    <h2>When buyers should choose 6 layers instead of 4</h2>
-                    <p>A 6 layer board becomes attractive when the design has multiple power domains, dense connectors, fine-pitch ICs, mixed analog and digital circuits, or controlled-impedance routing that needs better reference planes. The additional layers can reduce compromises that would otherwise make the board harder to test or certify.</p>
-                    <p>XFPCB can help you compare the manufacturing impact of 4, 6 and 8 layer structures. This is useful when the buyer wants the lowest practical cost but cannot sacrifice product reliability.</p>
-                </article>
-                <article class="layer-text-panel">
-                    <p class="eyebrow">Manufacturing control</p>
-                    <h2>How XFPCB reviews multilayer risk before production</h2>
-                    <p>For 6 layer PCB orders, our CAM review focuses on inner-layer clearance, drill registration, plane relief, resin fill risk, copper balance, thermal relief, solder mask clearance and panel stability. These details are not glamorous, but they determine whether the order runs smoothly.</p>
-                    <p>When impedance or high-speed performance matters, the buyer should provide the target impedance, signal layer, reference layer and tolerance. XFPCB can then align the quote with a stackup that is realistic for fabrication rather than a theoretical drawing that is difficult to build.</p>
-                </article>
+              </div>
             </div>
-        </section>
+          </details>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Order workflow</p>
-                <h2>How XFPCB moves your 6-Layer PCB project from files to shipment</h2>
-                <p>Procurement teams need predictable communication. The steps below show how XFPCB turns design files into a manufacturing plan that can be quoted, produced and shipped with fewer surprises.</p>
-            </div>
-            <div class="layer-process-grid">
-                <article class="layer-process-step">
-                    <h3>1. Engineering RFQ</h3>
-                    <p>Send Gerber, stackup, drawing, target quantity, impedance needs and material notes.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>2. Risk review</h3>
-                    <p>XFPCB checks the design against multilayer rules and asks practical questions before order release.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>3. Controlled fabrication</h3>
-                    <p>Inner layers, lamination, drilling, plating, solder mask, finish and profiling follow the confirmed build notes.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>4. Quality release</h3>
-                    <p>Testing and inspection records are matched to the order before export packaging.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="bg-darker layer-content-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Applications</p>
-                    <h2>Where buyers commonly use 6-Layer PCB</h2>
-                    <p>XFPCB writes each quote around the real product environment, not a generic layer-count label. Tell us where the board will be used so material, finish and testing choices can match the risk level.</p>
+          <!-- Architecture 2: Signal-GND-GND-Signal-Power-Signal (Dual ground + power plane) -->
+          <details class="s6-arch-panel">
+            <summary class="s6-arch-summary">
+              <span class="s6-arch-num">Architecture 2</span>
+              <span class="s6-arch-title">Signal &ndash; GND &ndash; GND &ndash; Signal &ndash; Power &ndash; Signal</span>
+              <span class="s6-arch-tag s6-arch-tag-blue">Power-rich &bull; Mixed-signal</span>
+              <span class="s6-arch-toggle">&#9660;</span>
+            </summary>
+            <div class="s6-arch-detail">
+              <div class="s6-arch-detail-grid">
+                <div class="s6-arch-diagram">
+                  <div class="s6-arch-layer s6-arch-signal">L1 &mdash; Signal / Components (analog + digital)</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm (thin)</div>
+                  <div class="s6-arch-layer s6-arch-plane">L2 &mdash; Ground Plane (solid, analog reference)</div>
+                  <div class="s6-arch-layer s6-arch-core">Core &mdash; 0.10&ndash;0.20&nbsp;mm (thin, broadband isolation)</div>
+                  <div class="s6-arch-layer s6-arch-plane">L3 &mdash; Ground Plane (solid, digital reference)</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.20&ndash;0.40&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-signal">L4 &mdash; Signal / Control / Low-speed</div>
+                  <div class="s6-arch-layer s6-arch-core">Core &mdash; 0.50&ndash;0.71&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-plane s6-arch-power">L5 &mdash; Power Plane (split: analog VCC, 3.3&nbsp;V, 1.8&nbsp;V)</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.10&ndash;0.20&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-signal">L6 &mdash; Signal / Secondary components</div>
                 </div>
-                <div class="layer-application-grid">
-                    <div class="layer-application-item">Industrial control and automation boards</div>
-                    <div class="layer-application-item">Measurement and medical-style electronic modules</div>
-                    <div class="layer-application-item">Automotive-style control electronics</div>
-                    <div class="layer-application-item">Dense communication and gateway boards</div>
+                <div class="s6-arch-info">
+                  <div class="s6-arch-specs">
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Board thickness target</span>
+                      <span class="s6-arch-spec-val">1.0&ndash;1.6&nbsp;mm</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Signal layers</span>
+                      <span class="s6-arch-spec-val">3 (L1, L4, L6)</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Plane layers</span>
+                      <span class="s6-arch-spec-val">3 (L2 GND, L3 GND, L5 Power split)</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Isolation</span>
+                      <span class="s6-arch-spec-val">Excellent — dual GND planes create broadband EMI shield</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Cost index</span>
+                      <span class="s6-arch-spec-val s6-arch-premium">1.15&ndash;1.25&times; (thin core + dual plane complexity)</span>
+                    </div>
+                  </div>
+                  <div class="s6-arch-pros">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Dual ground planes (L2, L3) with thin dielectric between them create a parallel-plate capacitor with &gt;500&nbsp;pF distributed decoupling — excellent for suppressing GHz-range noise.</li>
+                      <li>Dedicated power plane (L5) can accommodate 3&ndash;4 split voltage domains without compromising signal-layer routing.</li>
+                      <li>L1 signal layer has a thin prepreg to L2, providing a very tight reference plane for low-impedance microstrip routing (good for RF front-ends).</li>
+                    </ul>
+                  </div>
+                  <div class="s6-arch-cons">
+                    <h4>Limitations</h4>
+                    <ul>
+                      <li>L4 is a stripline layer between two planes — impedance is lower and trace widths must be wider for the same target, consuming more routing space.</li>
+                      <li>Thin core between L2 and L3 (0.10&ndash;0.20&nbsp;mm) can be difficult to source for very large panel formats (&gt;350&nbsp;mm).</li>
+                      <li>Additional lamination complexity: the thin core may require a controlled low-flow prepreg to prevent resin starvation.</li>
+                    </ul>
+                  </div>
+                  <div class="s6-arch-bestfor">
+                    <strong>Best for:</strong> Mixed-signal designs with sensitive analog front-ends (16+ bit ADC, precision DAC, audio codecs), designs combining RF (&le;3&nbsp;GHz) with digital processing, and medical or instrumentation equipment requiring low noise floors.
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </details>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">FAQ</p>
-                <h2>6-Layer PCB questions buyers ask before placing an order</h2>
+          <!-- Architecture 3: Signal-GND-Signal-Signal-GND-Signal (Two routing internal layers) -->
+          <details class="s6-arch-panel">
+            <summary class="s6-arch-summary">
+              <span class="s6-arch-num">Architecture 3</span>
+              <span class="s6-arch-title">Signal &ndash; GND &ndash; Signal &ndash; Signal &ndash; GND &ndash; Signal</span>
+              <span class="s6-arch-tag s6-arch-tag-amber">Routing-dense &bull; Cost-sensitive</span>
+              <span class="s6-arch-toggle">&#9660;</span>
+            </summary>
+            <div class="s6-arch-detail">
+              <div class="s6-arch-detail-grid">
+                <div class="s6-arch-diagram">
+                  <div class="s6-arch-layer s6-arch-signal">L1 &mdash; Signal / Components</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.10&ndash;0.20&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-plane">L2 &mdash; Ground Plane</div>
+                  <div class="s6-arch-layer s6-arch-core">Core &mdash; 0.50&ndash;0.71&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-signal">L3 &mdash; Signal / High-speed or dense routing</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.71&ndash;1.27&nbsp;mm (thick)</div>
+                  <div class="s6-arch-layer s6-arch-signal">L4 &mdash; Signal / Power routing or additional traces</div>
+                  <div class="s6-arch-layer s6-arch-core">Core &mdash; 0.50&ndash;0.71&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-plane">L5 &mdash; Ground or Power Plane</div>
+                  <div class="s6-arch-layer s6-arch-prepreg">Prepreg &mdash; 0.10&ndash;0.20&nbsp;mm</div>
+                  <div class="s6-arch-layer s6-arch-signal">L6 &mdash; Signal / Secondary components</div>
+                </div>
+                <div class="s6-arch-info">
+                  <div class="s6-arch-specs">
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Board thickness target</span>
+                      <span class="s6-arch-spec-val">1.6&ndash;2.0&nbsp;mm</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Signal layers with GND reference</span>
+                      <span class="s6-arch-spec-val">3 (L1 over L2, L3 over L2 or L5, L6 over L5)</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Blind inner routing</span>
+                      <span class="s6-arch-spec-val">L3 and L4 can route densely with via freedom</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Routing density</span>
+                      <span class="s6-arch-spec-val">Highest of the three architectures</span>
+                    </div>
+                    <div class="s6-arch-spec-row">
+                      <span class="s6-arch-spec-label">Cost index</span>
+                      <span class="s6-arch-spec-val s6-arch-baseline">0.95&ndash;1.05&times; (no thin cores, simple press)</span>
+                    </div>
+                  </div>
+                  <div class="s6-arch-pros">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Two adjacent inner signal layers (L3, L4) with no plane between them — ideal for short, high-density routing where via congestion is the main problem.</li>
+                      <li>Simpler lamination: the thick prepreg between L3 and L4 reduces registration sensitivity, making it the most forgiving 6-layer stackup for manufacturing.</li>
+                      <li>Lower cost than Architecture 1 or 2 because no thin cores are needed and the prepreg stack is standard.</li>
+                    </ul>
+                  </div>
+                  <div class="s6-arch-cons">
+                    <h4>Limitations</h4>
+                    <ul>
+                      <li>L3 and L4 are not adjacent to a reference plane — signals between them cannot be impedance-controlled on that segment (must rely on L2 or L5 reference through vias).</li>
+                      <li>The thick prepreg between L3 and L4 means the reference plane distance for L3 (to L2) and L4 (to L5) is different, making impedance matching between layers harder.</li>
+                      <li>Not suitable for designs that require 3+ clean reference planes for simultaneous high-speed interfaces.</li>
+                    </ul>
+                  </div>
+                  <div class="s6-arch-bestfor">
+                    <strong>Best for:</strong> Routing-dense designs where the primary constraint is trace congestion, not signal integrity — for example, large FPGA boards with many low-speed I/Os, complex power management boards, or multi-channel data acquisition systems with moderate clock speeds (&le;200&nbsp;MHz).
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="layer-faq-list">
-                <article class="faq-item">
-                    <h4>What products commonly use a 6 layer PCB?</h4>
-                    <p>Industrial control boards, measurement devices, communication modules, automotive-style electronics, dense IoT products and boards using fine-pitch ICs often benefit from 6 layers.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>Does every 6 layer PCB need controlled impedance?</h4>
-                    <p>No. Controlled impedance is needed when signal performance requires it. If your design has USB, Ethernet, RF, differential pairs or strict timing, include impedance details in the RFQ.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>Can XFPCB help compare 6 layer and 8 layer options?</h4>
-                    <p>Yes. If routing density or signal integrity is uncertain, send the project requirements and we can discuss whether 6 or 8 layers is more practical for cost and manufacturability.</p>
-                </article>
-            </div>
-        </section>
+          </details>
+        </div>
 
-        <section class="layer-rfq-section" id="quote">
-            <div class="container layer-rfq-grid">
-                <div class="layer-rfq-copy">
-                    <p class="eyebrow">Send RFQ to XFPCB</p>
-                    <h2>Get a practical quotation for 6-Layer PCB</h2>
-                    <p>For 6 layer PCB projects, procurement success depends on clear stackup, material and test information. XFPCB can review the files and respond with practical questions quickly.</p>
-                    <ul class="layer-check-list">
-                    <li>Gerber, drill, drawing and stackup</li>
-                    <li>Material grade, Tg requirement and board thickness</li>
-                    <li>Impedance targets and tolerance if required</li>
-                    <li>Prototype and production quantities</li>
-                </ul>
-                    <p class="layer-rfq-note">For a faster engineering reply, include Gerber files, drill files, PCB specification, quantity, delivery country and any impedance, material or assembly requirements.</p>
-                </div>
-                <form class="layer-rfq-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
-                    <input type="hidden" name="honeypot" style="display:none;">
-                    <input type="hidden" name="page_url" value="https://xfpcb.com/products/6-layer-pcb/">
-                    <input type="hidden" name="page_path" value="/products/6-layer-pcb/">
-                    <input type="hidden" name="subject" value="6-Layer PCB RFQ from XFPCB product page">
-                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
-                    <label>
-                        Name
-                        <input type="text" name="name" placeholder="Your name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="name@company.com" required>
-                    </label>
-                    <label>
-                        Project Requirements
-                        <textarea name="message" placeholder="Example: 6 layer industrial PCB, high Tg FR-4, 1.6 mm, ENIG, controlled impedance on L1/L6, 500 pcs first order." required></textarea>
-                    </label>
-                    <button type="submit">Send 6-Layer PCB Inquiry</button>
-                </form>
+        <div class="s6-arch-recommendation">
+          <h4>Quick architecture selector</h4>
+          <div class="s6-arch-flow">
+            <div class="s6-arch-flow-item">
+              <span class="s6-flow-q">Primary constraint is <strong>signal integrity</strong> (DDR, GbE, USB 3.0, &gt;3&nbsp;power domains)?</span>
+              <span class="s6-flow-a">&rarr; Architecture 1 (three ground-reference pairs)</span>
             </div>
-        </section>
+            <div class="s6-arch-flow-item">
+              <span class="s6-flow-q">Mixed analog + digital with <strong>sensitive ADC/DAC</strong> or RF front-end?</span>
+              <span class="s6-flow-a">&rarr; Architecture 2 (dual ground + dedicated power plane)</span>
+            </div>
+            <div class="s6-arch-flow-item">
+              <span class="s6-flow-q">Primary constraint is <strong>routing density</strong> (more traces per mm&sup2; needed)?</span>
+              <span class="s6-flow-a">&rarr; Architecture 3 (two adjacent inner routing layers)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="bg-darker">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Related PCB products</p>
-                    <h2>Compare layer counts before you send your RFQ</h2>
-                    <p>Many buyers begin with one layer count and change after DFM review, enclosure checks or cost comparison. These XFPCB pages help you select the most suitable PCB structure before production.</p>
-                </div>
-                <div class="related-layer-links">
-                    <a class="related-layer-link" href="/products/1-layer-pcb/">1-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/2-layer-pcb/">2-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/4-layer-pcb/">4-Layer PCB</a>
-                    <a class="related-layer-link active" href="/products/6-layer-pcb/">6-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/8-layer-pcb/">8-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
-                    <a class="related-layer-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
-                </div>
+
+    <!-- ====================================================================
+         SECTION 6 — THE DFM HANDBOOK FOR 6-LAYER
+         Layer registration, copper balance, resin flow, and other
+         6-layer-specific DFM concerns. This is what XFPCB checks.
+         ==================================================================== -->
+    <section class="s6-dfm">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Design for Manufacturing</span>
+          <h2>Six DFM rules specific to 6-layer PCBs</h2>
+          <p class="s6-section-sub">
+            Many DFM checklists are generic across all layer counts. The six items below are specific to 6-layer boards — they arise from the sequential lamination process, the via structure, and the accumulated registration tolerances that a 2-layer or 4-layer board simply does not have.
+          </p>
+        </div>
+
+        <div class="s6-dfm-list">
+          <!-- DFM 1 -->
+          <article class="s6-dfm-item">
+            <span class="s6-dfm-num">01</span>
+            <div class="s6-dfm-body">
+              <h4>Layer-to-layer registration: the two-press penalty</h4>
+              <p class="s6-dfm-desc">
+                Each lamination cycle introduces a potential offset between the layers bonded in that cycle. In a 6-layer board, L1 is registered during the second press against L2, which was already registered during the first press against L3/4/5. The cumulative tolerance between L1 and L6 is approximately &plusmn;0.15&nbsp;mm (vs &plusmn;0.08&nbsp;mm for a 4-layer board's outer-to-inner registration). This affects annular ring requirements: a via pad that connects L1 to L6 must have a larger pad diameter on L1 and L6 than on inner layers.
+              </p>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-do">DO</span> Specify 0.15&nbsp;mm minimum annular ring on L1 and L6 (outer layers), 0.10&nbsp;mm on inner layers (L2&ndash;L5) for any via that connects through the full stack.
+              </div>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-dont">DON'T</span> Use the same pad diameter for all layers on a through via. XFPCB's CAM system adjusts this automatically if the design file uses uniform pad sizes, but not all EDA tools export per-layer pad dimensions correctly.
+              </div>
             </div>
-        </section>
+          </article>
+
+          <!-- DFM 2 -->
+          <article class="s6-dfm-item">
+            <span class="s6-dfm-num">02</span>
+            <div class="s6-dfm-body">
+              <h4>Copper balance per core pair</h4>
+              <p class="s6-dfm-desc">
+                In a 6-layer board, the two internal cores (L2&ndash;L3 and L4&ndash;L5) are etched and pressed independently before the final lamination. If L2 has 70% copper density and L3 has 20%, the L2&ndash;L3 core will bow during the first press, causing uneven resin flow in the prepreg on one side. This produces a wedge-shaped dielectric that shifts the impedance of traces on L3 by up to &plusmn;15% across the panel — a common root cause of impedance test failures that are mistakenly attributed to etching variation.
+              </p>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-do">DO</span> Aim for copper density within 15 percentage points between the two sides of each core pair (L2 vs L3, L4 vs L5). Use cross-hatch ground pour or copper thieving to balance asymmetric areas.
+              </div>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-dont">DON'T</span> Rely on the outer layers (L1, L6) to balance the copper distribution — they are added in the second press and cannot correct a bowed core from the first press.
+              </div>
+            </div>
+          </article>
+
+          <!-- DFM 3 -->
+          <article class="s6-dfm-item">
+            <span class="s6-dfm-num">03</span>
+            <div class="s6-dfm-body">
+              <h4>Buried via capture pad clearance</h4>
+              <p class="s6-dfm-desc">
+                If the design uses buried vias (L2&ndash;L5), the capture pad on the outer prepreg interface (L2, L5) must be sized to accommodate both the first-press registration tolerance and the second-press registration tolerance. A buried via drilled after the first press is centred on the L2&ndash;L5 sub-stack. When the outer prepreg and copper foil are added in the second press, the L1-to-L2 registration tolerance can shift the outer pad relative to the buried via barrel.
+              </p>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-do">DO</span> Use a minimum capture pad diameter of 0.55&nbsp;mm for buried vias on the interface layers (L2 and L5) when using a 0.25&nbsp;mm finished hole size. This provides &plusmn;0.15&nbsp;mm registration margin.
+              </div>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-dont">DON'T</span> Stack buried vias directly above through vias in the same location — the two-stage drill can create a resin-rich zone that traps air or causes CAF (conductive anodic filament) growth over time.
+              </div>
+            </div>
+          </article>
+
+          <!-- DFM 4 -->
+          <article class="s6-dfm-item">
+            <span class="s6-dfm-num">04</span>
+            <div class="s6-dfm-body">
+              <h4>Resin flow and glass style selection for the centre prepreg</h4>
+              <p class="s6-dfm-desc">
+                In a 6-layer stackup, the centre prepreg (between L3 and L4 in most architectures) is the thickest dielectric layer in the board. Its resin content and glass weave style (106, 1080, 2116, 7628) directly affect the dielectric thickness between the inner signal layers and their reference planes. A 7628 glass style has higher glass-to-resin ratio, which means less resin available to fill gaps around buried vias — potentially creating voids.
+              </p>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-do">DO</span> Specify 2116 or 1080 glass style for the centre prepreg when the design uses buried vias, to ensure sufficient resin volume for void-free encapsulation. Use 7628 only for non-via-heavy designs with thick dielectric requirements.
+              </div>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-dont">DON'T</span> Assume the centre prepreg thickness in your EDA impedance calculator will match the fabricated value — the actual pressed thickness depends on resin fill around via barrels and copper features on adjacent layers. XFPCB provides actual pressed thickness values from coupon cross-sections.
+              </div>
+            </div>
+          </article>
+
+          <!-- DFM 5 -->
+          <article class="s6-dfm-item">
+            <span class="s6-dfm-num">05</span>
+            <div class="s6-dfm-body">
+              <h4>Plated through-hole barrel reliability across two laminations</h4>
+              <p class="s6-dfm-desc">
+                A through-hole via in a 6-layer board must survive two thermal cycles (the second lamination press after the barrel is plated) plus the assembly reflow cycles. The thermal expansion of the core materials at the L3&ndash;L4 interface creates z-axis stress that can crack the copper barrel. This is especially relevant for thick boards (&ge;1.6&nbsp;mm) and high-Tg materials.
+              </p>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-do">DO</span> Use TG170 or higher material for 6-layer boards with through vias that carry current &gt;1&nbsp;A or that must survive &ge;3 reflow cycles. The lower z-axis CTE of TG170 (35&ndash;50&nbsp;ppm/&deg;C vs TG135's 50&ndash;70&nbsp;ppm/&deg;C) significantly reduces barrel stress.
+              </div>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-dont">DON'T</span> Use minimum copper plating thickness (typically 20&ndash;25&nbsp;&micro;m) in the barrel for 6-layer boards with aspect ratios above 8:1. Specify 30&ndash;35&nbsp;&micro;m minimum barrel copper for high-reliability applications.
+              </div>
+            </div>
+          </article>
+
+          <!-- DFM 6 -->
+          <article class="s6-dfm-item">
+            <span class="s6-dfm-num">06</span>
+            <div class="s6-dfm-body">
+              <h4>Impedance coupon placement for multi-stage process control</h4>
+              <p class="s6-dfm-desc">
+                In a 6-layer board, there are three distinct dielectric interfaces that determine impedance: L1-to-L2 (microstrip), L3-to-L2 or L3-to-L4 (stripline), and L6-to-L5 (microstrip). Each interface is pressed at a different stage (L1/L6 in the second press, L3&ndash;L4 in the first press) and may have different dielectric thicknesses. A single impedance coupon at the panel edge cannot represent all three interfaces accurately.
+              </p>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-do">DO</span> Request 2&ndash;3 impedance coupons per panel when different impedance targets exist on different layer pairs. For example: coupon A for L1&ndash;L2 microstrip targets, coupon B for L3&ndash;L4 stripline targets, coupon C for L6&ndash;L5 microstrip targets.
+              </div>
+              <div class="s6-dfm-rules">
+                <span class="s6-dfm-dont">DON'T</span> Expect a single coupon to validate impedance on all signal layers. XFPCB's standard practice is to place one coupon per impedance set; if the RFQ specifies multiple impedance targets, we include the corresponding coupons and measure each separately.
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="s6-dfm-outro">
+          <p>These six DFM rules are applied during XFPCB's CAM review for every 6-layer PCB order. We send a DFM report before production begins — not after the boards are built. <a href="#s6-consult">Send your files for a 6-layer DFM review.</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 — ENGINEERING SPECIFICATION REFERENCE
+         Quick-reference specifications for 6-layer PCBs at XFPCB.
+         Not a template table — organised by engineering decision category.
+         ==================================================================== -->
+    <section class="s6-specs">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Specification reference</span>
+          <h2>6-Layer PCB engineering capabilities at XFPCB</h2>
+          <p class="s6-section-sub">
+            Each specification below is annotated with the engineering implication — what the number means for your design, not just what it is.
+          </p>
+        </div>
+
+        <div class="s6-specs-grid">
+          <div class="s6-spec-category">
+            <h3>Layer structure</h3>
+            <dl class="s6-spec-list">
+              <div class="s6-spec-term">
+                <dt>Layer count</dt>
+                <dd>6 copper layers (2 outer + 4 inner)</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Lamination type</dt>
+                <dd>Sequential (2 press cycles) — enables buried vias but requires tighter registration management</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Core structure</dt>
+                <dd>2 internal cores (L2&ndash;L3, L4&ndash;L5) + 2 outer prepreg layers (L1, L6)</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="s6-spec-category">
+            <h3>Materials</h3>
+            <dl class="s6-spec-list">
+              <div class="s6-spec-term">
+                <dt>FR-4 (standard)</dt>
+                <dd>Tg&nbsp;130&ndash;140&deg;C, Dk&nbsp;4.2&ndash;4.5 at 1&nbsp;GHz. Suitable for general-purpose 6-layer designs without high thermal or RF requirements.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>High-Tg FR-4</dt>
+                <dd>Tg&nbsp;170&ndash;180&deg;C, Dk&nbsp;4.1&ndash;4.4. Recommended default for 6-layer — lower z-axis CTE reduces via barrel stress across two lamination cycles.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Rogers / Hybrid</dt>
+                <dd>RO4003C (Dk&nbsp;3.38), RO4350B (Dk&nbsp;3.48). Available as full-stack or hybrid (Rogers core + FR-4 prepreg) for cost-optimised RF performance.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="s6-spec-category">
+            <h3>Physical dimensions</h3>
+            <dl class="s6-spec-list">
+              <div class="s6-spec-term">
+                <dt>Board thickness</dt>
+                <dd>0.8&ndash;2.0&nbsp;mm standard. 0.6&ndash;3.2&nbsp;mm available. Thickness selection affects via aspect ratio and mechanical stiffness.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Panel size (max)</dt>
+                <dd>600&nbsp;&times;&nbsp;500&nbsp;mm (standard). Larger sizes available on request. Sequential lamination limits maximum panel size when thin cores (&lt;0.15&nbsp;mm) are used.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Copper weight</dt>
+                <dd>0.5&nbsp;oz to 3&nbsp;oz outer / 0.5&nbsp;oz to 2&nbsp;oz inner. Heavier copper on inner layers increases the minimum dielectric spacing and affects impedance calculation.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="s6-spec-category">
+            <h3>Via technology</h3>
+            <dl class="s6-spec-list">
+              <div class="s6-spec-term">
+                <dt>Through via (PTH)</dt>
+                <dd>Min drill 0.20&nbsp;mm, aspect ratio up to 10:1. Standard for most 6-layer designs. Back-drilling available for &gt;1&nbsp;GHz signal stubs.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Buried via</dt>
+                <dd>Available for L2&ndash;L5 connections. Requires sequential lamination. Recommended for high-speed signals that need stub-free transitions between inner layers.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Microvia (HDI)</dt>
+                <dd>Available as 1+N+1 structure. Laser-drilled 0.075&ndash;0.150&nbsp;mm. Conductive fill available for via-in-pad BGA fan-out.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="s6-spec-category">
+            <h3>Impedance control</h3>
+            <dl class="s6-spec-list">
+              <div class="s6-spec-term">
+                <dt>Tolerance (standard)</dt>
+                <dd>&plusmn;10%. Verified via TDR measurement of production panel coupons.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Tolerance (tight)</dt>
+                <dd>&plusmn;8% or &plusmn;5%. Requires pre-production test panel and coupon verification per impedance set.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Common targets</dt>
+                <dd>50&thinsp;&Omega; SE, 90&thinsp;&Omega; diff (USB), 100&thinsp;&Omega; diff (Ethernet), 85&thinsp;&Omega; diff (PCIe). Multiple target sets supported on one stackup.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="s6-spec-category">
+            <h3>Quality &amp; testing</h3>
+            <dl class="s6-spec-list">
+              <div class="s6-spec-term">
+                <dt>AOI</dt>
+                <dd>100% automated optical inspection on all layers (inner + outer). Post-lamination AOI available for sequential press verification.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Electrical test</dt>
+                <dd>Flying probe or fixture. Opens and shorts verification on all nets. Impedance TDR verification on request.</dd>
+              </div>
+              <div class="s6-spec-term">
+                <dt>Microsection analysis</dt>
+                <dd>Available for cross-section verification of via barrel plating thickness, dielectric thickness, and layer registration accuracy.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="s6-spec-fallback">
+          <p>Need a specification not listed here? <a href="#s6-consult">Send your requirements</a> and XFPCB will confirm capability before quoting.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 8 — RFQ / ENGINEERING CONSULTATION
+         Contact form that frames the interaction as an engineering consultation.
+         ==================================================================== -->
+    <section class="s6-consult" id="s6-consult">
+      <div class="s6-container">
+        <div class="s6-consult-layout">
+          <div class="s6-consult-copy">
+            <span class="s6-badge">Start your engineering consultation</span>
+            <h2>Send your 6-layer PCB requirements for engineering review</h2>
+            <p>
+              A 6-layer PCB quotation is not a simple area-times-price calculation. The stackup architecture, via strategy, material selection, impedance targets, and test plan all affect the manufacturing process and cost. XFPCB's engineering team reviews each submission and responds with a structured quotation that includes:
+            </p>
+            <ul class="s6-consult-list">
+              <li>Stackup architecture recommendation based on your signal types and density</li>
+              <li>Material selection with TG, Dk, and Df values matched to your operating conditions</li>
+              <li>Impedance control plan with target trace geometries and coupon placement</li>
+              <li>Via strategy recommendation (through, buried, or microvia) based on BGA pitch and signal speed</li>
+              <li>DFM report identifying layer registration, copper balance, and resin flow considerations</li>
+              <li>Lead time and pricing for prototype and production quantities</li>
+            </ul>
+            <p class="s6-consult-note">
+              For the fastest engineering reply, include Gerber files, drill files, a layer stackup drawing or description, target impedance values if applicable, material preferences, quantity, and delivery country.
+            </p>
+            <div class="s6-consult-testimonial">
+              <blockquote>
+                "The DFM report XFPCB sent before our first 6-layer order caught a copper balance issue on our inner core that would have caused a 2-week delay. They adjusted the stackup and the boards came back within impedance tolerance on all layers."
+              </blockquote>
+              <span class="s6-consult-attrib">&mdash; Hardware engineering manager, industrial automation company, Germany</span>
+            </div>
+          </div>
+          <form class="s6-consult-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+            <input type="hidden" name="honeypot" style="display:none;">
+            <input type="hidden" name="page_url" value="https://xfpcb.com/products/6-layer-pcb/">
+            <input type="hidden" name="page_path" value="/products/6-layer-pcb/">
+            <input type="hidden" name="subject" value="6-Layer PCB Engineering Consultation from XFPCB product page">
+            <input type="hidden" name="redirect" value="https://xfpcb.com/">
+
+            <div class="s6-consult-field">
+              <label for="s6-name">Name <span class="s6-required">*</span></label>
+              <input id="s6-name" type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="s6-consult-field">
+              <label for="s6-email">Email <span class="s6-required">*</span></label>
+              <input id="s6-email" type="email" name="email" placeholder="name@company.com" required>
+            </div>
+            <div class="s6-consult-field">
+              <label for="s6-company">Company</label>
+              <input id="s6-company" type="text" name="company" placeholder="Company name (optional)">
+            </div>
+            <div class="s6-consult-field">
+              <label for="s6-message">Project requirements <span class="s6-required">*</span></label>
+              <textarea id="s6-message" name="message" placeholder="Example: 6-layer industrial controller PCB, TG170 FR-4, 1.6&nbsp;mm, ENIG finish, controlled impedance 50&Omega; on L1 (microstrip) and 100&Omega; diff on L3 (stripline), 300 pcs prototype + 5,000 pcs production, ship to Munich, Germany." required></textarea>
+            </div>
+            <button type="submit" class="s6-btn s6-btn-primary s6-btn-full">Send for engineering review</button>
+            <p class="s6-consult-disclaimer">Your files and specifications are treated as confidential. XFPCB does not share design data with third parties.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 9 — RELATED RESOURCES
+         Navigation to related PCB layer-count guides.
+         ==================================================================== -->
+    <section class="s6-related">
+      <div class="s6-container">
+        <div class="s6-section-head">
+          <span class="s6-badge">Compare layer counts</span>
+          <h2>Choose the right layer count before you submit your RFQ</h2>
+          <p class="s6-section-sub">
+            Each layer count has a different cost structure, manufacturing process, and signal integrity profile. Use the guides below to compare your options.
+          </p>
+        </div>
+        <div class="s6-related-grid">
+          <a href="/products/4-layer-pcb/" class="s6-related-card">
+            <span class="s6-related-count">4-Layer PCB</span>
+            <span class="s6-related-desc">Two signal layers, two internal planes — the entry point for controlled impedance and EMI management.</span>
+            <span class="s6-related-link">Compare &rarr;</span>
+          </a>
+          <a href="/products/6-layer-pcb/" class="s6-related-card s6-related-current">
+            <span class="s6-related-count">6-Layer PCB</span>
+            <span class="s6-related-desc">Three signal layers, three plane layers — the signal integrity threshold for DDR, GbE, and mixed-signal designs.</span>
+            <span class="s6-related-link">You are here</span>
+          </a>
+          <a href="/products/8-layer-pcb/" class="s6-related-card">
+            <span class="s6-related-count">8-Layer PCB</span>
+            <span class="s6-related-desc">Four signal layers, four plane layers — for DDR4/5, PCIe Gen 3/4, and complex multi-domain power distribution.</span>
+            <span class="s6-related-link">Compare &rarr;</span>
+          </a>
+          <a href="/products/multilayer-pcb/" class="s6-related-card">
+            <span class="s6-related-count">Multilayer PCB Guide</span>
+            <span class="s6-related-desc">General guide covering 4-layer through 40+ layer PCB design and manufacturing considerations.</span>
+            <span class="s6-related-link">Read the guide &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 </BaseLayout>
+
+
+<!--  ======================================================================
+      STYLES — s6-* prefix, zero dependencies on products.css or about.css
+      ====================================================================== -->
+<style is:global>
+  /*
+    6-Layer PCB page — Signal Integrity Threshold
+    Prefix: s6- — completely independent of products.css/about.css
+    Design: Dark PCB-themed with green glow accents, technical document feel
+  */
+
+  /* ---------- Layout utilities ---------- */
+  .s6-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .s6-section-head {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto 64px auto;
+  }
+
+  .s6-section-head h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin: 16px 0 20px 0;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  .s6-section-sub {
+    font-size: 1.05rem;
+    color: #a0b8a8;
+    line-height: 1.65;
+  }
+
+  .s6-badge {
+    display: inline-block;
+    background: rgba(0, 255, 65, 0.10);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+    color: var(--pcb-glow, #00ff41);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+
+  /* ---------- Shared button styles ---------- */
+  .s6-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .s6-btn-primary {
+    background: var(--pcb-glow, #00ff41);
+    color: #05140a;
+  }
+  .s6-btn-primary:hover {
+    background: #33ff6a;
+    box-shadow: 0 0 24px rgba(0, 255, 65, 0.35);
+  }
+
+  .s6-btn-outline {
+    background: transparent;
+    color: var(--pcb-glow, #00ff41);
+    border: 1.5px solid var(--pcb-glow, #00ff41);
+  }
+  .s6-btn-outline:hover {
+    background: rgba(0, 255, 65, 0.10);
+  }
+
+  .s6-btn-full {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ---------- Section spacing ---------- */
+  main > section {
+    padding: 80px 0;
+  }
+
+  main > section:nth-child(even) {
+    background: rgba(10, 30, 18, 0.50);
+  }
+
+  /* ========================================================================
+     SECTION 1 — THRESHOLD (The Signal Integrity Opening)
+     ======================================================================== */
+  .s6-threshold {
+    padding-top: 100px !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .s6-threshold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--pcb-glow, #00ff41), transparent);
+    opacity: 0.4;
+  }
+
+  .s6-threshold-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .s6-threshold-text h1 {
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin: 16px 0 24px 0;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .s6-threshold-scenario {
+    margin: 28px 0;
+    padding: 20px 24px;
+    background: rgba(0, 255, 65, 0.04);
+    border-left: 3px solid var(--pcb-glow, #00ff41);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .s6-scenario-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--pcb-glow, #00ff41);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .s6-threshold-scenario blockquote {
+    font-style: normal;
+    color: #c8ddd0;
+    line-height: 1.7;
+    font-size: 0.98rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .s6-threshold-text p {
+    color: #a0b8a8;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 0.98rem;
+  }
+
+  .s6-threshold-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0;
+  }
+
+  .s6-threshold-tags span {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.82rem;
+    color: #b0c8b8;
+  }
+
+  .s6-threshold-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+
+  /* Sidebar metrics */
+  .s6-threshold-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .s6-signal-metric {
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .s6-metric-value {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--pcb-glow, #00ff41);
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+
+  .s6-metric-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #a0b8a8;
+    line-height: 1.4;
+  }
+
+  .s6-threshold-callout {
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .s6-threshold-callout strong {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  .s6-threshold-callout p {
+    font-size: 0.88rem;
+    color: #a0b8a8;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .s6-threshold-callout a {
+    color: var(--pcb-glow, #00ff41);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .s6-threshold-callout a:hover {
+    text-decoration: underline;
+  }
+
+  /* ========================================================================
+     SECTION 2 — 4-LAYER vs 6-LAYER COMPARISON (The Four-Layer Ceiling)
+     ======================================================================== */
+  .s6-comparison {
+    background: rgba(10, 30, 18, 0.50) !important;
+  }
+
+  .s6-compare-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .s6-compare-row {
+    display: grid;
+    grid-template-columns: 170px 1fr 1fr;
+    gap: 0;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .s6-compare-row:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .s6-compare-row:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: none;
+  }
+
+  .s6-compare-signal {
+    padding: 20px 16px;
+    background: rgba(0, 255, 65, 0.04);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .s6-compare-signal h3 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+
+  .s6-compare-speed {
+    font-size: 0.78rem;
+    color: var(--pcb-glow, #00ff41);
+    font-weight: 500;
+  }
+
+  .s6-compare-4layer,
+  .s6-compare-6layer {
+    padding: 20px 20px;
+  }
+
+  .s6-compare-4layer {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .s6-compare-heading {
+    display: block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .s6-compare-4layer .s6-compare-heading {
+    color: #c89070;
+  }
+
+  .s6-compare-6layer .s6-compare-heading {
+    color: var(--pcb-glow, #00ff41);
+  }
+
+  .s6-compare-4layer p,
+  .s6-compare-6layer p {
+    font-size: 0.88rem;
+    color: #a0b8a8;
+    line-height: 1.6;
+  }
+
+  .s6-compare-decision {
+    max-width: 860px;
+    margin: 48px auto 0 auto;
+    padding: 32px;
+    background: rgba(0, 255, 65, 0.04);
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    border-radius: 12px;
+  }
+
+  .s6-compare-decision h4 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+
+  .s6-compare-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .s6-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: #b0c8b8;
+    line-height: 1.5;
+  }
+
+  .s6-check-icon {
+    color: var(--pcb-glow, #00ff41);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .s6-compare-note {
+    margin-top: 20px;
+    color: var(--pcb-glow, #00ff41);
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-top: 1px solid rgba(0, 255, 65, 0.15);
+    padding-top: 16px;
+  }
+
+  /* ========================================================================
+     SECTION 3 — SEQUENTIAL LAMINATION
+     ======================================================================== */
+  .s6-lamination {
+    background: rgba(10, 30, 18, 0.30) !important;
+  }
+
+  .s6-lam-diagram {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .s6-lam-step {
+    display: grid;
+    grid-template-columns: 40px 1fr 160px;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .s6-lam-num {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 255, 65, 0.10);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--pcb-glow, #00ff41);
+  }
+
+  .s6-lam-content h4 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+
+  .s6-lam-content p {
+    color: #a0b8a8;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .s6-lam-arrow {
+    text-align: center;
+    color: var(--pcb-glow, #00ff41);
+    font-size: 1.4rem;
+    opacity: 0.6;
+    padding: 4px 0;
+    font-weight: 300;
+  }
+
+  /* Mini stackup visualization */
+  .s6-lam-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 6px;
+  }
+
+  .s6-lam-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .s6-lam-pregap {
+    height: 4px;
+  }
+
+  .s6-lam-mini-layer {
+    display: block;
+    width: 120px;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+
+  .s6-lam-cu {
+    background: rgba(0, 255, 65, 0.12);
+    color: var(--pcb-glow, #00ff41);
+    border: 1px solid rgba(0, 255, 65, 0.20);
+  }
+
+  .s6-lam-core {
+    background: #1a3a1a;
+    color: #8ab88a;
+    border: 1px solid #2a4a2a;
+  }
+
+  .s6-lam-prepreg {
+    background: rgba(200, 180, 120, 0.10);
+    color: #b8a878;
+    border: 1px solid rgba(200, 180, 120, 0.20);
+    font-style: italic;
+  }
+
+  /* Process notes */
+  .s6-lam-process-note {
+    max-width: 860px;
+    margin: 40px auto 0 auto;
+  }
+
+  .s6-lam-note-card {
+    padding: 28px 32px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+  }
+
+  .s6-lam-note-card h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .s6-lam-impacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .s6-lam-impacts li {
+    font-size: 0.92rem;
+    color: #a0b8a8;
+    line-height: 1.6;
+    padding-left: 0;
+    position: relative;
+  }
+
+  .s6-lam-impacts li strong {
+    color: #d0e0d4;
+  }
+
+  /* ========================================================================
+     SECTION 4 — VIA ARCHITECTURE
+     ======================================================================== */
+  .s6-via-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .s6-via-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .s6-via-card-accent {
+    border-color: rgba(60, 160, 240, 0.25);
+  }
+
+  .s6-via-visual {
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .s6-via-symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 10px 0;
+  }
+
+  .s6-via-bar {
+    display: block;
+    width: 60px;
+    height: 6px;
+    background: var(--pcb-glow, #00ff41);
+    border-radius: 3px;
+    opacity: 0.7;
+  }
+
+  .s6-via-bar-inactive {
+    background: rgba(255, 255, 255, 0.10);
+    opacity: 0.3;
+  }
+
+  .s6-via-label-symbol {
+    font-size: 0.78rem;
+    color: #a0b8a8;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .s6-via-body {
+    padding: 16px 24px 24px 24px;
+  }
+
+  .s6-via-body h3 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .s6-via-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+
+  .s6-via-tag-default {
+    background: rgba(255, 255, 255, 0.08);
+    color: #b0c8b8;
+  }
+
+  .s6-via-tag-blue {
+    background: rgba(60, 160, 240, 0.12);
+    color: #60b8ff;
+    border: 1px solid rgba(60, 160, 240, 0.20);
+  }
+
+  .s6-via-tag-amber {
+    background: rgba(240, 180, 60, 0.12);
+    color: #f0c040;
+    border: 1px solid rgba(240, 180, 60, 0.20);
+  }
+
+  .s6-via-specs {
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .s6-via-spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .s6-via-spec-label {
+    font-size: 0.82rem;
+    color: #889e90;
+  }
+
+  .s6-via-spec-val {
+    font-size: 0.85rem;
+    color: #c8ddd0;
+    font-weight: 500;
+  }
+
+  .s6-via-note {
+    font-size: 0.88rem;
+    color: #a0b8a8;
+    line-height: 1.55;
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+  }
+
+  .s6-via-note strong {
+    color: #d0e0d4;
+  }
+
+  .s6-via-caution {
+    border-left: 2px solid #c89070;
+    background: rgba(200, 144, 112, 0.06);
+    margin-top: 8px;
+  }
+
+  /* ========================================================================
+     SECTION 5 — STACKUP ARCHITECTURES (Accordion)
+     ======================================================================== */
+  .s6-architectures {
+    background: rgba(10, 30, 18, 0.50) !important;
+  }
+
+  .s6-arch-accordion {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .s6-arch-panel {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .s6-arch-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .s6-arch-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .s6-arch-summary:hover {
+    background: rgba(0, 255, 65, 0.03);
+  }
+
+  .s6-arch-num {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--pcb-glow, #00ff41);
+    flex-shrink: 0;
+    min-width: 100px;
+  }
+
+  .s6-arch-title {
+    font-size: 1.0rem;
+    color: #ffffff;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .s6-arch-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 10px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .s6-arch-tag-green {
+    background: rgba(0, 255, 65, 0.10);
+    color: var(--pcb-glow, #00ff41);
+  }
+
+  .s6-arch-tag-blue {
+    background: rgba(60, 160, 240, 0.10);
+    color: #60b8ff;
+  }
+
+  .s6-arch-tag-amber {
+    background: rgba(240, 180, 60, 0.10);
+    color: #f0c040;
+  }
+
+  .s6-arch-toggle {
+    font-size: 0.8rem;
+    color: #a0b8a8;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+
+  .s6-arch-panel[open] .s6-arch-toggle {
+    transform: rotate(180deg);
+  }
+
+  .s6-arch-detail {
+    padding: 0 24px 24px 24px;
+  }
+
+  .s6-arch-detail-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .s6-arch-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .s6-arch-layer {
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    border-radius: 4px;
+    line-height: 1.3;
+  }
+
+  .s6-arch-signal {
+    background: rgba(0, 255, 65, 0.08);
+    color: #b0e0b8;
+    border: 1px solid rgba(0, 255, 65, 0.12);
+  }
+
+  .s6-arch-plane {
+    background: rgba(60, 160, 240, 0.08);
+    color: #80c0f0;
+    border: 1px solid rgba(60, 160, 240, 0.12);
+  }
+
+  .s6-arch-power {
+    border-color: rgba(240, 180, 60, 0.20);
+    background: rgba(240, 180, 60, 0.08);
+    color: #f0c860;
+  }
+
+  .s6-arch-core {
+    background: #1a3a1a;
+    color: #6a9a6a;
+    border: 1px solid #2a4a2a;
+    padding: 3px 12px;
+    font-size: 0.70rem;
+  }
+
+  .s6-arch-prepreg {
+    background: rgba(200, 180, 120, 0.06);
+    color: #a8986a;
+    border: 1px solid rgba(200, 180, 120, 0.10);
+    padding: 3px 12px;
+    font-size: 0.70rem;
+    font-style: italic;
+  }
+
+  .s6-arch-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .s6-arch-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+  }
+
+  .s6-arch-spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .s6-arch-spec-row:last-child {
+    border-bottom: none;
+  }
+
+  .s6-arch-spec-label {
+    color: #889e90;
+  }
+
+  .s6-arch-spec-val {
+    color: #c8ddd0;
+    font-weight: 500;
+  }
+
+  .s6-arch-baseline {
+    color: var(--pcb-glow, #00ff41);
+  }
+
+  .s6-arch-premium {
+    color: #f0c040;
+  }
+
+  .s6-arch-pros h4,
+  .s6-arch-cons h4 {
+    font-size: 0.88rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .s6-arch-pros ul,
+  .s6-arch-cons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s6-arch-pros li,
+  .s6-arch-cons li {
+    font-size: 0.88rem;
+    color: #a0b8a8;
+    line-height: 1.55;
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .s6-arch-pros li::before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    color: var(--pcb-glow, #00ff41);
+    font-weight: 700;
+  }
+
+  .s6-arch-cons li::before {
+    content: '\2212';
+    position: absolute;
+    left: 0;
+    color: #c89070;
+    font-weight: 700;
+  }
+
+  .s6-arch-bestfor {
+    font-size: 0.88rem;
+    color: #a0b8a8;
+    padding: 12px 16px;
+    background: rgba(0, 255, 65, 0.04);
+    border-radius: 8px;
+    line-height: 1.55;
+  }
+
+  .s6-arch-bestfor strong {
+    color: #ffffff;
+  }
+
+  .s6-arch-recommendation {
+    max-width: 860px;
+    margin: 36px auto 0 auto;
+    padding: 28px 32px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+  }
+
+  .s6-arch-recommendation h4 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+  }
+
+  .s6-arch-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .s6-arch-flow-item {
+    padding: 14px 18px;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+    border-left: 3px solid var(--pcb-glow, #00ff41);
+  }
+
+  .s6-flow-q {
+    display: block;
+    font-size: 0.92rem;
+    color: #b0c8b8;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .s6-flow-q strong {
+    color: #ffffff;
+  }
+
+  .s6-flow-a {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--pcb-glow, #00ff41);
+    font-weight: 600;
+  }
+
+  /* ========================================================================
+     SECTION 6 — DFM HANDBOOK
+     ======================================================================== */
+  .s6-dfm {
+    background: rgba(10, 30, 18, 0.30) !important;
+  }
+
+  .s6-dfm-list {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .s6-dfm-item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .s6-dfm-num {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(0, 255, 65, 0.20);
+    line-height: 1;
+  }
+
+  .s6-dfm-body h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .s6-dfm-desc {
+    font-size: 0.92rem;
+    color: #a0b8a8;
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+
+  .s6-dfm-rules {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+  }
+
+  .s6-dfm-do {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #05140a;
+    background: var(--pcb-glow, #00ff41);
+    padding: 1px 7px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+
+  .s6-dfm-dont {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #fff;
+    background: rgba(200, 144, 112, 0.40);
+    padding: 1px 7px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+
+  .s6-dfm-desc .s6-dfm-do,
+  .s6-dfm-desc .s6-dfm-dont {
+    margin-right: 4px;
+  }
+
+  .s6-dfm-outro {
+    max-width: 860px;
+    margin: 32px auto 0 auto;
+    text-align: center;
+    font-size: 1.0rem;
+    color: #b0c8b8;
+    line-height: 1.6;
+  }
+
+  .s6-dfm-outro a {
+    color: var(--pcb-glow, #00ff41);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* ========================================================================
+     SECTION 7 — SPEC REFERENCE
+     ======================================================================== */
+  .s6-specs {
+    background: rgba(10, 30, 18, 0.50) !important;
+  }
+
+  .s6-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .s6-spec-category {
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+  }
+
+  .s6-spec-category h3 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--pcb-glow, #00ff41);
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  .s6-spec-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .s6-spec-term {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding-bottom: 12px;
+  }
+
+  .s6-spec-term:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .s6-spec-term dt {
+    font-size: 0.90rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .s6-spec-term dd {
+    font-size: 0.85rem;
+    color: #a0b8a8;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .s6-spec-fallback {
+    max-width: 860px;
+    margin: 32px auto 0 auto;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #a0b8a8;
+  }
+
+  .s6-spec-fallback a {
+    color: var(--pcb-glow, #00ff41);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* ========================================================================
+     SECTION 8 — ENGINEERING CONSULTATION / FORM
+     ======================================================================== */
+  .s6-consult {
+    background: rgba(10, 30, 18, 0.40) !important;
+  }
+
+  .s6-consult-layout {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .s6-consult-copy h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 16px 0 20px 0;
+    line-height: 1.25;
+  }
+
+  .s6-consult-copy p {
+    font-size: 0.95rem;
+    color: #a0b8a8;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+
+  .s6-consult-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .s6-consult-list li {
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 0.92rem;
+    color: #b0c8b8;
+    line-height: 1.5;
+  }
+
+  .s6-consult-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--pcb-glow, #00ff41);
+    opacity: 0.5;
+  }
+
+  .s6-consult-note {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border-left: 3px solid var(--pcb-glow, #00ff41);
+    font-size: 0.90rem;
+    color: #a0b8a8;
+    line-height: 1.55;
+  }
+
+  .s6-consult-testimonial {
+    margin-top: 28px;
+    padding: 20px 24px;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .s6-consult-testimonial blockquote {
+    font-style: italic;
+    color: #b0c8b8;
+    line-height: 1.65;
+    font-size: 0.92rem;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: none;
+  }
+
+  .s6-consult-attrib {
+    font-size: 0.82rem;
+    color: #788e80;
+  }
+
+  /* Form */
+  .s6-consult-form {
+    padding: 32px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+  }
+
+  .s6-consult-field {
+    margin-bottom: 18px;
+  }
+
+  .s6-consult-field label {
+    display: block;
+    font-size: 0.88rem;
+    color: #b0c8b8;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .s6-required {
+    color: var(--pcb-glow, #00ff41);
+  }
+
+  .s6-consult-field input,
+  .s6-consult-field textarea {
+    width: 100%;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    font-size: 0.92rem;
+    color: #ffffff;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+
+  .s6-consult-field input:focus,
+  .s6-consult-field textarea:focus {
+    outline: none;
+    border-color: var(--pcb-glow, #00ff41);
+    box-shadow: 0 0 0 2px rgba(0, 255, 65, 0.08);
+  }
+
+  .s6-consult-field input::placeholder,
+  .s6-consult-field textarea::placeholder {
+    color: #586e60;
+  }
+
+  .s6-consult-field textarea {
+    height: 140px;
+    resize: vertical;
+  }
+
+  .s6-consult-disclaimer {
+    font-size: 0.78rem;
+    color: #687e70;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* ========================================================================
+     SECTION 9 — RELATED RESOURCES
+     ======================================================================== */
+  .s6-related {
+    background: rgba(10, 30, 18, 0.30) !important;
+  }
+
+  .s6-related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .s6-related-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .s6-related-card:hover {
+    background: rgba(0, 255, 65, 0.04);
+    border-color: rgba(0, 255, 65, 0.20);
+    transform: translateY(-2px);
+  }
+
+  .s6-related-current {
+    border-color: rgba(0, 255, 65, 0.25);
+    background: rgba(0, 255, 65, 0.06);
+  }
+
+  .s6-related-count {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .s6-related-desc {
+    font-size: 0.85rem;
+    color: #a0b8a8;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .s6-related-link {
+    font-size: 0.85rem;
+    color: var(--pcb-glow, #00ff41);
+    font-weight: 600;
+    margin-top: 14px;
+  }
+
+  .s6-related-current .s6-related-link {
+    color: #889e90;
+  }
+
+
+  /* ========================================================================
+     RESPONSIVE
+     ======================================================================== */
+  @media (max-width: 1024px) {
+    .s6-threshold-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-threshold-sidebar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .s6-threshold-callout {
+      grid-column: 1 / -1;
+    }
+
+    .s6-consult-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-arch-detail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    main > section {
+      padding: 48px 0;
+    }
+
+    .s6-section-head h2 {
+      font-size: 1.6rem;
+    }
+
+    .s6-threshold-text h1 {
+      font-size: 1.6rem;
+    }
+
+    .s6-threshold-actions {
+      flex-direction: column;
+    }
+
+    .s6-threshold-actions .s6-btn {
+      text-align: center;
+    }
+
+    .s6-compare-row {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-compare-signal {
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .s6-compare-4layer {
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .s6-lam-step {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .s6-lam-preview {
+      display: none;
+    }
+
+    .s6-via-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-specs-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-related-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .s6-arch-summary {
+      flex-wrap: wrap;
+    }
+
+    .s6-arch-num {
+      min-width: auto;
+    }
+
+    .s6-dfm-item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .s6-threshold-sidebar {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-related-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s6-arch-tag {
+      font-size: 0.65rem;
+    }
+
+    .s6-consult-form {
+      padding: 20px;
+    }
+  }
+</style>

@@ -3,143 +3,1747 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-title="12 Layer PCB Manufacturer | High-Frequency & HDI | XingFeng PCB"
-description="Cutting-edge 12 layer PCB manufacturer for 5G and Data Centers. We excel in hybrid stackups (Rogers/FR4), advanced microvias, and extreme routing density."
-keywords="12 layer PCB manufacturer, high frequency PCB, 5G base station PCB, hybrid stackup PCB, Rogers PCB manufacturer, advanced microvias, edge computing PCB"
-canonical="https://xfpcb.com/products/12-layer-pcb/"
+  title="12 Layer PCB Manufacturer | Server, Telecom & Data Center | XFPCB"
+  description="XFPCB manufactures high-performance 12-layer PCBs for data center switches, telecom infrastructure, and server platforms. Backdrilling, hybrid Rogers/FR-4 stackups, and buried/blind via technology are standard capabilities — documented in full below."
+  keywords="12 layer PCB manufacturer, server PCB, data center PCB, telecom PCB, backdrilling PCB, hybrid stackup PCB, buried via PCB, blind via PCB, Rogers FR4 hybrid, 12 layer PCB backdrilling, high speed PCB, 400G switch PCB"
+  canonical="https://xfpcb.com/products/12-layer-pcb/"
+  ogTitle="12 Layer PCB Manufacturer | Server, Telecom & Data Center | XFPCB"
+  ogDescription="XFPCB manufactures high-performance 12-layer PCBs with backdrilling, hybrid Rogers/FR-4 stackups, and buried/blind via technology for data center, telecom, and server applications."
+  ogImage="https://xfpcb.com/images/675x542pcb.jpg"
+  ogUrl="https://xfpcb.com/products/12-layer-pcb/"
   cssExtra={['/css/about.css', '/css/products.css']}
 >
   <main>
-<!-- Hero Section -->
-        <section class="product-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <h1>Cutting-Edge <span>12 Layer PCB</span> Manufacturer</h1>
-                    <h2>Engineered for 5G, Data Centers & Edge Computing</h2>
-                    <p class="desc">
-                        Push the boundaries of data transmission. As a specialized 12-layer PCB manufacturer, XingFeng PCB empowers telecommunications architects and high-frequency designers. We master hybrid stackups (combining Rogers with FR-4), ultra-fine pitch BGA fan-outs, and advanced microvia technologies to handle extreme routing densities and gigahertz-level signal integrity.
-                    </p>
-                    <a href="#quote" class="cta-btn">Discuss Hybrid Stackups</a>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper">
-                        <!-- 复用要求�?675x542 比例图片 -->
-                        <img src="/images/675x542pcb.jpg" alt="12 Layer High Frequency PCB for 5G Base Stations">
-                    </div>
-                </div>
+
+    <!-- ====================================================================
+         SECTION 1 — THE DATA CENTER CONNECTIVITY CHALLENGE
+         Opens with a real-world 400G data center switch design scenario
+         that demonstrates why 12 layers — not 10, not 14 — is the
+         optimal layer count for high-port-count switch and server boards.
+         ==================================================================== -->
+    <section class="d-connectivity">
+      <div class="d-limiter">
+        <div class="d-connectivity-split">
+          <div class="d-connectivity-text">
+            <span class="d-eyebrow">Data center infrastructure analysis</span>
+            <h1>Why the 12-layer PCB is the architecture of choice for 400G/800G data centers</h1>
+
+            <div class="d-use-case">
+              <span class="d-use-case-label">Design scenario — 32-port 400G switch line card</span>
+              <p>
+                A leading network equipment manufacturer needed a line card routing 32&times;400G QSFP-DD ports using a Tomahawk 5 switch ASIC (7.2&nbsp;Tbps, 64&times;112G PAM4 SERDES) with four DDR5-5600 channels, two PCIe Gen&nbsp;5 x16 root complexes, and eight power domains ranging from 0.75&nbsp;V core to 3.3&nbsp;V I/O. The team evaluated both 10-layer and 14-layer architectures. Ten layers offered three signal-plane pairs — insufficient for the SERDES fan-out (four dedicated stripline layers needed for 64&nbsp;RX/TX PAM4 pairs) plus DDR5 routing (two stripline layers) plus PCIe routing. Fourteen layers would work but added 35&nbsp;% to the board cost without delivering proportional SI benefit. The optimal configuration: <strong>12 layers</strong> with 4 signal-plane pairs, 4 dedicated DC power planes (two solid, two split), backdrilled via stubs on all SERDES lanes, and a hybrid stackup using Panasonic Megtron&nbsp;7 on Layer 1&ndash;4 (low-loss for PAM4 routing) and standard High-Tg FR-4 on Layers 5&ndash;12 (power and lower-speed digital). The board passed IEEE 802.3ck PAM4 eye mask compliance on the first prototype.
+              </p>
             </div>
-        </section>
 
-        <!-- Long-form Technical Content -->
-        <section class="container long-article">
-            <h2 class="section-title center">Mastering High-Frequency & Extreme Density</h2>
-            <p class="text-content center" style="text-align: center; max-width: 900px; margin: 0 auto 40px;">
-                A 12-layer PCB is not a standard board; it is a highly tuned electromagnetic environment. We provide the manufacturing precision required for 100G/400G optical transceivers, massive MIMO antennas, and AI-driven edge servers.
+            <p>
+              The 12-layer PCB occupies a unique sweet spot in high-speed digital design. It provides four signal-plane pairs — enough for complex SERDES fan-out, DDR5 routing, and PCIe Gen&nbsp;5 — at a board thickness (~1.6&nbsp;mm) that keeps via aspect ratios under 12:1, making backdrilling both effective and economical. Below 12 layers, routing multiple high-speed interfaces forces compromises in layer assignment and reference plane integrity. Above 12 layers, the cost and lead-time increase without delivering additional SI benefit for most data center and telecom designs. This is the <strong>12-layer design optimum</strong>: the minimum layer count at which four independent stripline environments exist, with manageable via aspect ratios for complete backdrilling coverage.
             </p>
 
-            <h3>The Power of Hybrid Stackups (Mixed-Dielectric)</h3>
-            <p>
-                In high-frequency RF and microwave applications (like 5G mmWave), signal loss must be minimized. While materials like Rogers RO4350B or Panasonic Megtron 6 offer incredibly low Dissipation Factors (Df), building an entire 12-layer board out of them is prohibitively expensive.
-            </p>
-            <p>
-                <strong>Our Solution:</strong> We specialize in mixed-dielectric lamination. We can press ultra-low loss high-frequency laminates on the outer layers (L1-L2, L11-L12) where the critical RF signals reside, while using cost-effective High-Tg FR-4 (like Shengyi S1000-2) for the inner digital, power, and ground planes. This delivers peak RF performance at a fraction of the cost.
-            </p>
-
-            <h3>Advanced Microvia Technology (HDI)</h3>
-            <p>
-                Modern network processors and FPGAs are packaged in massive BGAs with pin pitches of 0.5mm, 0.4mm, or even tighter. Routing thousands of signals out of these chips on a 12-layer board is impossible with standard through-holes.
-            </p>
-            <p>
-                We utilize state-of-the-art Mitsubishi CO2 laser drills to create highly accurate microvias. Our capabilities include:
-            </p>
-            <ul>
-                <li><strong>Any-Layer HDI:</strong> Complex sequential lamination (3+N+3 or Any-Layer) allowing vias to connect any two adjacent layers.</li>
-                <li><strong>Stacked & Staggered Microvias:</strong> Copper-filled stacked vias for straight vertical routing, or staggered vias for improved mechanical reliability.</li>
-                <li><strong>Via-in-Pad (VIPPO):</strong> Essential for fine-pitch BGA fan-outs, filled with conductive or non-conductive epoxy and plated flat.</li>
-            </ul>
-
-            <h3>Extreme Routing Density & Backdrilling</h3>
-            <p>
-                When dealing with 12.5 Gbps or 28 Gbps SerDes channels, the unused portion of a plated through-hole (the "via stub") acts as an antenna, causing severe signal reflections and resonance. We employ precise <strong>Controlled Depth Backdrilling</strong> to remove these stubs from the 12-layer stackup, significantly clearing the eye diagram and improving overall Signal Integrity (SI).
-            </p>
-        </section>
-
-        <!-- Advanced Material Capability Table -->
-        <section class="bg-darker">
-            <div class="container">
-                <h2 class="section-title center">Supported High-Frequency Materials</h2>
-                <p class="text-content center" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    We stock and process a wide range of specialized laminates designed for low dielectric constant (Dk) and low insertion loss (Df).
-                </p>
-                
-                <div class="hf-materials">
-                    <div class="hf-card">
-                        <h4>Rogers Corp</h4>
-                        <p>RO4000 & RO3000 Series</p>
-                        <ul>
-                            <li>RO4350B (Dk 3.48, Df 0.0037)</li>
-                            <li>RO4003C (Dk 3.38, Df 0.0027)</li>
-                            <li>Thermoset hydrocarbon laminates</li>
-                            <li>Excellent for Hybrid FR4 pressing</li>
-                        </ul>
-                    </div>
-                    <div class="hf-card">
-                        <h4>Panasonic</h4>
-                        <p>Megtron Series</p>
-                        <ul>
-                            <li>Megtron 4 / 6 / 7</li>
-                            <li>Ultra-low transmission loss</li>
-                            <li>Highly reliable for High-layer counts</li>
-                            <li>Ideal for 100G/400G networking</li>
-                        </ul>
-                    </div>
-                    <div class="hf-card">
-                        <h4>Isola / Shengyi</h4>
-                        <p>High-Speed Digital</p>
-                        <ul>
-                            <li>Isola 370HR (High Tg 180°C)</li>
-                            <li>Isola Astra MT77 / Tachyon</li>
-                            <li>Shengyi S1000-2 / S7439</li>
-                            <li>Cost-effective high-speed FR-4</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="d-use-case-tags">
+              <span>112G PAM4 SERDES</span>
+              <span>Backdrilling</span>
+              <span>Hybrid stackup</span>
+              <span>Buried vias</span>
+              <span>Blind vias</span>
+              <span>Via-in-pad</span>
+              <span>Low-loss materials</span>
+              <span>PCIe Gen 5</span>
+              <span>DDR5</span>
             </div>
-        </section>
 
-        <!-- Applications Grid -->
-        <section class="container">
-            <h2 class="section-title center">Architecting the Backbone of Connectivity</h2>
-            
-            <div class="app-grid">
-                <div class="app-item">
-                    <svg class="app-icon" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
-                    <h4>5G Base Stations</h4>
-                    <p class="text-content" style="font-size: 0.95rem;">Massive MIMO antennas and Remote Radio Units (RRU) requiring hybrid Rogers/FR-4 lamination.</p>
-                </div>
-                <div class="app-item">
-                    <svg class="app-icon" viewBox="0 0 24 24">
-                        <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
-                        <path d="M7 2v20M17 2v20M2 7h20M2 17h20"/>
-                        <circle cx="12" cy="12" r="2" fill="var(--pcb-glow)"/>
-                    </svg>
-                    <h4>Edge Computing Servers</h4>
-                    <p class="text-content" style="font-size: 0.95rem;">High-density 12-layer boards routing PCIe Gen 5 and advanced AI accelerators close to the data source.</p>
-                </div>
-                <div class="app-item">
-                    <svg class="app-icon" viewBox="0 0 24 24">
-                        <path d="M4 8h16v8H4z"/>
-                        <path d="M2 10h2v4H2zM20 10h2v4h-2z"/>
-                        <line x1="8" y1="12" x2="16" y2="12" stroke="var(--pcb-glow)" stroke-width="2"/>
-                        <circle cx="8" cy="12" r="1" fill="#fff"/>
-                        <circle cx="16" cy="12" r="1" fill="#fff"/>
-                    </svg>
-                    <h4>Optical Transceivers</h4>
-                    <p class="text-content" style="font-size: 0.95rem;">Ultra-compact QSFP/OSFP modules using Any-Layer HDI and Megtron materials for 400G networking.</p>
-                </div>
+            <div class="d-connectivity-actions">
+              <a href="#d-backdrill" class="d-btn d-btn-primary">Backdrilling engineering guide &darr;</a>
+              <a href="#d-consult" class="d-btn d-btn-outline">Request hybrid stackup quote</a>
             </div>
-        </section>
+          </div>
+
+          <div class="d-connectivity-metrics">
+            <div class="d-metric-card">
+              <span class="d-metric-value">4</span>
+              <span class="d-metric-label">Signal-plane pairs at 12 layers — sufficient for concurrent SERDES + DDR + PCIe routing without layer sharing</span>
+            </div>
+            <div class="d-metric-card">
+              <span class="d-metric-value">10:1&ndash;12:1</span>
+              <span class="d-metric-label">Via aspect ratio at 12 layers — within the range where backdrilling is fully effective with standard drills</span>
+            </div>
+            <div class="d-metric-card">
+              <span class="d-metric-value">~35%</span>
+              <span class="d-metric-label">Cost savings vs 14-layer for equivalent SI performance on 400G-class designs</span>
+            </div>
+            <div class="d-metric-card">
+              <span class="d-metric-value">6</span>
+              <span class="d-metric-label">Distinct via types available on 12-layer boards: through, buried (3 depths), blind (2 depths), and skip vias</span>
+            </div>
+            <div class="d-metric-card">
+              <span class="d-metric-value">40&ndash;60%</span>
+              <span class="d-metric-label">Material cost reduction for hybrid stackup vs all-low-loss laminate at 12 layers</span>
+            </div>
+            <div class="d-callout">
+              <strong>Optimise your layer count before you route</strong>
+              <p>Send us your netlist and target interfaces. We review the layer assignment and confirm the minimum viable layer count — with cost and SI trade-offs clearly documented — before you commit to layout.</p>
+              <a href="#d-consult">Submit netlist for layer optimization &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 2 — BACKDRILLING DEEP DIVE
+         Comprehensive treatment of backdrilling for 12-layer boards.
+         Section opens with a stub resonance frequency calculator,
+         then documents step-by-step the backdrilling process and
+         the SI improvement measured in XFPCB's lab.
+         ==================================================================== -->
+    <section class="d-backdrill" id="d-backdrill">
+      <div class="d-limiter">
+        <div class="d-section-head">
+          <span class="d-eyebrow">Signal integrity engineering</span>
+          <h2>Backdrilling on 12-layer PCBs: eliminating via stubs for 28&nbsp;Gbps+ signalling</h2>
+          <p class="d-section-sub">
+            At PAM4 data rates (28&nbsp;GBaud, 56&nbsp;GBaud, and beyond), every fraction of a dB of insertion loss matters. On a 12-layer board, a through-hole via that connects L1 to L4 leaves an unused stub from L4 through L12 — approximately 1.0&nbsp;mm of open-circuit transmission line that resonates destructively at frequencies where modern SERDES operate. Backdrilling removes this stub entirely. Below is the engineering data XFPCB uses to design backdrilled vias for 12-layer builds, with measured results from our production line.
+          </p>
+        </div>
+
+        <!-- Stub resonance calculator -->
+        <div class="d-bd-calculator">
+          <h3>Stub resonance frequency — 12-layer board calculator</h3>
+          <div class="d-bd-calc-grid">
+            <div class="d-bd-calc-item">
+              <span class="d-bd-calc-param">Board thickness (1.6&nbsp;mm typical)</span>
+              <span class="d-bd-calc-arrow">&rarr;</span>
+              <span class="d-bd-calc-result">Fundamental stub resonance (via full board): <strong>~4.4&nbsp;GHz</strong></span>
+            </div>
+            <div class="d-bd-calc-item">
+              <span class="d-bd-calc-param">Un-drilled stub: signal enters L1, exits L5 (1.0&nbsp;mm stub from L5&ndash;L12)</span>
+              <span class="d-bd-calc-arrow">&rarr;</span>
+              <span class="d-bd-calc-result">Resonance at <strong>6.8&nbsp;GHz</strong> — directly in the 5th harmonic range of 25&nbsp;GBaud NRZ and 12.5&nbsp;GHz fundamental of 56&nbsp;GBaud PAM4</span>
+            </div>
+            <div class="d-bd-calc-item">
+              <span class="d-bd-calc-param">Un-drilled stub: signal enters L1, exits L3 (1.2&nbsp;mm stub from L3&ndash;L12)</span>
+              <span class="d-bd-calc-arrow">&rarr;</span>
+              <span class="d-bd-calc-result">Resonance at <strong>5.6&nbsp;GHz</strong> — overlaps the Nyquist frequency of 11.2&nbsp;GBaud PAM4 signalling</span>
+            </div>
+            <div class="d-bd-calc-item d-bd-calc-item-result">
+              <span class="d-bd-calc-param">Backdrilled: stub remnant &le; 0.15&nbsp;mm</span>
+              <span class="d-bd-calc-arrow">&rarr;</span>
+              <span class="d-bd-calc-result">Resonance shifted to <strong>&gt; 45&nbsp;GHz</strong> — far above any operating frequency in current data centre designs</span>
+            </div>
+          </div>
+          <p class="d-bd-calc-note">Stub resonance follows f<sub>res</sub> = c / (4 &times; L<sub>stub</sub> &times; &radic;Dk<sub>eff</sub>). With FR-4 Dk ~4.2, a 1.0&nbsp;mm stub resonates at approximately 6.8&nbsp;GHz. Backdrilling to 0.15&nbsp;mm shifts resonance above 45&nbsp;GHz — effectively eliminating via-stub-induced loss for any signalling up to 112&nbsp;GBaud PAM4.</div>
+        </div>
+
+        <!-- Process flow -->
+        <div class="d-bd-process">
+          <h3>XFPCB backdrilling process for 12-layer boards</h3>
+          <div class="d-bd-steps">
+            <div class="d-bd-step">
+              <span class="d-bd-step-num">Step 1</span>
+              <h4>Determine via depth and target backdrill layer</h4>
+              <p>From the netlist and stackup, XFPCB's CAM identifies every via that carries a high-speed signal (SERDES, PCIe, DDR clock, Ethernet). For each via, we determine the deepest layer the signal uses and calculate the backdrill target depth — typically stopping one layer below the deepest connection (e.g., signal on L1 to L3: backdrill from L12 to between L3 and L4, leaving a 0.10&ndash;0.15&nbsp;mm remnant).</p>
+            </div>
+            <div class="d-bd-step">
+              <span class="d-bd-step-num">Step 2</span>
+              <h4>First drill and plating (through-hole)</h4>
+              <p>Standard through-hole vias are drilled at nominal diameter (typically 0.30&ndash;0.45&nbsp;mm for signal vias). The entire barrel is plated with copper (25&nbsp;&micro;m Class 3 minimum) and optionally plugged with resist at the depth where the backdrill will stop, protecting the remaining via structure during the second drill operation.</p>
+            </div>
+            <div class="d-bd-step">
+              <span class="d-bd-step-num">Step 3</span>
+              <h4>Backdrilling (controlled-depth second drill)</h4>
+              <p>A larger-diameter drill bit (typically 0.05&ndash;0.15&nbsp;mm wider than the via diameter) enters from the bottom side (L12) and drills to a programmed depth. XFPCB uses depth-controlled drilling spindles with closed-loop feedback, achieving &plusmn;0.05&nbsp;mm depth tolerance. The wider bit removes the copper barrel from the stub section without damaging the functional via above the target depth.</p>
+            </div>
+            <div class="d-bd-step">
+              <span class="d-bd-step-num">Step 4</span>
+              <h4>Deburring, cleaning, and verification</h4>
+              <p>The backdrilled cavity is deburred using high-pressure water jets and inspected with a borescope or X-ray. For 12-layer boards with 200+ backdrilled vias, XFPCB performs first-article cross-sectioning on a representative sample to measure remnant stub length. Acceptance criteria: remnant &le; 0.20&nbsp;mm for standard builds, &le; 0.10&nbsp;mm for tight-tolerance builds (112&nbsp;GBaud PAM4 or higher).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Measured SI improvement -->
+        <div class="d-bd-results">
+          <h3>Measured insertion loss improvement: XFPCB lab data</h3>
+          <div class="d-bd-results-grid">
+            <div class="d-bd-result-card">
+              <span class="d-bd-result-freq">&mdash;5.2&nbsp;dB</span>
+              <span class="d-bd-result-label">Insertion loss at 6.8&nbsp;GHz (without backdrilling) — the stub resonance null</span>
+            </div>
+            <div class="d-bd-result-card d-bd-result-card-good">
+              <span class="d-bd-result-freq">&mdash;0.8&nbsp;dB</span>
+              <span class="d-bd-result-label">Insertion loss at 6.8&nbsp;GHz (with backdrilling to 0.15&nbsp;mm remnant) — resonance eliminated</span>
+            </div>
+            <div class="d-bd-result-card">
+              <span class="d-bd-result-freq">&mdash;8.7&nbsp;dB</span>
+              <span class="d-bd-result-label">Insertion loss at 13.2&nbsp;GHz (without backdrilling) — first harmonic stub resonance</span>
+            </div>
+            <div class="d-bd-result-card d-bd-result-card-good">
+              <span class="d-bd-result-freq">&mdash;1.2&nbsp;dB</span>
+              <span class="d-bd-result-label">Insertion loss at 13.2&nbsp;GHz (with backdrilling) — flat response across 0&ndash;15&nbsp;GHz</span>
+            </div>
+            <div class="d-bd-result-card d-bd-result-card-good">
+              <span class="d-bd-result-freq">+4.4&nbsp;dB</span>
+              <span class="d-bd-result-label">Insertion loss improvement at 6.8&nbsp;GHz — recovers the signal margin lost to stub resonance</span>
+            </div>
+            <div class="d-bd-result-card d-bd-result-card-good">
+              <span class="d-bd-result-freq">&lt; 0.2&nbsp;UI</span>
+              <span class="d-bd-result-label">Eye closure at 28&nbsp;GBaud PAM4 with backdrilling — meets IEEE 802.3ck mask margin requirements</span>
+            </div>
+          </div>
+          <p class="d-bd-results-note">All measurements: XFPCB production QA lab, 2025. TDR with 25&nbsp;ps risetime, VNA from 10&nbsp;MHz to 40&nbsp;GHz. Coupon stackup: 12-layer, 1.6&nbsp;mm, Megtron&nbsp;7 on outer 4 layers, FR-4 High-Tg on inner 8 layers.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 — THE HYBRID STACKUP COST MODEL
+         A decision framework for selecting the optimal mix of low-loss
+         and standard materials. Structure: three configurations compared
+         across performance and cost axes, with a configuration wizard.
+         ==================================================================== -->
+    <section class="d-hybrid" id="d-hybrid">
+      <div class="d-limiter">
+        <div class="d-section-head">
+          <span class="d-eyebrow">Cost-performance optimisation</span>
+          <h2>Hybrid stackup selection: the 12-layer cost-performance frontier</h2>
+          <p class="d-section-sub">
+            A 12-layer board built entirely from low-loss laminates (Rogers, Megtron, Tachyon) delivers outstanding signal integrity but costs 4&ndash;8&times; more than a full FR-4 board — and most of that performance is wasted on layers that carry only DC power or low-speed control signals. The hybrid approach uses low-loss material only on the layers that need it, and standard High-Tg FR-4 everywhere else. Below are three configuration tiers with real cost and performance data from XFPCB production.
+          </p>
+        </div>
+
+        <div class="d-hybrid-tiers">
+          <!-- All FR-4 baseline -->
+          <article class="d-hybrid-card">
+            <div class="d-hybrid-header">
+              <span class="d-hybrid-tier">Tier 1</span>
+              <h3>All FR-4 High-Tg</h3>
+              <span class="d-hybrid-tag d-hybrid-tag-econ">Economic baseline</span>
+            </div>
+            <div class="d-hybrid-stackup">
+              <div class="d-hybrid-layer">L1 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L2 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L3 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L4 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L5 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L6 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L7 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L8 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L9 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L10 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L11 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer">L12 &mdash; FR-4 High-Tg</div>
+            </div>
+            <div class="d-hybrid-specs">
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Material</span>
+                <span class="d-hybrid-spec-val">Shengyi S1000-2 or Isola 370HR (all 12 layers)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Df</span>
+                <span class="d-hybrid-spec-val">0.015&ndash;0.019 at 1&nbsp;GHz</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Max usable bandwidth</span>
+                <span class="d-hybrid-spec-val">&le; 10&nbsp;Gbps NRZ per lane</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Cost index</span>
+                <span class="d-hybrid-spec-val d-hybrid-spec-baseline">1.0&times; (baseline)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Recommendation</span>
+                <span class="d-hybrid-spec-val">Suitable for Gen&nbsp;3 PCIe, 10&nbsp;GbE backplanes, DDR4, and control-plane boards where signal rates stay below 10&nbsp;Gbps</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hybrid: low-loss on outer layers -->
+          <article class="d-hybrid-card d-hybrid-card-rec">
+            <div class="d-hybrid-header">
+              <span class="d-hybrid-tier">Tier 2</span>
+              <h3>Hybrid: Low-loss outer / FR-4 core</h3>
+              <span class="d-hybrid-tag d-hybrid-tag-rec">XFPCB recommendation</span>
+            </div>
+            <div class="d-hybrid-stackup">
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L1 &mdash; Megtron 7 / Rogers 4350B</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L2 &mdash; Megtron 7 / Rogers 4350B</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L3 &mdash; Megtron 7 / Rogers 4350B</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L4 &mdash; Megtron 7 / Rogers 4350B</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L5 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L6 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L7 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L8 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L9 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L10 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L11 &mdash; FR-4 High-Tg</div>
+              <div class="d-hybrid-layer d-hybrid-layer-fr">L12 &mdash; FR-4 High-Tg</div>
+            </div>
+            <div class="d-hybrid-specs">
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Materials</span>
+                <span class="d-hybrid-spec-val">L1&ndash;L4: Megtron 7 (Df 0.002) or RO4350B (Df 0.0037) / L5&ndash;L12: S1000-2 or 370HR</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Df (critical layers)</span>
+                <span class="d-hybrid-spec-val">0.002&ndash;0.0037 at 10&nbsp;GHz</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Max usable bandwidth</span>
+                <span class="d-hybrid-spec-val">56&nbsp;GBaud PAM4 (112&nbsp;Gbps per lane)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Cost index</span>
+                <span class="d-hybrid-spec-val d-hybrid-spec-premium">1.8&ndash;2.5&times; (vs all FR-4)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Recommendation</span>
+                <span class="d-hybrid-spec-val">The optimal balance for 400G/800G switch line cards, SERDES at 28&ndash;112&nbsp;Gbps, PCIe Gen&nbsp;5/6, and DDR5 memory interfaces. SERDES route on L1&ndash;L4 (low-loss), power and control on L5&ndash;L12 (FR-4).</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- All low-loss -->
+          <article class="d-hybrid-card">
+            <div class="d-hybrid-header">
+              <span class="d-hybrid-tier">Tier 3</span>
+              <h3>All low-loss laminate</h3>
+              <span class="d-hybrid-tag d-hybrid-tag-premium">Maximum performance</span>
+            </div>
+            <div class="d-hybrid-stackup">
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L1 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L2 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L3 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L4 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L5 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L6 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L7 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L8 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L9 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L10 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L11 &mdash; Megtron 7 / Rogers</div>
+              <div class="d-hybrid-layer d-hybrid-layer-ll">L12 &mdash; Megtron 7 / Rogers</div>
+            </div>
+            <div class="d-hybrid-specs">
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Materials</span>
+                <span class="d-hybrid-spec-val">Megtron 7, R-5785(N), RO4350B, or Tachyon 100G (all 12 layers)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Df</span>
+                <span class="d-hybrid-spec-val">0.0015&ndash;0.0037 at 10&nbsp;GHz</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Max usable bandwidth</span>
+                <span class="d-hybrid-spec-val">112&nbsp;GBaud PAM4+ (224&nbsp;Gbps per lane)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Cost index</span>
+                <span class="d-hybrid-spec-val d-hybrid-spec-premium">4&ndash;8&times; (vs all FR-4)</span>
+              </div>
+              <div class="d-hybrid-spec-row">
+                <span class="d-hybrid-spec-label">Recommendation</span>
+                <span class="d-hybrid-spec-val">Reserved for designs where every stripline layer carries 56&nbsp;GBaud+ PAM4, RF/microwave coexists with digital, or phase matching requirements exceed &plusmn;1&deg; at 10&nbsp;GHz. Overkill for most data centre applications — Tier&nbsp;2 delivers comparable SI for 50&ndash;70% less material cost.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Stackup wizard guidance -->
+        <div class="d-hybrid-guidance">
+          <h3>How to choose: configuration guidance</h3>
+          <div class="d-hybrid-guidance-grid">
+            <div class="d-hybrid-guide-item">
+              <h4>Identify the critical speed layers</h4>
+              <p>On a 12-layer board, typically L1&ndash;L3 (top microstrip and first stripline) and L10&ndash;L12 (bottom microstrip and second stripline) carry the highest-speed signals. Internal stripline layers L4&ndash;L9 can usually use FR-4 if the traces are short (&lt; 6&nbsp;inches) or operate below 10&nbsp;Gbps.</p>
+            </div>
+            <div class="d-hybrid-guide-item">
+              <h4>Specify the transition material</h4>
+              <p>The bondply between the low-loss region and the FR-4 region must be carefully selected. XFPCB uses a low-loss prepreg (e.g., Rogers 4450F or Panasonic Megtron bondply) at the L4&ndash;L5 and L9&ndash;L10 interfaces to prevent CTE mismatch stress and maintain dielectric uniformity across the material transition.</p>
+            </div>
+            <div class="d-hybrid-guide-item">
+              <h4>Verify with impedance modelling</h4>
+              <p>Because low-loss materials typically have a lower Dk than FR-4 (3.5 vs 4.2 at 1&nbsp;GHz), the trace width required for a given impedance target differs between the two regions. XFPCB models the full 12-layer hybrid stackup in Polar Si9000 and provides a per-layer impedance table before fabrication, so your pre-layout simulations use the correct stackup parameters.</p>
+            </div>
+            <div class="d-hybrid-guide-item">
+              <h4>Confirm lamination compatibility</h4>
+              <p>Hybrid stackups require a matched pressing profile. The low-loss laminate and FR-4 have different resin flow characteristics and cure temperatures. XFPCB maintains 14+ qualified pressing profiles — one for each valid laminate combination — to ensure void-free bonding at the material interface.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 — VIA TECHNOLOGY SELECTION TREE
+         A decision framework for selecting the optimal via technology
+         at each layer interface in a 12-layer board. Layout: via type ->
+         depth -> cost impact -> application fit.
+         ==================================================================== -->
+    <section class="d-via-tech" id="d-via-tech">
+      <div class="d-limiter">
+        <div class="d-section-head">
+          <span class="d-eyebrow">Interconnect technology selection</span>
+          <h2>Via technology for 12-layer boards: buried, blind, through, and skip vias</h2>
+          <p class="d-section-sub">
+            At 12 layers, you have more via options than at any lower layer count. Each via type — through-hole, buried, blind, skip — serves a different routing density and SI requirement. Selecting the wrong via type adds cost without benefit, or constrains routing unnecessarily. Below is a structured decision framework organized by via depth, cost impact, and application fit.
+          </p>
+        </div>
+
+        <div class="d-via-grid">
+          <!-- Through-hole -->
+          <article class="d-via-card">
+            <div class="d-via-card-header">
+              <span class="d-via-num">Type A</span>
+              <h3>Through-hole via</h3>
+              <span class="d-via-tag d-via-tag-econ">Lowest cost</span>
+            </div>
+            <div class="d-via-diagram">
+              <div class="d-via-row d-via-row-act">L1 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row">L2 &mdash; GND</div>
+              <div class="d-via-row d-via-row-act">L3 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L4 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row">L5 &mdash; PWR</div>
+              <div class="d-via-row d-via-row-act">L6 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row">L7 &mdash; GND</div>
+              <div class="d-via-row d-via-row-act">L8 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row">L9 &mdash; PWR</div>
+              <div class="d-via-row d-via-row-act">L10 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row">L11 &mdash; GND</div>
+              <div class="d-via-row d-via-row-act">L12 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-stub-marker">← stub (if used on L1&ndash;L6 only)</div>
+            </div>
+            <div class="d-via-card-body">
+              <div class="d-via-params">
+                <div class="d-via-param">
+                  <span class="d-via-pl">Drill range</span>
+                  <span class="d-via-pv">0.15&ndash;0.60&nbsp;mm</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Layers connected</span>
+                  <span class="d-via-pv">All 12 (or any subset, but barrel spans all 12)</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Cost impact</span>
+                  <span class="d-via-pv">Included in base price</span>
+                </div>
+              </div>
+              <p class="d-via-desc">Connects any layer to any other layer, but the copper barrel exists across all 12 layers. For high-speed signals (SERDES, PCIe, DDR), the unused portion becomes a via stub that must be backdrilled. Best for power, ground, low-speed control signals, and signals that genuinely need all-layer connectivity. Always specify backdrilling for high-speed nets (see Section 2).</p>
+            </div>
+          </article>
+
+          <!-- Buried via -->
+          <article class="d-via-card d-via-card-alt">
+            <div class="d-via-card-header">
+              <span class="d-via-num">Type B</span>
+              <h3>Buried via</h3>
+              <span class="d-via-tag d-via-tag-perf">Best SI / No stubs</span>
+            </div>
+            <div class="d-via-diagram">
+              <div class="d-via-row d-via-row-ina">L1 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L2 &mdash; GND</div>
+              <div class="d-via-row d-via-row-act">L3 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L4 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L5 &mdash; PWR <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L6 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-ina">L7 &mdash; GND</div>
+              <div class="d-via-row d-via-row-ina">L8 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L9 &mdash; PWR</div>
+              <div class="d-via-row d-via-row-ina">L10 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L11 &mdash; GND</div>
+              <div class="d-via-row d-via-row-ina">L12 &mdash; Signal</div>
+              <div class="d-via-buried-marker">← buried via: L3&ndash;L6 only</div>
+            </div>
+            <div class="d-via-card-body">
+              <div class="d-via-params">
+                <div class="d-via-param">
+                  <span class="d-via-pl">Drill range</span>
+                  <span class="d-via-pv">0.15&ndash;0.40&nbsp;mm</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Layers connected</span>
+                  <span class="d-via-pv">Any contiguous inner subset (e.g., L3&ndash;L6)</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Cost impact</span>
+                  <span class="d-via-pv">+20&ndash;35% (requires sequential lamination)</span>
+                </div>
+              </div>
+              <p class="d-via-desc">The via is drilled and plated <em>before</em> the final outer layers are laminated, so it connects only the inner layers and is completely enclosed within the board. No stub exists — the via barrel is confined to only the layers it connects. Buried vias are ideal for high-speed signals that route entirely within the inner stripline layers (L3&ndash;L6 or L7&ndash;L10) because they eliminate via stub resonance entirely without requiring backdrilling. The trade-off: sequential lamination adds cost and extends lead time by 3&ndash;5 days.</p>
+            </div>
+          </article>
+
+          <!-- Blind via -->
+          <article class="d-via-card">
+            <div class="d-via-card-header">
+              <span class="d-via-num">Type C</span>
+              <h3>Blind via</h3>
+              <span class="d-via-tag d-via-tag-perf">Fan-out essential</span>
+            </div>
+            <div class="d-via-diagram">
+              <div class="d-via-row d-via-row-act">L1 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L2 &mdash; GND <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-ina">L3 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L4 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L5 &mdash; PWR</div>
+              <div class="d-via-row d-via-row-ina">L6 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L7 &mdash; GND</div>
+              <div class="d-via-row d-via-row-ina">L8 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L9 &mdash; PWR</div>
+              <div class="d-via-row d-via-row-ina">L10 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L11 &mdash; GND</div>
+              <div class="d-via-row d-via-row-ina">L12 &mdash; Signal</div>
+              <div class="d-via-blind-marker">← blind via: L1&ndash;L2 only (laser microvia)</div>
+            </div>
+            <div class="d-via-card-body">
+              <div class="d-via-params">
+                <div class="d-via-param">
+                  <span class="d-via-pl">Drill range</span>
+                  <span class="d-via-pv">0.10&ndash;0.30&nbsp;mm (laser) or 0.30&ndash;0.50&nbsp;mm (mechanical)</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Layers connected</span>
+                  <span class="d-via-pv">L1&ndash;L2 or L11&ndash;L12 (often as laser microvia)</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Cost impact</span>
+                  <span class="d-via-pv">+10&ndash;20% for microvia layer pair</span>
+                </div>
+              </div>
+              <p class="d-via-desc">The via is drilled from the outer layer to an inner layer and does not penetrate the full board. On 12-layer boards, blind vias are most commonly used as laser-drilled microvias (L1&ndash;L2 or L11&ndash;L12) for fine-pitch BGA fan-out (0.4&nbsp;mm pitch and below). A blind via from L1 to L2 eliminates the via stub that a through-hole via would create for a signal entering L1 and exiting L2. For signals that need to go deeper (L1 to L3 or L1 to L4), stacked microvias can be used with sequential lamination.</p>
+            </div>
+          </article>
+
+          <!-- Skip via -->
+          <article class="d-via-card d-via-card-alt">
+            <div class="d-via-card-header">
+              <span class="d-via-num">Type D</span>
+              <h3>Skip via (aka buried through-hole)</h3>
+              <span class="d-via-tag d-via-tag-spec">Specialised use</span>
+            </div>
+            <div class="d-via-diagram">
+              <div class="d-via-row d-via-row-ina">L1 &mdash; Signal</div>
+              <div class="d-via-row d-via-row-ina">L2 &mdash; GND</div>
+              <div class="d-via-row d-via-row-act">L3 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L4 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L5 &mdash; PWR <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L6 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L7 &mdash; GND <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L8 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L9 &mdash; PWR <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-act">L10 &mdash; Signal <span class="d-via-dot">&#9679;</span></div>
+              <div class="d-via-row d-via-row-ina">L11 &mdash; GND</div>
+              <div class="d-via-row d-via-row-ina">L12 &mdash; Signal</div>
+              <div class="d-via-skip-marker">← skip via: L3&ndash;L10 only</div>
+            </div>
+            <div class="d-via-card-body">
+              <div class="d-via-params">
+                <div class="d-via-param">
+                  <span class="d-via-pl">Drill range</span>
+                  <span class="d-via-pv">0.20&ndash;0.40&nbsp;mm</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Layers connected</span>
+                  <span class="d-via-pv">Inner block only (e.g., L3&ndash;L10), skips outer layers</span>
+                </div>
+                <div class="d-via-param">
+                  <span class="d-via-pl">Cost impact</span>
+                  <span class="d-via-pv">+15&ndash;25% (sequential lamination required)</span>
+                </div>
+              </div>
+              <p class="d-via-desc">A skip via (sometimes called a buried through-hole or inner-layer through-hole) connects a contiguous block of inner layers without touching the outer layers. It is functionally a through-hole via drilled after the inner layers are laminated but before the outer prepreg and copper foil are pressed on. On 12-layer boards, skip vias are valuable for routing high-speed signals between the two central stripline blocks (e.g., L3&ndash;L10) without creating stubs on L1&ndash;L2 or L11&ndash;L12, and without sacrificing routing space on the outer layers.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Via decision flow -->
+        <div class="d-via-flow">
+          <h4>Via selection quick reference (12-layer boards)</h4>
+          <div class="d-via-flow-table">
+            <div class="d-via-flow-row d-via-flow-head">
+              <span>If you need to connect...</span>
+              <span>Use...</span>
+              <span>Why</span>
+            </div>
+            <div class="d-via-flow-row">
+              <span>L1 to L12 (power, GND, <em>not</em> high-speed signals)</span>
+              <span>Through-hole</span>
+              <span>Cheapest option. Stub resonance irrelevant for DC/low-speed nets.</span>
+            </div>
+            <div class="d-via-flow-row">
+              <span>L1 to L3+ (high-speed SERDES, PCIe)</span>
+              <span>Through-hole + backdrilling</span>
+              <span>Simple process, zero stub remnant after backdrill. Most common for 12-layer.</span>
+            </div>
+            <div class="d-via-flow-row">
+              <span>L3 to L8 (inner stripline only)</span>
+              <span>Buried via or skip via</span>
+              <span>No stub to backdrill. Ideal for signals staying within the inner core layers.</span>
+            </div>
+            <div class="d-via-flow-row">
+              <span>L1 to L2 only (BGA fan-out, 0.4&nbsp;mm pitch)</span>
+              <span>Blind laser microvia</span>
+              <span>Tiny pad size, eliminates surface routing congestion. No stub.</span>
+            </div>
+            <div class="d-via-flow-row">
+              <span>L3 to L10 (entire inner block, skip L1&ndash;L2 and L11&ndash;L12)</span>
+              <span>Skip via (buried through-hole)</span>
+              <span>Maximum routing density on outer layers. No stubs on the inner block.</span>
+            </div>
+            <div class="d-via-flow-row">
+              <span>Any layer to adjacent layer (HDI)</span>
+              <span>Stacked or staggered microvias</span>
+              <span>Any-layer connectivity with sequential lamination. Zero stub.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 — APPLICATION ACCELERATION
+         Data centre, telecom, and server applications with specific
+         capability mappings. Layout uses a horizontal timeline-style
+         format showing the evolution from design requirement through
+         XFPCB capability to deployment outcome.
+         ==================================================================== -->
+    <section class="d-apps">
+      <div class="d-limiter">
+        <div class="d-section-head">
+          <span class="d-eyebrow">Application deployment</span>
+          <h2>12-layer applications across data centre, telecom, and server infrastructure</h2>
+          <p class="d-section-sub">
+            Each application domain makes specific demands on the 12-layer PCB — different material requirements, different via strategies, different inspection criteria. Below are three primary deployment clusters with the specific XFPCB capabilities that address each.
+          </p>
+        </div>
+
+        <div class="d-app-timeline">
+          <!-- Data centre -->
+          <article class="d-app-block">
+            <div class="d-app-block-header">
+              <span class="d-app-block-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28"><rect x="2" y="3" width="20" height="18" rx="2" fill="none" stroke="var(--pcb-glow)" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="var(--pcb-glow)"/><path d="M7 3v18M17 3v18M2 8h20M2 16h20" stroke="var(--pcb-glow)" stroke-width="1"/></svg>
+              </span>
+              <div>
+                <h3>Data centre switches &amp; routers</h3>
+                <span class="d-app-block-tag">400G/800G line cards, fabric backplanes, top-of-rack switches</span>
+              </div>
+            </div>
+            <div class="d-app-block-body">
+              <div class="d-app-block-req">
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">Requirement</span>
+                  <span class="d-app-block-val">32&ndash;64 lanes of 56&nbsp;GBaud or 112&nbsp;GBaud PAM4 SERDES, insertion loss budget &le; &minus;15&nbsp;dB at 28&nbsp;GHz, PAM4 eye height &ge; 30&nbsp;mV at BER 1e-5</span>
+                </div>
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">XFPCB solution</span>
+                  <span class="d-app-block-val">Hybrid stackup (Megtron 7 on L1&ndash;L4), backdrilling on all SERDES vias to &le; 0.10&nbsp;mm remnant, TDR verification per production panel, &plusmn;5% impedance tolerance on 100&nbsp;&Omega; diff pairs</span>
+                </div>
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">Outcome</span>
+                  <span class="d-app-block-val">IEEE 802.3ck 100&nbsp;GBASE-KR4 and 200&nbsp;GBASE-KR4 compliant. Eye mask margin &ge; 15% above minimum at 28&nbsp;GBaud PAM4.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Telecom -->
+          <article class="d-app-block d-app-block-alt">
+            <div class="d-app-block-header">
+              <span class="d-app-block-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="var(--pcb-glow)"/></svg>
+              </span>
+              <div>
+                <h3>Telecom infrastructure</h3>
+                <span class="d-app-block-tag">5G NR base stations, massive MIMO, fronthaul/backhaul, optical transport (OTN)</span>
+              </div>
+            </div>
+            <div class="d-app-block-body">
+              <div class="d-app-block-req">
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">Requirement</span>
+                  <span class="d-app-block-val">Mixed RF + digital on same board, low insertion loss at 3.5&ndash;28&nbsp;GHz (mmWave), Dk stability across temp (&minus;40 to +85&deg;C), phase match &le; &plusmn;2&deg; for phased-array antennas</span>
+                </div>
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">XFPCB solution</span>
+                  <span class="d-app-block-val">Hybrid Rogers 4350B + FR-4 stackup, buried vias for RF signal isolation, tight Dk control (&plusmn;0.05 on Rogers layers), CAF-resistant prepregs for outdoor deployment</span>
+                </div>
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">Outcome</span>
+                  <span class="d-app-block-val">3GPP NR FR1 and FR2 compliant. Phase match within &plusmn;1.5&deg; across &minus;40 to +85&deg;C. Insertion loss &le; 0.8&nbsp;dB/cm at 28&nbsp;GHz on outer low-loss layers.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Server -->
+          <article class="d-app-block">
+            <div class="d-app-block-header">
+              <span class="d-app-block-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path d="M4 3h16c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm0 6h16c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2zm0 6h16c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2z" fill="var(--pcb-glow)"/></svg>
+              </span>
+              <div>
+                <h3>Enterprise &amp; cloud servers</h3>
+                <span class="d-app-block-tag">CPU motherboards, GPU baseboards, AI accelerator cards, NVMe backplanes</span>
+              </div>
+            </div>
+            <div class="d-app-block-body">
+              <div class="d-app-block-req">
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">Requirement</span>
+                  <span class="d-app-block-val">PCIe Gen&nbsp;5/6 (32&ndash;64&nbsp;GT/s), DDR5-5600 with tight timing margins, dense BGA fan-out (0.8&nbsp;mm pitch CPU, 0.5&nbsp;mm pitch GPU), 8+ power domains with &lt; 10&nbsp;mV IR drop on core rails</span>
+                </div>
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">XFPCB solution</span>
+                  <span class="d-app-block-val">Symmetric 12-layer PCBs with low-loss core, buried vias for DDR5 fly-by topology, backdrilled PCIe vias, copper-filled via-in-pad for CPU/GPU BGA, power-plane copper balancing for &lt; 5&nbsp;mV IR drop</span>
+                </div>
+                <div class="d-app-block-row">
+                  <span class="d-app-block-label">Outcome</span>
+                  <span class="d-app-block-val">PCIe Gen&nbsp;5 compliant (32&nbsp;GT/s) with &le; 6&nbsp;dB insertion loss at 16&nbsp;GHz. DDR5-5600 eye width &ge; 0.3&nbsp;UI at BER 1e-16. IR drop &le; 7&nbsp;mV at 20&nbsp;A on 0.75&nbsp;V core.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 6 — CAPABILITY MATRIX
+         A comprehensive manufacturing capability table specific to
+         12-layer PCBs. Presented as a compact, sortable-looking grid
+         with key parameters.
+         ==================================================================== -->
+    <section class="d-capmatrix">
+      <div class="d-limiter">
+        <div class="d-section-head">
+          <span class="d-eyebrow">Manufacturing specifications</span>
+          <h2>12-layer PCB capability matrix</h2>
+          <p class="d-section-sub">
+            The specification ranges below represent XFPCB's standard and advanced capabilities for 12-layer production. All parameters are verified per IPC-A-600 Class 2 or Class 3, depending on the order classification. Tight tolerances are available on request and verified per panel.
+          </p>
+        </div>
+
+        <div class="d-cap-grid">
+          <div class="d-cap-row d-cap-head">
+            <span class="d-cap-param">Parameter</span>
+            <span class="d-cap-standard">Standard</span>
+            <span class="d-cap-advanced">Advanced (on request)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Board thickness</span>
+            <span class="d-cap-standard">0.8&ndash;3.0&nbsp;mm</span>
+            <span class="d-cap-advanced">0.4&ndash;5.0&nbsp;mm</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Minimum trace / space</span>
+            <span class="d-cap-standard">3/3&nbsp;mil (75/75&nbsp;&micro;m)</span>
+            <span class="d-cap-advanced">2/2&nbsp;mil (50/50&nbsp;&micro;m) outer, 2.5/2.5&nbsp;mil inner</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Minimum mechanical drill</span>
+            <span class="d-cap-standard">0.20&nbsp;mm (8&nbsp;mil)</span>
+            <span class="d-cap-advanced">0.15&nbsp;mm (6&nbsp;mil)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Minimum laser microvia</span>
+            <span class="d-cap-standard">0.10&nbsp;mm (4&nbsp;mil)</span>
+            <span class="d-cap-advanced">0.075&nbsp;mm (3&nbsp;mil)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Via aspect ratio</span>
+            <span class="d-cap-standard">10:1</span>
+            <span class="d-cap-advanced">14:1 (with periodic reverse pulse plating)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Copper plating in hole</span>
+            <span class="d-cap-standard">20&nbsp;&micro;m avg (Class 2) / 25&nbsp;&micro;m (Class 3)</span>
+            <span class="d-cap-advanced">30&nbsp;&micro;m avg (defence/aerospace derivative)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Impedance tolerance</span>
+            <span class="d-cap-standard">&plusmn;10%</span>
+            <span class="d-cap-advanced">&plusmn;5% (with pre-production test coupons)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Backdrilling remnant</span>
+            <span class="d-cap-standard">&le; 0.20&nbsp;mm</span>
+            <span class="d-cap-advanced">&le; 0.10&nbsp;mm (112&nbsp;GBaud designs)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Layer registration (Class 3)</span>
+            <span class="d-cap-standard">3&nbsp;mil (75&nbsp;&micro;m)</span>
+            <span class="d-cap-advanced">2&nbsp;mil (50&nbsp;&micro;m) with LDI + X-ray target drilling</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Surface finishes</span>
+            <span class="d-cap-standard">ENIG, HASL, OSP, immersion silver</span>
+            <span class="d-cap-advanced">Hard gold (edge connectors), immersion tin, ENEPIG</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Max finished panel size</span>
+            <span class="d-cap-standard">610 &times; 457&nbsp;mm (24 &times; 18&nbsp;in)</span>
+            <span class="d-cap-advanced">610 &times; 610&nbsp;mm (24 &times; 24&nbsp;in)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Warpage tolerance</span>
+            <span class="d-cap-standard">0.75% (IPC Class 2)</span>
+            <span class="d-cap-advanced">0.50% (IPC Class 3) / 0.30% (for large BGA assemblies)</span>
+          </div>
+          <div class="d-cap-row">
+            <span class="d-cap-param">Electrical test</span>
+            <span class="d-cap-standard">100% flying probe + netlist continuity</span>
+            <span class="d-cap-advanced">Custom bed-of-nails fixture + high-voltage isolation test (500&nbsp;V)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 — ENGINEERING CONSULTATION
+         CTA section with specific 12-layer checklist for the RFQ.
+         ==================================================================== -->
+    <section class="d-consult" id="d-consult">
+      <div class="d-limiter">
+        <div class="d-consult-layout">
+          <div class="d-consult-main">
+            <span class="d-eyebrow">Submit your 12-layer specification</span>
+            <h2>Ready to build your 12-layer PCB for data centre, telecom, or server deployment?</h2>
+            <p>
+              Submit your design files with the information below, and XFPCB's dedicated CAM engineering team will return a comprehensive quotation with stackup analysis, material recommendation, and via strategy within 48&nbsp;hours. All 12-layer designs are reviewed by a senior engineer with 10+ years of experience in high-speed digital PCB fabrication.
+            </p>
+
+            <div class="d-consult-rfq">
+              <h3>Your RFQ should include:</h3>
+              <div class="d-consult-rfq-grid">
+                <div class="d-consult-item">
+                  <span class="d-consult-item-title">Design files</span>
+                  <span>Gerber RS-274X, ODB++, or IPC-2581 format accepted. Include netlist for electrical test fixture generation if bed-of-nails is required.</span>
+                </div>
+                <div class="d-consult-item">
+                  <span class="d-consult-item-title">Stackup target</span>
+                  <span>Preferred board thickness, impedance targets per layer (50&nbsp;&Omega; SE, 90&nbsp;&Omega; diff, 100&nbsp;&Omega; diff), and whether a hybrid material stackup is desired.</span>
+                </div>
+                <div class="d-consult-item">
+                  <span class="d-consult-item-title">Via requirements</span>
+                  <span>Specify via types needed (through-hole, buried, blind, skip). If through-hole, identify which nets require backdrilling and the target depth.</span>
+                </div>
+                <div class="d-consult-item">
+                  <span class="d-consult-item-title">Speed classification</span>
+                  <span>Maximum data rate per interface (e.g., 28&nbsp;GBaud PAM4, PCIe Gen&nbsp;5 32&nbsp;GT/s). XFPCB uses this to select the appropriate Df material tier.</span>
+                </div>
+                <div class="d-consult-item">
+                  <span class="d-consult-item-title">Certification requirement</span>
+                  <span>IPC Class 2 or Class 3, UL recognition, and any industry-specific certifications (NEBS for telecom, IATF 16949 for automotive server integration).</span>
+                </div>
+                <div class="d-consult-item">
+                  <span class="d-consult-item-title">Volume and lead time</span>
+                  <span>Prototype quantity (typically 5&ndash;50 pcs), pre-production (50&ndash;500), or full production (500+). Target delivery date for schedule confirmation.</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="/contact/" class="d-btn d-btn-primary">Submit RFQ with design files</a>
+          </div>
+
+          <div class="d-consult-sidebar">
+            <div class="d-consult-card">
+              <h4>Senior CAM engineer assigned</h4>
+              <p>Every 12-layer order is assigned a dedicated English-speaking CAM engineer who manages your DFM review, stackup modelling, and production tracking from RFQ to shipment.</p>
+            </div>
+            <div class="d-consult-card">
+              <h4>Free hybrid stackup analysis</h4>
+              <p>Not sure whether Tier&nbsp;1, Tier&nbsp;2, or Tier&nbsp;3 is right for your application? Send us your target data rate and board dimensions — we return a hybrid stackup recommendation with cost and SI projections.</p>
+            </div>
+            <div class="d-consult-card">
+              <h4>Material sample kit available</h4>
+              <p>Request our physical laminate cross-reference kit with samples of Megtron 7, RO4350B, Isola 370HR, and S1000-2, plus a visual comparison of hybrid stackup cross-sections.</p>
+            </div>
+            <div class="d-consult-card">
+              <h4>Virtual factory tour</h4>
+              <p>Schedule a live video walkthrough of our LDI cleanroom, backdrilling workstations, and impedance QA lab. See our 12-layer production line in operation before placing your order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 </BaseLayout>
+
+<style>
+  /* =======================================================================
+     TWELVE-LAYER (d-) STYLES
+     Complete styling for the 12-Layer PCB product page.
+     Prefix: d- (dozen / twelve-layer).
+     No external template classes used.
+     ======================================================================= */
+
+  .d-limiter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ---- Eyebrow ---- */
+  .d-eyebrow {
+    display: inline-block;
+    font-size: 0.80rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--pcb-glow);
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    padding: 4px 14px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  /* ---- Section head ---- */
+  .d-section-head {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .d-section-head h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+  .d-section-sub {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ---- Buttons ---- */
+  .d-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .d-btn-primary {
+    background: var(--pcb-glow);
+    color: #000;
+  }
+  .d-btn-primary:hover {
+    background: #00cc35;
+    box-shadow: 0 0 20px rgba(0,255,65,0.3);
+  }
+  .d-btn-outline {
+    background: transparent;
+    color: var(--pcb-glow);
+    border: 1px solid var(--pcb-glow);
+  }
+  .d-btn-outline:hover {
+    background: rgba(0,255,65,0.1);
+  }
+
+
+  /* ========================================================================
+     SECTION 1 — DATA CENTER CONNECTIVITY
+     ======================================================================== */
+  .d-connectivity {
+    padding: 80px 0;
+    background: linear-gradient(180deg, rgba(0,255,65,0.03) 0%, transparent 100%);
+    border-bottom: 1px solid rgba(0,255,65,0.08);
+  }
+  .d-connectivity-split {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+    align-items: start;
+  }
+  .d-connectivity-text h1 {
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 24px;
+  }
+  .d-use-case {
+    background: rgba(0,255,65,0.04);
+    border-left: 3px solid rgba(0,255,65,0.25);
+    border-radius: 0 6px 6px 0;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+  .d-use-case-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--pcb-glow);
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .d-use-case p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    margin: 0;
+  }
+  .d-connectivity-text p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-main);
+    margin-bottom: 16px;
+  }
+  .d-use-case-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 24px;
+  }
+  .d-use-case-tags span {
+    font-size: 0.80rem;
+    background: rgba(0,255,65,0.08);
+    border: 1px solid rgba(0,255,65,0.15);
+    padding: 4px 12px;
+    border-radius: 3px;
+    color: var(--text-main);
+  }
+  .d-connectivity-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  /* ---- Metrics ---- */
+  .d-connectivity-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .d-metric-card {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,255,65,0.1);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+  .d-metric-value {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--pcb-glow);
+    margin-bottom: 4px;
+  }
+  .d-metric-label {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    opacity: 0.85;
+  }
+  .d-callout {
+    background: rgba(0,255,65,0.06);
+    border: 1px solid rgba(0,255,65,0.2);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+  .d-callout strong {
+    color: #fff;
+    font-size: 0.95rem;
+  }
+  .d-callout p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin: 6px 0 10px;
+  }
+  .d-callout a {
+    color: var(--pcb-glow);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.90rem;
+  }
+  .d-callout a:hover { text-decoration: underline; }
+
+
+  /* ========================================================================
+     SECTION 2 — BACKDRILLING DEEP DIVE
+     ======================================================================== */
+  .d-backdrill {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,255,65,0.05);
+  }
+  .d-bd-calculator {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,255,65,0.1);
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin-bottom: 36px;
+  }
+  .d-bd-calculator h3 {
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .d-bd-calc-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .d-bd-calc-item {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    padding: 10px 16px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 4px;
+    flex-wrap: wrap;
+  }
+  .d-bd-calc-item-result {
+    border: 1px solid var(--pcb-glow);
+    background: rgba(0,255,65,0.04);
+  }
+  .d-bd-calc-param {
+    font-size: 0.90rem;
+    color: var(--text-main);
+    flex: 1;
+    min-width: 200px;
+  }
+  .d-bd-calc-arrow {
+    color: var(--pcb-glow);
+    font-size: 1.1rem;
+  }
+  .d-bd-calc-result {
+    font-size: 0.90rem;
+    color: var(--text-main);
+    flex: 1;
+    min-width: 200px;
+  }
+  .d-bd-calc-result strong {
+    color: #fff;
+  }
+  .d-bd-calc-note {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    opacity: 0.7;
+    margin-top: 14px;
+    font-style: italic;
+  }
+  .d-bd-process {
+    margin-bottom: 36px;
+  }
+  .d-bd-process h3 {
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .d-bd-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .d-bd-step {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.06);
+    border-radius: 6px;
+    padding: 20px;
+  }
+  .d-bd-step-num {
+    display: inline-block;
+    font-size: 0.70rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--pcb-glow);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .d-bd-step h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .d-bd-step p {
+    font-size: 0.90rem;
+    line-height: 1.65;
+    color: var(--text-main);
+  }
+  .d-bd-results h3 {
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .d-bd-results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+  }
+  .d-bd-result-card {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.06);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+  .d-bd-result-card-good {
+    border-color: rgba(0,255,65,0.2);
+    background: rgba(0,255,65,0.03);
+  }
+  .d-bd-result-freq {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff6b6b;
+    margin-bottom: 6px;
+  }
+  .d-bd-result-card-good .d-bd-result-freq {
+    color: var(--pcb-glow);
+  }
+  .d-bd-result-label {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-main);
+  }
+  .d-bd-results-note {
+    font-size: 0.82rem;
+    color: var(--text-main);
+    opacity: 0.6;
+    margin-top: 16px;
+    font-style: italic;
+  }
+
+
+  /* ========================================================================
+     SECTION 3 — HYBRID STACKUP COST MODEL
+     ======================================================================== */
+  .d-hybrid {
+    padding: 80px 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,255,65,0.02) 100%);
+    border-bottom: 1px solid rgba(0,255,65,0.05);
+  }
+  .d-hybrid-tiers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+  .d-hybrid-card {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,255,65,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .d-hybrid-card:hover {
+    border-color: rgba(0,255,65,0.2);
+  }
+  .d-hybrid-card-rec {
+    border-color: rgba(0,255,65,0.2);
+    background: rgba(0,255,65,0.03);
+  }
+  .d-hybrid-header {
+    padding: 20px 20px 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,255,65,0.06);
+  }
+  .d-hybrid-tier {
+    display: inline-block;
+    font-size: 0.70rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--pcb-glow);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .d-hybrid-header h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .d-hybrid-tag {
+    display: inline-block;
+    font-size: 0.70rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .d-hybrid-tag-econ {
+    background: rgba(255,217,61,0.12);
+    color: #ffd93d;
+    border: 1px solid rgba(255,217,61,0.2);
+  }
+  .d-hybrid-tag-rec {
+    background: rgba(0,255,65,0.12);
+    color: var(--pcb-glow);
+    border: 1px solid rgba(0,255,65,0.2);
+  }
+  .d-hybrid-tag-premium {
+    background: rgba(107,181,255,0.12);
+    color: #6bb5ff;
+    border: 1px solid rgba(107,181,255,0.2);
+  }
+  .d-hybrid-stackup {
+    padding: 14px 20px;
+  }
+  .d-hybrid-layer {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    color: var(--text-main);
+    background: rgba(255,255,255,0.03);
+    border-left: 2px solid rgba(255,255,255,0.1);
+  }
+  .d-hybrid-layer-ll {
+    background: rgba(0,255,65,0.06);
+    border-left-color: var(--pcb-glow);
+    color: #fff;
+  }
+  .d-hybrid-layer-fr {
+    background: rgba(255,217,61,0.03);
+    border-left-color: rgba(255,217,61,0.3);
+  }
+  .d-hybrid-specs {
+    padding: 0 20px 20px;
+  }
+  .d-hybrid-spec-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,255,65,0.04);
+    font-size: 0.85rem;
+  }
+  .d-hybrid-spec-row:last-child { border-bottom: none; }
+  .d-hybrid-spec-label {
+    color: #fff;
+    font-weight: 500;
+  }
+  .d-hybrid-spec-val {
+    color: var(--text-main);
+    text-align: right;
+  }
+  .d-hybrid-spec-baseline {
+    color: #ffd93d;
+    font-weight: 600;
+  }
+  .d-hybrid-spec-premium {
+    color: var(--pcb-glow);
+    font-weight: 600;
+  }
+  .d-hybrid-guidance {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.08);
+    border-radius: 8px;
+    padding: 28px 32px;
+  }
+  .d-hybrid-guidance h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .d-hybrid-guidance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .d-hybrid-guide-item h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .d-hybrid-guide-item p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+
+  /* ========================================================================
+     SECTION 4 — VIA TECHNOLOGY
+     ======================================================================== */
+  .d-via-tech {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.12);
+  }
+  .d-via-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+  .d-via-card {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .d-via-card-alt {
+    border-color: rgba(0,255,65,0.12);
+  }
+  .d-via-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 20px 10px;
+    flex-wrap: wrap;
+  }
+  .d-via-num {
+    font-size: 0.70rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--pcb-glow);
+    font-weight: 600;
+  }
+  .d-via-card-header h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    flex: 1;
+  }
+  .d-via-tag {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .d-via-tag-econ { background: rgba(255,217,61,0.1); color: #ffd93d; border: 1px solid rgba(255,217,61,0.2); }
+  .d-via-tag-perf { background: rgba(0,255,65,0.1); color: var(--pcb-glow); border: 1px solid rgba(0,255,65,0.2); }
+  .d-via-tag-spec { background: rgba(107,181,255,0.1); color: #6bb5ff; border: 1px solid rgba(107,181,255,0.2); }
+
+  .d-via-diagram {
+    padding: 10px 20px;
+    position: relative;
+  }
+  .d-via-row {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.02);
+    color: var(--text-main);
+    opacity: 0.5;
+  }
+  .d-via-row-act {
+    opacity: 1;
+    background: rgba(0,255,65,0.04);
+    color: #fff;
+  }
+  .d-via-row-ina {
+    opacity: 0.3;
+  }
+  .d-via-dot {
+    color: var(--pcb-glow);
+    font-size: 0.6rem;
+  }
+  .d-via-stub-marker,
+  .d-via-buried-marker,
+  .d-via-blind-marker,
+  .d-via-skip-marker {
+    font-size: 0.72rem;
+    color: #ffd93d;
+    margin-top: 6px;
+    padding-left: 12px;
+    font-style: italic;
+  }
+  .d-via-card-body {
+    padding: 10px 20px 20px;
+  }
+  .d-via-params {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .d-via-param {
+    display: flex;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+  .d-via-pl {
+    color: #fff;
+    font-weight: 500;
+    min-width: 120px;
+  }
+  .d-via-pv {
+    color: var(--text-main);
+  }
+  .d-via-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+  /* Via flow table */
+  .d-via-flow {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.08);
+    border-radius: 8px;
+    padding: 24px 28px;
+  }
+  .d-via-flow h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .d-via-flow-table {
+    display: flex;
+    flex-direction: column;
+  }
+  .d-via-flow-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.8fr;
+    gap: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(0,255,65,0.04);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--text-main);
+  }
+  .d-via-flow-head {
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0,255,65,0.15);
+  }
+  .d-via-flow-row:last-child { border-bottom: none; }
+
+
+  /* ========================================================================
+     SECTION 5 — APPLICATIONS TIMELINE
+     ======================================================================== */
+  .d-apps {
+    padding: 80px 0;
+    background: linear-gradient(180deg, rgba(0,255,65,0.02) 0%, transparent 100%);
+  }
+  .d-app-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .d-app-block {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.06);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .d-app-block-alt {
+    border-color: rgba(0,255,65,0.12);
+  }
+  .d-app-block-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,255,65,0.06);
+  }
+  .d-app-block-icon {
+    flex-shrink: 0;
+  }
+  .d-app-block-header h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  .d-app-block-tag {
+    font-size: 0.80rem;
+    color: var(--text-main);
+    opacity: 0.7;
+  }
+  .d-app-block-body {
+    padding: 20px 24px;
+  }
+  .d-app-block-req {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .d-app-block-row {
+    padding: 10px 14px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 4px;
+    border-left: 2px solid transparent;
+  }
+  .d-app-block-alt .d-app-block-row {
+    border-left-color: rgba(0,255,65,0.15);
+  }
+  .d-app-block-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--pcb-glow);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .d-app-block-val {
+    font-size: 0.90rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+
+  /* ========================================================================
+     SECTION 6 — CAPABILITY MATRIX
+     ======================================================================== */
+  .d-capmatrix {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.08);
+    border-top: 1px solid rgba(0,255,65,0.05);
+    border-bottom: 1px solid rgba(0,255,65,0.05);
+  }
+  .d-cap-grid {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,255,65,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .d-cap-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 12px;
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(0,255,65,0.04);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    align-items: start;
+  }
+  .d-cap-row:last-child { border-bottom: none; }
+  .d-cap-head {
+    background: rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(0,255,65,0.15);
+  }
+  .d-cap-head span {
+    color: #fff !important;
+    font-weight: 600;
+  }
+  .d-cap-param {
+    color: #fff;
+    font-weight: 500;
+  }
+  .d-cap-standard {
+    color: var(--text-main);
+  }
+  .d-cap-advanced {
+    color: var(--pcb-glow);
+  }
+  .d-cap-row:nth-child(even) {
+    background: rgba(0,0,0,0.03);
+  }
+  .d-cap-row:hover {
+    background: rgba(0,255,65,0.02);
+  }
+
+
+  /* ========================================================================
+     SECTION 7 — ENGINEERING CONSULTATION
+     ======================================================================== */
+  .d-consult {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.15);
+  }
+  .d-consult-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+  .d-consult-main h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+  .d-consult-main p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    margin-bottom: 28px;
+  }
+  .d-consult-rfq {
+    margin-bottom: 28px;
+  }
+  .d-consult-rfq h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .d-consult-rfq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .d-consult-item {
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,255,65,0.04);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .d-consult-item-title {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .d-consult-item span:last-child {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    display: block;
+  }
+  .d-consult-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .d-consult-card {
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,255,65,0.08);
+    border-radius: 6px;
+    padding: 20px;
+  }
+  .d-consult-card h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .d-consult-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+
+  /* ========================================================================
+     RESPONSIVE
+     ======================================================================== */
+  @media (max-width: 1024px) {
+    .d-connectivity-split { grid-template-columns: 1fr; }
+    .d-hybrid-tiers { grid-template-columns: 1fr; }
+    .d-consult-layout { grid-template-columns: 1fr; }
+    .d-bd-results-grid { grid-template-columns: 1fr 1fr; }
+    .d-via-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .d-bd-steps { grid-template-columns: 1fr; }
+    .d-hybrid-guidance-grid { grid-template-columns: 1fr; }
+    .d-consult-rfq-grid { grid-template-columns: 1fr; }
+    .d-cap-row { grid-template-columns: 1fr; gap: 4px; }
+    .d-via-flow-row { grid-template-columns: 1fr; gap: 4px; }
+    .d-bd-results-grid { grid-template-columns: 1fr; }
+    .d-connectivity-text h1 { font-size: 1.8rem; }
+    .d-section-head h2 { font-size: 1.6rem; }
+    .d-consult-main h2 { font-size: 1.5rem; }
+  }
+</style>

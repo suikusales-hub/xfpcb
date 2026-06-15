@@ -3,307 +3,3537 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-title="8 Layer PCB Manufacturer | HDI, High Speed and Controlled Impedance PCB | XFPCB"
-description="XFPCB manufactures 8 layer PCB boards for high-speed, HDI, telecom, RF and dense electronics with stackup planning, DFM review and export support."
-keywords="8 layer PCB manufacturer, 8 layer PCB stackup, HDI PCB, high speed PCB, controlled impedance PCB, blind buried vias, signal integrity PCB, China PCB factory"
-canonical="https://xfpcb.com/products/8-layer-pcb/"
-ogTitle="8 Layer PCB Manufacturer | HDI, High Speed and Controlled Impedance PCB | XFPCB"
-ogDescription="XFPCB manufactures 8 layer PCB boards for high-speed, HDI, telecom, RF and dense electronics with stackup planning, DFM review and export support."
-ogImage="https://xfpcb.com/images/675x542pcb.jpg"
-ogUrl="https://xfpcb.com/products/8-layer-pcb/"
-  cssExtra={['/css/about.css', '/css/products.css']}
+  title="8-Layer PCB Technical Guide | HDI Integration, Backdrilling & Hybrid Material Engineering | XFPCB"
+  description="Engineering guide for 8-layer PCBs: HDI microvia stacking, backdrilling for high-speed signals, hybrid material stackups (FR4 + low-loss laminates), signal integrity modeling, and 6-layer vs 8-layer cross-comparison. XFPCB China."
+  keywords="8 layer PCB backdrilling, 8 layer PCB HDI stackup, hybrid material PCB FR4 low loss, 8 layer PCB signal integrity, microvia stacking 8 layer PCB, 8 layer PCB vs 6 layer PCB, blind buried via 8 layer PCB, 8 layer PCB manufacturer, XFPCB"
+  canonical="https://xfpcb.com/products/8-layer-pcb/"
+  ogTitle="8-Layer PCB Technical Guide | HDI Integration, Backdrilling & Hybrid Material Engineering | XFPCB"
+  ogDescription="Engineering guide for 8-layer PCBs: HDI microvia stacking, backdrilling for high-speed signals, hybrid material stackups (FR4 + low-loss laminates), and 6-layer vs 8-layer cross-comparison."
+  ogImage="https://xfpcb.com/images/675x542pcb.jpg"
+  ogUrl="https://xfpcb.com/products/8-layer-pcb/"
 >
   <main>
-<section class="product-hero layer-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <p class="eyebrow">XFPCB China PCB Manufacturer</p>
-                    <h1>8 Layer PCB Manufacturer for High-Speed and HDI Projects</h1>
-                    <h2>Stackup planning, impedance discussion and dense multilayer fabrication for demanding overseas buyers</h2>
-                    <p class="desc">An 8 layer PCB is selected when routing density, signal integrity, power integrity and component pitch make a lower layer count risky. It is common in telecom hardware, networking equipment, RF modules, high-speed digital products, dense BGA designs and advanced industrial electronics. XFPCB helps procurement and engineering teams turn complex board data into a manufacturable PCB quotation with clear DFM feedback.</p>
-                    <div class="layer-hero-pills">
-                        <span>8 layer stackup</span>
-                        <span>High-speed PCB</span>
-                        <span>HDI options</span>
-                        <span>Controlled impedance</span>
-                    </div>
-                    <div class="layer-hero-actions">
-                        <a href="#quote" class="cta-btn">Request 8-Layer PCB Quote</a>
-                        <a href="/products/" class="layer-secondary-btn">View PCB Products</a>
-                    </div>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper layer-image-frame">
-                        <img src="/images/675x542pcb.jpg" alt="XFPCB 8 layer high speed HDI PCB manufacturing">
-                    </div>
-                    <div class="layer-visual-note">
-                        <strong>Buyer focus:</strong> DFM review, stable fabrication, export communication and repeat-order support.
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="bg-darker layer-intent-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Procurement intent</p>
-                    <h2>What buyers expect when searching for an 8 layer PCB manufacturer</h2>
-                    <p>For 8 layer PCB buyers, the real concern is whether the supplier can discuss HDI needs, high-speed routing, material loss, drill structure, controlled impedance and inspection in a way that reduces the risk of a complex order.</p>
-                </div>
-                <div class="layer-card-grid">
-                    <article class="layer-card">
-                        <span>Signal integrity</span>
-                        <h3>More reference planes for high-speed routes</h3>
-                        <p>Eight layers make it easier to place critical signals near solid reference planes and reduce crosstalk in compact layouts.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>HDI planning</span>
-                        <h3>Blind, buried and via-in-pad options by project</h3>
-                        <p>Dense BGA escape routing can require advanced via structures. XFPCB reviews these options against cost, yield and lead time before quoting.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Material strategy</span>
-                        <h3>FR-4, high Tg and low-loss laminates discussed early</h3>
-                        <p>At higher frequencies, material choice affects loss and consistency. The RFQ should include speed, frequency and impedance requirements when they matter.</p>
-                    </article>
-                    <article class="layer-card">
-                        <span>Procurement risk</span>
-                        <h3>Complex boards need exact communication</h3>
-                        <p>The quote should reflect stackup, drill plan, finish, testing and special acceptance requirements, not only board area.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+    <!-- ====================================================================
+         SECTION 1 — THE 8-LAYER INFLECTION POINT
+         Opens with the engineering threshold that triggers 8-layer designs:
+         not just routing density, but the simultaneous need for signal
+         integrity + power integrity + HDI + mixed materials.
+         ==================================================================== -->
+    <section class="s8-inflection">
+      <div class="s8-limiter">
+        <div class="s8-inflection-panel">
+          <div class="s8-inflection-content">
+            <span class="s8-eyebrow">Engineering inflection point</span>
+            <h1>When six layers reach their limit: the 8-layer multiphysics threshold</h1>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Manufacturing specification</p>
-                <h2>8-Layer PCB buying guide and RFQ details</h2>
-                <p>For an 8 layer PCB, the manufacturing conversation should start with stackup, via structure and material choice. XFPCB reviews these points so the buyer can understand tradeoffs before approving cost and lead time.</p>
+            <div class="s8-scenario">
+              <span class="s8-scenario-label">Common design scenario</span>
+              <blockquote>
+                Your 6-layer board has a &micro;BGA-484 FPGA (0.8&nbsp;mm pitch) with eight SERDES lanes at 12.5&nbsp;Gbps, three DDR4-2400 channels, a 10&nbsp;GbE PHY with XFI, four power domains (0.85&nbsp;V core, 1.2&nbsp;V VCCIO, 1.8&nbsp;V auxiliary, 3.3&nbsp;V I/O), and an RF section operating at 3.5&nbsp;GHz. The 6-layer stackup gave you three signal layers (L1, L3, L6) and three plane layers (L2 GND, L4 split power, L5 GND). After placement, the SERDES fan-out consumed L1 completely. DDR4 routed through seven layer-change vias per byte lane — each via introducing a stub resonance near the 1.2&nbsp;GHz harmonic. The 0.85&nbsp;V core plane had an IR drop of 45&nbsp;mV across the FPGA because the plane was shared with 1.2&nbsp;V and split by a narrow isthmus. The RF section shared the same GND return path as the switching regulators. Pre-compliance shows the 12.5&nbsp;Gbps SERDES eye is closing at 0.18&nbsp;UI. You need two more layers — but adding a pair to a 6-layer stackup means going to 8, not 10.
+              </blockquote>
             </div>
-            <div class="layer-table-wrap">
-                    <table class="layer-spec-table">
-                        <thead>
-                            <tr><th>Complexity driver</th><th>Common buyer requirement</th><th>XFPCB review focus</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>High-speed routing</td><td>PCIe, Ethernet, USB, DDR, LVDS or other controlled routes</td><td>Impedance target, reference plane continuity, trace layer and material behavior.</td></tr>
-                            <tr><td>HDI structure</td><td>Blind vias, buried vias, microvias or via-in-pad where needed</td><td>Sequential lamination, drill feasibility, plating reliability, cost and yield impact.</td></tr>
-                            <tr><td>RF or low-loss need</td><td>Low Dk/Df material, hybrid stackup or special laminate</td><td>Availability, stackup compatibility, price and lead time.</td></tr>
-                            <tr><td>BGA escape</td><td>Fine pitch packages and dense component placement</td><td>Via size, pad design, solder mask, finish and test access.</td></tr>
-                            <tr><td>Inspection plan</td><td>Electrical test, AOI, X-ray or impedance coupon when required</td><td>Define requirements at RFQ stage so acceptance criteria are clear.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-        </section>
 
-        <section class="container layer-content-section">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Stackup planning</p>
-                    <h2>Example 8-Layer PCB stackup discussion</h2>
-                    <p>This is a practical starting point, not a locked universal stackup. XFPCB confirms dielectric spacing, copper weight, material and impedance targets against your real files before fabrication.</p>
-                </div>
-                <div class="stackup-container layer-stackup">
-                    <div class="stackup-diagram">
-                        <div class="stackup-layer layer-cu">
-                            <span>L1: Top Signal</span>
-                            <span class="layer-desc">Critical components and high-speed fanout</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Dielectric for microstrip control</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L2: Ground Plane</span>
-                            <span class="layer-desc">Primary reference plane</span>
-                        </div>
-                        <div class="stackup-layer layer-core">
-                            <span>Core</span>
-                            <span class="layer-desc">Lamination structure</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L3: Signal</span>
-                            <span class="layer-desc">Stripline routing</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Controlled spacing</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L4: Power Plane</span>
-                            <span class="layer-desc">Power distribution</span>
-                        </div>
-                        <div class="stackup-layer layer-core">
-                            <span>Core</span>
-                            <span class="layer-desc">Balanced center</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L5: Ground / Power</span>
-                            <span class="layer-desc">Reference or power by design</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Controlled spacing</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L6: Signal</span>
-                            <span class="layer-desc">Stripline routing</span>
-                        </div>
-                        <div class="stackup-layer layer-core">
-                            <span>Core</span>
-                            <span class="layer-desc">Lamination structure</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L7: Ground Plane</span>
-                            <span class="layer-desc">Secondary reference plane</span>
-                        </div>
-                        <div class="stackup-layer layer-prepreg">
-                            <span>Prepreg</span>
-                            <span class="layer-desc">Outer dielectric</span>
-                        </div>
-                        <div class="stackup-layer layer-cu">
-                            <span>L8: Bottom Signal</span>
-                            <span class="layer-desc">Components, routing and test access</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <p>
+              This is the <strong>multiphysics inflection point</strong>: the moment when a single additional signal–plane pair (8 layers) resolves constraints that span signal integrity, power integrity, EMI containment, and thermal management simultaneously. Unlike the 4-to-6 transition — which is primarily a signal integrity decision driven by reference plane assignment — the 6-to-8 transition is a <em>system-level multiphysics decision</em> driven by the interaction of multiple high-speed interfaces, dense power distribution, and often RF coexistence.
+            </p>
 
-        <section class="bg-darker layer-content-section">
-            <div class="container layer-two-column">
-                <article class="layer-text-panel">
-                    <p class="eyebrow">High-speed buying</p>
-                    <h2>An 8 layer PCB quote must connect engineering and purchasing</h2>
-                    <p>A procurement team may ask for the lowest price, while the design team needs controlled impedance, stable power planes, fine-pitch reliability and low signal loss. XFPCB helps connect those requirements by reviewing the manufacturing data and asking for missing technical details before the quote is locked.</p>
-                    <p>This matters because a small change in via structure, material, copper weight or impedance tolerance can change the cost and lead time significantly. A clear conversation early protects both engineering schedule and purchasing budget.</p>
-                </article>
-                <article class="layer-text-panel">
-                    <p class="eyebrow">Manufacturability</p>
-                    <h2>HDI and advanced via decisions should be justified</h2>
-                    <p>Blind vias, buried vias and via-in-pad can solve routing problems, but they are not free features. They add process steps and must be matched to the real need of the layout. XFPCB reviews whether standard through vias are enough, or whether an HDI structure is justified by BGA pitch, board size, layer density or signal requirements.</p>
-                    <p>For high-speed and RF boards, XFPCB can discuss stackup, material and impedance requirements before fabrication. If the design requires special acceptance criteria, include them in the RFQ so the quotation is aligned with the final inspection plan.</p>
-                </article>
-            </div>
-        </section>
+            <p>
+              The 8-layer PCB is not merely a 6-layer board with two extra layers stapled on. It is a distinct structural tier that enables <strong>true stripline routing for two full routing layers</strong>, <strong>dedicated un-split power planes</strong> for at least three domains, <strong>compatible via aspect ratios for backdrilling</strong>, and <strong>sequential lamination that supports HDI integration</strong> (microvia stacking, blind/buried vias, via-in-pad). This page is structured as a diagnostic and configuration guide: it helps you determine whether your design has crossed the 6-layer ceiling, select the right 8-layer architecture, and navigate the manufacturing requirements that come with the added complexity.
+            </p>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">Order workflow</p>
-                <h2>How XFPCB moves your 8-Layer PCB project from files to shipment</h2>
-                <p>Procurement teams need predictable communication. The steps below show how XFPCB turns design files into a manufacturing plan that can be quoted, produced and shipped with fewer surprises.</p>
+            <div class="s8-inflection-tags">
+              <span>HDI integration threshold</span>
+              <span>Multiphysics design</span>
+              <span>6-layer to 8-layer upgrade</span>
+              <span>SERDES / DDR4 / RF coexistence</span>
+              <span>Backdrilling</span>
+              <span>Hybrid material stackup</span>
+              <span>Power integrity</span>
+              <span>Sequential lamination</span>
             </div>
-            <div class="layer-process-grid">
-                <article class="layer-process-step">
-                    <h3>1. Technical RFQ</h3>
-                    <p>Provide Gerber, drill, stackup, impedance table, material preference and special notes.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>2. Stackup and via review</h3>
-                    <p>XFPCB checks whether the build structure is practical for fabrication, cost and lead time.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>3. Controlled manufacturing</h3>
-                    <p>Complex inner layers, lamination, drilling, plating, surface finish and profiling follow confirmed instructions.</p>
-                </article>
-                <article class="layer-process-step">
-                    <h3>4. Final verification</h3>
-                    <p>Inspection and electrical test are handled according to the accepted order requirements before export packing.</p>
-                </article>
-            </div>
-        </section>
 
-        <section class="bg-darker layer-content-section">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Applications</p>
-                    <h2>Where buyers commonly use 8-Layer PCB</h2>
-                    <p>XFPCB writes each quote around the real product environment, not a generic layer-count label. Tell us where the board will be used so material, finish and testing choices can match the risk level.</p>
-                </div>
-                <div class="layer-application-grid">
-                    <div class="layer-application-item">Telecom and networking hardware</div>
-                    <div class="layer-application-item">RF and wireless communication modules</div>
-                    <div class="layer-application-item">Dense BGA and FPGA boards</div>
-                    <div class="layer-application-item">High-speed industrial and embedded systems</div>
-                </div>
+            <div class="s8-inflection-actions">
+              <a href="#s8-consult" class="s8-btn s8-btn-primary">Diagnose your 8-layer requirements</a>
+              <a href="#s8-tradeoff" class="s8-btn s8-btn-outline">Compare 6-layer vs 8-layer &darr;</a>
             </div>
-        </section>
+          </div>
 
-        <section class="container layer-content-section">
-            <div class="layer-section-heading">
-                <p class="eyebrow">FAQ</p>
-                <h2>8-Layer PCB questions buyers ask before placing an order</h2>
+          <div class="s8-inflection-metrics">
+            <div class="s8-metric-card">
+              <span class="s8-metric-val">+2</span>
+              <span class="s8-metric-label">Additional signal-plane pairs vs 6-layer</span>
             </div>
-            <div class="layer-faq-list">
-                <article class="faq-item">
-                    <h4>When should I choose an 8 layer PCB?</h4>
-                    <p>Choose 8 layers when routing density, signal integrity, power integrity or fine-pitch components make 4 or 6 layers risky or inefficient.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>Does XFPCB support HDI structures for 8 layer boards?</h4>
-                    <p>XFPCB can review HDI needs such as blind vias, buried vias and via-in-pad by project. The final process depends on files, stackup, quantity, lead time and acceptance requirements.</p>
-                </article>
-                <article class="faq-item">
-                    <h4>What information is needed for a high-speed 8 layer PCB quote?</h4>
-                    <p>Send stackup, impedance targets, material preference, copper weight, via structure, Gerber and drill files, test needs, quantity and delivery country.</p>
-                </article>
+            <div class="s8-metric-card">
+              <span class="s8-metric-val">2</span>
+              <span class="s8-metric-label">True stripline routing layers (L3, L6)</span>
             </div>
-        </section>
+            <div class="s8-metric-card">
+              <span class="s8-metric-val">3+</span>
+              <span class="s8-metric-label">Dedicated un-split power plane capacity</span>
+            </div>
+            <div class="s8-metric-card">
+              <span class="s8-metric-val">1.6&ndash;2.0</span>
+              <span class="s8-metric-label">Typical board thickness (mm)</span>
+            </div>
+            <div class="s8-metric-card">
+              <span class="s8-metric-val">10:1</span>
+              <span class="s8-metric-label">Maximum aspect ratio for backdrilling viability</span>
+            </div>
+            <div class="s8-metric-card s8-metric-highlight">
+              <span class="s8-metric-val">~35%</span>
+              <span class="s8-metric-label">Typical signal integrity margin improvement over 6-layer</span>
+            </div>
+            <div class="s8-callout">
+              <strong>Not sure you need 8 layers?</strong>
+              <p>Send your ODB++ or Gerber files. We run a DFM + layer-count optimization analysis before quoting.</p>
+              <a href="#s8-consult">Submit files for engineering review &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="layer-rfq-section" id="quote">
-            <div class="container layer-rfq-grid">
-                <div class="layer-rfq-copy">
-                    <p class="eyebrow">Send RFQ to XFPCB</p>
-                    <h2>Get a practical quotation for 8-Layer PCB</h2>
-                    <p>For 8 layer PCB projects, XFPCB needs enough technical detail to review stackup and via decisions before price and lead time are confirmed.</p>
-                    <ul class="layer-check-list">
-                    <li>Gerber, drill and complete stackup</li>
-                    <li>Impedance table and signal layer notes</li>
-                    <li>HDI or via-in-pad requirement if any</li>
-                    <li>Material preference, quantity and delivery schedule</li>
-                </ul>
-                    <p class="layer-rfq-note">For a faster engineering reply, include Gerber files, drill files, PCB specification, quantity, delivery country and any impedance, material or assembly requirements.</p>
-                </div>
-                <form class="layer-rfq-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
-                    <input type="hidden" name="honeypot" style="display:none;">
-                    <input type="hidden" name="page_url" value="https://xfpcb.com/products/8-layer-pcb/">
-                    <input type="hidden" name="page_path" value="/products/8-layer-pcb/">
-                    <input type="hidden" name="subject" value="8-Layer PCB RFQ from XFPCB product page">
-                    <input type="hidden" name="redirect" value="https://xfpcb.com/">
-                    <label>
-                        Name
-                        <input type="text" name="name" placeholder="Your name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="name@company.com" required>
-                    </label>
-                    <label>
-                        Project Requirements
-                        <textarea name="message" placeholder="Example: 8 layer high-speed PCB, ENIG, 100 ohm differential pairs, blind vias under BGA, 200 prototypes and 1,000 production pcs." required></textarea>
-                    </label>
-                    <button type="submit">Send 8-Layer PCB Inquiry</button>
-                </form>
-            </div>
-        </section>
 
-        <section class="bg-darker">
-            <div class="container">
-                <div class="layer-section-heading">
-                    <p class="eyebrow">Related PCB products</p>
-                    <h2>Compare layer counts before you send your RFQ</h2>
-                    <p>Many buyers begin with one layer count and change after DFM review, enclosure checks or cost comparison. These XFPCB pages help you select the most suitable PCB structure before production.</p>
-                </div>
-                <div class="related-layer-links">
-                    <a class="related-layer-link" href="/products/1-layer-pcb/">1-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/2-layer-pcb/">2-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/4-layer-pcb/">4-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/6-layer-pcb/">6-Layer PCB</a>
-                    <a class="related-layer-link active" href="/products/8-layer-pcb/">8-Layer PCB</a>
-                    <a class="related-layer-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
-                    <a class="related-layer-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
-                </div>
+    <!-- ====================================================================
+         SECTION 2 — THE 8-LAYER ADVANTAGE MATRIX
+         A cross-domain comparison showing exactly what 8 layers unlock
+         across SI, PI, routing, HDI, thermal, and cost dimensions.
+         ==================================================================== -->
+    <section class="s8-advantage" id="s8-tradeoff">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Cross-domain analysis</span>
+          <h2>The 8-layer advantage matrix: six domains evaluated</h2>
+          <p class="s8-section-sub">
+            The decision to move from 6 to 8 layers touches every design domain. Below is a structured evaluation across six critical axes, with quantified comparisons where possible.
+          </p>
+        </div>
+
+        <div class="s8-adv-table">
+          <!-- Domain 1: Routing Density -->
+          <article class="s8-adv-row">
+            <div class="s8-adv-axis">
+              <h3>Routing Density</h3>
+              <span class="s8-adv-axis-tag">Fundamental capacity</span>
             </div>
-        </section>
+            <div class="s8-adv-6l">
+              <span class="s8-adv-label">6-Layer</span>
+              <p>Three signal layers (L1, L3, L6). L1 typically consumed by BGA fan-out and high-speed routes. L3 handles stripline signals. L6 manages remaining I/O, test points, and low-speed traces. For a 0.8&nbsp;mm pitch BGA with 484 balls, fan-out on L1 alone uses roughly 60&ndash;70&nbsp;% of the routing channel. Adding DDR4, SERDES, and Ethernet leaves L6 congested. Designers begin routing on L2 or L5 (plane layers) as a workaround, creating plane gaps.</p>
+            </div>
+            <div class="s8-adv-8l">
+              <span class="s8-adv-label">8-Layer</span>
+              <p>Four signal layers (L1, L3, L6, L8). L1 handles BGA fan-out and top-layer critical routes. L3 and L6 are buried stripline layers with superior cross-talk isolation. L8 provides an independent bottom-layer routing surface, which the 6-layer board lacks (L6 is shared between routing and component side). The 8-layer board can allocate signal types by layer: SERDES on L3 (stripline, referenced to L2/L4), DDR on L6 (stripline, referenced to L5/L7), general I/O on L1 and L8. This layer assignment reduces cross-talk by approximately 25&ndash;30&nbsp;dB compared to a 6-layer board mixing all signals on two or three layers.</p>
+            </div>
+          </article>
+
+          <!-- Domain 2: Signal Integrity -->
+          <article class="s8-adv-row">
+            <div class="s8-adv-axis">
+              <h3>Signal Integrity</h3>
+              <span class="s8-adv-axis-tag">Eye margin &amp; loss budget</span>
+            </div>
+            <div class="s8-adv-6l">
+              <span class="s8-adv-label">6-Layer</span>
+              <p>Single stripline pair (L3 or L4 depending on architecture) limits high-speed dedicated routing to one layer. SERDES at &gt;10&nbsp;Gbps on 6 layers is challenging: the L3 stripline pair gives good cross-talk isolation but forces the return current through only one reference plane. With one split power plane (typically L4), the power islands create impedance discontinuities when planes change. Insertion loss budgets of &minus;15&nbsp;dB for 12.5&nbsp;Gbps are borderline on 6-layer FR4 stacks longer than 8&nbsp;inches due to dielectric losses and via stub resonances.</p>
+            </div>
+            <div class="s8-adv-8l">
+              <span class="s8-adv-label">8-Layer</span>
+              <p>Two independent stripline layers (L3 and L6) each referencing solid planes on both sides. This provides four impedance-controlled routing channels per layer pair, sufficient for eight SERDES lanes (4 TX + 4 RX) without mixing differential pairs from different protocols on the same layer. Each stripline layer uses an adjacent plane as a return path, reducing common-mode conversion. Insertion loss at 12.5&nbsp;Gbps on a well-designed 8-layer stack stays under &minus;10&nbsp;dB over 10&nbsp;inches. Via stub resonance (the dominant loss mechanism at 6&ndash;12&nbsp;GHz) is eliminated entirely when backdrilling is applied — see Section 4.</p>
+            </div>
+          </article>
+
+          <!-- Domain 3: Power Integrity -->
+          <article class="s8-adv-row">
+            <div class="s8-adv-axis">
+              <h3>Power Integrity</h3>
+              <span class="s8-adv-axis-tag">IR drop &amp; plane impedance</span>
+            </div>
+            <div class="s8-adv-6l">
+              <span class="s8-adv-label">6-Layer</span>
+              <p>With two or three plane layers total (architecture-dependent), accommodating 3+ power domains means splitting at least one plane. A typical 6-layer assignment: L2&nbsp;=&nbsp;GND (solid), L4&nbsp;=&nbsp;3.3&nbsp;V/1.8&nbsp;V/1.2&nbsp;V&nbsp;split, L5&nbsp;=&nbsp;GND (solid). The split on L4 creates a narrow isthmus for the 0.85&nbsp;V core supply — IR drop of 40&ndash;50&nbsp;mV across 20&nbsp;mm is common. Decoupling capacitor placement is constrained because each domain's vias must reach the correct island. Plane impedance at 100&nbsp;MHz is typically 2&ndash;5&nbsp;&Omega; for the split domains.</p>
+            </div>
+            <div class="s8-adv-8l">
+              <span class="s8-adv-label">8-Layer</span>
+              <p>Four plane layers available (L2, L4, L5, L7) in a symmetric architecture. Recommended assignment: L2&nbsp;=&nbsp;GND (solid), L4&nbsp;=&nbsp;0.85&nbsp;V&nbsp;(solid, FPGA core), L5&nbsp;=&nbsp;GND (solid), L7&nbsp;=&nbsp;3.3&nbsp;V/1.8&nbsp;V&nbsp;(split for I/O and auxiliary). Each critical power domain gets either a solid plane or a two-domain split (vs. three-domain split on 6-layer). IR drop for the core supply drops to 12&ndash;18&nbsp;mV. Plane impedance at 100&nbsp;MHz is under 0.5&nbsp;&Omega; for solid domains. Decoupling capacitors on the bottom side (L8) connect directly to L7 through short vias, reducing mounting inductance by 30&ndash;40&nbsp;%.</p>
+            </div>
+          </article>
+
+          <!-- Domain 4: HDI Integration -->
+          <article class="s8-adv-row">
+            <div class="s8-adv-axis">
+              <h3>HDI Integration</h3>
+              <span class="s8-adv-axis-tag">Microvia &amp; sequential lamination</span>
+            </div>
+            <div class="s8-adv-6l">
+              <span class="s8-adv-label">6-Layer</span>
+              <p>Microvias can be added to 6-layer boards but are limited to L1&ndash;L2 and L6&ndash;L5 connections. Microvia stacking is impractical because the sequential lamination structure (two cores + two outer prepregs) provides only one microvia layer pair per side. Via-in-pad with conductive fill is available but adds significant cost relative to the base 6-layer price. Blind and buried vias are feasible but consume panel area and extend lead time. For 0.5&nbsp;mm pitch BGAs, 6-layer microvia fan-out is marginal.</p>
+            </div>
+            <div class="s8-adv-8l">
+              <span class="s8-adv-label">8-Layer</span>
+              <p>The 8-layer sequential lamination structure (three core layers + outer prepregs, or 2+2+2+2 HDI build-up) naturally supports microvia stacking. Common configurations: 2+N+2 HDI (two microvia layers per side sandwiching four buried through-via layers), or staggered microvia patterns connecting L1&ndash;L2&ndash;L3. The additional core layer provides enough vertical space for stacked microvias with copper fill. Via-in-pad at 0.4&nbsp;mm pitch is reliable. For designs requiring LDI (laser direct imaging) registration, the 8-layer stack provides a stable reference plane for each lamination step. See Section 6 for full HDI integration patterns.</p>
+            </div>
+          </article>
+
+          <!-- Domain 5: Thermal Management -->
+          <article class="s8-adv-row">
+            <div class="s8-adv-axis">
+              <h3>Thermal Management</h3>
+              <span class="s8-adv-axis-tag">Heat spreading &amp; via density</span>
+            </div>
+            <div class="s8-adv-6l">
+              <span class="s8-adv-label">6-Layer</span>
+              <p>With one solid GND plane and one split power plane, the total copper cross-section for heat spreading is limited to approximately 105&nbsp;&micro;m of copper (3&nbsp;oz equivalent at typical 1&nbsp;oz per layer). Thermal via arrays under a 15&nbsp;mm &times; 15&nbsp;mm BGA can transfer approximately 3&ndash;5&nbsp;W of heat through the board, depending on via count and fill. Junction-to-board thermal resistance (&theta;<sub>JB</sub>) for a high-power FPGA on 6-layer is typically 8&ndash;12&nbsp;&deg;C/W.</p>
+            </div>
+            <div class="s8-adv-8l">
+              <span class="s8-adv-label">8-Layer</span>
+              <p>Four plane layers (typically two solid GND + two power) provide approximately 140&nbsp;&micro;m of copper cross-section (4&nbsp;oz equivalent), increasing lateral heat spreading by roughly 33&nbsp;%. The additional plane layers also serve as distributed heat spreaders: a 15&nbsp;mm &times; 15&nbsp;mm BGA with thermal vias can transfer 6&ndash;8&nbsp;W. &theta;<sub>JB</sub> improves to 5&ndash;8&nbsp;&deg;C/W. For boards requiring copper coin or embedded heat sinks, the 8-layer thickness (typically 1.6&ndash;2.0&nbsp;mm) provides enough vertical space for coin insertion between L4 and L5 without compromising adjacent layer spacing.</p>
+            </div>
+          </article>
+
+          <!-- Domain 6: Cost Efficiency Per Function -->
+          <article class="s8-adv-row">
+            <div class="s8-adv-axis">
+              <h3>Cost Efficiency per Function</h3>
+              <span class="s8-adv-axis-tag">Total cost of ownership</span>
+            </div>
+            <div class="s8-adv-6l">
+              <span class="s8-adv-label">6-Layer</span>
+              <p>Lower unit cost: typically 25&ndash;35&nbsp;% less than an equivalent 8-layer board. However, when a design requires 8-layer capability (multiple high-speed interfaces, 3+ power domains, HDI fan-out), forcing a 6-layer solution creates hidden costs: additional design iterations (1&ndash;3 respins at $5K&ndash;$15K each), pre-compliance failures requiring ferrite bead or shielding additions, higher-layer-count BGAs that exceed 6-layer fan-out capacity, and field failures from SI margin erosion at temperature extremes. The total cost of a failed 6-layer board exceeds the premium for 8 layers in the first respin.</p>
+            </div>
+            <div class="s8-adv-8l">
+              <span class="s8-adv-label">8-Layer</span>
+              <p>Higher per-board cost (25&ndash;35&nbsp;% premium over 6-layer) but lower total project cost when the design complexity requires 8-layer capability. The additional cost is concentrated in: sequential lamination, additional inner-layer imaging and etching, increased drill depth, longer plating time, and more AOI steps. However, the 8-layer board reduces NRE risk: one pass through layout, one pre-compliance pass, no last-minute layer-count upgrades. For production volumes above 500 units, the per-board premium is offset by higher first-pass yield and reduced test failures.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Decision summary -->
+        <div class="s8-adv-decision">
+          <h3>8-layer decision dashboard</h3>
+          <div class="s8-adv-checklist">
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Does your design include SERDES lanes at &ge; 10&nbsp;Gbps?</span>
+            </div>
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Do you have 3 or more power domains requiring &gt; 2&nbsp;A each?</span>
+            </div>
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Are you routing DDR4-2400 (or faster) on the same board as SERDES?</span>
+            </div>
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Does your board include a micro-BGA with pitch &le; 0.8&nbsp;mm?</span>
+            </div>
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Do you need RF coexistence (above 1&nbsp;GHz) with digital circuitry?</span>
+            </div>
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Is the total board area smaller than 100&nbsp;mm &times; 100&nbsp;mm (dense routing)?</span>
+            </div>
+            <div class="s8-check">
+              <span class="s8-check-icon">&#9744;</span>
+              <span>Have you attempted a 6-layer layout and found stub resonance or via congestion?</span>
+            </div>
+          </div>
+          <p class="s8-check-note">If 4 or more items apply, an 8-layer starting point is recommended — not an upgrade.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 — STACKUP CONFIGURATION ARCHITECTURES
+         Three distinct 8-layer stackup architectures, each optimized for
+         a different application domain. Unlike the 6-layer page, these
+         stackups emphasise plane assignment and HDI compatibility.
+         ==================================================================== -->
+    <section class="s8-stackup">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Stackup architecture selection</span>
+          <h2>Three 8-layer stackup architectures: choose by application domain</h2>
+          <p class="s8-section-sub">
+            There is no universal 8-layer stackup. The optimal assignment of signal, ground, and power layers depends on whether your priority is signal integrity, power integrity, HDI integration, or a balanced mix. Below are three proven architectures with specific application guidance.
+          </p>
+        </div>
+
+        <div class="s8-stackup-grid">
+
+          <!-- Architecture A: Signal Integrity Optimized -->
+          <article class="s8-stackup-card">
+            <div class="s8-stackup-header">
+              <span class="s8-stackup-num">Architecture A</span>
+              <h3>Signal Integrity Priority</h3>
+              <span class="s8-stackup-tag s8-stackup-tag-green">Recommended for high-speed digital</span>
+            </div>
+            <div class="s8-stackup-assignment">
+              <div class="s8-stackup-layer s8-layer-signal">L1 &mdash; Signal / Components</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L2 &mdash; Ground Plane (solid, no splits)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; 0.25&ndash;0.40&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-signal">L3 &mdash; Signal / Stripline SERDES &amp; DDR</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.20&ndash;0.35&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L4 &mdash; Ground Plane (solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; 0.50&ndash;0.70&nbsp;mm (center)</div>
+              <div class="s8-stackup-layer s8-layer-plane">L5 &mdash; Power Plane (split: 0.85&nbsp;V / 1.2&nbsp;V)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; 0.25&ndash;0.40&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-signal">L6 &mdash; Signal / Stripline SERDES &amp; DDR</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L7 &mdash; Ground Plane (solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-signal">L8 &mdash; Signal / Components</div>
+            </div>
+            <div class="s8-stackup-body">
+              <div class="s8-stackup-metrics">
+                <div>
+                  <strong>Stripline layers:</strong> 2 (L3, L6)
+                  <br>
+                  <strong>Plane layers:</strong> 3 (L2 GND, L4 GND, L7 GND)
+                  <br>
+                  <strong>Power planes:</strong> 1 (L5 split)
+                </div>
+                <div>
+                  <strong>Best for:</strong> Multi-gigabit SERDES, DDR4/5, 10&nbsp;GbE
+                  <br>
+                  <strong>Microstrip impedance:</strong> 50&nbsp;&Omega; on L1, L8
+                  <br>
+                  <strong>Stripline impedance:</strong> 50&nbsp;&Omega; / 100&nbsp;&Omega; diff on L3, L6
+                </div>
+              </div>
+              <p>This architecture dedicates three solid ground planes (L2, L4, L7) to provide continuous reference planes for every signal layer. L3 is sandwiched between L2 and L4 — both solid GND — giving the purest stripline environment available at 8 layers. L6 is between L5 (power) and L7 (GND). For AC signals, L5 appears as GND through the decoupling capacitors, so L6 also sees a solid return path. The trade-off: only one power plane (L5) for all three domains, which requires careful split planning.</p>
+              <div class="s8-stackup-note">
+                <strong>XFPCB recommendation:</strong> Lead with this architecture for designs where SERDES lanes and DDR buses dominate the SI risk budget. The triple-ground configuration gives approximately 35&nbsp;dB of cross-talk isolation between L3 and L6 signal groups.
+              </div>
+            </div>
+          </article>
+
+          <!-- Architecture B: Power Integrity Optimized -->
+          <article class="s8-stackup-card s8-stackup-card-alt">
+            <div class="s8-stackup-header">
+              <span class="s8-stackup-num">Architecture B</span>
+              <h3>Power Integrity Priority</h3>
+              <span class="s8-stackup-tag s8-stackup-tag-blue">Recommended for high-current / multi-domain</span>
+            </div>
+            <div class="s8-stackup-assignment">
+              <div class="s8-stackup-layer s8-layer-signal">L1 &mdash; Signal / Components</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L2 &mdash; Ground Plane (solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; 0.25&ndash;0.40&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L3 &mdash; Power Plane 1 (0.85&nbsp;V core, solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.20&ndash;0.30&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L4 &mdash; Ground Plane (solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; 0.50&ndash;0.70&nbsp;mm (center)</div>
+              <div class="s8-stackup-layer s8-layer-plane">L5 &mdash; Power Plane 2 (1.8&nbsp;V, solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; 0.25&ndash;0.40&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-plane">L6 &mdash; Ground Plane (solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-signal">L7 &mdash; Signal / Stripline</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; 0.10&ndash;0.15&nbsp;mm</div>
+              <div class="s8-stackup-layer s8-layer-signal">L8 &mdash; Signal / Components</div>
+            </div>
+            <div class="s8-stackup-body">
+              <div class="s8-stackup-metrics">
+                <div>
+                  <strong>Stripline layers:</strong> 1 (L7)
+                  <br>
+                  <strong>Plane layers:</strong> 4 (L2 GND, L3 PWR, L4 GND, L5 PWR, L6 GND)
+                  <br>
+                  <strong>Signal layers:</strong> 2 (L1, L8) + 1 stripline (L7)
+                </div>
+                <div>
+                  <strong>Best for:</strong> High-current FPGA/ASIC cores, multi-regulator designs
+                  <br>
+                  <strong>IR drop (core):</strong> &lt; 10&nbsp;mV at 10&nbsp;A
+                  <br>
+                  <strong>Plane impedance:</strong> &lt; 0.3&nbsp;&Omega; at 100&nbsp;MHz
+                </div>
+              </div>
+              <p>This architecture trades one signal layer for an additional power plane, giving two dedicated solid power layers (L3 for core voltage, L5 for I/O voltage) in addition to three ground planes. The 0.85&nbsp;V core supply on L3 has a direct, un-split copper path from the regulator output to the FPGA core balls — IR drop is minimized. L6 (GND) provides the return path for L7 stripline signals. The trade-off: only one stripline layer (L7) for high-speed signals, so SERDES and DDR must share L7 or route on L1/L8 as microstrip.</p>
+              <div class="s8-stackup-note">
+                <strong>XFPCB recommendation:</strong> Choose this architecture when the dominant constraint is power delivery — for example, a large FPGA with 0.85&nbsp;V core drawing 15&ndash;25&nbsp;A, or a design with five or more independent voltage domains. The IR drop improvement alone often justifies the SI trade-off.
+              </div>
+            </div>
+          </article>
+
+          <!-- Architecture C: HDI-Compatible Hybrid -->
+          <article class="s8-stackup-card">
+            <div class="s8-stackup-header">
+              <span class="s8-stackup-num">Architecture C</span>
+              <h3>HDI-Compatible Hybrid</h3>
+              <span class="s8-stackup-tag s8-stackup-tag-amber">Recommended for HDI + RF + mixed materials</span>
+            </div>
+            <div class="s8-stackup-assignment">
+              <div class="s8-stackup-layer s8-layer-signal">L1 &mdash; Signal / RF microstrip (low-loss laminate)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; Rogers 4450F / low-loss bondply</div>
+              <div class="s8-stackup-layer s8-layer-plane">L2 &mdash; Ground Plane (solid, RF return reference)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; FR-4 High Tg (0.20&ndash;0.30&nbsp;mm)</div>
+              <div class="s8-stackup-layer s8-layer-signal">L3 &mdash; Signal / Digital stripline</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; FR-4 (0.20&ndash;0.35&nbsp;mm)</div>
+              <div class="s8-stackup-layer s8-layer-plane">L4 &mdash; Ground / Power (hybrid assignment)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; FR-4 (0.50&ndash;0.71&nbsp;mm, center)</div>
+              <div class="s8-stackup-layer s8-layer-plane">L5 &mdash; Power / Ground (hybrid assignment)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; FR-4 (0.20&ndash;0.35&nbsp;mm)</div>
+              <div class="s8-stackup-layer s8-layer-signal">L6 &mdash; Signal / Digital stripline</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Core &mdash; FR-4 High Tg (0.20&ndash;0.30&nbsp;mm)</div>
+              <div class="s8-stackup-layer s8-layer-plane">L7 &mdash; Ground Plane (solid)</div>
+              <div class="s8-stackup-layer s8-layer-dielectric">Prepreg &mdash; Rogers 4450F / low-loss bondply</div>
+              <div class="s8-stackup-layer s8-layer-signal">L8 &mdash; Signal / RF microstrip (low-loss laminate)</div>
+            </div>
+            <div class="s8-stackup-body">
+              <div class="s8-stackup-metrics">
+                <div>
+                  <strong>Hybrid layers:</strong> L1, L8 (RF on Rogers/Taconic)
+                  <br>
+                  <strong>Digital stripline layers:</strong> 2 (L3, L6 on FR-4)
+                  <br>
+                  <strong>Plane layers:</strong> 3 (L2, L4/L5 hybrid, L7)
+                  <br>
+                  <strong>Dielectric types:</strong> 2 (FR-4 + low-loss RF)
+                </div>
+                <div>
+                  <strong>Best for:</strong> RF transceivers + digital processing on one board
+                  <br>
+                  <strong>RF Dk control:</strong> &plusmn;0.05 (Rogers laminates)
+                  <br>
+                  <strong>Digital cross-talk:</strong> &lt; &minus;40&nbsp;dB RF-to-digital
+                </div>
+              </div>
+              <p>This architecture uses a hybrid material stackup where the outer layers (L1, L2, L7, L8) use low-loss RF-grade laminates (Rogers 4000 series, Taconic RF-35, or equivalent) while the inner layers (L3&ndash;L6) remain standard FR-4. The RF signals route on L1 or L8 microstrip, referenced to L2 or L7 respectively — both of which maintain the Dk tolerance required for impedance-controlled RF transmission lines. Digital high-speed signals route on L3 and L6 (stripline), isolated from the RF layers by the L2 and L7 ground planes. This provides 40+ dB of isolation between RF and digital sections without expensive all-Rogers material.</p>
+              <div class="s8-stackup-note">
+                <strong>XFPCB recommendation:</strong> Specify this stackup when your design requires both RF front-end circuitry (GSM, LTE, Wi-Fi 6/7, UWB) and high-speed digital processing on the same PCB. The hybrid approach saves 50&ndash;60&nbsp;% in material cost compared to a full low-loss laminate stack, while meeting RF performance requirements.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 — BACKDRILLING ENGINEERING GUIDE
+         Comprehensive treatment of backdrilling for high-speed 8-layer boards.
+         This is a key differentiator vs. competitors who barely mention it.
+         ==================================================================== -->
+    <section class="s8-backdrill">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">High-speed signal optimization</span>
+          <h2>Backdrilling on 8-layer PCBs: eliminating via stub resonance</h2>
+          <p class="s8-section-sub">
+            At data rates above 5&nbsp;Gbps, the single largest signal integrity loss mechanism in multi-layer PCBs is <em>via stub resonance</em> — the unwanted quarter-wave resonance created by the unused portion of a through-hole via. Backdrilling removes this stub. On 8-layer boards, backdrilling is particularly effective because the board thickness (typically 1.6&nbsp;mm) creates a stub that resonates at approximately 4.4&nbsp;GHz in its fundamental mode — exactly where many high-speed interfaces (PCIe Gen&nbsp;4, USB&nbsp;3.2, 10&nbsp;GbE, JESD204B) operate.
+          </p>
+        </div>
+
+        <div class="s8-backdrill-layout">
+          <div class="s8-backdrill-content">
+            <div class="s8-backdrill-primer">
+              <h3>What is via stub resonance?</h3>
+              <p>A through-hole via in an 8-layer board connects all eight layers regardless of which layers the net uses. When a signal enters the via on L1 and leaves on L3, the via continues from L4 through L8 as a <strong>stub</strong> — an open-circuit transmission line stub. At the frequency where the stub length equals &lambda;/4, the input impedance at the junction drops to near zero, effectively shorting the signal to ground. This resonant null causes:</p>
+              <ul>
+                <li>Insertion loss peak: typically &minus;5 to &minus;15&nbsp;dB at the resonant frequency</li>
+                <li>Group delay distortion: &plusmn;50&nbsp;ps near resonance, causing eye closure</li>
+                <li>Impedance discontinuity: the via appears as a reactive load that changes with frequency</li>
+                <li>Radiated EMI: the stub acts as an unintentional antenna</li>
+              </ul>
+            </div>
+
+            <div class="s8-backdrill-frequency">
+              <h3>Resonance calculator for 8-layer boards</h3>
+              <div class="s8-backdrill-calc">
+                <div class="s8-calc-row">
+                  <span>Board thickness (1.6&nbsp;mm)</span>
+                  <span class="s8-calc-arrow">&rarr;</span>
+                  <span>Fundamental stub resonance: <strong>&asymp; 4.4&nbsp;GHz</strong></span>
+                </div>
+                <div class="s8-calc-row">
+                  <span>First harmonic (3&lambda;/4):</span>
+                  <span class="s8-calc-arrow">&rarr;</span>
+                  <span><strong>&asymp; 13.2&nbsp;GHz</strong></span>
+                </div>
+                <div class="s8-calc-row">
+                  <span>Un-drilled stub (L3&ndash;L8, 1.0&nbsp;mm):</span>
+                  <span class="s8-calc-arrow">&rarr;</span>
+                  <span>Resonance at <strong>&asymp; 6.8&nbsp;GHz</strong></span>
+                </div>
+                <div class="s8-calc-row s8-calc-row-result">
+                  <span>Backdrilled stub (&lt; 0.2&nbsp;mm remnant):</span>
+                  <span class="s8-calc-arrow">&rarr;</span>
+                  <span>Resonance shifted to <strong>&gt; 35&nbsp;GHz</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="s8-backdrill-process">
+              <h3>The backdrilling process for 8-layer boards</h3>
+              <div class="s8-process-steps">
+                <div class="s8-bd-step">
+                  <span class="s8-bd-num">1</span>
+                  <div>
+                    <h4>Drill through-hole</h4>
+                    <p>Standard mechanical drilling creates the via from L1 to L8. The drill diameter is typically 0.30&ndash;0.50&nbsp;mm for signal vias. The hole is plated with copper (typically 25&nbsp;&micro;m minimum) to form the conductive barrel.</p>
+                  </div>
+                </div>
+                <div class="s8-bd-step">
+                  <span class="s8-bd-num">2</span>
+                  <div>
+                    <h4>First plating and plugging</h4>
+                    <p>The via is plated and optionally plugged (with resist or conductive material) to protect the inner via section during the second drill step. The plug depth is controlled to ensure the second drill operation meets the target remnant length.</p>
+                  </div>
+                </div>
+                <div class="s8-bd-step">
+                  <span class="s8-bd-num">3</span>
+                  <div>
+                    <h4>Backdrilling (controlled-depth second drill)</h4>
+                    <p>A larger-diameter drill (typically 0.05&ndash;0.15&nbsp;mm wider than the via diameter) enters from the stub side (L8) and terminates at a precise depth between L3 and L4. The controlled-depth drilling removes the copper barrel from L4&ndash;L8, eliminating the stub. XFPCB uses depth-controlled drilling with &plusmn;0.05&nbsp;mm tolerance.</p>
+                  </div>
+                </div>
+                <div class="s8-bd-step">
+                  <span class="s8-bd-num">4</span>
+                  <div>
+                    <h4>Deburring and inspection</h4>
+                    <p>The backdrilled cavity is deburred and inspected. X-ray inspection verifies the remnant stub length. Typical acceptance: remnant &le; 0.20&nbsp;mm from the target exit layer. Cross-sectioning is used for first-article verification.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="s8-backdrill-guidance">
+              <h3>When to specify backdrilling on 8-layer boards</h3>
+              <table class="s8-guidance-table">
+                <thead>
+                  <tr>
+                    <th>Signal interface</th>
+                    <th>Data rate</th>
+                    <th>Backdrilling recommended?</th>
+                    <th>Remnant max</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PCIe Gen&nbsp;4</td>
+                    <td>16&nbsp;GT/s</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.15&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>PCIe Gen&nbsp;5</td>
+                    <td>32&nbsp;GT/s</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.10&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>USB 3.2 / 3.2 Gen&nbsp;2</td>
+                    <td>10&ndash;20&nbsp;Gbps</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.15&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>10&nbsp;GbE (XFI / KR)</td>
+                    <td>10.3125&nbsp;Gbps</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.20&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>SERDES &ge; 12.5&nbsp;Gbps</td>
+                    <td>12.5+&nbsp;Gbps</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.12&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>DDR4-2400&ndash;3200</td>
+                    <td>2.4&ndash;3.2&nbsp;GT/s</td>
+                    <td>Recommended for fly-by topology</td>
+                    <td>0.25&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>DDR5-4800+</td>
+                    <td>4.8+&nbsp;GT/s</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.15&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>HDMI 2.1 / DisplayPort 2.0</td>
+                    <td>12&ndash;20&nbsp;Gbps</td>
+                    <td><strong>Required</strong></td>
+                    <td>0.15&nbsp;mm</td>
+                  </tr>
+                  <tr>
+                    <td>Gigabit Ethernet (1000BASE-T)</td>
+                    <td>125&nbsp;MHz</td>
+                    <td>Not needed</td>
+                    <td>&mdash;</td>
+                  </tr>
+                  <tr>
+                    <td>I&sup2;C / SPI / UART / general GPIO</td>
+                    <td>&lt; 100&nbsp;MHz</td>
+                    <td>Not needed</td>
+                    <td>&mdash;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="s8-backdrill-note">
+              <h4>Backdrilling cost and design impact</h4>
+              <p>Backdrilling adds approximately 5&ndash;12&nbsp;% to the total board cost, depending on the number of backdrilled vias and the drill-to-depth tolerance required. The cost is justified when the design includes even a single high-speed interface above 5&nbsp;Gbps, because the difference between a non-backdrilled 8-layer board (resonance at 4.4&nbsp;GHz) and a backdrilled one (resonance above 35&nbsp;GHz) is the difference between a failing and passing 12.5&nbsp;Gbps eye diagram. XFPCB offers backdrilling as a standard option for 8-layer boards with a remnant stub tolerance of &plusmn;0.05&nbsp;mm.</p>
+            </div>
+          </div>
+
+          <div class="s8-backdrill-sidebar">
+            <div class="s8-sidebar-card">
+              <h4>Backdrilling: the 8-layer advantage</h4>
+              <p>On a 4-layer board (1.6&nbsp;mm), the stub of a via connecting L1 to L2 is L3&ndash;L4&nbsp;(~0.8&nbsp;mm). On a 6-layer board, the stub is L4&ndash;L6&nbsp;(~0.8&ndash;1.0&nbsp;mm). On an 8-layer board, the stub can be L4&ndash;L8&nbsp;(~1.0&ndash;1.2&nbsp;mm) — <em>longer than the active via section</em>.</p>
+              <p>This means backdrilling has the greatest relative impact on 8-layer boards. The longer the stub, the lower the resonant frequency and the more signal energy is lost. For 8-layer high-speed designs, backdrilling is not an optional enhancement — it is a prerequisite for reliable operation above 5&nbsp;Gbps.</p>
+            </div>
+            <div class="s8-sidebar-card s8-sidebar-card-dark">
+              <h4>Design rule summary</h4>
+              <ul>
+                <li>Specify backdrill start and stop layers in drill drawing</li>
+                <li>Minimum drill diameter: 0.30&nbsp;mm (signal)</li>
+                <li>Backdrill diameter: via diameter + 0.10&nbsp;mm</li>
+                <li>Minimum remnant stub: 0.10&nbsp;mm (capability), 0.20&nbsp;mm (standard)</li>
+                <li>Maximum backdrill depth: &plusmn;0.05&nbsp;mm tolerance</li>
+                <li>Avoid stacking backdrilled vias in same grid cell</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 — SIGNAL INTEGRITY WORKSHOP
+         Impedance control, cross-talk modeling, insertion loss budget, and
+         practical stackup calculations for 8-layer boards.
+         ==================================================================== -->
+    <section class="s8-si-workshop">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Signal integrity engineering</span>
+          <h2>8-layer signal integrity: impedance, cross-talk, and loss budget</h2>
+          <p class="s8-section-sub">
+            The 8-layer board provides enough vertical headroom to implement both microstrip (outer layers) and stripline (inner layers) with well-controlled dielectric spacing. This section provides practical impedance calculations, cross-talk isolation estimates, and an insertion loss budget worksheet.
+          </p>
+        </div>
+
+        <div class="s8-si-grid">
+          <!-- Impedance control -->
+          <article class="s8-si-card">
+            <h3>Impedance control on 8-layer stackups</h3>
+            <p>The 8-layer stackup supports three transmission line types: surface microstrip (L1/L8), offset stripline (L3 between L2 and L4, L6 between L5 and L7), and edge-coupled differential pairs on any signal layer. The table below shows achievable impedance ranges and tolerances for a standard FR-4 stackup (Dk&nbsp;=&nbsp;4.2&ndash;4.5 at 1&nbsp;GHz).</p>
+            <table class="s8-si-table">
+              <thead>
+                <tr>
+                  <th>Line type</th>
+                  <th>Target Z<sub>0</sub></th>
+                  <th>Trace width (mm)</th>
+                  <th>Spacing (mm)</th>
+                  <th>Tolerance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Microstrip (L1)</td>
+                  <td>50&nbsp;&Omega; SE</td>
+                  <td>0.18&ndash;0.25</td>
+                  <td>&mdash;</td>
+                  <td>&plusmn;8%</td>
+                </tr>
+                <tr>
+                  <td>Microstrip (L1)</td>
+                  <td>100&nbsp;&Omega; Diff</td>
+                  <td>0.15&ndash;0.20</td>
+                  <td>0.20&ndash;0.30</td>
+                  <td>&plusmn;8%</td>
+                </tr>
+                <tr>
+                  <td>Stripline (L3)</td>
+                  <td>50&nbsp;&Omega; SE</td>
+                  <td>0.12&ndash;0.18</td>
+                  <td>&mdash;</td>
+                  <td>&plusmn;6%</td>
+                </tr>
+                <tr>
+                  <td>Stripline (L3)</td>
+                  <td>100&nbsp;&Omega; Diff</td>
+                  <td>0.10&ndash;0.15</td>
+                  <td>0.15&ndash;0.25</td>
+                  <td>&plusmn;6%</td>
+                </tr>
+                <tr>
+                  <td>Stripline (L3)</td>
+                  <td>90&nbsp;&Omega; Diff (USB)</td>
+                  <td>0.12&ndash;0.18</td>
+                  <td>0.18&ndash;0.28</td>
+                  <td>&plusmn;6%</td>
+                </tr>
+                <tr>
+                  <td>Stripline (L3)</td>
+                  <td>85&nbsp;&Omega; Diff (PCIe)</td>
+                  <td>0.14&ndash;0.20</td>
+                  <td>0.20&ndash;0.30</td>
+                  <td>&plusmn;6%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="s8-si-note">Values shown for FR-4 (Dk&nbsp;=&nbsp;4.3) with 1&nbsp;oz copper and standard prepreg thicknesses. XFPCB provides impedance test coupons per lot with TDR verification. For tight-tolerance designs (&plusmn;5%), specify controlled Dk materials.</p>
+          </article>
+
+          <!-- Cross-talk isolation -->
+          <article class="s8-si-card">
+            <h3>Cross-talk isolation by layer assignment</h3>
+            <p>The 8-layer board's multiple reference planes provide natural cross-talk isolation between signal layers. The table below shows measured (simulation-validated) near-end cross-talk (NEXT) values for different layer combinations with 50&nbsp;&Omega; single-ended traces on 0.5&nbsp;mm pitch.</p>
+            <table class="s8-si-table">
+              <thead>
+                <tr>
+                  <th>Aggressor layer</th>
+                  <th>Victim layer</th>
+                  <th>Separation</th>
+                  <th>NEXT (dB)</th>
+                  <th>FEXT (dB)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>L1</td>
+                  <td>L3</td>
+                  <td>1 prepreg + 1 core + L2 plane</td>
+                  <td>&lt; &minus;45</td>
+                  <td>&lt; &minus;50</td>
+                </tr>
+                <tr>
+                  <td>L1</td>
+                  <td>L8</td>
+                  <td>Full stack + 2 planes</td>
+                  <td>&lt; &minus;60</td>
+                  <td>&lt; &minus;65</td>
+                </tr>
+                <tr>
+                  <td>L3</td>
+                  <td>L6</td>
+                  <td>1 core + 2 planes (L4, L5)</td>
+                  <td>&lt; &minus;55</td>
+                  <td>&lt; &minus;60</td>
+                </tr>
+                <tr>
+                  <td>L3 (edge-coupled)</td>
+                  <td>L3 (same layer)</td>
+                  <td>0.20&nbsp;mm gap</td>
+                  <td>&lt; &minus;28</td>
+                  <td>&lt; &minus;30</td>
+                </tr>
+                <tr>
+                  <td>L6 (edge-coupled)</td>
+                  <td>L6 (same layer)</td>
+                  <td>0.20&nbsp;mm gap</td>
+                  <td>&lt; &minus;28</td>
+                  <td>&lt; &minus;30</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="s8-si-note">The stripline layers (L3, L6) benefit from dual reference planes that confine the electric field, reducing cross-talk by 15&ndash;20&nbsp;dB compared to microstrip. For designs mixing RF and digital, assign RF to L1/L8 microstrip and digital to L3/L6 stripline for &gt; 45&nbsp;dB of broadband isolation.</p>
+          </article>
+
+          <!-- Insertion loss budget -->
+          <article class="s8-si-card s8-si-card-wide">
+            <h3>Insertion loss budget worksheet for 8-layer boards</h3>
+            <p>Use this worksheet to estimate the total insertion loss budget for a high-speed channel on an 8-layer board. Fill in your trace length, via count, and material parameters.</p>
+            <div class="s8-loss-budget">
+              <div class="s8-loss-item">
+                <span class="s8-loss-label">Dielectric loss (FR-4, Df&nbsp;=&nbsp;0.020 at 10&nbsp;GHz)</span>
+                <span class="s8-loss-formula">0.11&nbsp;dB/cm/GHz</span>
+                <span class="s8-loss-example">8&nbsp;cm &times; 10&nbsp;GHz &rarr; &minus;8.8&nbsp;dB</span>
+              </div>
+              <div class="s8-loss-item">
+                <span class="s8-loss-label">Conductor loss (1&nbsp;oz copper, 10&nbsp;GHz)</span>
+                <span class="s8-loss-formula">0.04&nbsp;dB/cm/GHz</span>
+                <span class="s8-loss-example">8&nbsp;cm &times; 10&nbsp;GHz &rarr; &minus;3.2&nbsp;dB</span>
+              </div>
+              <div class="s8-loss-item">
+                <span class="s8-loss-label">Via loss per transition (non-backdrilled)</span>
+                <span class="s8-loss-formula">0.3&ndash;0.8&nbsp;dB at 10&nbsp;GHz</span>
+                <span class="s8-loss-example">4 vias &rarr; &minus;1.2 to &minus;3.2&nbsp;dB</span>
+              </div>
+              <div class="s8-loss-item">
+                <span class="s8-loss-label">Via loss (backdrilled, remnant &lt; 0.2&nbsp;mm)</span>
+                <span class="s8-loss-formula">0.05&ndash;0.15&nbsp;dB at 10&nbsp;GHz</span>
+                <span class="s8-loss-example">4 vias &rarr; &minus;0.2 to &minus;0.6&nbsp;dB</span>
+              </div>
+              <div class="s8-loss-item s8-loss-item-total">
+                <span class="s8-loss-label">Total estimated loss (8&nbsp;cm, 4 vias, no backdrill)</span>
+                <span class="s8-loss-formula"></span>
+                <span class="s8-loss-example"><strong>&minus;13.2 to &minus;15.2&nbsp;dB</strong></span>
+              </div>
+              <div class="s8-loss-item s8-loss-item-total s8-loss-item-good">
+                <span class="s8-loss-label">Total estimated loss (8&nbsp;cm, 4 vias, backdrilled)</span>
+                <span class="s8-loss-formula"></span>
+                <span class="s8-loss-example"><strong>&minus;12.2 to &minus;12.6&nbsp;dB</strong></span>
+              </div>
+            </div>
+            <p class="s8-si-note">Typical maximum loss budget for 12.5&nbsp;Gbps SERDES: &minus;15&nbsp;dB (per IEEE 802.3). The non-backdrilled board at 15.2&nbsp;dB is <em>over budget</em>. The backdrilled board at 12.6&nbsp;dB has 2.4&nbsp;dB of margin — enough for connector loss, crosstalk, and manufacturing variation. For longer traces (&gt; 12&nbsp;cm) or higher data rates (&gt; 25&nbsp;Gbps), specify low-loss laminates (Df&nbsp;&le;&nbsp;0.010) for the signal layers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 6 — HDI INTEGRATION AT 8 LAYERS
+         Microvia stacking patterns, blind/buried via strategies, and
+         via-in-pad options specific to 8-layer sequential lamination.
+         ==================================================================== -->
+    <section class="s8-hdi">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">HDI technology integration</span>
+          <h2>HDI on 8-layer PCBs: microvia stacking patterns and via strategies</h2>
+          <p class="s8-section-sub">
+            The 8-layer PCB occupies a unique position in the HDI landscape: it is thick enough to support sequential lamination with multiple build-up layers, yet thin enough that microvia aspect ratios remain manufacturable. This makes the 8-layer stack the most cost-effective entry point for designs that need both HDI fan-out and controlled-impedance stripline routing.
+          </p>
+        </div>
+
+        <div class="s8-hdi-layout">
+          <div class="s8-hdi-main">
+            <!-- HDI build-up types -->
+            <article class="s8-hdi-block">
+              <h3>Four HDI build-up configurations for 8-layer PCBs</h3>
+              <div class="s8-hdi-configs">
+                <div class="s8-hdi-config">
+                  <span class="s8-hdi-config-label">Type A: 1+N+1</span>
+                  <p>One sequential build-up layer per side. Total structure: L1&ndash;L2 (microvia) + L2&ndash;L7 (through vias) + L7&ndash;L8 (microvia). Suitable for 0.65&nbsp;mm pitch BGAs and moderate routing density. Lowest HDI cost.</p>
+                </div>
+                <div class="s8-hdi-config">
+                  <span class="s8-hdi-config-label">Type B: 2+N+2</span>
+                  <p>Two sequential build-up layers per side. Total structure: L1&ndash;L2&ndash;L3 (microvia stack) + L3&ndash;L6 (buried through vias) + L6&ndash;L7&ndash;L8 (microvia stack). Suitable for 0.4&ndash;0.5&nbsp;mm pitch BGAs. Requires two lamination cycles for the build-up layers.</p>
+                </div>
+                <div class="s8-hdi-config">
+                  <span class="s8-hdi-config-label">Type C: Staggered microvia</span>
+                  <p>Microvias on L1&ndash;L2, L2&ndash;L3, L7&ndash;L6, L6&ndash;L5 in a staggered pattern. No stacked vias — each microvia catches a different inner layer pad. Suitable when via-in-pad is not required but BGA pitch is &le; 0.5&nbsp;mm. Lower cost than stacked, but consumes more routing area on inner layers.</p>
+                </div>
+                <div class="s8-hdi-config">
+                  <span class="s8-hdi-config-label">Type D: Via-in-pad (VIPPO)</span>
+                  <p>Microvias placed directly in BGA pads, filled with copper or conductive epoxy, and planarized. L1&ndash;L2 microvia under a 0.4&nbsp;mm BGA pad. Support for 0.35&nbsp;mm pitch with careful pad size management. Copper-filled VIPPO provides the best thermal performance.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Blind and buried via strategy -->
+            <article class="s8-hdi-block">
+              <h3>Blind and buried via options in 8-layer builds</h3>
+              <p>The 8-layer sequential lamination structure supports buried vias that are impossible in 4-layer or 6-layer boards of the same thickness:</p>
+              <table class="s8-hdi-table">
+                <thead>
+                  <tr>
+                    <th>Via type</th>
+                    <th>Layer span (example)</th>
+                    <th>Drill method</th>
+                    <th>Lamination stage</th>
+                    <th>Cost factor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Through via (PTH)</td>
+                    <td>L1&ndash;L8</td>
+                    <td>Mechanical</td>
+                    <td>After final lamination</td>
+                    <td>1&times; (baseline)</td>
+                  </tr>
+                  <tr>
+                    <td>Buried via L3&ndash;L6</td>
+                    <td>L3&ndash;L6</td>
+                    <td>Mechanical</td>
+                    <td>After 1st lamination (L3&ndash;L4&ndash;L5&ndash;L6 sub-stack)</td>
+                    <td>1.2&ndash;1.4&times;</td>
+                  </tr>
+                  <tr>
+                    <td>Buried via L2&ndash;L5</td>
+                    <td>L2&ndash;L7</td>
+                    <td>Mechanical</td>
+                    <td>After 2nd lamination (before outer layers)</td>
+                    <td>1.3&ndash;1.5&times;</td>
+                  </tr>
+                  <tr>
+                    <td>Blind via L1&ndash;L2</td>
+                    <td>L1&ndash;L2</td>
+                    <td>Laser + mechanical</td>
+                    <td>After final lamination</td>
+                    <td>1.4&ndash;1.8&times;</td>
+                  </tr>
+                  <tr>
+                    <td>Blind via L1&ndash;L3</td>
+                    <td>L1&ndash;L3</td>
+                    <td>Laser (stacked microvia)</td>
+                    <td>After final lamination</td>
+                    <td>1.6&ndash;2.0&times;</td>
+                  </tr>
+                  <tr>
+                    <td>VIPPO (Cu-filled)</td>
+                    <td>L1&ndash;L2</td>
+                    <td>Laser + fill + cap plate</td>
+                    <td>After final lamination</td>
+                    <td>1.8&ndash;2.5&times;</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="s8-hdi-note">The cost factor is relative to a standard through-only via 8-layer board. The key decision point: when BGA pitch exceeds 0.65&nbsp;mm, through vias are usually sufficient and HDI features are not needed. Below 0.65&nbsp;mm, some level of HDI (at minimum Type A) is required. Below 0.4&nbsp;mm, Type D (VIPPO) is mandatory.</p>
+            </article>
+
+            <!-- Microvia reliability -->
+            <article class="s8-hdi-block">
+              <h3>Microvia reliability in 8-layer sequential lamination</h3>
+              <p>The IPC-6012 and IPC-6013 standards define microvia reliability requirements that are particularly relevant for 8-layer HDI builds. Key considerations:</p>
+              <ul class="s8-hdi-list">
+                <li><strong>Microvia aspect ratio:</strong> For 0.15&nbsp;mm drill diameter in 0.10&nbsp;mm dielectric, aspect ratio = 0.67:1 (well within the IPC-6012 Class&nbsp;3 limit of 1:1).</li>
+                <li><strong>Stacked microvia plating:</strong> When stacking microvias (L1&ndash;L2&ndash;L3), the second microvia must be plated through the first microvia's barrel. XFPCB uses pulse reverse plating (PRP) to ensure &ge; 20&nbsp;&micro;m copper thickness in the stacked via barrel.</li>
+                <li><strong>Thermal cycling:</strong> Microvias in 8-layer HDI boards are subjected to three lamination cycles (for Type B). The cumulative thermal stress can cause barrel cracking if the copper elongation is insufficient. XFPCB specifies high-elongation copper (EL &ge; 18%) for microvia plating in multi-lamination HDI builds.</li>
+                <li><strong>Resin recession:</strong> During sequential lamination, the resin in microvia fills can recede when heated. This is mitigated by using filled vias with controlled cure cycles and verifying planarity after each lamination step.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="s8-hdi-sidebar">
+            <div class="s8-sidebar-card">
+              <h4>HDI decision flowchart</h4>
+              <div class="s8-flowchart">
+                <div class="s8-flow-item">BGA pitch &ge; 0.80&nbsp;mm
+                  <span class="s8-flow-arrow">&darr;</span>
+                  <span class="s8-flow-result">Through vias only — no HDI needed</span>
+                </div>
+                <div class="s8-flow-item">BGA pitch 0.65&ndash;0.80&nbsp;mm
+                  <span class="s8-flow-arrow">&darr;</span>
+                  <span class="s8-flow-result">Consider Type A (1+N+1) if routing congested</span>
+                </div>
+                <div class="s8-flow-item">BGA pitch 0.40&ndash;0.65&nbsp;mm
+                  <span class="s8-flow-arrow">&darr;</span>
+                  <span class="s8-flow-result">Type B (2+N+2) or Type C (staggered) recommended</span>
+                </div>
+                <div class="s8-flow-item">BGA pitch &le; 0.40&nbsp;mm
+                  <span class="s8-flow-arrow">&darr;</span>
+                  <span class="s8-flow-result">Type D VIPPO mandatory; consider 10-layer HDI</span>
+                </div>
+              </div>
+            </div>
+            <div class="s8-sidebar-card s8-sidebar-card-dark">
+              <h4>XFPCB HDI capability at 8 layers</h4>
+              <ul>
+                <li>Minimum microvia diameter: 75&nbsp;&micro;m (laser)</li>
+                <li>Minimum blind via diameter: 0.20&nbsp;mm (mechanical)</li>
+                <li>Minimum BGA pitch (VIPPO): 0.35&nbsp;mm</li>
+                <li>Via-in-pad fill: Copper or conductive epoxy</li>
+                <li>Maximum microvia stack: 3 layers per side</li>
+                <li>Laser drill registration: &plusmn;50&nbsp;&micro;m</li>
+                <li>Sequential lamination cycles: up to 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 — HYBRID MATERIAL STRATEGIES
+         FR4 + low-loss laminate combinations for RF coexistence.
+         ==================================================================== -->
+    <section class="s8-hybrid">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Material engineering</span>
+          <h2>Hybrid material stackups: combining FR-4 with low-loss laminates</h2>
+          <p class="s8-section-sub">
+            When an 8-layer board carries both high-speed digital signals and RF/microwave circuitry, a hybrid material stackup can meet the electrical requirements of both domains without the cost of an all-low-loss laminate build. The 8-layer structure naturally accommodates mixed dielectric materials because the sequential lamination process can bond different core and prepreg types at different stages.
+          </p>
+        </div>
+
+        <div class="s8-hybrid-content">
+          <div class="s8-hybrid-row">
+            <div class="s8-hybrid-text">
+              <h3>When to specify a hybrid stackup</h3>
+              <p>A hybrid stackup (different laminate types for different layers) is appropriate when:</p>
+              <ul>
+                <li><strong>RF front-end + digital back-end on one board:</strong> The RF section (LNA, PA, filters) needs tight Dk control (&plusmn;0.05) and low Df (&le; 0.003) for low insertion loss at GHz frequencies, while the digital section (MCU, FPGA, SERDES) can tolerate standard FR-4 (Df&nbsp;&asymp;&nbsp;0.020).</li>
+                <li><strong>High-speed SERDES at 25+ Gbps over long traces:</strong> FR-4 dielectric loss at 25&nbsp;GHz is approximately 0.28&nbsp;dB/cm. For a 15&nbsp;cm trace, that's &minus;4.2&nbsp;dB from dielectric alone — consuming nearly a third of the &minus;15&nbsp;dB budget. A low-loss laminate (Df&nbsp;&le;&nbsp;0.010) cuts this to &minus;2.1&nbsp;dB.</li>
+                <li><strong>mmWave or radar applications (24&ndash;77&nbsp;GHz):</strong> FR-4 is unusable above approximately 15&nbsp;GHz due to dielectric loss and Dk variation. Low-loss RF laminates (Rogers, Taconic, Isola) are required for the RF layers, while standard FR-4 can be used for non-critical routing.</li>
+                <li><strong>Thermal management + RF performance:</strong> Some RF laminates (e.g., Rogers 4350B with 0.60&nbsp;W/mK thermal conductivity) provide better heat spreading than FR-4 (0.25&nbsp;W/mK), useful when RF power amplifiers are on the outer layers.</li>
+              </ul>
+            </div>
+            <div class="s8-hybrid-compat">
+              <h3>Material compatibility matrix</h3>
+              <table class="s8-hybrid-table">
+                <thead>
+                  <tr>
+                    <th>Laminate type</th>
+                    <th>Dk @ 10&nbsp;GHz</th>
+                    <th>Df @ 10&nbsp;GHz</th>
+                    <th>Tg (&deg;C)</th>
+                    <th>TCD (&micro;m/m/&deg;C)</th>
+                    <th>Hybrid with FR-4?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Standard FR-4</td>
+                    <td>4.2&ndash;4.5</td>
+                    <td>0.018&ndash;0.025</td>
+                    <td>130&ndash;150</td>
+                    <td>14&ndash;18</td>
+                    <td>&mdash;</td>
+                  </tr>
+                  <tr>
+                    <td>High Tg FR-4</td>
+                    <td>4.3&ndash;4.6</td>
+                    <td>0.020&ndash;0.025</td>
+                    <td>170&ndash;180</td>
+                    <td>12&ndash;15</td>
+                    <td>Yes (common)</td>
+                  </tr>
+                  <tr>
+                    <td>Rogers 4003C</td>
+                    <td>3.38 &plusmn; 0.05</td>
+                    <td>0.0027</td>
+                    <td>&gt; 280</td>
+                    <td>11&ndash;14</td>
+                    <td>Yes (with bondply)</td>
+                  </tr>
+                  <tr>
+                    <td>Rogers 4350B</td>
+                    <td>3.48 &plusmn; 0.05</td>
+                    <td>0.0037</td>
+                    <td>&gt; 280</td>
+                    <td>12&ndash;16</td>
+                    <td>Yes (with bondply)</td>
+                  </tr>
+                  <tr>
+                    <td>Taconic RF-35</td>
+                    <td>3.50 &plusmn; 0.10</td>
+                    <td>0.0028</td>
+                    <td>&gt; 315</td>
+                    <td>9&ndash;12</td>
+                    <td>Yes (with bondply)</td>
+                  </tr>
+                  <tr>
+                    <td>Isola I-Tera MT40</td>
+                    <td>3.45 &plusmn; 0.05</td>
+                    <td>0.0031</td>
+                    <td>200</td>
+                    <td>10&ndash;13</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Panasonic MEGTRON6</td>
+                    <td>3.6 &plusmn; 0.05</td>
+                    <td>0.0020</td>
+                    <td>185</td>
+                    <td>11&ndash;14</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="s8-hybrid-stackup-example">
+            <h3>Example hybrid stackup: 8-layer, 2&times; RF + 6&times; FR-4</h3>
+            <div class="s8-hybrid-diagram">
+              <div class="s8-hybrid-layer s8-hybrid-rf">L1 &mdash; RF microstrip (Rogers 4350B, 0.25&nbsp;mm)</div>
+              <div class="s8-hybrid-layer s8-hybrid-bond">Bondply &mdash; Rogers 4450F prepreg, 0.10&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-plane">L2 &mdash; Ground plane (on FR-4 core, 0.30&nbsp;mm)</div>
+              <div class="s8-hybrid-layer s8-hybrid-fr4">FR-4 Core &mdash; High Tg, 0.50&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-signal">L3 &mdash; Digital signal / stripline (on FR-4 core)</div>
+              <div class="s8-hybrid-layer s8-hybrid-fr4">Prepreg &mdash; FR-4, 0.20&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-plane">L4 &mdash; Ground / power (on FR-4 core, 0.71&nbsp;mm center)</div>
+              <div class="s8-hybrid-layer s8-hybrid-fr4">Core &mdash; FR-4 High Tg, 0.71&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-plane">L5 &mdash; Power / ground (on FR-4 core)</div>
+              <div class="s8-hybrid-layer s8-hybrid-fr4">Prepreg &mdash; FR-4, 0.20&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-signal">L6 &mdash; Digital signal / stripline (on FR-4 core)</div>
+              <div class="s8-hybrid-layer s8-hybrid-fr4">FR-4 Core &mdash; High Tg, 0.30&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-plane">L7 &mdash; Ground plane (on FR-4 core)</div>
+              <div class="s8-hybrid-layer s8-hybrid-bond">Bondply &mdash; Rogers 4450F prepreg, 0.10&nbsp;mm</div>
+              <div class="s8-hybrid-layer s8-hybrid-rf">L8 &mdash; RF microstrip (Rogers 4350B, 0.25&nbsp;mm)</div>
+            </div>
+            <div class="s8-hybrid-notes">
+              <p><strong>Key process considerations:</strong></p>
+              <ul>
+                <li>The RF laminates (Rogers 4350B) on L1 and L8 are bonded to the FR-4 core using Rogers 4450F bondply — a prepreg specifically designed for hybrid bonding with different coefficient of thermal expansion (CTE) between FR-4 and RF laminates.</li>
+                <li>The bondply's resin system accommodates the CTE mismatch (FR-4: 14&ndash;18&nbsp;ppm/&deg;C, Rogers 4350B: 12&ndash;16&nbsp;ppm/&deg;C) during the lamination thermal cycle.</li>
+                <li>Drilling hybrid stacks requires two drill programs: standard carbide bits for FR-4 sections and slower feed rates for the RF laminate to avoid burring and resin smear.</li>
+                <li>Plating adhesion to the Rogers laminate requires a plasma desmear step before electroless copper deposition, because RF laminates are ceramic-filled and do not respond to standard permanganate desmear.</li>
+                <li>XFPCB recommends a Dk verification coupon on the RF layers for every hybrid panel, with TDR impedance measurement to validate the RF transmission line performance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 8 — MANUFACTURING CHALLENGES
+         Registration tolerance, copper balance, resin flow, and DFM rules
+         specific to 8-layer sequential lamination.
+         ==================================================================== -->
+    <section class="s8-manufacturing">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Manufacturing complexity</span>
+          <h2>Eight-layer manufacturing: registration, copper balance, and resin flow</h2>
+          <p class="s8-section-sub">
+            The 8-layer sequential lamination process introduces manufacturing challenges that are less pronounced at 4 or 6 layers. Understanding these constraints helps designers avoid DFM issues that can cause yield loss, impedance variation, or delayed delivery. This section documents the three critical process controls for 8-layer fabrication.
+          </p>
+        </div>
+
+        <div class="s8-mfg-grid">
+          <!-- Registration tolerance -->
+          <article class="s8-mfg-card">
+            <div class="s8-mfg-icon">R</div>
+            <h3>Layer-to-layer registration</h3>
+            <p>An 8-layer board has three sequential lamination stages (assuming a symmetric build: two outer cores + center core + outer prepregs). Each stage introduces a registration event. The accumulated tolerance from L1 to L8 is the sum of the tolerances at each stage:</p>
+            <div class="s8-mfg-formula">
+              Total registration error = &radic;(&delta;<sup>2</sup><sub>stage1</sub> + &delta;<sup>2</sup><sub>stage2</sub> + &delta;<sup>2</sup><sub>stage3</sub>)
+            </div>
+            <p>XFPCB typical registration capability:</p>
+            <ul>
+              <li>Inner-layer imaging: &plusmn;25&nbsp;&micro;m per layer (LDI process)</li>
+              <li>First lamination (core-to-core): &plusmn;50&nbsp;&micro;m shift</li>
+              <li>Second lamination (outer prepregs): &plusmn;75&nbsp;&micro;m shift</li>
+              <li>Drilling registration to outer layer: &plusmn;75&nbsp;&micro;m</li>
+              <li><strong>Total accumulated L1-to-L8:</strong> &plusmn;125&nbsp;&micro;m (typical), &plusmn;100&nbsp;&micro;m (with AOI compensation)</li>
+            </ul>
+            <div class="s8-mfg-note">
+              <strong>DFM recommendation:</strong> To reduce registration risk, XFPCB uses a "star" registration pattern (three tooling holes per panel edge plus one diagonal) during lamination. Designers can help by placing fiducial marks on L1 and L8 that align with inner-layer tooling holes.
+            </div>
+          </article>
+
+          <!-- Copper balance -->
+          <article class="s8-mfg-card">
+            <div class="s8-mfg-icon">Cu</div>
+            <h3>Copper balance and resin flow</h3>
+            <p>During each lamination step, the prepreg resin must flow evenly across the panel to achieve uniform dielectric thickness. Uneven copper distribution creates "resin-rich" and "resin-starved" areas, causing wedge-shaped dielectrics and impedance variation. The 8-layer board is particularly sensitive because there are three prepreg interfaces (L1&ndash;L2, L4&ndash;L5, L7&ndash;L8) in a standard symmetric stackup.</p>
+            <p><strong>Copper balance rules for 8-layer boards:</strong></p>
+            <ul>
+              <li>Copper density per layer pair must be within 15&nbsp;% (e.g., if L1 is 60&nbsp;% copper, L2 must be 45&ndash;75&nbsp;% copper in the same area)</li>
+              <li>Large copper pours must include a "thieving" pattern or cross-hatching on adjacent plane layers to maintain even dielectric spacing</li>
+              <li>For the center core (L4&ndash;L5 in Architecture A), both sides should have balanced copper distribution to prevent core bowing during lamination</li>
+              <li>XFPCB CAM engineers add copper thieving or dummy pads to achieve balance when the design copper density varies by more than 20&nbsp;% across the panel</li>
+            </ul>
+            <div class="s8-mfg-note">
+              <strong>DFM recommendation:</strong> Use a post-layout copper density analysis tool (e.g., Allegro PCB MFG or Valor) to check copper distribution per layer pair before releasing Gerber files. Aim for within 10&nbsp;% copper density between paired layers.
+            </div>
+          </article>
+
+          <!-- Resin flow and dielectric thickness -->
+          <article class="s8-mfg-card">
+            <div class="s8-mfg-icon">RF</div>
+            <h3>Resin flow control and dielectric uniformity</h3>
+            <p>Each prepreg layer in an 8-layer stack has a specified resin content (RC%) that determines how much the dielectric thickness changes during lamination. The challenge is that the prepreg between L1 and L2 experiences a different pressure environment than the prepreg between L4 and L5 (the center of the stack), leading to different resin flow behavior.</p>
+            <p><strong>Factors affecting resin flow in 8-layer lamination:</strong></p>
+            <ul>
+              <li><strong>Prepreg RC% selection:</strong> Outer prepregs (L1&ndash;L2, L7&ndash;L8) typically use higher RC% (65&ndash;70&nbsp;%) to compensate for the pressure gradient at the stack edges. Inner prepregs (L3&ndash;L4, L5&ndash;L6) use lower RC% (55&ndash;60&nbsp;%) because the pressure is more uniform in the center.</li>
+              <li><strong>Lamination pressure profile:</strong> XFPCB uses a multi-stage pressure ramp for 8-layer boards: low pressure (50&nbsp;psi) during the first 10&nbsp;minutes for resin gelation, then high pressure (350&nbsp;psi) for the remaining cure cycle. This prevents resin over-flow from the outer prepregs.</li>
+              <li><strong>Dielectric thickness tolerance:</strong> Achievable tolerance on prepreg thickness after lamination is &plusmn;10&nbsp;% for outer prepregs and &plusmn;8&nbsp;% for inner prepregs. This translates to an impedance tolerance of approximately &plusmn;6&nbsp;% for stripline on L3 and L6.</li>
+              <li><strong>Resin recession at drilled holes:</strong> During drilling, the heat can cause resin recession (haloing) around the hole, especially near outer prepreg layers. This is mitigated by proper drill speed and feed rate selection — XFPCB uses 150&ndash;200&nbsp;K&nbsp;RPM with 2&ndash;3&nbsp;m/min feed for 0.30&nbsp;mm drills in 8-layer FR-4.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- DFM table -->
+        <div class="s8-dfm-section">
+          <h3>8-layer DFM checklist: what XFPCB reviews before fabrication</h3>
+          <table class="s8-dfm-table">
+            <thead>
+              <tr>
+                <th>DFM item</th>
+                <th>What we check</th>
+                <th>Typical issue at 8 layers</th>
+                <th>Action by XFPCB</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Copper balance</td>
+                <td>Copper density per layer pair</td>
+                <td>Uneven resin flow &rarr; wedge dielectric &rarr; impedance variation</td>
+                <td>Add thieving/dummy pads, confirm with customer</td>
+              </tr>
+              <tr>
+                <td>Registration targets</td>
+                <td>Tooling holes and fiducials</td>
+                <td>Misalignment between L1 and L8 &rarr; pad-to-hole breakout</td>
+                <td>Compensate artwork per lamination stage</td>
+              </tr>
+              <tr>
+                <td>Via aspect ratio</td>
+                <td>Drill diameter vs. board thickness</td>
+                <td>High aspect ratio &rarr; poor plating coverage in via center</td>
+                <td>Recommend larger drill or thinner stackup</td>
+              </tr>
+              <tr>
+                <td>Stub length (backdrill)</td>
+                <td>Via stop/start layers vs. drill depth</td>
+                <td>Backdrill remnant too long &rarr; stub resonance at operating frequency</td>
+                <td>Verify depth tolerance; cross-section first article</td>
+              </tr>
+              <tr>
+                <td>Hybrid material bond</td>
+                <td>CTE compatibility between materials</td>
+                <td>Delamination at bondply interface during thermal cycling</td>
+                <td>Verify bondply selection; suggest plasma treatment</td>
+              </tr>
+              <tr>
+                <td>Microvia alignment</td>
+                <td>Laser drill capture pad registration</td>
+                <td>Microvia misses target pad in stacked configuration</td>
+                <td>Check capture pad size (&ge; 100&nbsp;&micro;m larger than microvia)</td>
+              </tr>
+              <tr>
+                <td>Sequential lamination plan</td>
+                <td>Buried via placement relative to core boundaries</td>
+                <td>Buried via intersects outer prepreg &rarr; exposed via after lamination</td>
+                <td>Adjust drill program to stay within core region</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 9 — SPECIFICATIONS AND CAPABILITIES
+         Technical specification summary table.
+         ==================================================================== -->
+    <section class="s8-specs">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Technical specifications</span>
+          <h2>8-layer PCB manufacturing specifications</h2>
+          <p class="s8-section-sub">
+            XFPCB's standard and advanced capabilities for 8-layer PCB fabrication. All specifications are verified per IPC-6012 Class&nbsp;2/3 as specified in the order.
+          </p>
+        </div>
+
+        <div class="s8-specs-grid">
+          <div class="s8-specs-group">
+            <h3>Layer stack and materials</h3>
+            <table class="s8-specs-table">
+              <tbody>
+                <tr><td>Layer count</td><td>8 layers</td></tr>
+                <tr><td>Standard thickness</td><td>1.2&nbsp;mm, 1.6&nbsp;mm, 2.0&nbsp;mm</td></tr>
+                <tr><td>Copper weight (inner)</td><td>0.5&ndash;2&nbsp;oz</td></tr>
+                <tr><td>Copper weight (outer)</td><td>0.5&ndash;3&nbsp;oz</td></tr>
+                <tr><td>Core materials</td><td>FR-4, High Tg FR-4, Rogers, Taconic, Isola, MEGTRON</td></tr>
+                <tr><td>Prepreg types</td><td>FR-4, Rogers 4450F, low-flow prepreg</td></tr>
+                <tr><td>Hybrid stackups</td><td>Supported (FR-4 + RF laminate)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s8-specs-group">
+            <h3>HDI and via options</h3>
+            <table class="s8-specs-table">
+              <tbody>
+                <tr><td>Minimum mechanical drill</td><td>0.20&nbsp;mm</td></tr>
+                <tr><td>Minimum laser microvia</td><td>75&nbsp;&micro;m</td></tr>
+                <tr><td>Minimum blind via (mechanical)</td><td>0.25&nbsp;mm</td></tr>
+                <tr><td>Via-in-pad</td><td>Copper fill or epoxy fill + cap plate</td></tr>
+                <tr><td>Microvia stack</td><td>Up to 3 layers per side</td></tr>
+                <tr><td>Buried via layers</td><td>L2&ndash;L7, L3&ndash;L6 (per stackup)</td></tr>
+                <tr><td>Backdrilling</td><td>&plusmn;0.05&nbsp;mm depth tolerance</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s8-specs-group">
+            <h3>Impedance and electrical</h3>
+            <table class="s8-specs-table">
+              <tbody>
+                <tr><td>Impedance tolerance (standard)</td><td>&plusmn;8%</td></tr>
+                <tr><td>Impedance tolerance (tight)</td><td>&plusmn;5% (with controlled Dk)</td></tr>
+                <tr><td>Impedance test</td><td>TDR coupon per panel</td></tr>
+                <tr><td>Dielectric thickness tolerance</td><td>&plusmn;8% (inner), &plusmn;10% (outer)</td></tr>
+                <tr><td>Electrical test</td><td>Flying probe or fixture</td></tr>
+                <tr><td>Dk range available</td><td>3.0&ndash;4.8 (by material selection)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s8-specs-group">
+            <h3>Registration and quality</h3>
+            <table class="s8-specs-table">
+              <tbody>
+                <tr><td>Layer-to-layer registration</td><td>&plusmn;125&nbsp;&micro;m (L1&ndash;L8)</td></tr>
+                <tr><td>Drill-to-copper registration</td><td>&plusmn;75&nbsp;&micro;m</td></tr>
+                <tr><td>Solder mask registration</td><td>&plusmn;50&nbsp;&micro;m</td></tr>
+                <tr><td>Minimum trace/space</td><td>75&nbsp;&micro;m / 75&nbsp;&micro;m (inner), 100&nbsp;&micro;m / 100&nbsp;&micro;m (outer)</td></tr>
+                <tr><td>AOI</td><td>100% on inner and outer layers</td></tr>
+                <tr><td>X-ray inspection</td><td>For buried vias and backdrill verification</td></tr>
+                <tr><td>Qualification standard</td><td>IPC-6012 Class 2 / Class 3</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s8-specs-group">
+            <h3>Surface finishes</h3>
+            <table class="s8-specs-table">
+              <tbody>
+                <tr><td>ENIG (Electroless Nickel Immersion Gold)</td><td>Standard option</td></tr>
+                <tr><td>HASL / Lead-free HASL</td><td>Economy option</td></tr>
+                <tr><td>OSP (Organic Solderability Preservative)</td><td>Cost-effective</td></tr>
+                <tr><td>Immersion Silver (ImAg)</td><td>For fine-pitch applications</td></tr>
+                <tr><td>Immersion Tin (ImSn)</td><td>For press-fit connectors</td></tr>
+                <tr><td>ENEPIG</td><td>For multiple reflow + wire bonding</td></tr>
+                <tr><td>Hard Gold (selective)</td><td>For edge connectors / contacts</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s8-specs-group">
+            <h3>Delivery and volume</h3>
+            <table class="s8-specs-table">
+              <tbody>
+                <tr><td>Prototype lead time</td><td>3&ndash;7 working days</td></tr>
+                <tr><td>Production lead time</td><td>10&ndash;18 working days</td></tr>
+                <tr><td>Minimum order quantity</td><td>1 piece (prototype)</td></tr>
+                <tr><td>Panel size (max)</td><td>580&nbsp;mm &times; 480&nbsp;mm</td></tr>
+                <tr><td>Express service</td><td>24&ndash;48&nbsp;hour quick-turn (select stackups)</td></tr>
+                <tr><td>Packaging</td><td>Vacuum + ESD-safe + rigid box</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 10 — 6-LAYER vs 8-LAYER TRADE-OFF GUIDE
+         A structured decision guide that helps buyers determine which they need.
+         ==================================================================== -->
+    <section class="s8-tradeoff">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Decision guide</span>
+          <h2>6-layer vs 8-layer: a structured trade-off analysis</h2>
+          <p class="s8-section-sub">
+            Many designs can be implemented on either 6 or 8 layers — the question is whether the 8-layer version provides enough improvement in signal integrity, power delivery, or routing margin to justify the additional cost. This section provides a quantitative framework for that decision.
+          </p>
+        </div>
+
+        <div class="s8-tradeoff-grid">
+          <!-- Dimension 1: Routing -->
+          <div class="s8-tradeoff-dimension">
+            <h4>Routing channels</h4>
+            <div class="s8-tradeoff-compare">
+              <div class="s8-tradeoff-6l">
+                <span class="s8-tradeoff-label">6-Layer</span>
+                <span class="s8-tradeoff-val">2&ndash;3 signal layers</span>
+                <span class="s8-tradeoff-detail">Typically one dedicated microstrip, one stripline, one shared routing/component</span>
+              </div>
+              <div class="s8-tradeoff-divider"></div>
+              <div class="s8-tradeoff-8l">
+                <span class="s8-tradeoff-label">8-Layer</span>
+                <span class="s8-tradeoff-val">4 signal layers</span>
+                <span class="s8-tradeoff-detail">Two dedicated stripline layers, two microstrip layers</span>
+              </div>
+            </div>
+            <span class="s8-tradeoff-verdict">8-layer wins for BGA fan-out + multiple high-speed buses</span>
+          </div>
+
+          <div class="s8-tradeoff-dimension">
+            <h4>Plane availability</h4>
+            <div class="s8-tradeoff-compare">
+              <div class="s8-tradeoff-6l">
+                <span class="s8-tradeoff-label">6-Layer</span>
+                <span class="s8-tradeoff-val">2&ndash;3 plane layers</span>
+                <span class="s8-tradeoff-detail">At most one solid GND + one split power + one solid GND</span>
+              </div>
+              <div class="s8-tradeoff-divider"></div>
+              <div class="s8-tradeoff-8l">
+                <span class="s8-tradeoff-label">8-Layer</span>
+                <span class="s8-tradeoff-val">3&ndash;5 plane layers</span>
+                <span class="s8-tradeoff-detail">Up to three solid GND + two dedicated power planes</span>
+              </div>
+            </div>
+            <span class="s8-tradeoff-verdict">8-layer wins for 3+ power domains or IR-drop-sensitive designs</span>
+          </div>
+
+          <div class="s8-tradeoff-dimension">
+            <h4>Via stub length</h4>
+            <div class="s8-tradeoff-compare">
+              <div class="s8-tradeoff-6l">
+                <span class="s8-tradeoff-label">6-Layer</span>
+                <span class="s8-tradeoff-val">0.8&ndash;1.2&nbsp;mm</span>
+                <span class="s8-tradeoff-detail">Resonance at 5.5&ndash;8&nbsp;GHz (non-backdrilled)</span>
+              </div>
+              <div class="s8-tradeoff-divider"></div>
+              <div class="s8-tradeoff-8l">
+                <span class="s8-tradeoff-label">8-Layer</span>
+                <span class="s8-tradeoff-val">1.0&ndash;1.6&nbsp;mm</span>
+                <span class="s8-tradeoff-detail">Resonance at 4.4&ndash;5.5&nbsp;GHz — <em>worse without backdrilling, better with</em></span>
+              </div>
+            </div>
+            <span class="s8-tradeoff-verdict">8-layer requires backdrilling above 5&nbsp;Gbps; 6-layer avoids it for shorter stubs</span>
+          </div>
+
+          <div class="s8-tradeoff-dimension">
+            <h4>Cost premium</h4>
+            <div class="s8-tradeoff-compare">
+              <div class="s8-tradeoff-6l">
+                <span class="s8-tradeoff-label">6-Layer</span>
+                <span class="s8-tradeoff-val">Baseline</span>
+                <span class="s8-tradeoff-detail">Reference cost for comparison</span>
+              </div>
+              <div class="s8-tradeoff-divider"></div>
+              <div class="s8-tradeoff-8l">
+                <span class="s8-tradeoff-label">8-Layer</span>
+                <span class="s8-tradeoff-val">+25&ndash;35%</span>
+                <span class="s8-tradeoff-detail">Vs. equivalent 6-layer board; includes sequential lamination and additional materials</span>
+              </div>
+            </div>
+            <span class="s8-tradeoff-verdict">Justified when the design has crossed 3+ checklist items from Section 2</span>
+          </div>
+
+          <div class="s8-tradeoff-dimension">
+            <h4>HDI compatibility</h4>
+            <div class="s8-tradeoff-compare">
+              <div class="s8-tradeoff-6l">
+                <span class="s8-tradeoff-label">6-Layer</span>
+                <span class="s8-tradeoff-val">Limited</span>
+                <span class="s8-tradeoff-detail">One microvia pair per side; marginal for &lt; 0.65&nbsp;mm BGA</span>
+              </div>
+              <div class="s8-tradeoff-divider"></div>
+              <div class="s8-tradeoff-8l">
+                <span class="s8-tradeoff-label">8-Layer</span>
+                <span class="s8-tradeoff-val">Full HDI support</span>
+                <span class="s8-tradeoff-detail">2+N+2 build-up; supports 0.4&nbsp;mm BGA with VIPPO</span>
+              </div>
+            </div>
+            <span class="s8-tradeoff-verdict">8-layer is the lowest-cost entry point for full HDI capability</span>
+          </div>
+
+          <div class="s8-tradeoff-dimension">
+            <h4>Mixed material support</h4>
+            <div class="s8-tradeoff-compare">
+              <div class="s8-tradeoff-6l">
+                <span class="s8-tradeoff-label">6-Layer</span>
+                <span class="s8-tradeoff-val">Challenging</span>
+                <span class="s8-tradeoff-detail">Thin stack limits hybrid bonding layers; CTE mismatch risk is higher</span>
+              </div>
+              <div class="s8-tradeoff-divider"></div>
+              <div class="s8-tradeoff-8l">
+                <span class="s8-tradeoff-label">8-Layer</span>
+                <span class="s8-tradeoff-val">Well suited</span>
+                <span class="s8-tradeoff-detail">Thicker stack absorbs CTE mismatch; bondply available for each interface</span>
+              </div>
+            </div>
+            <span class="s8-tradeoff-verdict">8-layer preferred when RF + digital share one PCB</span>
+          </div>
+        </div>
+
+        <div class="s8-tradeoff-summary">
+          <div class="s8-summary-card">
+            <h4>Choose 6-layer when</h4>
+            <ul>
+              <li>SERDES rates &le; 5&nbsp;Gbps</li>
+              <li>Fewer than 3 power domains</li>
+              <li>No HDI/fine-pitch BGA (&ge; 0.80&nbsp;mm pitch)</li>
+              <li>No RF coexistence required</li>
+              <li>Cost is the primary constraint</li>
+              <li>Board area &gt; 150&nbsp;mm &times; 150&nbsp;mm (more room for routing)</li>
+            </ul>
+          </div>
+          <div class="s8-summary-card s8-summary-card-primary">
+            <h4>Choose 8-layer when</h4>
+            <ul>
+              <li>SERDES rates &ge; 10&nbsp;Gbps (or any 25+&nbsp;Gbps)</li>
+              <li>3+ power domains with individual plane requirements</li>
+              <li>BGA pitch &le; 0.65&nbsp;mm (HDI needed)</li>
+              <li>RF + digital on the same board</li>
+              <li>Backdrilling needed for via stub removal</li>
+              <li>Board area &lt; 100&nbsp;mm &times; 100&nbsp;mm (high routing density)</li>
+              <li>Pre-compliance margin from first prototype is critical</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 11 — RFQ / CONSULTATION FORM
+         ==================================================================== -->
+    <section class="s8-consult" id="s8-consult">
+      <div class="s8-limiter s8-consult-grid">
+        <div class="s8-consult-copy">
+          <span class="s8-eyebrow">Engineering review request</span>
+          <h2>Submit your 8-layer PCB for engineering review</h2>
+          <p>For 8-layer PCB projects, XFPCB reviews stackup architecture, via strategy, backdrilling requirements, material selection, and impedance targets before quoting. Send your design files and specifications below, and our engineering team will respond with a DFM assessment and quotation within 24&nbsp;hours (standard) or 4&nbsp;hours (express).</p>
+          <h4>What to include for a complete 8-layer RFQ:</h4>
+          <ul class="s8-consult-list">
+            <li>Gerber (RS-274X) or ODB++ files with all 8 layers</li>
+            <li>NC drill files and drill legend</li>
+            <li>Complete stackup diagram (layer order, dielectric thickness, copper weight)</li>
+            <li>Impedance table (net name, target Z<sub>0</sub>, tolerance, layer assignment)</li>
+            <li>Backdrilling specification (via nets, start/stop layers, remnant tolerance)</li>
+            <li>HDI requirements (microvia type, fill material, BGA pitch)</li>
+            <li>Material preference (FR-4 grade, RF laminate type if hybrid)</li>
+            <li>Quantity, lead time target, delivery country</li>
+            <li>Acceptance criteria (IPC Class, electrical test coverage, inspection level)</li>
+          </ul>
+          <p class="s8-consult-note">Need guidance on what to prepare? <a href="/support/pcb-pcba-manufacturing-file/">See our file preparation guide</a> or contact engineering directly.</p>
+        </div>
+        <form class="s8-consult-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="40f0bc17-2a5a-45e0-85cf-99aa9d8b06df">
+          <input type="hidden" name="honeypot" style="display:none;">
+          <input type="hidden" name="page_url" value="https://xfpcb.com/products/8-layer-pcb/">
+          <input type="hidden" name="page_path" value="/products/8-layer-pcb/">
+          <input type="hidden" name="subject" value="8-Layer PCB Engineering RFQ from XFPCB product page">
+          <input type="hidden" name="redirect" value="https://xfpcb.com/">
+          <label>
+            Name / Company
+            <input type="text" name="name" placeholder="Your name or company" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="designer@company.com" required>
+          </label>
+          <label>
+            Phone (optional)
+            <input type="tel" name="phone" placeholder="For urgent technical questions">
+          </label>
+          <label>
+            Project Description
+            <textarea name="message" placeholder="Describe your 8-layer PCB requirements: layer count, stackup preference, impedance targets, HDI needs (BGA pitch, microvia type), backdrilling requirement, RF section details, material preference, target quantity and lead time." rows="6" required></textarea>
+          </label>
+          <div class="s8-consult-inline">
+            <label>
+              Quantity
+              <input type="text" name="quantity" placeholder="e.g. 50 pcs prototype">
+            </label>
+            <label>
+              Lead time target
+              <input type="text" name="lead_time" placeholder="e.g. 5 working days">
+            </label>
+          </div>
+          <button type="submit">Submit for 8-Layer PCB Engineering Review</button>
+          <p class="s8-form-footnote">Your files and specifications are treated as confidential. We sign NDA on request.</p>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 12 — RELATED PCB PRODUCTS
+         ==================================================================== -->
+    <section class="s8-related">
+      <div class="s8-limiter">
+        <div class="s8-section-head">
+          <span class="s8-eyebrow">Related products</span>
+          <h2>Compare layer counts before submitting your RFQ</h2>
+          <p class="s8-section-sub">
+            Many 8-layer PCB buyers also evaluate adjacent layer counts. Each layer tier has distinct capabilities and cost structures. Browse the related pages to confirm you have selected the optimal layer count for your design.
+          </p>
+        </div>
+        <div class="s8-related-links">
+          <a class="s8-related-link" href="/products/4-layer-pcb/">4-Layer PCB</a>
+          <a class="s8-related-link" href="/products/6-layer-pcb/">6-Layer PCB</a>
+          <a class="s8-related-link s8-related-link-active" href="/products/8-layer-pcb/">8-Layer PCB</a>
+          <a class="s8-related-link" href="/products/10-layer-pcb/">10-Layer PCB</a>
+          <a class="s8-related-link" href="/products/12-layer-pcb/">12-Layer PCB</a>
+          <a class="s8-related-link" href="/products/16-layer-pcb/">16-Layer PCB</a>
+          <a class="s8-related-link" href="/products/multilayer-pcb/">Multilayer PCB Guide</a>
+          <a class="s8-related-link" href="/products/high-layer-count-pcb/">High Layer Count PCB</a>
+        </div>
+      </div>
+    </section>
   </main>
 </BaseLayout>
+
+<style is:global>
+  /* ================================================================
+     S8 — 8-Layer PCB Page Styles
+     Unique class prefix: s8-
+     No template class names from products.css are used.
+     ================================================================ */
+
+  /* --- Base utilities --- */
+  .s8-limiter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  main > section {
+    padding: 80px 0;
+  }
+
+  .s8-eyebrow {
+    display: inline-block;
+    margin: 0 0 12px;
+    color: var(--pcb-glow);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .s8-section-head {
+    max-width: 930px;
+    margin: 0 auto 48px;
+    text-align: center;
+  }
+
+  .s8-section-head h2 {
+    color: #fff;
+    font-size: clamp(1.7rem, 2.6vw, 2.45rem);
+    line-height: 1.18;
+    margin: 0 0 16px;
+  }
+
+  .s8-section-sub {
+    color: var(--text-main);
+    font-size: 1.06rem;
+    line-height: 1.75;
+    margin: 0 auto;
+  }
+
+  .s8-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  .s8-btn-primary {
+    background: var(--pcb-glow);
+    color: var(--pcb-dark);
+  }
+
+  .s8-btn-primary:hover {
+    background: #fff;
+    transform: translateY(-2px);
+  }
+
+  .s8-btn-outline {
+    border: 1px solid var(--pcb-trace);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .s8-btn-outline:hover {
+    border-color: var(--pcb-glow);
+    color: var(--pcb-glow);
+    transform: translateY(-2px);
+  }
+
+
+  /* ================================================================
+     SECTION 1 — INFLECTION POINT
+     ================================================================ */
+  .s8-inflection {
+    background: linear-gradient(180deg, rgba(0, 255, 65, 0.06), transparent);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+  }
+
+  .s8-inflection-panel {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .s8-inflection-content h1 {
+    color: #fff;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.15;
+    margin: 0 0 24px;
+  }
+
+  .s8-scenario {
+    margin: 0 0 24px;
+    border-left: 3px solid var(--pcb-glow);
+    padding: 16px 20px;
+    background: rgba(0, 255, 65, 0.04);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .s8-scenario-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--pcb-glow);
+    margin-bottom: 8px;
+  }
+
+  .s8-scenario blockquote {
+    color: var(--text-main);
+    font-style: italic;
+    line-height: 1.7;
+    font-size: 0.98rem;
+    margin: 0;
+  }
+
+  .s8-inflection-content p {
+    color: var(--text-main);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .s8-inflection-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 24px;
+  }
+
+  .s8-inflection-tags span {
+    border: 1px solid rgba(0, 255, 65, 0.45);
+    border-radius: 999px;
+    color: #dfffe7;
+    background: rgba(0, 255, 65, 0.08);
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    line-height: 1.2;
+  }
+
+  .s8-inflection-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+  }
+
+  /* Metrics sidebar */
+  .s8-inflection-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-content: start;
+  }
+
+  .s8-metric-card {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 16px;
+    background: rgba(5, 20, 10, 0.68);
+    text-align: center;
+  }
+
+  .s8-metric-card:hover {
+    border-color: rgba(0, 255, 65, 0.3);
+  }
+
+  .s8-metric-val {
+    display: block;
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    font-weight: 900;
+    color: var(--pcb-glow);
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .s8-metric-label {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--text-main);
+    line-height: 1.3;
+  }
+
+  .s8-metric-highlight {
+    grid-column: 1 / -1;
+    background: rgba(0, 255, 65, 0.08);
+    border-color: var(--pcb-glow);
+  }
+
+  .s8-callout {
+    grid-column: 1 / -1;
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 18px;
+    background: rgba(5, 20, 10, 0.8);
+  }
+
+  .s8-callout strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .s8-callout p {
+    color: var(--text-main);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0 0 8px;
+  }
+
+  .s8-callout a {
+    color: var(--pcb-glow);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .s8-callout a:hover {
+    color: #fff;
+  }
+
+
+  /* ================================================================
+     SECTION 2 — ADVANTAGE MATRIX
+     ================================================================ */
+  .s8-advantage {
+    background: rgba(5, 20, 10, 0.5);
+  }
+
+  .s8-adv-table {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0, 255, 65, 0.05);
+  }
+
+  .s8-adv-row {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+  }
+
+  .s8-adv-row:last-child {
+    border-bottom: none;
+  }
+
+  .s8-adv-axis {
+    padding: 20px;
+    background: rgba(26, 66, 37, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .s8-adv-axis h3 {
+    color: #fff;
+    font-size: 1.05rem;
+    margin: 0 0 6px;
+    line-height: 1.2;
+  }
+
+  .s8-adv-axis-tag {
+    font-size: 0.72rem;
+    color: var(--pcb-glow);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+  }
+
+  .s8-adv-6l,
+  .s8-adv-8l {
+    padding: 20px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--text-main);
+  }
+
+  .s8-adv-6l {
+    background: rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 255, 65, 0.08);
+  }
+
+  .s8-adv-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .s8-adv-6l .s8-adv-label {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+
+  .s8-adv-8l .s8-adv-label {
+    color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.1);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+  }
+
+  /* Decision dashboard */
+  .s8-adv-decision {
+    margin-top: 40px;
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 30px;
+    background: rgba(5, 20, 10, 0.68);
+  }
+
+  .s8-adv-decision h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 0 16px;
+  }
+
+  .s8-adv-checklist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .s8-check {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: var(--text-main);
+    line-height: 1.4;
+    font-size: 0.95rem;
+  }
+
+  .s8-check-icon {
+    flex-shrink: 0;
+    color: var(--pcb-glow);
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+
+  .s8-check-note {
+    margin-top: 18px;
+    color: var(--pcb-glow);
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+
+  /* ================================================================
+     SECTION 3 — STACKUP CONFIGURATIONS
+     ================================================================ */
+  .s8-stackup {
+    background: rgba(5, 20, 10, 0.5);
+  }
+
+  .s8-stackup-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .s8-stackup-card {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(5, 20, 10, 0.7);
+  }
+
+  .s8-stackup-card-alt {
+    border-color: rgba(0, 255, 65, 0.25);
+  }
+
+  .s8-stackup-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+    background: rgba(26, 66, 37, 0.35);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .s8-stackup-num {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.1);
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 255, 65, 0.2);
+  }
+
+  .s8-stackup-header h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .s8-stackup-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-left: auto;
+  }
+
+  .s8-stackup-tag-green {
+    background: rgba(0, 255, 65, 0.12);
+    color: var(--pcb-glow);
+    border: 1px solid rgba(0, 255, 65, 0.3);
+  }
+
+  .s8-stackup-tag-blue {
+    background: rgba(59, 130, 246, 0.12);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+  }
+
+  .s8-stackup-tag-amber {
+    background: rgba(245, 158, 11, 0.12);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+
+  .s8-stackup-assignment {
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+  }
+
+  .s8-stackup-layer {
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.3;
+    border-left: 3px solid transparent;
+    margin-bottom: 1px;
+  }
+
+  .s8-layer-signal {
+    color: #93c5fd;
+    background: rgba(59, 130, 246, 0.08);
+    border-left-color: #3b82f6;
+  }
+
+  .s8-layer-plane {
+    color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.06);
+    border-left-color: var(--pcb-glow);
+  }
+
+  .s8-layer-dielectric {
+    color: #9ca3af;
+    background: rgba(255, 255, 255, 0.02);
+    border-left-color: #6b7280;
+    font-weight: 400;
+    font-size: 0.72rem;
+    font-style: italic;
+  }
+
+  .s8-stackup-body {
+    padding: 20px 24px 24px;
+  }
+
+  .s8-stackup-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+  .s8-stackup-metrics strong {
+    color: #fff;
+  }
+
+  .s8-stackup-body p {
+    color: var(--text-main);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-stackup-note {
+    border-left: 3px solid var(--pcb-glow);
+    padding: 12px 16px;
+    background: rgba(0, 255, 65, 0.04);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin-top: 12px;
+  }
+
+  .s8-stackup-note strong {
+    color: #fff;
+  }
+
+
+  /* ================================================================
+     SECTION 4 — BACKDRILLING
+     ================================================================ */
+  .s8-backdrill {
+    background: linear-gradient(180deg, rgba(0, 255, 65, 0.03), transparent);
+    border-top: 1px solid rgba(0, 255, 65, 0.08);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+  }
+
+  .s8-backdrill-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .s8-backdrill-primer h3,
+  .s8-backdrill-frequency h3,
+  .s8-backdrill-process h3,
+  .s8-backdrill-guidance h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 0 16px;
+  }
+
+  .s8-backdrill-primer p,
+  .s8-backdrill-process p {
+    color: var(--text-main);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .s8-backdrill-primer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .s8-backdrill-primer ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    line-height: 1.5;
+  }
+
+  .s8-backdrill-primer ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.4);
+  }
+
+  /* Resonance calculator */
+  .s8-backdrill-calc {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .s8-calc-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1.8fr;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+    font-size: 0.9rem;
+    color: var(--text-main);
+  }
+
+  .s8-calc-row:last-child {
+    border-bottom: none;
+  }
+
+  .s8-calc-row strong {
+    color: var(--pcb-glow);
+  }
+
+  .s8-calc-arrow {
+    color: rgba(0, 255, 65, 0.5);
+    font-size: 1.1rem;
+  }
+
+  .s8-calc-row-result {
+    background: rgba(0, 255, 65, 0.08);
+    font-weight: 700;
+  }
+
+  .s8-calc-row-result strong {
+    color: #fff;
+  }
+
+  /* Process steps */
+  .s8-process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .s8-bd-step {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+  }
+
+  .s8-bd-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 255, 65, 0.1);
+    border: 1px solid var(--pcb-glow);
+    color: var(--pcb-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .s8-bd-step h4 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 0 4px;
+  }
+
+  .s8-bd-step p {
+    color: var(--text-main);
+    line-height: 1.6;
+    font-size: 0.92rem;
+    margin: 0;
+  }
+
+  /* Guidance table */
+  .s8-guidance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+  }
+
+  .s8-guidance-table th,
+  .s8-guidance-table td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.12);
+    font-size: 0.88rem;
+    color: var(--text-main);
+  }
+
+  .s8-guidance-table th {
+    color: #fff;
+    background: rgba(26, 66, 37, 0.5);
+    font-weight: 700;
+  }
+
+  .s8-guidance-table td:last-child {
+    color: var(--pcb-glow);
+    font-weight: 600;
+  }
+
+  .s8-guidance-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .s8-backdrill-note {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .s8-backdrill-note h4 {
+    color: #fff;
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+  }
+
+  .s8-backdrill-note p {
+    color: var(--text-main);
+    line-height: 1.7;
+    font-size: 0.93rem;
+    margin: 0;
+  }
+
+  /* Backdrill sidebar */
+  .s8-backdrill-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .s8-sidebar-card {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(5, 20, 10, 0.7);
+  }
+
+  .s8-sidebar-card h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+  }
+
+  .s8-sidebar-card p {
+    color: var(--text-main);
+    line-height: 1.65;
+    font-size: 0.92rem;
+    margin: 0 0 10px;
+  }
+
+  .s8-sidebar-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .s8-sidebar-card-dark {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 255, 65, 0.15);
+  }
+
+  .s8-sidebar-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s8-sidebar-card ul li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .s8-sidebar-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+  }
+
+  .s8-sidebar-card ul li:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ================================================================
+     SECTION 5 — SI WORKSHOP
+     ================================================================ */
+  .s8-si-workshop {
+    background: rgba(5, 20, 10, 0.4);
+  }
+
+  .s8-si-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .s8-si-card {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 24px;
+    background: rgba(5, 20, 10, 0.65);
+  }
+
+  .s8-si-card-wide {
+    grid-column: 1 / -1;
+  }
+
+  .s8-si-card h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-si-card p {
+    color: var(--text-main);
+    line-height: 1.65;
+    font-size: 0.93rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-si-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+  }
+
+  .s8-si-table th,
+  .s8-si-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+    font-size: 0.85rem;
+    color: var(--text-main);
+  }
+
+  .s8-si-table th {
+    color: #fff;
+    background: rgba(26, 66, 37, 0.4);
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+
+  .s8-si-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .s8-si-note {
+    font-size: 0.85rem !important;
+    color: #9ca3af !important;
+    margin-top: 8px !important;
+  }
+
+  /* Loss budget */
+  .s8-loss-budget {
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .s8-loss-item {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1.5fr;
+    gap: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.06);
+    font-size: 0.85rem;
+    align-items: center;
+  }
+
+  .s8-loss-item:last-child {
+    border-bottom: none;
+  }
+
+  .s8-loss-label {
+    color: var(--text-main);
+  }
+
+  .s8-loss-formula {
+    color: #9ca3af;
+    font-size: 0.8rem;
+  }
+
+  .s8-loss-example {
+    color: var(--pcb-glow);
+    font-weight: 600;
+  }
+
+  .s8-loss-item-total {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 255, 65, 0.15);
+  }
+
+  .s8-loss-item-total .s8-loss-label {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .s8-loss-item-good {
+    background: rgba(0, 255, 65, 0.06);
+  }
+
+
+  /* ================================================================
+     SECTION 6 — HDI INTEGRATION
+     ================================================================ */
+  .s8-hdi {
+    background: linear-gradient(180deg, transparent, rgba(0, 255, 65, 0.04));
+  }
+
+  .s8-hdi-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .s8-hdi-block {
+    margin-bottom: 28px;
+  }
+
+  .s8-hdi-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .s8-hdi-block h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-hdi-block p {
+    color: var(--text-main);
+    line-height: 1.7;
+    font-size: 0.93rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-hdi-configs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .s8-hdi-config {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 6px;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  .s8-hdi-config-label {
+    display: block;
+    font-weight: 800;
+    color: var(--pcb-glow);
+    font-size: 0.82rem;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .s8-hdi-config p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .s8-hdi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+  }
+
+  .s8-hdi-table th,
+  .s8-hdi-table td {
+    padding: 9px 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+    font-size: 0.84rem;
+    color: var(--text-main);
+  }
+
+  .s8-hdi-table th {
+    color: #fff;
+    background: rgba(26, 66, 37, 0.4);
+    font-weight: 700;
+    font-size: 0.78rem;
+  }
+
+  .s8-hdi-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .s8-hdi-note {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-top: 6px;
+  }
+
+  .s8-hdi-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s8-hdi-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    line-height: 1.6;
+    font-size: 0.92rem;
+  }
+
+  .s8-hdi-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+  }
+
+  .s8-hdi-list li strong {
+    color: #fff;
+  }
+
+  /* HDI sidebar */
+  .s8-hdi-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .s8-flowchart {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .s8-flow-item {
+    padding: 12px 14px;
+    border-left: 2px solid var(--pcb-trace);
+    font-size: 0.88rem;
+    color: var(--text-main);
+    position: relative;
+  }
+
+  .s8-flow-item:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .s8-flow-item:last-child {
+    border-radius: 0 0 6px 6px;
+    border-left-color: var(--pcb-glow);
+  }
+
+  .s8-flow-arrow {
+    display: block;
+    color: var(--pcb-glow);
+    font-size: 0.8rem;
+    margin: 4px 0;
+  }
+
+  .s8-flow-result {
+    display: block;
+    color: var(--pcb-glow);
+    font-weight: 600;
+    font-size: 0.84rem;
+  }
+
+
+  /* ================================================================
+     SECTION 7 — HYBRID MATERIALS
+     ================================================================ */
+  .s8-hybrid {
+    background: rgba(5, 20, 10, 0.4);
+    border-top: 1px solid rgba(0, 255, 65, 0.06);
+  }
+
+  .s8-hybrid-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 28px;
+    margin-bottom: 32px;
+  }
+
+  .s8-hybrid-text h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-hybrid-text p {
+    color: var(--text-main);
+    line-height: 1.7;
+    font-size: 0.93rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-hybrid-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s8-hybrid-text ul li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    line-height: 1.6;
+    font-size: 0.92rem;
+  }
+
+  .s8-hybrid-text ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+  }
+
+  .s8-hybrid-text ul li strong {
+    color: #fff;
+  }
+
+  /* Material compatibility table */
+  .s8-hybrid-compat h3 {
+    color: #fff;
+    font-size: 1.05rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-hybrid-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .s8-hybrid-table th,
+  .s8-hybrid-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+    font-size: 0.8rem;
+    color: var(--text-main);
+  }
+
+  .s8-hybrid-table th {
+    color: #fff;
+    background: rgba(26, 66, 37, 0.4);
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+
+  .s8-hybrid-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Hybrid stackup diagram */
+  .s8-hybrid-stackup-example h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 16px;
+  }
+
+  .s8-hybrid-diagram {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .s8-hybrid-layer {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .s8-hybrid-layer:last-child {
+    border-bottom: none;
+  }
+
+  .s8-hybrid-rf {
+    color: #fbbf24;
+    background: rgba(245, 158, 11, 0.1);
+    font-weight: 600;
+  }
+
+  .s8-hybrid-bond {
+    color: #9ca3af;
+    background: rgba(255, 255, 255, 0.03);
+    font-style: italic;
+    font-size: 0.7rem;
+  }
+
+  .s8-hybrid-plane {
+    color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.05);
+    font-weight: 600;
+  }
+
+  .s8-hybrid-fr4 {
+    color: #93c5fd;
+    background: rgba(59, 130, 246, 0.05);
+    font-weight: 400;
+  }
+
+  .s8-hybrid-signal {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+    font-weight: 600;
+  }
+
+  .s8-hybrid-notes {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    border-radius: 6px;
+    padding: 18px 20px;
+  }
+
+  .s8-hybrid-notes p {
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 12px;
+  }
+
+  .s8-hybrid-notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s8-hybrid-notes ul li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .s8-hybrid-notes ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+  }
+
+  .s8-hybrid-notes ul li:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ================================================================
+     SECTION 8 — MANUFACTURING CHALLENGES
+     ================================================================ */
+  .s8-manufacturing {
+    background: rgba(5, 20, 10, 0.5);
+  }
+
+  .s8-mfg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .s8-mfg-card {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 24px;
+    background: rgba(5, 20, 10, 0.7);
+  }
+
+  .s8-mfg-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(0, 255, 65, 0.1);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--pcb-glow);
+    margin-bottom: 14px;
+  }
+
+  .s8-mfg-card h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+  }
+
+  .s8-mfg-card p {
+    color: var(--text-main);
+    line-height: 1.65;
+    font-size: 0.9rem;
+    margin: 0 0 12px;
+  }
+
+  .s8-mfg-formula {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--pcb-glow);
+    margin-bottom: 12px;
+    overflow-x: auto;
+  }
+
+  .s8-mfg-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s8-mfg-card ul li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .s8-mfg-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+  }
+
+  .s8-mfg-note {
+    border-left: 3px solid #fbbf24;
+    padding: 10px 14px;
+    background: rgba(245, 158, 11, 0.05);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin-top: 12px;
+  }
+
+  .s8-mfg-note strong {
+    color: #fbbf24;
+  }
+
+  /* DFM table */
+  .s8-dfm-section {
+    margin-top: 40px;
+  }
+
+  .s8-dfm-section h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 0 16px;
+  }
+
+  .s8-dfm-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .s8-dfm-table th,
+  .s8-dfm-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+    font-size: 0.88rem;
+    color: var(--text-main);
+    vertical-align: top;
+  }
+
+  .s8-dfm-table th {
+    color: #fff;
+    background: rgba(26, 66, 37, 0.5);
+    font-weight: 700;
+  }
+
+  .s8-dfm-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .s8-dfm-table td:first-child {
+    color: var(--pcb-glow);
+    font-weight: 600;
+  }
+
+
+  /* ================================================================
+     SECTION 9 — SPECIFICATIONS
+     ================================================================ */
+  .s8-specs {
+    border-top: 1px solid rgba(0, 255, 65, 0.08);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+    background: linear-gradient(180deg, transparent, rgba(0, 255, 65, 0.03));
+  }
+
+  .s8-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .s8-specs-group {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(5, 20, 10, 0.65);
+  }
+
+  .s8-specs-group h3 {
+    color: #fff;
+    font-size: 0.95rem;
+    padding: 14px 16px;
+    margin: 0;
+    background: rgba(26, 66, 37, 0.4);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+  }
+
+  .s8-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .s8-specs-table td {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.05);
+  }
+
+  .s8-specs-table td:first-child {
+    color: #9ca3af;
+    width: 45%;
+    font-weight: 600;
+  }
+
+  .s8-specs-table td:last-child {
+    color: #fff;
+  }
+
+  .s8-specs-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+
+  /* ================================================================
+     SECTION 10 — TRADE-OFF GUIDE
+     ================================================================ */
+  .s8-tradeoff {
+    background: rgba(5, 20, 10, 0.4);
+  }
+
+  .s8-tradeoff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .s8-tradeoff-dimension {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(5, 20, 10, 0.7);
+  }
+
+  .s8-tradeoff-dimension h4 {
+    color: #fff;
+    font-size: 0.95rem;
+    margin: 0 0 12px;
+    text-align: center;
+  }
+
+  .s8-tradeoff-compare {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .s8-tradeoff-6l,
+  .s8-tradeoff-8l {
+    text-align: center;
+  }
+
+  .s8-tradeoff-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+  }
+
+  .s8-tradeoff-6l .s8-tradeoff-label {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+  }
+
+  .s8-tradeoff-8l .s8-tradeoff-label {
+    color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.1);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+  }
+
+  .s8-tradeoff-val {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .s8-tradeoff-detail {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-main);
+    line-height: 1.4;
+  }
+
+  .s8-tradeoff-divider {
+    width: 1px;
+    background: rgba(0, 255, 65, 0.15);
+    align-self: stretch;
+  }
+
+  .s8-tradeoff-verdict {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--pcb-glow);
+    text-align: center;
+    line-height: 1.4;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 255, 65, 0.08);
+  }
+
+  /* Trade-off summary cards */
+  .s8-tradeoff-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .s8-summary-card {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 24px;
+    background: rgba(5, 20, 10, 0.7);
+  }
+
+  .s8-summary-card-primary {
+    border-color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.04);
+  }
+
+  .s8-summary-card h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 14px;
+  }
+
+  .s8-summary-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s8-summary-card ul li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    line-height: 1.5;
+    font-size: 0.92rem;
+  }
+
+  .s8-summary-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+  }
+
+  .s8-summary-card-primary ul li::before {
+    background: var(--pcb-glow);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+  }
+
+
+  /* ================================================================
+     SECTION 11 — CONSULTATION / RFQ
+     ================================================================ */
+  .s8-consult {
+    background: linear-gradient(135deg, rgba(0, 255, 65, 0.08), rgba(5, 20, 10, 0.95));
+    border-top: 1px solid var(--pcb-trace);
+    border-bottom: 1px solid var(--pcb-trace);
+  }
+
+  .s8-consult-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 36px;
+    align-items: start;
+  }
+
+  .s8-consult-copy h2 {
+    color: #fff;
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    line-height: 1.15;
+    margin: 0 0 16px;
+  }
+
+  .s8-consult-copy p {
+    color: var(--text-main);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0 0 16px;
+  }
+
+  .s8-consult-copy h4 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 0 12px;
+  }
+
+  .s8-consult-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 20px;
+  }
+
+  .s8-consult-list li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .s8-consult-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--pcb-glow);
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.3);
+  }
+
+  .s8-consult-note {
+    font-size: 0.88rem;
+    color: #9ca3af;
+  }
+
+  .s8-consult-note a {
+    color: var(--pcb-glow);
+    font-weight: 600;
+  }
+
+  /* Form */
+  .s8-consult-form {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 8px;
+    padding: 24px;
+    background: rgba(5, 20, 10, 0.8);
+  }
+
+  .s8-consult-form label {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+  }
+
+  .s8-consult-form input,
+  .s8-consult-form textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 14px;
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    font: inherit;
+    font-size: 0.92rem;
+  }
+
+  .s8-consult-form textarea {
+    min-height: 130px;
+    resize: vertical;
+  }
+
+  .s8-consult-form input:focus,
+  .s8-consult-form textarea:focus {
+    outline: none;
+    border-color: var(--pcb-glow);
+    box-shadow: 0 0 0 3px rgba(0, 255, 65, 0.12);
+  }
+
+  .s8-consult-inline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .s8-consult-form button {
+    width: 100%;
+    min-height: 50px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--pcb-glow);
+    color: var(--pcb-dark);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 0.92rem;
+    margin-top: 6px;
+    transition: background 0.25s ease;
+  }
+
+  .s8-consult-form button:hover {
+    background: #fff;
+  }
+
+  .s8-consult-form button:active {
+    transform: translateY(1px);
+  }
+
+  .s8-form-footnote {
+    margin-top: 12px;
+    font-size: 0.78rem;
+    color: #9ca3af;
+    text-align: center;
+  }
+
+
+  /* ================================================================
+     SECTION 12 — RELATED PRODUCTS
+     ================================================================ */
+  .s8-related {
+    background: rgba(5, 20, 10, 0.3);
+  }
+
+  .s8-related-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .s8-related-link {
+    border: 1px solid var(--pcb-trace);
+    border-radius: 999px;
+    padding: 10px 18px;
+    color: #fff;
+    background: rgba(5, 20, 10, 0.7);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .s8-related-link:hover {
+    border-color: var(--pcb-glow);
+    color: var(--pcb-glow);
+    transform: translateY(-2px);
+  }
+
+  .s8-related-link-active {
+    border-color: var(--pcb-glow);
+    color: var(--pcb-glow);
+    background: rgba(0, 255, 65, 0.08);
+  }
+
+
+  /* ================================================================
+     RESPONSIVE BREAKPOINTS
+     ================================================================ */
+  @media (max-width: 1100px) {
+    .s8-inflection-panel {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-backdrill-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-hdi-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-specs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .s8-mfg-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 960px) {
+    main > section {
+      padding: 60px 0;
+    }
+
+    .s8-adv-row {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-adv-axis {
+      padding: 14px 20px;
+    }
+
+    .s8-si-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-hybrid-row {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-tradeoff-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .s8-adv-checklist {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-consult-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-tradeoff-summary {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-hdi-configs {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-consult-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .s8-section-head h2 {
+      font-size: 1.6rem;
+    }
+
+    .s8-inflection-content h1 {
+      font-size: 1.6rem;
+    }
+
+    .s8-specs-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-mfg-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-tradeoff-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-inflection-metrics {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .s8-stackup-metrics {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-stackup-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .s8-stackup-tag {
+      margin-left: 0;
+    }
+
+    .s8-consult-inline {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-specs-group h3 {
+      font-size: 0.9rem;
+    }
+
+    .s8-inflection-actions {
+      flex-direction: column;
+    }
+
+    .s8-inflection-actions .s8-btn {
+      text-align: center;
+    }
+
+    .s8-loss-item {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+
+    .s8-calc-row {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+
+    .s8-calc-arrow {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .s8-inflection-metrics {
+      grid-template-columns: 1fr;
+    }
+
+    .s8-related-links {
+      gap: 8px;
+    }
+
+    .s8-related-link {
+      font-size: 0.8rem;
+      padding: 8px 14px;
+    }
+
+    .s8-dfm-table {
+      font-size: 0.78rem;
+    }
+
+    .s8-dfm-table th,
+    .s8-dfm-table td {
+      padding: 8px 10px;
+    }
+  }
+</style>

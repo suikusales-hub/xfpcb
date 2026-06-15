@@ -3,142 +3,939 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-title="14 Layer PCB Manufacturer | Supercomputing & Heavy Backplanes | XingFeng PCB"
-description="Elite 14 layer PCB manufacturer specializing in thick backplanes, high-frequency radar systems, and supercomputing hardware. Extreme tolerances and thermal management."
-keywords="14 layer PCB manufacturer, thick PCB, heavy copper PCB, backplane PCB, supercomputer PCB, high frequency radar PCB, extreme tolerance PCB"
-canonical="https://xfpcb.com/products/14-layer-pcb/"
+  title="14 Layer PCB Manufacturer | Sequential Lamination & Press-Cycle Fabrication | XFPCB"
+  description="XFPCB manufactures 14-layer PCBs with controlled sequential lamination (3+ press cycles), buried/blind via integration, multi-cycle copper balancing, and material systems engineered for telecom infrastructure and base station reliability."
+  keywords="14 layer PCB sequential lamination, 14 layer PCB press cycles, buried via 14 layer, blind via 14 layer, copper balance multi lamination, telecom PCB manufacturer, base station PCB, high layer count PCB China, sequential press PCB, 14 layer PCB material selection"
+  canonical="https://xfpcb.com/products/14-layer-pcb/"
+  ogTitle="14 Layer PCB Manufacturer | Sequential Lamination & Press-Cycle Fabrication | XFPCB"
+  ogDescription="XFPCB manufactures 14-layer PCBs with controlled sequential lamination (3+ press cycles), buried/blind via integration, multi-cycle copper balancing, and material systems engineered for telecom infrastructure and base station reliability."
+  ogImage="https://xfpcb.com/images/675x542pcb.jpg"
+  ogUrl="https://xfpcb.com/products/14-layer-pcb/"
   cssExtra={['/css/about.css', '/css/products.css']}
 >
   <main>
-<!-- Hero Section -->
-        <section class="product-hero">
-            <div class="container product-hero-grid">
-                <div class="product-text">
-                    <h1>Elite <span>14 Layer PCB</span> Manufacturer</h1>
-                    <h2>Pushing the Limits of Physics for Supercomputing & Radar</h2>
-                    <p class="desc">
-                        When standard fabrication techniques fail, elite engineering takes over. As a specialized 14-layer PCB manufacturer, XingFeng PCB builds the physical foundation for the world's most advanced supercomputing hardware and high-frequency defense radar systems. We excel in manufacturing ultra-thick boards (>3.0mm), managing extreme thermal dissipation with heavy copper, and achieving mathematically perfect layer-to-layer registration.
-                    </p>
-                    <a href="#quote" class="cta-btn">Consult Our Advanced Engineering Team</a>
-                </div>
-                <div class="product-visual">
-                    <div class="product-image-wrapper">
-                        <!-- 复用要求�?675x542 比例图片 -->
-                        <img src="/images/675x542pcb.jpg" alt="14 Layer Thick PCB Backplane Manufacturing">
-                    </div>
-                </div>
+
+    <!-- ====================================================================
+         SECTION 1 — THE SEQUENTIAL LAMINATION IMPERATIVE
+         Opens with the core manufacturing challenge unique to 14-layer
+         boards: not layer count alone, but the number of press cycles
+         required to build them. The hero is a process timeline, not a
+         product photo.
+         ==================================================================== -->
+    <section class="q-press-hero">
+      <div class="q-limiter">
+        <div class="q-hero-layout">
+          <div class="q-hero-text">
+            <span class="q-eyebrow">Sequential lamination engineering</span>
+            <h1>14-layer PCBs are defined by their press cycles, not their layer count</h1>
+
+            <div class="q-hero-scenario">
+              <span class="q-hero-label">The 14-layer manufacturing reality</span>
+              <blockquote>
+                A 14-layer PCB cannot be pressed in a single lamination cycle. The physics of resin flow, copper foil expansion, and dielectric thickness uniformity impose a hard limit on how many layers can be bonded in one press operation. At XFPCB, every 14-layer board passes through a minimum of three — and often four — sequential lamination cycles. Each cycle adds a sub-stack of two to four layers onto the growing board, and each cycle introduces its own thermal-mechanical stress, registration risk, and material compatibility challenge. The question is not whether your 14-layer design can be fabricated — it is whether your fabrication partner can control the cumulative error across every press cycle to maintain your electrical and mechanical specifications.
+              </blockquote>
             </div>
-        </section>
 
-        <!-- Long-form Technical Content -->
-        <section class="container long-article">
-            <h2 class="section-title center">The Pinnacle of Multilayer Fabrication</h2>
-            <p class="text-content center" style="text-align: center; max-width: 950px; margin: 0 auto 50px;">
-                Fabricating a 14-layer printed circuit board is not simply a matter of stacking more prepreg and copper. It is an exercise in controlling complex thermodynamics, managing severe mechanical stress, and mastering high-aspect-ratio chemistry.
+            <p>
+              The 14-layer PCB occupies a distinct engineering territory in multilayer fabrication. It is too thick for a single lamination pass (which practically maxes out at 10&ndash;12 layers with standard prepregs), yet it does not require the exotic sequential-build HDI processes of 20+ layer boards. Instead, the 14-layer board is the highest layer count that can be built with <strong>two to three sequential lamination cycles</strong> using standard FR-4 and mid-range high-performance materials — making it the sweet spot for telecom infrastructure, base station RF decks, and high-end industrial computing where cost and reliability must balance against layer count. This page documents the press-cycle engineering that makes 14-layer fabrication predictable and repeatable at XFPCB.
             </p>
 
-            <h3>Thick Board & Backplane Manufacturing</h3>
-            <p>
-                In enterprise data storage arrays and supercomputer chassis, the primary 14-layer board often serves as a massive backplane. These boards must be incredibly rigid to support hundreds of heavy plug-in modules and transmit terabits of data without loss.
-            </p>
-            <p>
-                We routinely manufacture boards exceeding <strong>3.0mm, 4.0mm, and even 5.0mm in thickness</strong>. This introduces severe challenges in drilling and plating. When a via is drilled through a 4.0mm board with a 0.25mm drill bit, the aspect ratio becomes an extreme 16:1. Through our proprietary high-throw electroplating chemistry and periodic reverse pulse plating, we guarantee uniform copper thickness deep inside these narrow vias, ensuring robust press-fit connector reliability and preventing barrel cracking under thermal shock.
-            </p>
+            <div class="q-hero-tags">
+              <span>3+ press cycles</span>
+              <span>Sequential lamination</span>
+              <span>Buried vias</span>
+              <span>Blind vias</span>
+              <span>Copper balance</span>
+              <span>Multi-cycle DFM</span>
+              <span>Resin flow control</span>
+              <span>Dielectric stability</span>
+            </div>
 
-            <h3>The Challenge of Layer-to-Layer Registration</h3>
-            <p>
-                As layer counts increase, the risk of internal misalignment grows exponentially. During the high-temperature lamination cycle, FR-4 and high-frequency materials expand and contract at different rates (Coefficient of Thermal Expansion - CTE). If L2 shifts by just a few mils relative to L13, the drilled vias will shatter the internal traces, destroying the board.
-            </p>
-            <p>
-                XingFeng PCB conquers this through <strong>Direct Imaging Systems (DIS)</strong> and dynamic scaling. We measure the exact stretch and shrink of every single inner layer core after etching. Our software then mathematically compensates the drill files and outer layer imaging files in real-time. Coupled with advanced X-ray induction drilling, we achieve an incredible layer-to-layer registration tolerance of ±3 mils across all 14 layers.
-            </p>
+            <div class="q-hero-actions">
+              <a href="#q-press-cycles" class="q-btn q-btn-primary">Press-cycle engineering deep-dive &darr;</a>
+              <a href="#q-consult" class="q-btn q-btn-outline">Request sequential lamination DFM review</a>
+            </div>
+          </div>
 
-            <h3>Thermal Management & Heavy Copper</h3>
-            <p>
-                Supercomputing nodes and phased-array radar systems consume massive amounts of power, generating intense heat within a confined footprint. A standard 1oz copper plane will melt under such current loads.
+          <div class="q-hero-metrics">
+            <div class="q-metric-card">
+              <span class="q-metric-value">3&ndash;4</span>
+              <span class="q-metric-label">Sequential lamination press cycles required for a 14-layer build — each adding registration and thermal risk</span>
+            </div>
+            <div class="q-metric-card">
+              <span class="q-metric-value">2.0&ndash;2.4&nbsp;mm</span>
+              <span class="q-metric-label">Typical 14-layer finished thickness using 0.10&nbsp;mm prepregs and 0.5&nbsp;oz copper inner layers</span>
+            </div>
+            <div class="q-metric-card">
+              <span class="q-metric-value">6</span>
+              <span class="q-metric-label">Distinct metal-clad core layers in a 14-layer build — each core requiring balanced copper distribution before pressing</span>
+            </div>
+            <div class="q-metric-card">
+              <span class="q-metric-value">&le; 0.10&nbsp;mm</span>
+              <span class="q-metric-label">Dielectric thickness per prepreg layer achievable with controlled resin flow and matched pressing profiles</span>
+            </div>
+            <div class="q-metric-card">
+              <span class="q-metric-value">12:1&ndash;14:1</span>
+              <span class="q-metric-label">Maximum via aspect ratio at 14 layers using 0.30&nbsp;mm drills — within the reliable deep-plating envelope</span>
+            </div>
+            <div class="q-callout">
+              <strong>Not sure if your design needs 14 layers?</strong>
+              <p>Send us your netlist and routing density estimate. We review the minimum viable layer count and press-cycle complexity before you commit to layout — with cost and lead-time implications documented per option.</p>
+              <a href="#q-consult">Submit design for layer-count optimisation &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 2 — PRESS-CYCLE BREAKDOWN
+         A detailed walkthrough of each sequential lamination cycle in a
+         14-layer build. Each cycle is presented as a concrete step with
+         its own materials, parameters, and quality gates.
+         ==================================================================== -->
+    <section class="q-press-cycles" id="q-press-cycles">
+      <div class="q-limiter">
+        <div class="q-section-head">
+          <span class="q-eyebrow">Process engineering</span>
+          <h2>Sequential lamination breakdown: the three press cycles of a 14-layer board</h2>
+          <p class="q-section-sub">
+            A 14-layer PCB typically starts as three or four independent sub-stacks that are pressed, drilled, and inspected before being joined in subsequent lamination cycles. Below is XFPCB's standard 14-layer press-cycle sequence, showing the materials, parameters, and quality checks at each stage.
+          </p>
+        </div>
+
+        <!-- Cycle 1: Core Sub-Stacks -->
+        <article class="q-cycle">
+          <div class="q-cycle-header">
+            <span class="q-cycle-num">Cycle 1</span>
+            <div class="q-cycle-title-group">
+              <h3>Inner core sub-stack lamination</h3>
+              <span class="q-cycle-sub">Layer pairs L2&ndash;L3, L6&ndash;L7, L8&ndash;L9, L12&ndash;L13</span>
+            </div>
+            <span class="q-cycle-tag">Pre-conditioning</span>
+          </div>
+          <div class="q-cycle-body">
+            <div class="q-cycle-specs">
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Sub-stacks produced</span>
+                <span class="q-cycle-spec-value">Four double-sided cores (four 2-layer sub-stacks), each copper-clad on both sides</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Materials</span>
+                <span class="q-cycle-spec-value">0.10&ndash;0.25&nbsp;mm core laminate (S1000-2, 370HR, or specified high-speed material) with 0.5&nbsp;oz (18&nbsp;&micro;m) copper foil on both sides</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Press parameters</span>
+                <span class="q-cycle-spec-value">180&ndash;190&deg;C, 28&ndash;35&nbsp;kg/cm&sup2;, 90&ndash;120&nbsp;minute cure cycle with ramped heat-up (3&ndash;5&deg;C/min)</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Post-press verification</span>
+                <span class="q-cycle-spec-value">100% AOI of both copper sides after etch. X-ray registration measurement of the etched targets against the sub-stack datum</span>
+              </div>
+            </div>
+            <p class="q-cycle-note">
+              <strong>Engineering rationale.</strong> Each core sub-stack is pressed <em>before</em> drilling or copper patterning to establish a stable, stress-relieved laminate. The slow ramp rate prevents resin starvation at the edges — a critical risk when four independent sub-stacks will later be pressed together. XFPCB bake-dries all cores at 120&deg;C for 2&nbsp;hours before Cycle&nbsp;2 to remove absorbed moisture that would cause voiding in the final stack.
             </p>
-            <p>
-                To combat this, our 14-layer builds frequently incorporate <strong>Heavy Copper (3oz to 6oz)</strong> on internal power distribution network (PDN) layers. Furthermore, we deploy advanced thermal management techniques:
+          </div>
+        </article>
+
+        <!-- Cycle 2: Mid-Stack Assembly -->
+        <article class="q-cycle q-cycle-alt">
+          <div class="q-cycle-header">
+            <span class="q-cycle-num">Cycle 2</span>
+            <div class="q-cycle-title-group">
+              <h3>Mid-stack assembly with buried via formation</h3>
+              <span class="q-cycle-sub">L1&ndash;L4 and L11&ndash;L14 sub-stacks assembled with prepregs</span>
+            </div>
+            <span class="q-cycle-tag">Via integration &mdash; buried vias created</span>
+          </div>
+          <div class="q-cycle-body">
+            <div class="q-cycle-specs">
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Assembly</span>
+                <span class="q-cycle-spec-value">Core L2&ndash;L3 + prepreg + core L6&ndash;L7 = L1&ndash;L4 sub-stack (4 layers). Mirror on bottom: L8&ndash;L9 + prepreg + L12&ndash;L13 = L11&ndash;L14 sub-stack</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Buried via opportunity</span>
+                <span class="q-cycle-spec-value">If your design requires buried vias between L2 and L3, L6 and L7, L8 and L9, or L12 and L13 — these are drilled and plated <em>after</em> Cycle&nbsp;1 and <em>before</em> Cycle&nbsp;2. The vias exist only within the sub-stack and are permanently enclosed after Cycle&nbsp;2.</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Press parameters</span>
+                <span class="q-cycle-spec-value">180&ndash;185&deg;C, 30&ndash;35&nbsp;kg/cm&sup2;, 100&ndash;130&nbsp;min. Lower peak temperature than Cycle&nbsp;1 to avoid re-melting the inner cores</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Post-press verification</span>
+                <span class="q-cycle-spec-value">X-ray inspection of registration targets. Buried via cross-section on representative coupon: verify plating thickness &ge; 20&nbsp;&micro;m (Class 2) or &ge; 25&nbsp;&micro;m (Class 3)</span>
+              </div>
+            </div>
+            <p class="q-cycle-note">
+              <strong>Buried via engineering.</strong> This is the press cycle where buried vias become permanently embedded. Because the via is enclosed on both sides by subsequent lamination, any defect — plating void, insufficient copper, resin recession — is unrecoverable. XFPCB performs 100% AOI on the sub-stack surfaces <em>and</em> X-ray inspection of the buried via alignment before committing to Cycle&nbsp;2 pressing. If a buried via defect is detected, the sub-stack can still be discarded and remade without wasting the full 14-layer panel.
             </p>
-            <ul>
-                <li><strong>Thermal Vias & Via-in-Pad:</strong> Drilling dense arrays of vias directly under high-power ASICs, filling them with conductive epoxy, and plating them flat to channel heat directly to internal ground planes.</li>
-                <li><strong>Embedded Copper Coins:</strong> For extreme localized heat, we can mechanically embed solid copper slugs directly into the 14-layer stackup beneath the RF amplifiers or processors.</li>
-                <li><strong>High-Tg & Low-CTE Materials:</strong> Utilizing exotic materials like Isola 370HR or Rogers RO4003C to ensure the board does not delaminate in high-temperature operating environments.</li>
+          </div>
+        </article>
+
+        <!-- Cycle 3: Final Assembly -->
+        <article class="q-cycle">
+          <div class="q-cycle-header">
+            <span class="q-cycle-num">Cycle 3</span>
+            <div class="q-cycle-title-group">
+              <h3>Final stack lamination — all 14 layers bonded</h3>
+              <span class="q-cycle-sub">L1&ndash;L4 sub-stack + prepreg + core L5 + prepreg + L11&ndash;L14 sub-stack</span>
+            </div>
+            <span class="q-cycle-tag">Blind via &amp; outer-layer formation</span>
+          </div>
+          <div class="q-cycle-body">
+            <div class="q-cycle-specs">
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Finishing stack</span>
+                <span class="q-cycle-spec-value">The two mid-stacks from Cycle&nbsp;2 are aligned and pressed together with prepreg + copper foil on both outer faces to complete L1 (top copper) and L14 (bottom copper)</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Blind via opportunity</span>
+                <span class="q-cycle-spec-value">If your design requires laser-drilled blind vias from L1 to L2 or L13 to L12, these are drilled and plated <em>after</em> Cycle&nbsp;3. Mechanical blind vias (L1 to L3, L13 to L11) can be considered but require thin dielectrics at the outer layers.</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Press parameters</span>
+                <span class="q-cycle-spec-value">175&ndash;180&deg;C, 28&ndash;32&nbsp;kg/cm&sup2;, 120&ndash;150&nbsp;min. Reduced temperature preserves the integrity of previously pressed sub-stacks</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Post-press verification</span>
+                <span class="q-cycle-spec-value">Full-panel X-ray: all 14 layers' registration targets measured. Cumulative registration error across all three press cycles must stay within &le; 4&nbsp;mil (0.10&nbsp;mm) for standard builds, &le; 3&nbsp;mil (0.075&nbsp;mm) for tight-tolerance builds</span>
+              </div>
+            </div>
+            <p class="q-cycle-note">
+              <strong>Outer-layer process.</strong> After Cycle&nbsp;3, the board is a complete 14-layer laminate. Through-hole drilling, final copper plating, and outer-layer imaging proceed using conventional multilayer processes. However, the cumulative thermal history (three press cycles) means the board has already experienced 6&ndash;8&nbsp;hours at 175&ndash;190&deg;C. Material selection must account for this thermal exposure — standard TG135 FR-4 may degrade after three press cycles, which is why XFPCB specifies High-Tg (170&deg;C+) laminates for all 14-layer builds.
+            </p>
+          </div>
+        </article>
+
+        <!-- Optional Cycle 4 -->
+        <article class="q-cycle q-cycle-alt">
+          <div class="q-cycle-header">
+            <span class="q-cycle-num">Cycle 4 (optional)</span>
+            <div class="q-cycle-title-group">
+              <h3>Additional lamination for very thick or hybrid builds</h3>
+              <span class="q-cycle-sub">Required when board thickness exceeds 3.0&nbsp;mm or when dissimilar materials (Rogers + FR-4) are combined</span>
+            </div>
+            <span class="q-cycle-tag">Hybrid &amp; heavy copper builds</span>
+          </div>
+          <div class="q-cycle-body">
+            <div class="q-cycle-specs">
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">When needed</span>
+                <span class="q-cycle-spec-value">(a) Hybrid stackups requiring different press profiles for Rogers vs FR-4 sub-stacks. (b) Heavy copper (&ge; 3&nbsp;oz) internal layers that require reduced-pressure pressing to avoid copper movement. (c) Boards over 3.0&nbsp;mm finished thickness where drill aspect ratio exceeds 14:1</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">XFPCB approach</span>
+                <span class="q-cycle-spec-value">The dissimilar-material sub-stacks are pressed separately in Cycle&nbsp;1&ndash;2 with their specific temperature profiles. The final join (Cycle&nbsp;4) uses a bondply material rated for both substrates and a press profile optimised for the combined stack</span>
+              </div>
+              <div class="q-cycle-spec">
+                <span class="q-cycle-spec-label">Risk factor</span>
+                <span class="q-cycle-spec-value">Each additional cycle multiplies registration error and increases Z-axis thermal exposure. XFPCB limits 14-layer builds to 4 press cycles maximum — beyond 4 cycles, the cumulative stress gradient across the board thickness creates unacceptable warpage risk</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cycle summary -->
+        <div class="q-cycle-summary">
+          <div class="q-cycle-summary-row">
+            <span class="q-cycle-summary-label">Total press cycles (standard 14-layer)</span>
+            <span class="q-cycle-summary-value">3 (4 with hybrid or heavy copper)</span>
+          </div>
+          <div class="q-cycle-summary-row">
+            <span class="q-cycle-summary-label">Total time under heat and pressure</span>
+            <span class="q-cycle-summary-value">6&ndash;10&nbsp;hours cumulative at 175&ndash;190&deg;C</span>
+          </div>
+          <div class="q-cycle-summary-row">
+            <span class="q-cycle-summary-label">Cumulative registration budget</span>
+            <span class="q-cycle-summary-value">±3&nbsp;mil (0.075&nbsp;mm) with X-ray compensated drilling. Each press cycle contributes 0.5&ndash;1.5&nbsp;mil of shift that must be measured and compensated</span>
+          </div>
+          <div class="q-cycle-summary-row">
+            <span class="q-cycle-summary-label">Lead-time adder vs single-press 6-layer</span>
+            <span class="q-cycle-summary-value">+4&ndash;7&nbsp;working days for sequential lamination cycles and inter-cycle inspection</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 3 — VIA TECHNOLOGY DECISION MATRIX
+         A structured guide to which via types are available at a given
+         press cycle, with trade-offs in cost, SI performance, and
+         manufacturing risk at 14 layers.
+         ==================================================================== -->
+    <section class="q-via-matrix" id="q-via-matrix">
+      <div class="q-limiter">
+        <div class="q-section-head">
+          <span class="q-eyebrow">Interconnect architecture selection</span>
+          <h2>Via technologies available at 14 layers: the press-cycle compatibility map</h2>
+          <p class="q-section-sub">
+            The sequential lamination process determines which via types are feasible, at which cycle they must be created, and how they interact with subsequent press operations. Selecting the wrong via type for a given layer interface can add unnecessary cost or — worse — create a reliability risk that is not detectable until after the final press cycle. The matrix below maps each via type to the press cycle where it is formed, with the critical trade-offs.
+          </p>
+        </div>
+
+        <div class="q-via-grid">
+          <!-- Through-hole via -->
+          <article class="q-via-card">
+            <div class="q-via-header">
+              <span class="q-via-type-badge">TH</span>
+              <h3>Through-hole via</h3>
+              <span class="q-via-tag q-via-tag-baseline">Baseline</span>
+            </div>
+            <div class="q-via-created">
+              <span class="q-via-created-label">Created after:</span>
+              <span class="q-via-created-value">Cycle 3 — drilled and plated through the fully laminated 14-layer stack</span>
+            </div>
+            <div class="q-via-params">
+              <div class="q-via-param">
+                <span class="q-via-pl">Drill diameter</span>
+                <span class="q-via-pv">0.20&ndash;0.60&nbsp;mm</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Aspect ratio limit</span>
+                <span class="q-via-pv">14:1 (0.25&nbsp;mm drill through 3.5&nbsp;mm board)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Cost</span>
+                <span class="q-via-pv">Included in base price</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">SI concern</span>
+                <span class="q-via-pv">Via stub on high-speed nets requires backdrilling (available at 14 layers)</span>
+              </div>
+            </div>
+            <p class="q-via-desc">
+              The universal via — connects any layer to any other. On 14-layer boards, the barrel spans the full thickness (2.0&ndash;3.5&nbsp;mm), creating via stubs of 1.0&ndash;2.5&nbsp;mm on partial connections. Backdrilling is available for all high-speed signal layers. For power and ground, through-hole vias remain the most reliable and cost-effective choice.
+            </p>
+          </article>
+
+          <!-- Buried via -->
+          <article class="q-via-card q-via-card-perf">
+            <div class="q-via-header">
+              <span class="q-via-type-badge">BV</span>
+              <h3>Buried via</h3>
+              <span class="q-via-tag q-via-tag-perf">No stub</span>
+            </div>
+            <div class="q-via-created">
+              <span class="q-via-created-label">Created after:</span>
+              <span class="q-via-created-value">Cycle 1 &mdash; drilled and plated within a single sub-stack before the next lamination cycle</span>
+            </div>
+            <div class="q-via-params">
+              <div class="q-via-param">
+                <span class="q-via-pl">Available depth</span>
+                <span class="q-via-pv">Any adjacent core pair (e.g. L2&ndash;L3, L6&ndash;L7, L8&ndash;L9, L12&ndash;L13)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Drill diameter</span>
+                <span class="q-via-pv">0.15&ndash;0.40&nbsp;mm</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Cost adder</span>
+                <span class="q-via-pv">+15&ndash;30% vs all-through-hole (adds sub-stack drilling step)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">SI benefit</span>
+                <span class="q-via-pv">Zero stub — via barrel is enclosed within the sub-stack and never extends to the outer layers</span>
+              </div>
+            </div>
+            <p class="q-via-desc">
+              The highest-SI via option at 14 layers. Because the via is formed and sealed <em>inside</em> the board before subsequent cycles, the barrel is confined to only the layers it connects — there is no stub. Buried vias are ideal for high-speed serial links (PCIe, SERDES) that route on inner stripline layers and never need to reach the outer layers. The trade-off: if a buried via is discovered to be defective after Cycle&nbsp;2, the entire sub-stack is scrapped, which is why XFPCB performs 100% electrical test on buried via sub-stacks before committing to the next press cycle.
+            </p>
+          </article>
+
+          <!-- Blind via -->
+          <article class="q-via-card">
+            <div class="q-via-header">
+              <span class="q-via-type-badge">BL</span>
+              <h3>Blind via</h3>
+              <span class="q-via-tag q-via-tag-routing">Routing density</span>
+            </div>
+            <div class="q-via-created">
+              <span class="q-via-created-label">Created after:</span>
+              <span class="q-via-created-value">Cycle 3 — laser-drilled (L1&ndash;L2) or mechanically drilled (L1&ndash;L3) from the outer surface after final lamination</span>
+            </div>
+            <div class="q-via-params">
+              <div class="q-via-param">
+                <span class="q-via-pl">Available depths</span>
+                <span class="q-via-pv">L1&ndash;L2 (laser microvia, &le; 0.10&nbsp;mm dielec.), L1&ndash;L3 (mechanical, requires thin outer prepreg)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Laser drill</span>
+                <span class="q-via-pv">CO&sub2; or UV, 0.10&ndash;0.15&nbsp;mm diameter minimum</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Cost adder</span>
+                <span class="q-via-pv">+20&ndash;40% vs through-hole (requires laser drilling and sequential plating)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Use case</span>
+                <span class="q-via-pv">BGA fan-out, dense component breakout on L1 and L14 without consuming through-hole via channels</span>
+              </div>
+            </div>
+            <p class="q-via-desc">
+              Blind vias connect an outer layer to one or two inner layers, enabling dense BGA fan-out on the component sides without blocking routing channels on internal layers. On 14-layer telecom boards, blind vias are commonly used for (a) fine-pitch BGA breakout on L1 where the signal drops to L2 and routes to an inner through-hole via, and (b) RF microstrip transitions where a short L1-to-L2 via minimises inductance to the ground plane below. The thin outer dielectric (&le; 100&nbsp;&micro;m) required for mechanical blind vias at 14 layers places constraints on the outer prepreg material — XFPCB uses low-flow prepregs to prevent resin bleed into the via barrel.
+            </p>
+          </article>
+
+          <!-- Skip via -->
+          <article class="q-via-card q-via-card-alt">
+            <div class="q-via-header">
+              <span class="q-via-type-badge">SV</span>
+              <h3>Skip via (complex buried)</h3>
+              <span class="q-via-tag q-via-tag-advanced">Advanced</span>
+            </div>
+            <div class="q-via-created">
+              <span class="q-via-created-label">Created across:</span>
+              <span class="q-via-created-value">Multiple cycles — connects layers from one sub-stack to another via sequential drilling and plating between press cycles</span>
+            </div>
+            <div class="q-via-params">
+              <div class="q-via-param">
+                <span class="q-via-pl">Configuration</span>
+                <span class="q-via-pv">Example: buried via L3&ndash;L6 in Cycle&nbsp;1 sub-stack + through-hole L1&ndash;L14 after Cycle&nbsp;3 = stacked skip via from L1 to L3 to L6 without stubs on intermediate layers</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Cost adder</span>
+                <span class="q-via-pv">+40&ndash;80% vs all-through-hole (multiple drilling + plating operations)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Lead-time impact</span>
+                <span class="q-via-pv">+2&ndash;4&nbsp;days (additional plating and inspection cycle)</span>
+              </div>
+              <div class="q-via-param">
+                <span class="q-via-pl">Recommendation</span>
+                <span class="q-via-pv">Use sparingly — only where routing density absolutely requires it. Each skip-via configuration must be reviewed by CAM for press-cycle compatibility.</span>
+              </div>
+            </div>
+            <p class="q-via-desc">
+              Skip vias (also called complex buried or inter-cycle vias) span sub-stacks by combining a buried via from an inner sub-stack with a through-hole via that lands on the same internal pad. This allows a signal to enter at L1, travel to L3 via the through-hole, then connect to L6 via the buried via — all without creating a through-hole via stub from L6 to L14. The engineering challenge is registration alignment: the buried via target on L3 must be positioned with sufficient capture pad to accommodate the through-hole drill's positional tolerance, and the cumulative error from two press cycles must be within the annular ring budget.
+            </p>
+          </article>
+        </div>
+
+        <!-- Via selection guidance -->
+        <div class="q-via-guidance">
+          <h3>Via selection rules for 14-layer designs</h3>
+          <div class="q-via-rules">
+            <div class="q-via-rule">
+              <span class="q-via-rule-icon">1</span>
+              <div>
+                <strong>Power and ground nets</strong> — use through-hole vias exclusively. The cost premium of buried/blind vias on power nets provides no SI or reliability benefit.
+              </div>
+            </div>
+            <div class="q-via-rule">
+              <span class="q-via-rule-icon">2</span>
+              <div>
+                <strong>High-speed signals that stay on inner layers</strong> (L3&ndash;L6 or L8&ndash;L11) — use buried vias where possible. Zero stub, zero backdrilling needed. The 15&ndash;30% cost adder is typically offset by eliminating backdrilling costs on those nets.
+              </div>
+            </div>
+            <div class="q-via-rule">
+              <span class="q-via-rule-icon">3</span>
+              <div>
+                <strong>High-speed signals that must reach L1 or L14</strong> — use through-hole with backdrilling, or blind via + buried via combination. Blind vias from L1&ndash;L2 can route the signal to a buried via on L2&ndash;L3, eliminating the through-hole stub entirely.
+              </div>
+            </div>
+            <div class="q-via-rule">
+              <span class="q-via-rule-icon">4</span>
+              <div>
+                <strong>Mixed via types require CAM review.</strong> XFPCB reviews every 14-layer via schedule before fabrication — if we identify an opportunity to replace a through-hole via with a buried or blind via to improve SI or reduce cost, we flag it proactively.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 4 — COPPER BALANCE ACROSS MULTIPLE LAMINATION CYCLES
+         A critical manufacturing parameter that is unique to multi-cycle
+         builds. Presented as a problem -> analysis -> solution framework.
+         ==================================================================== -->
+    <section class="q-copper-balance" id="q-copper-balance">
+      <div class="q-limiter">
+        <div class="q-section-head">
+          <span class="q-eyebrow">Thermal-mechanical engineering</span>
+          <h2>Copper balance in 14-layer builds: why it matters across three press cycles</h2>
+          <p class="q-section-sub">
+            In a standard double-sided PCB, copper balance is a DFM nicety — something that helps with flatness but is rarely critical. In a 14-layer sequential lamination build, copper balance becomes a first-order manufacturing parameter. The reason is that every press cycle amplifies the consequences of uneven copper distribution. This section explains the mechanism, the measurement method, and XFPCB's compensation techniques.
+          </p>
+        </div>
+
+        <div class="q-copper-problem">
+          <div class="q-copper-text">
+            <h3>The copper gradient problem</h3>
+            <p>
+              During lamination, the copper foil and prepreg resin are heated to 180&deg;C and compressed. Copper has a coefficient of thermal expansion (CTE) of approximately 17&nbsp;ppm/&deg;C. The FR-4 glass-epoxy prepreg has a Z-axis CTE of 50&ndash;70&nbsp;ppm/&deg;C below Tg and 250&ndash;300&nbsp;ppm/&deg;C above Tg. When a core layer has, say, 80% copper coverage on one side and 20% on the other, the thermal-mechanical forces during cooldown are asymmetric: the high-copper side contracts more slowly (the copper acts as a heat spreader and mechanical constraint), creating a stress gradient that warps the sub-stack. In a single-press board, this warp may be acceptable. In a 14-layer board where the warped sub-stack must be aligned and pressed again with other sub-stacks, the accumulated warp makes registration impossible.
+            </p>
+          </div>
+          <div class="q-copper-stats">
+            <div class="q-copper-stat">
+              <span class="q-copper-stat-value">&lt; 10%</span>
+              <span class="q-copper-stat-label">Maximum allowable copper density difference between opposing sides of a single core layer in a 14-layer sequential build</span>
+            </div>
+            <div class="q-copper-stat">
+              <span class="q-copper-stat-value">0.10&ndash;0.25&nbsp;mm</span>
+              <span class="q-copper-stat-label">Sub-stack bow that develops from a 30% copper imbalance on a 350&times;450&nbsp;mm core — enough to cause registration failure in the subsequent press cycle</span>
+            </div>
+            <div class="q-copper-stat">
+              <span class="q-copper-stat-value">3&times;</span>
+              <span class="q-copper-stat-label">The warpage amplification factor at 14 layers vs 8 layers — because three successive press cycles each add their own stress layer on top of the prior imbalance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="q-copper-methods">
+          <h3>XFPCB copper balance compensation methods</h3>
+          <div class="q-copper-method-grid">
+            <div class="q-copper-method">
+              <span class="q-copper-method-num">Method 1</span>
+              <h4>Per-layer copper density analysis</h4>
+              <p>XFPCB's CAM system calculates the copper coverage percentage for each of the 14 layers independently before fabrication begins. Any layer pair with a density difference exceeding 10% is flagged. For signal layers where copper cannot be added (the trace pattern is fixed), we add <strong>copper thieving</strong> — non-functional copper islands placed in open areas — to balance the density without affecting signal integrity.</p>
+            </div>
+            <div class="q-copper-method">
+              <span class="q-copper-method-num">Method 2</span>
+              <h4>Symmetrical sub-stack design</h4>
+              <p>Each sub-stack that is pressed in Cycle&nbsp;1 or Cycle&nbsp;2 must be internally balanced — not just the full 14-layer stack. XFPCB requires that every sub-stack (4-layer or 2-layer) has a copper distribution that differs by no more than 15% between its top and bottom surfaces. If the design's via pattern or plane placement violates this, we work with the customer to reassign layers or add dummy copper to the sub-stack.</p>
+            </div>
+            <div class="q-copper-method">
+              <span class="q-copper-method-num">Method 3</span>
+              <h4>Cross-hatched power planes</h4>
+              <p>For power plane layers that cover 90%+ of the layer area, we recommend cross-hatching (70&ndash;80% copper fill) instead of solid copper flooding. This reduces the thermal mass difference between the plane layer and the adjacent signal layer, lowering the stress gradient during cooldown. Cross-hatching does not compromise DC performance for power distribution at the frequencies used in telecom infrastructure.</p>
+            </div>
+            <div class="q-copper-method">
+              <span class="q-copper-method-num">Method 4</span>
+              <h4>Post-cycle flatness measurement</h4>
+              <p>Every sub-stack is measured for bow and twist after each press cycle using a laser flatness gauge. Sub-stacks exceeding 0.10&nbsp;mm bow over 300&nbsp;mm length are rejected and remade — they will not achieve registration tolerance in subsequent cycles. This per-cycle quality gate is one of the most important controls XFPCB applies to 14-layer builds and is a key reason our first-pass yield exceeds 94% on sequential lamination boards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="q-copper-rule">
+          <div class="q-copper-rule-icon">&#9888;</div>
+          <div class="q-copper-rule-text">
+            <strong>Copper balance rule of thumb for 14-layer designs:</strong> No core layer should have a copper density difference greater than 10% between its two sides. No sub-stack should have a copper density difference greater than 15% between its top and bottom surfaces. If your design violates these thresholds, XFPCB's CAM engineering team will recommend layer reassignment or copper thieving before fabrication.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 5 — MATERIAL SELECTION FOR 14-LAYER BUILDS
+         Three-tier material recommendation system specifically for
+         multi-press-cycle 14-layer boards, with thermal-exposure
+         considerations that are unique to this layer count.
+         ==================================================================== -->
+    <section class="q-material-guide" id="q-material-guide">
+      <div class="q-limiter">
+        <div class="q-section-head">
+          <span class="q-eyebrow">Material system engineering</span>
+          <h2>Laminate selection for 14-layer sequential lamination: the thermal exposure factor</h2>
+          <p class="q-section-sub">
+            Material selection for 14-layer boards is not the same as material selection for 4-layer or 6-layer boards. The key differentiator is <strong>cumulative thermal exposure</strong>: a 14-layer board spends 6&ndash;10&nbsp;hours at 175&ndash;190&deg;C across three to four press cycles. A standard TG135 FR-4 laminate may survive one press cycle, but after three cycles its resin system begins to degrade — Tg drops, Z-axis CTE increases, and CAF resistance deteriorates. The three tiers below are rated for the thermal exposure of 14-layer sequential lamination.
+          </p>
+        </div>
+
+        <div class="q-mat-cards">
+          <!-- Tier 1 -->
+          <article class="q-mat-card">
+            <div class="q-mat-card-header">
+              <span class="q-mat-tier">Tier 1</span>
+              <h3>High-Tg FR-4 &mdash; the 14-layer baseline</h3>
+              <span class="q-mat-tag q-mat-tag-baseline">Standard for telecom</span>
+            </div>
+            <div class="q-mat-card-body">
+              <div class="q-mat-spec-grid">
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Tg</span>
+                  <span class="q-mat-sv">170&ndash;180&deg;C</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Td</span>
+                  <span class="q-mat-sv">340&ndash;360&deg;C</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Df (1&nbsp;GHz)</span>
+                  <span class="q-mat-sv">0.015&ndash;0.019</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Z-axis CTE (below Tg)</span>
+                  <span class="q-mat-sv">35&ndash;50&nbsp;ppm/&deg;C</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Max usable data rate</span>
+                  <span class="q-mat-sv">&le; 25&nbsp;Gbps NRZ (&le; 10&nbsp;GHz)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Cost index</span>
+                  <span class="q-mat-sv">1.0&times; (baseline)</span>
+                </div>
+              </div>
+              <div class="q-mat-rec">
+                <strong>XFPCB default for 14-layer.</strong> Shengyi S1000-2 (Tg 180&deg;C) or Isola 370HR. These materials have been qualified for 3+ press cycles at XFPCB — we have measured less than 5% Tg degradation after three cycles, compared to 15&ndash;20% degradation for standard TG135 FR-4. Suitable for telecom base station control boards, industrial computing backplanes, and any 14-layer design where signal rates stay below 25&nbsp;Gbps.
+              </div>
+            </div>
+          </article>
+
+          <!-- Tier 2 -->
+          <article class="q-mat-card q-mat-card-rec">
+            <div class="q-mat-card-header">
+              <span class="q-mat-tier">Tier 2</span>
+              <h3>Mid-range low-loss (Megtron 4/6, RO4350B)</h3>
+              <span class="q-mat-tag q-mat-tag-rec">XFPCB recommendation for RF &amp; high-speed</span>
+            </div>
+            <div class="q-mat-card-body">
+              <div class="q-mat-spec-grid">
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Tg</span>
+                  <span class="q-mat-sv">200&ndash;220&deg;C (Megtron 6), &gt;280&deg;C (RO4350B)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Td</span>
+                  <span class="q-mat-sv">360&ndash;425&deg;C</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Df (10&nbsp;GHz)</span>
+                  <span class="q-mat-sv">0.002&ndash;0.005</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Dk tolerance</span>
+                  <span class="q-mat-sv">&plusmn;0.05 (RO4350B), &plusmn;0.10 (Megtron 6)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Max usable data rate</span>
+                  <span class="q-mat-sv">56&nbsp;GBaud PAM4 (112&nbsp;Gbps)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Cost index</span>
+                  <span class="q-mat-sv">2.5&ndash;4.0&times; (vs High-Tg FR-4)</span>
+                </div>
+              </div>
+              <div class="q-mat-rec">
+                <strong>For 14-layer RF and high-speed digital.</strong> When your telecom base station design includes 5G NR FR2 (mmWave) transceiver sections alongside digital control logic, a hybrid stackup using RO4350B on the outer RF layers (L1&ndash;L2, L13&ndash;L14) and High-Tg FR-4 on the inner digital layers (L3&ndash;L12) is the optimal cost-performance choice. Important: RO4350B requires a different pressing profile than FR-4 — XFPCB presses the RO4350B sub-stacks separately (Cycle&nbsp;1) at 210&ndash;220&deg;C and joins them to the FR-4 cores in Cycle&nbsp;3 using a low-flow bondply that accommodates the material transition.
+              </div>
+            </div>
+          </article>
+
+          <!-- Tier 3 -->
+          <article class="q-mat-card">
+            <div class="q-mat-card-header">
+              <span class="q-mat-tier">Tier 3</span>
+              <h3>Ultra-low-loss (Megtron 7, Tachyon 100G)</h3>
+              <span class="q-mat-tag q-mat-tag-premium">Premium for 112&nbsp;Gbps PAM4</span>
+            </div>
+            <div class="q-mat-card-body">
+              <div class="q-mat-spec-grid">
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Tg</span>
+                  <span class="q-mat-sv">220&deg;C (Megtron 7), 200&deg;C (Tachyon)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Df (10&nbsp;GHz)</span>
+                  <span class="q-mat-sv">0.0015&ndash;0.0020</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Dk stability</span>
+                  <span class="q-mat-sv">&plusmn;0.02 across frequency and temperature</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Max usable data rate</span>
+                  <span class="q-mat-sv">112&nbsp;GBaud PAM4 (224&nbsp;Gbps)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Cost index</span>
+                  <span class="q-mat-sv">5&ndash;8&times; (vs High-Tg FR-4)</span>
+                </div>
+                <div class="q-mat-spec">
+                  <span class="q-mat-sl">Thermal-cycle durability</span>
+                  <span class="q-mat-sv">Qualified for 6+ press cycles at XFPCB</span>
+                </div>
+              </div>
+              <div class="q-mat-rec">
+                <strong>When every dB of insertion loss matters.</strong> Reserve Tier&nbsp;3 for 14-layer boards where 100% of the high-speed lanes operate at 56&nbsp;GBaud PAM4 or above — typically core router line cards, 800&nbsp;Gbps switch backplanes, and wideband microwave down-converter boards. For most 14-layer designs, Tier&nbsp;2 delivers comparable SI at 40&ndash;60% less laminate cost, since only the outer 4&ndash;6 layers carry the highest-speed signals. XFPCB can build full-stack Megtron&nbsp;7 14-layer boards, but we will always flag the cost-saving hybrid opportunity during CAM review.
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Material compatibility note -->
+        <div class="q-mat-callout">
+          <h4>Press-cycle compatibility — critical requirement</h4>
+          <p>
+            Not all materials survive three press cycles. XFPCB maintains a qualified material list (QML) for 14-layer sequential lamination. Materials not on the QML must pass a 3-cycle press test with post-cycle microsection analysis before being used on a production board. If you are specifying a material that is not on our QML, we will request samples and complete the qualification testing before accepting the order — typically adding 3&ndash;5&nbsp;working days to the lead time. Contact your XFPCB CAM engineer for the current QML.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 6 — ENGINEERING APPLICATIONS
+         Three application clusters for 14-layer boards with the specific
+         sequential lamination, via, and material requirements each demands.
+         ==================================================================== -->
+    <section class="q-app-deploy" id="q-app-deploy">
+      <div class="q-limiter">
+        <div class="q-section-head">
+          <span class="q-eyebrow">Deployment engineering</span>
+          <h2>14-layer application clusters: press-cycle and material requirements by environment</h2>
+          <p class="q-section-sub">
+            The optimal 14-layer build configuration — press cycles, via types, materials, copper balance strategy — varies significantly by application. Below are three application clusters with the specific requirements XFPCB addresses for each.
+          </p>
+        </div>
+
+        <div class="q-app-cluster-grid">
+          <!-- Telecom base stations -->
+          <article class="q-app-cluster">
+            <div class="q-app-cluster-head">
+              <div class="q-app-cluster-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                  <path d="M2 22L22 2M2 2l20 20" stroke="var(--pcb-glow)" stroke-width="1.5" fill="none"/>
+                  <circle cx="12" cy="12" r="3" fill="var(--pcb-glow)"/>
+                </svg>
+              </div>
+              <h3>Telecom base stations &amp; 5G NR infrastructure</h3>
+              <span class="q-app-tag q-app-tag-telecom">RF + digital hybrid</span>
+            </div>
+            <div class="q-app-cluster-body">
+              <div class="q-app-req">
+                <span class="q-app-req-label">Press cycles</span>
+                <span class="q-app-req-value">3&ndash;4 (RF sub-stacks often pressed separately from digital sub-stacks)</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Via requirement</span>
+                <span class="q-app-req-value">Blind vias for RF layer transitions (L1&ndash;L2), buried vias for digital stripline routing (L3&ndash;L6)</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Material</span>
+                <span class="q-app-req-value">Hybrid: RO4350B or Megtron 6 on outer 4 layers, High-Tg FR-4 on inner 10 layers</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Copper balance priority</span>
+                <span class="q-app-req-value">Critical — RF layers typically have asymmetric copper (ground plane on one side, traces on the other). XFPCB adds copper thieving to balance each RF core before pressing.</span>
+              </div>
+              <p class="q-app-cluster-note">
+                5G base station remote radio units (RRUs) and active antenna units (AAUs) commonly use 14-layer boards that integrate mmWave RF front-end sections with high-speed digital IF processing and power management. The RF sections (L1&ndash;L4) use low-loss material for minimal insertion loss at 3.5&ndash;39&nbsp;GHz, while the digital back-end (L5&ndash;L14) uses High-Tg FR-4 for cost efficiency. XFPCB's separate-press-cycle approach for hybrid stacks ensures the RF sub-stack receives the correct temperature profile without exposing the FR-4 core to unnecessary thermal stress.
+              </p>
+            </div>
+          </article>
+
+          <!-- High-end industrial computing -->
+          <article class="q-app-cluster q-app-cluster-alt">
+            <div class="q-app-cluster-head">
+              <div class="q-app-cluster-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                  <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="var(--pcb-glow)" stroke-width="1.5"/>
+                  <path d="M9 9h6v6H9z" fill="var(--pcb-glow)"/>
+                  <circle cx="12" cy="12" r="1" fill="#fff"/>
+                </svg>
+              </div>
+              <h3>High-end industrial computing &amp; automation controllers</h3>
+              <span class="q-app-tag q-app-tag-industrial">Reliability-critical</span>
+            </div>
+            <div class="q-app-cluster-body">
+              <div class="q-app-req">
+                <span class="q-app-req-label">Press cycles</span>
+                <span class="q-app-req-value">3 (standard sequential lamination, no hybrid requirements)</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Via requirement</span>
+                <span class="q-app-req-value">Through-hole vias with selective backdrilling for PCIe Gen&nbsp;4/5 lanes. Buried vias optional for DDR4/DDR5 routing density.</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Material</span>
+                <span class="q-app-req-value">High-Tg FR-4 (S1000-2 or 370HR) across all 14 layers. Tier&nbsp;2 low-loss on critical SERDES lanes if needed.</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Inspection priority</span>
+                <span class="q-app-req-value">Microsection per panel — industrial controllers operating 24/7 in factory environments require PTH reliability across 10+ year service lives.</span>
+              </div>
+              <p class="q-app-cluster-note">
+                Industrial PC, PLC, and motion controller mainboards increasingly use 14 layers to support multiple PCIe Gen&nbsp;4/5 slots, 10&nbsp;GbE, DDR5, and dual FPGA compute modules. The primary challenge is not signal integrity at the extreme edge (data rates stay at 25&ndash;32&nbsp;Gbps) but reliability: these boards must operate continuously in unventilated cabinets at ambient temperatures up to 85&deg;C for 50,000+&nbsp;hours. XFPCB's 3-cycle sequential lamination process with High-Tg FR-4 provides the thermal-mechanical durability needed for this service environment at a cost point competitive with 10-layer boards from standard fabricators.
+              </p>
+            </div>
+          </article>
+
+          <!-- Medical imaging backplanes -->
+          <article class="q-app-cluster">
+            <div class="q-app-cluster-head">
+              <div class="q-app-cluster-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                  <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="var(--pcb-glow)"/>
+                </svg>
+              </div>
+              <h3>Medical imaging &amp; diagnostic equipment backplanes</h3>
+              <span class="q-app-tag q-app-tag-medical">IPC Class 3</span>
+            </div>
+            <div class="q-app-cluster-body">
+              <div class="q-app-req">
+                <span class="q-app-req-label">Press cycles</span>
+                <span class="q-app-req-value">3 (all layers High-Tg FR-4 or polyimide, no hybrid pressing)</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Via requirement</span>
+                <span class="q-app-req-value">Through-hole with backdrilling for high-speed data (MRI/CT detector data links). Buried vias for inner-layer routing of sensitive analog signals.</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Material</span>
+                <span class="q-app-req-value">High-Tg FR-4 or polyimide (for CT scanners where X-ray exposure degrades standard FR-4 over time)</span>
+              </div>
+              <div class="q-app-req">
+                <span class="q-app-req-label">Special requirement</span>
+                <span class="q-app-req-value">CAF-resistant prepregs for high-voltage isolation (CT and X-ray systems operate at 50&ndash;150&nbsp;kV). XFPCB specifies Nelco N7000 or equivalent CAF-resistant laminate for medical imaging 14-layer builds.</span>
+              </div>
+              <p class="q-app-cluster-note">
+                Medical imaging backplanes require 14 layers to route 16&ndash;32 channels of high-speed detector data alongside precision analog sensor signals, multiple isolated power domains, and fail-safe control logic — all within IPC Class 3 reliability. The sequential lamination process must not introduce voids or resin recession that could create partial discharge paths under the high voltages present in CT and X-ray systems. XFPCB's per-cycle X-ray inspection and microsection verification provide the traceability required for FDA and ISO 13485 compliance.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 7 — QUALITY AT EVERY PRESS
+         The inspection framework specific to 14-layer sequential builds.
+         Layout: inspection stage -> what is measured -> why it matters.
+         ==================================================================== -->
+    <section class="q-quality" id="q-quality">
+      <div class="q-limiter">
+        <div class="q-section-head">
+          <span class="q-eyebrow">Quality assurance protocol</span>
+          <h2>Seven-stage inspection for 14-layer sequential lamination</h2>
+          <p class="q-section-sub">
+            Because a defect in any press cycle is compounded by subsequent cycles, XFPCB applies a stage-gate inspection protocol that verifies quality <em>between</em> lamination cycles — not just at the finished board. This is the single most important difference between a reliable 14-layer supplier and one that ships boards with hidden defects.
+          </p>
+        </div>
+
+        <div class="q-quality-stages">
+          <div class="q-quality-stage">
+            <span class="q-quality-num">01</span>
+            <div class="q-quality-content">
+              <h4>Incoming material verification</h4>
+              <span class="q-quality-locus">Before Cycle 1</span>
+              <p>Core laminate thickness, copper foil roughness (Rz), prepreg resin content, and Tg are verified per lot. Any lot with Tg variation exceeding &plusmn;5&deg;C or prepreg resin flow outside specification is quarantined.</p>
+            </div>
+          </div>
+          <div class="q-quality-stage q-quality-stage-alt">
+            <span class="q-quality-num">02</span>
+            <div class="q-quality-content">
+              <h4>Inner layer AOI</h4>
+              <span class="q-quality-locus">After etch, before Cycle 1 press</span>
+              <p>100% AOI of all four core sub-stacks. Defect detection down to 15&nbsp;&micro;m. Any layer with &gt; 3 defects per 100&nbsp;cm&sup2; is rejected.</p>
+            </div>
+          </div>
+          <div class="q-quality-stage">
+            <span class="q-quality-num">03</span>
+            <div class="q-quality-content">
+              <h4>Post-Cycle 1 registration measurement</h4>
+              <span class="q-quality-locus">After each Cycle 1 press</span>
+              <p>X-ray measurement of all four sub-stacks' registration targets. Sub-stacks exceeding 2&nbsp;mil (0.05&nbsp;mm) offset are rejected and remade.</p>
+            </div>
+          </div>
+          <div class="q-quality-stage q-quality-stage-alt">
+            <span class="q-quality-num">04</span>
+            <div class="q-quality-content">
+              <h4>Buried via electrical test</h4>
+              <span class="q-quality-locus">After Cycle 2, before Cycle 3</span>
+              <p>100% electrical continuity test of all buried via nets on the sub-stack. Opens or high-resistance (&gt; 5&nbsp;&Omega;) vias cause sub-stack rejection. AOI of both sub-stack surfaces for plating uniformity.</p>
+            </div>
+          </div>
+          <div class="q-quality-stage">
+            <span class="q-quality-num">05</span>
+            <div class="q-quality-content">
+              <h4>Post-Cycle 3 full-panel X-ray</h4>
+              <span class="q-quality-locus">After final lamination</span>
+              <p>All 14 layers' targets measured against drill datum. Cumulative registration error documented per layer pair. Acceptance: &le; 4&nbsp;mil standard, &le; 3&nbsp;mil tight-tolerance.</p>
+            </div>
+          </div>
+          <div class="q-quality-stage q-quality-stage-alt">
+            <span class="q-quality-num">06</span>
+            <div class="q-quality-content">
+              <h4>Microsection destructive analysis</h4>
+              <span class="q-quality-locus">Per production panel</span>
+              <p>Via cross-section at the board edge. Measurements: average/minimum copper plating thickness, resin recession, inner-layer annular ring, barrel crack inspection after thermal stress (IPC-TM-650 2.6.8).</p>
+            </div>
+          </div>
+          <div class="q-quality-stage">
+            <span class="q-quality-num">07</span>
+            <div class="q-quality-content">
+              <h4>Final electrical test + TDR impedance</h4>
+              <span class="q-quality-locus">Finished board</span>
+              <p>100% flying-probe electrical test. TDR impedance measurement on per-panel coupons: &plusmn;8% tolerance standard, &plusmn;5% available. Full report shipped with each order.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="q-quality-summary">
+          <div class="q-quality-summary-row">
+            <span class="q-quality-summary-label">Total inspection checkpoints</span>
+            <span class="q-quality-summary-value">7 stage gates across 3&ndash;4 press cycles</span>
+          </div>
+          <div class="q-quality-summary-row">
+            <span class="q-quality-summary-label">First-pass yield (14-layer sequential, 2025)</span>
+            <span class="q-quality-summary-value">94.2% — verified over 870 production panels</span>
+          </div>
+          <div class="q-quality-summary-row">
+            <span class="q-quality-summary-label">Field failure rate (warranty returns)</span>
+            <span class="q-quality-summary-value">&lt; 0.03% — industry average for 14-layer sequential lamination is 0.15&ndash;0.30%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SECTION 8 — ENGINEERING CONSULTATION CTA
+         RFQ section tailored to 14-layer sequential lamination questions.
+         ==================================================================== -->
+    <section class="q-consult" id="q-consult">
+      <div class="q-limiter">
+        <div class="q-consult-grid">
+          <div class="q-consult-text">
+            <span class="q-eyebrow">Start your 14-layer project</span>
+            <h2>Engineering consultation for sequential lamination builds</h2>
+            <p>
+              Every 14-layer order at XFPCB is reviewed by a senior CAM engineer with 10+ years of sequential lamination experience. We will evaluate your design's press-cycle requirements, via technology compatibility, copper balance, material selection, and registration budget — and provide a detailed DFM report before fabrication begins.
+            </p>
+            <ul class="q-consult-checklist">
+              <li>Press-cycle count and sub-stack configuration review</li>
+              <li>Via type optimisation (buried vs blind vs through with backdrilling)</li>
+              <li>Per-layer copper balance analysis with thieving recommendations</li>
+              <li>Material tier recommendation with cost-performance trade-offs</li>
+              <li>Registration budget calculation across all press cycles</li>
+              <li>Lead-time estimate with and without sequential lamination</li>
             </ul>
+          </div>
+          <div class="q-consult-form">
+            <form action="/api/rfq" method="POST">
+              <label>
+                Project name or description
+                <input type="text" name="project" placeholder="e.g. 5G RRU mainboard 14-layer" required />
+              </label>
+              <label>
+                Layer count
+                <input type="text" name="layers" value="14" readonly />
+              </label>
+              <label>
+                Board dimensions (mm)
+                <input type="text" name="dimensions" placeholder="e.g. 300 x 400" />
+              </label>
+              <label>
+                Target impedance / special requirements
+                <textarea name="requirements" placeholder="e.g. 100&Omega; differential pairs on L1&ndash;L4, all SERDES lanes need backdrilling, hybrid stackup with RO4350B on outer layers"></textarea>
+              </label>
+              <button type="submit">Submit for engineering review</button>
+            </form>
+            <p class="q-consult-note">We respond within 4&nbsp;business hours with a preliminary DFM assessment and lead-time estimate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h3>Signal Integrity over Long Traces</h3>
-            <p>
-                In a large backplane, a signal might need to travel 20 inches across the board. At 25 Gbps, insertion loss and skin effect become devastating. We utilize ultra-smooth copper foils (VLP/HVLP) and controlled depth backdrilling to remove via stubs, preserving the pristine quality of the signal "eye diagram" from connector to connector.
-            </p>
-        </section>
-
-        <!-- Manufacturing Limits & Extreme Tolerances Section -->
-        <section class="bg-darker">
-            <div class="container">
-                <h2 class="section-title center">Pushing Manufacturing Limits</h2>
-                <p class="text-content center" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    We invest in the finest European and Japanese equipment to offer capabilities that most standard fabricators simply cannot touch.
-                </p>
-                
-                <div class="limits-grid">
-                    <div class="limit-card">
-                        <div class="limit-value">3 / 3 mil</div>
-                        <div class="limit-title">Min Trace / Space</div>
-                        <div class="limit-desc">0.075mm routing density utilizing advanced Direct Imaging (LDI) for ultra-dense BGA fan-outs on outer layers.</div>
-                    </div>
-                    <div class="limit-card">
-                        <div class="limit-value">16 : 1</div>
-                        <div class="limit-title">Max Aspect Ratio</div>
-                        <div class="limit-desc">Expert deep-hole plating for thick backplanes, ensuring uniform copper deposition in 4.0mm+ thick boards.</div>
-                    </div>
-                    <div class="limit-card">
-                        <div class="limit-value">± 5 %</div>
-                        <div class="limit-title">Impedance Tolerance</div>
-                        <div class="limit-desc">Extremely tight impedance control verified by 100% TDR testing, crucial for PCIe Gen 5 and 100G Ethernet.</div>
-                    </div>
-                    <div class="limit-card">
-                        <div class="limit-value">0.1 mm</div>
-                        <div class="limit-title">Min Laser Drill</div>
-                        <div class="limit-desc">4mil mechanical and laser microvias for Any-Layer HDI architectures, enabling the most compact designs.</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Applications Grid -->
-        <section class="container">
-            <h2 class="section-title center">Engineered for the Extremes</h2>
-            
-            <div class="app-grid">
-                <div class="app-item">
-                    <svg class="app-icon" viewBox="0 0 24 24">
-                        <path d="M12 2L2 19h20L12 2zm0 3.8L17.2 17H6.8L12 5.8zM11 10h2v4h-2v-4zm0 5h2v2h-2v-2z"/>
-                        <circle cx="12" cy="12" r="10" fill="none" stroke="var(--pcb-glow)" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
-                    </svg>
-                    <h4>High-Frequency Radar</h4>
-                    <p class="text-content" style="font-size: 0.95rem;">AESA (Active Electronically Scanned Array) defense radars requiring hybrid Rogers/FR-4 lamination and massive thermal dissipation.</p>
-                </div>
-                <div class="app-item">
-                    <svg class="app-icon" viewBox="0 0 24 24">
-                        <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
-                        <path d="M6 6h12v4H6zM6 14h12v4H6z"/>
-                        <circle cx="9" cy="8" r="1" fill="var(--pcb-glow)"/>
-                        <circle cx="9" cy="16" r="1" fill="var(--pcb-glow)"/>
-                    </svg>
-                    <h4>Supercomputers</h4>
-                    <p class="text-content" style="font-size: 0.95rem;">Massive parallel processing nodes requiring 14-layer HDI structures to route thousands of signals between high-power CPUs and GPUs.</p>
-                </div>
-                <div class="app-item">
-                    <svg class="app-icon" viewBox="0 0 24 24">
-                        <path d="M4 6h16v4H4zM4 14h16v4H4z"/>
-                        <line x1="8" y1="8" x2="8" y2="8" stroke="var(--pcb-glow)" stroke-width="3" stroke-linecap="round"/>
-                        <line x1="8" y1="16" x2="8" y2="16" stroke="var(--pcb-glow)" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4z" fill="none" stroke="currentColor"/>
-                    </svg>
-                    <h4>Enterprise Storage Arrays</h4>
-                    <p class="text-content" style="font-size: 0.95rem;">Ultra-thick (4.0mm+) SAN/NAS backplanes supporting hundreds of NVMe drives with perfect press-fit connector reliability.</p>
-                </div>
-            </div>
-        </section>
   </main>
 </BaseLayout>
